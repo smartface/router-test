@@ -1,0 +1,5 @@
+.c9/*
+output/Android/*
+output/iOS/*
+!output/Android/README.md
+!output/iOS/README.md
