@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SMF xsi:schemaLocation="http://developer.smartface.biz/SAS/schema/4.1.0 sasObjectsRestricted.xsd" xmlns="http://developer.smartface.biz/SAS/schema/4.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<SMF xsi:schemaLocation="http://developer.smartface.biz/SAS/schema/4.1.0 sasObjectsRestricted.xsd" xmlns="http://developer.smartface.biz/SAS/schema/4.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Defaults>
 		<Page name="Page" backgroundImage="" fillColor="#FFFFFF" imageFillType="SMF.UI.ImageFillType.tile" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false" lockOrientation="false" onKeyPress="String" onOrientationChanged="String" showStatusBar="false" touchEnabled="true" templatePage="None" onHide="String" onShow="String"/>
 		<Dialog name="Dialog" designVisible="true" enabled="true" height="246px" left="0px" top="181px" onHide="String" onShow="String" onTouch="String" touchEnabled="true" width="320px" backgroundImage="" fillColor="#F0F0F0" imageFillType="SMF.UI.ImageFillType.tile" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false"  onKeyPress="String" onOrientationChanged="String"/>
