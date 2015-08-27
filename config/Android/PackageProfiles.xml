@@ -20,19 +20,4 @@
 			-->
 		</android>
 	</profile>
-	<profile Name="hdpi" >
-		<android>
-			<folder name="android/drawable-hdpi" />
-		</android>
-	</profile>
-	<profile Name="drawable" >
-		<android>
-			<folder name="android/drawable" />
-		</android>
-	</profile>
-	<profile Name="mdpi" >
-		<android>
-			<folder name="android/drawable-mdpi" />
-		</android>
-	</profile>
 </packageProfiles>
