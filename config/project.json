@@ -17,8 +17,8 @@
 		"orientation": {
 			"portrait": true,
 			"upsideDown": false,
-			"landscapeLeft": false,
-			"landscapeRight": false
+			"landScapeLeft": false,
+			"landScapeRight": false
 		}
 	},
 	"api": {
