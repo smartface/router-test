@@ -1,5 +1,6 @@
 .c9/*
 output/Android/*
 output/iOS/*
+plugin
 !output/Android/README.md
 !output/iOS/README.md

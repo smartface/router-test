@@ -53,7 +53,10 @@
 				"infoPlist": "config/iOS/Info.plist",
 				"urlIdentifier": "",
 				"urlSchemes": "",
-				"plugins": []
+				"plugins": {
+					"facebookios": "$PROJECT_ROOT/plugin/iOS/facebook.zip",
+					"googleanalyticsplugin-ios": "$PROJECT_ROOT/plugin/iOS/GoogleAnalyticsiOS.zip"
+				}
 			},
 			"android": {
 				"scripts": "scripts",
@@ -67,7 +70,10 @@
 					"aliasName": "smartface",
 					"keyPass": "smartface"
 				},
-				"plugins": []
+				"plugins": {
+					"facebook": "$PROJECT_ROOT/plugin/Android/FacebookAndroid.zip",
+					"googleanalytics": "$PROJECT_ROOT/plugin/Android/GoogleAnalyticsAndroid.zip"
+				}
 			}
 		},
 		"output": {
