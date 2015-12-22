@@ -54,8 +54,14 @@
 				"urlIdentifier": "",
 				"urlSchemes": "",
 				"plugins": {
-					"facebookios": "$PROJECT_ROOT/plugin/iOS/facebook.zip",
-					"googleanalyticsplugin-ios": "$PROJECT_ROOT/plugin/iOS/GoogleAnalyticsiOS.zip"
+					"facebookios": {
+						"path": "$PROJECT_ROOT/plugin/iOS/facebook.zip",
+						"active": false
+					},
+					"googleanalyticsplugin-ios": {
+						"path": "$PROJECT_ROOT/plugin/iOS/GoogleAnalyticsiOS.zip",
+						"active": false
+					}
 				}
 			},
 			"android": {
