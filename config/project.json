@@ -77,8 +77,15 @@
 					"keyPass": "smartface"
 				},
 				"plugins": {
-					"facebook": "$PROJECT_ROOT/plugin/Android/FacebookAndroid.zip",
-					"googleanalytics": "$PROJECT_ROOT/plugin/Android/GoogleAnalyticsAndroid.zip"
+					"facebookios": {
+						"path": "$PROJECT_ROOT/plugin/iOS/facebook.zip",
+						"active": false
+					},
+					"googleanalyticsplugin-ios": {
+						"path": "$PROJECT_ROOT/plugin/iOS/GoogleAnalyticsiOS.zip",
+						"active": false
+					}
+
 				}
 			}
 		},
