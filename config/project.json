@@ -63,7 +63,7 @@
 						"active": false
 					}
 				}
-			},
+			},jlıkjıjlk
 			"android": {
 				"scripts": "scripts",
 				"images": "images/Android",
@@ -91,10 +91,12 @@
 		},
 		"output": {
 			"ios": {
-				"outputFolder": "output/iOS"
+				"outputFolder": "output/iOS",
+				"bundleIdentifier": "io.smartface.demo"
 			},
 			"android": {
-				"outputFolder": "output/Android"
+				"outputFolder": "output/Android",
+				"packageName": "io.smartface.demo"
 			}
 		},
 		"tempFolder": "output/.tmp"
