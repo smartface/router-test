@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <packageProfiles>
-	<profile Name="Default" >
+	<profile name="Default">
 		<android>
 			<folder name="android/drawable" />
 			<folder name="android/drawable-mdpi" />
 			<folder name="android/drawable-hdpi" />
 			<folder name="android/drawable-xhdpi" />
-			<folder name="android/drawable-xxhdpi" />				
+			<folder name="android/drawable-xxhdpi" />
 			<!--  Uncomment this block for adding necessary information to android manifest
 			<compatible-screens>
 				<screen android:screenSize="normal" android:screenDensity="mdpi" />
