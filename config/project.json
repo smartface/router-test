@@ -110,6 +110,10 @@
 						"active": false
 					}
 				}
+			},
+			"keys": {
+				"project3DesKey": "",
+				"projectEncryptedKey": ""
 			}
 		},
 		"output": {
