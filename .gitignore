@@ -2,6 +2,8 @@
 .smf/*
 output/Android/*
 output/iOS/*
+output/.tmp
+output/publish-error.log
 plugin/Android/*
 plugin/iOS/*
 !output/Android/README.md
