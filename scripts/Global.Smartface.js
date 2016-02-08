@@ -24,3 +24,6 @@ function Global_Events_OnError(e) {
 			break;
 	}
 }
+
+Application.onStart = Global_Events_OnStart;
+Application.onUnhandledError = Global_Events_OnError;
