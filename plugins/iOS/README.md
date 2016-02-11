@@ -1,12 +1,12 @@
 # How to Use Smartface Plugins ?
 
-Smartface platform supports plugins. There are some ready to use plugins which are ready to use;
+Smartface platform supports plugins. There are some ready to use plugins which are;
 
-  - Facebook
-  - Google Analytics
-  - ImageCode
-  - Parse
-  - AdMob
+  - Facebook ( Android / iOS )
+  - Google Analytics ( Android / iOS )
+  - ImageCode ( Android / iOS )
+  - Parse ( Android )
+  - AdMob ( iOS )
 
 Follow the steps below to be able to use plugins into your project;
 
@@ -14,9 +14,51 @@ Follow the steps below to be able to use plugins into your project;
   - Find the plugins definition.
   - Change the value ofactive key as true for related plugin.
    
-Here is a sample code for activationg a plugin;
+Here is a sample code for activating a plugin;
 
 ```javascript
+			"ios": {
+				"scripts": "scripts",
+				"images": "images/iOS",
+				"assets": "assets",
+				"infoPlist": "config/iOS/Info.plist",
+				"urlIdentifier": "",
+				"urlSchemes": "",
+				"plugins": {
+					"facebookios": {
+						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/Facebook/iOS/1.0.0/FacebookiOS.zip",
+						"path": "plugins/iOS/FacebookiOS.zip",
+						"active": true
+					},
+					"googleanalyticsplugin-ios": {
+						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/GoogleAnalytics/iOS/1.0.0/GoogleAnalyticsiOS.zip",
+						"path": "plugins/iOS/GoogleAnalyticsiOS.zip",
+						"active": false
+					},
+					"admob-ios": {
+						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/AdMob/iOS/1.0.0/AdmobiOS.zip",
+						"path": "plugins/iOS/AdmobiOS.zip",
+						"active": false
+					},
+					"codereaderios": {
+						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/CodeReader/iOS/1.0.0/CodeReaderiOS.zip",
+						"path": "plugins/iOS/CodeReaderiOS.zip",
+						"active": false
+					}
+				}
+			},
+			"android": {
+				"scripts": "scripts",
+				"images": "images/Android",
+				"assets": "assets",
+				"manifest": "config/Android/AndroidManifest.xml",
+				"packageProfiles": "config/Android/PackageProfiles.xml",
+				"sign": {
+					"keystoreFile": "config/Android/smfdefault.keystore",
+					"keystorePass": "smartface",
+					"aliasName": "smartface",
+					"keyPass": "smartface"
+				},
 				"plugins": {
 					"facebook": {
 						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/Facebook/Android/1.0.0/FacebookAndroid.zip",
@@ -39,12 +81,10 @@ Here is a sample code for activationg a plugin;
 						"active": false
 					}
 				}
+			}
 ```
 
-### Related Guides For Plugins
 
-Developing and Using Smartface Plugins - http://www.smartface.io/developer/guides/plugins/developing-smartface-plugins/
+Please check the link if you interested about developing and using Smartface Plugins;
 
-Developing Android (Java) Plugins for Smartface - http://www.smartface.io/developer/guides/plugins/developing-android-plugin/
-
-Developing iOS (Objective-C) Plugins for Smartface - http://www.smartface.io/developer/guides/plugins/developing-ios-plugin/
+http://www.smartface.io/developer/guides/#plugin
