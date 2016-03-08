@@ -1,3 +1,5 @@
+/* globals lang, changeLang */
+
 /**
  * Triggered when application is started.
  * @param {EventArguments} e Returns some attributes about the specified functions

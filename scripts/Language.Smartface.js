@@ -1,4 +1,4 @@
-﻿var lang = {};
+var lang = {};
 
 function notifyLang() {
 	for (var keyword in lang) {

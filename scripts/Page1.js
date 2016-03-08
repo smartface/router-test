@@ -1,3 +1,5 @@
+/* globals */
+
 (function () {
 	var btnClickCount = 0;
 	
