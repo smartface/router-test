@@ -34,13 +34,6 @@ SMF.i18n = {
 		}
 		this.currentLang = languageCode;
 		lang = this.languageKV[languageCode];
-		for (var keyword in lang) {
-			if (lang.hasOwnProperty(keyword)) {
-				Data.notify('lang["' + keyword + '"]');
-				Data.notify("lang['" + keyword + "']");
-				Data.notify('lang.' + keyword);
-			}
-		}
 	}
 };
 
