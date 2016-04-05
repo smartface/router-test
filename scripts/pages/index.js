@@ -1,0 +1,1 @@
+include('pages/page1.js');

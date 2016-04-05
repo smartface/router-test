@@ -1,17 +1,16 @@
-/* globals lang, changeLang */
-
 /**
  * Triggered when application is started.
  * @param {EventArguments} e Returns some attributes about the specified functions
  * @this Application
  */
-function Global_Events_OnStart(e) {
-	changeLang(Device.language, true);
-	include("Page1.js");
+ 
+function Application_OnStart(e) {
+	include("i18n/i18n.js");
+	include("pages/index.js");
 	Pages.page1.show();
 }
 
-function Global_Events_OnError(e) {
+function Application_OnError(e) {
 	switch (e.type) {
 		case "Server Error":
 		case "Size Overflow":
@@ -27,5 +26,5 @@ function Global_Events_OnError(e) {
 	}
 }
 
-Application.onStart = Global_Events_OnStart;
-Application.onUnhandledError = Global_Events_OnError;
+Application.onStart = Application_OnStart();
+Application.onUnhandledError = Application_OnError();
