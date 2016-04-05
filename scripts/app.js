@@ -1,10 +1,13 @@
+Application.onStart = Application_OnStart();
+Application.onUnhandledError = Application_OnError();
+
 include("i18n/i18n.js");
 /**
  * Triggered when application is started.
  * @param {EventArguments} e Returns some attributes about the specified functions
  * @this Application
- */
- 
+*/
+
 function Application_OnStart(e) {
 	include("pages/index.js");
 	Pages.page1.show();
@@ -25,6 +28,3 @@ function Application_OnError(e) {
 			break;
 	}
 }
-
-Application.onStart = Application_OnStart();
-Application.onUnhandledError = Application_OnError();
