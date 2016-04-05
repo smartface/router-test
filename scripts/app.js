@@ -1,3 +1,4 @@
+include("i18n/i18n.js");
 /**
  * Triggered when application is started.
  * @param {EventArguments} e Returns some attributes about the specified functions
@@ -5,7 +6,6 @@
  */
  
 function Application_OnStart(e) {
-	include("i18n/i18n.js");
 	include("pages/index.js");
 	Pages.page1.show();
 }
