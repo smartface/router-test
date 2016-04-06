@@ -31,8 +31,7 @@
 			"consumerSecret": ""
 		},
 		"googleMaps": {
-			"androidKey": "01u81e3cP5lidl1HRJ55hoBH0N5_Kmlvku4EIYg",
-			"iosKey": ""
+			"androidKey": "01u81e3cP5lidl1HRJ55hoBH0N5_Kmlvku4EIYg"
 		},
 		"adMob": {
 			"publisherId": ""
