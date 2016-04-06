@@ -175,7 +175,7 @@
 			
 			<meta-data
 				android:name="com.google.android.maps.v2.API_KEY"
-				android:value="AIzaSyBYmxE1Mw9MnrmpxgI0TrDqF8QoN0ISR3g"/>
+				android:value="${GoogleMapsKey}"/>
 			<meta-data
 				android:name="${PackageName}.useActionBar"
 				android:value="true"/>
