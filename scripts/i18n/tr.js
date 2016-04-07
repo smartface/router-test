@@ -14,4 +14,4 @@ SMF.i18n.defineLanguage('tr', {
 	"networkError": "Bir ağ bağlantı hatası oluştu, lütfen daha sonra tekrar deneyiniz",
 	"applicationError": "Beklenmeyen Uygulama Hatası",
 	"delete": "Sil"
-}
+});

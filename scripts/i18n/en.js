@@ -14,4 +14,4 @@ SMF.i18n.defineLanguage('en', {
 	"networkError": "There has been a network error, please try again later",
 	"applicationError": "Unhandled Application Error",
 	"delete": "Delete"
-}
+});

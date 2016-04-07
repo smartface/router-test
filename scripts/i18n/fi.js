@@ -13,4 +13,4 @@ SMF.i18n.defineLanguage('fi', {
 	"sureToDelete": "Haluatko varmasti poistaa?",
 	"networkError": "Tapahtui verkkovirhe. Yritä myöhemmin uudelleen",
 	"applicationError": "Käsittelemätön Application Error"
-}
+});
