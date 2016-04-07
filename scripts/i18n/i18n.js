@@ -1,8 +1,11 @@
-// some code to load related lang keys & values
-// load device.lang
-// if it fails load en
-// if it fails load default min keys & values embeded in this file.
-// Required for BC
+/* 
+	"lang" variable is required for things like system level error messages and alert button messages.
+	Current implementation tries to load the value found in the variable "Device.language".
+	If this value is not defined, "SMF.i18n.switchLanguage" function tries to load the value given with "SMF.i18n.defaultLang", which is originally set to be "en".
+	If that fails, first found key in "SMF.i18n.languageKV" is attempted to be loaded, and if nothing is found, then nothing is loaded.
+	"SMF.i18n.languageKV" is populated by calling "SMF.i18n.defineLanguage".
+	Required for BC
+*/
 var lang = {};
 
 SMF.i18n = {
