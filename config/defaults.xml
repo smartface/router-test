@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<SMF xsi:schemaLocation="http://developer.smartface.biz/SAS/schema/4.4.0 sasObjectsRestricted.xsd" xmlns="http://developer.smartface.biz/SAS/schema/4.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<SMF>
 	<Defaults>
-		<Page name="Page" backgroundImage="" fillColor="#FFFFFF" imageFillType="SMF.UI.ImageFillType.tile" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false" lockOrientation="false" showStatusBar="false" touchEnabled="true" templatePage="None"
-		/>
-		<Dialog name="Dialog" designVisible="true" enabled="true" height="246px" left="0px" top="181px" touchEnabled="true" width="320px" backgroundImage="" fillColor="#F0F0F0" imageFillType="SMF.UI.ImageFillType.tile" imagePosition="SMF.UI.Alignment.topLeft"
+		<Page name="Page" backgroundImage="" fillColor="#FFFFFF" imageFillType="SMF.UI.ImageFillType.tile" imagePosition="SMF.UI.Alignment.topLeft" lockOrientation="false" touchEnabled="true"/>
+		<Dialog name="Dialog" enabled="true" height="246px" left="0px" top="181px" touchEnabled="true" width="320px" backgroundImage="" fillColor="#F0F0F0" imageFillType="SMF.UI.ImageFillType.tile" imagePosition="SMF.UI.Alignment.topLeft"
 		limitObjectsInPageBoundaries="false" />
-		<Label name="Label" designVisible="true" enabled="true" height="7.29%" left="12.5%" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false"
-		font.underline="false" lockAutoPosition="false" lockAutoSize="false" top="46.35%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false" alpha="1" autoSize="false" backgroundTransparent="true" borderColor="#999999" borderWitdh="0"
-		detectURLsInString="false" fillColor="#CCCCCC" fontColor="#666666" horizontalGap="0" minimumFontSize="7" multipleLine="false" roundEdge="3" showScrollBar="false" text="&quot;Label&quot;" textAlignment="SMF.UI.Alignment.left" Z="0" />
-		<Image name="Image" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="30%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="35%" touchEnabled="true" visible="true"
+		<Label name="Label" enabled="true" height="7.29%" left="12.5%" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false"
+		font.underline="false"  top="46.35%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false" alpha="1" autoSize="false" backgroundTransparent="true" borderColor="#999999" borderWitdh="0"
+		detectURLsInString="false" fillColor="#CCCCCC" fontColor="#666666" horizontalGap="0" minimumFontSize="7" multipleLine="false" roundEdge="3" showScrollBar="false" text="Label" textAlignment="SMF.UI.Alignment.left" Z="0" />
+		<Image name="Image" enabled="true" height="30%" left="12.5%"  top="35%" touchEnabled="true" visible="true"
 		width="75%" alpha="1" changeAnimation="fade" enableCache="true" enableScroll="false" enableZoom="false" image="ObjDefaultImage.png" imageFillType="SMF.UI.ImageFillType.normal" imagePosition="SMF.UI.Alignment.center" maxZoomLevel="1" minZoomLevel="1"
 		zoomLevel="1" Z="0" />
-		<ImageButton name="ImageButton" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false"
-		height="10%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="45%" touchEnabled="true" visible="true" width="75%" alpha="1" defaultImage="buttondefault.png" disabledFontColor="#0000FF" fontColor="#333333" highlightedImage="buttonhighlighted.png"
-		horizontalGap="0" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.center" inactiveImage="buttoninactive.png" pressedFontColor="#FFFFFF" text="&quot;Button&quot;" textAlignment="SMF.UI.Alignment.center" Z="0" />
-		<TextButton name="TextButton" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false"
-		height="10%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="45%" touchEnabled="true" visible="true" width="75%" alpha="1" fillColor="#00A1F1" fontColor="#000000" horizontalGap="0" pressedFillColor="#2EB9FF" pressedFontColor="#FFFFFF"
-		roundEdge="3" style3D="false" text="&quot;Button&quot;" textAlignment="SMF.UI.Alignment.center" Z="0" />
-		<Ticker name="Ticker" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false"
-		height="7.29%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1" backgroundTransparent="false" borderColor="#999999" borderWidth="0" fillColor="#CCCCCC" fontColor="#666666"
-		refreshRate="100" roundEdge="0" text="&quot;Ticker&quot;" textAlignment="SMF.UI.Alignment.left" Z="0" />
-		<Editbox name="EditBox" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" borderWitdh="1" designVisible="true" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false"
-		font.underline="false" height="10%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="45%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false" alpha="1" backgroundTransparent="false" activeBorderColor="#3366CC" inactiveBorderColor="#999999"
-		characterList="" enableClearButton="true" fillColor="#FFFFFF" focusEnabled="true" fontColor="#7a7a7a" horizontalGap="0" inputFiltering="SMF.UI.EditboxInputFiltering.disabled" isPassword="false" lengthRangeMax="0" lengthRangeMin="0" mask="" minimumFontSize="7"
-		borderWidth="0" multipleLine="false" placeHolder="" returnKey="SMF.UI.EditboxReturnKey.done" roundEdge="5" text="&quot;EditBox&quot;" textAlignment="SMF.UI.Alignment.left" textFormatType="SMF.UI.EditboxTextFormat.generic" valueRangeMax="0" valueRangeMin="0"
+		<ImageButton name="ImageButton" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false"
+		height="10%" left="12.5%"  top="45%" touchEnabled="true" visible="true" width="75%" alpha="1" defaultImage="buttondefault.png" disabledFontColor="#0000FF" fontColor="#333333" highlightedImage="buttonhighlighted.png"
+		horizontalGap="0" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.center" inactiveImage="buttoninactive.png" pressedFontColor="#FFFFFF" text="Button" textAlignment="SMF.UI.Alignment.center" Z="0" />
+		<TextButton name="TextButton" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false"
+		height="10%" left="12.5%"  top="45%" touchEnabled="true" visible="true" width="75%" alpha="1" fillColor="#00A1F1" fontColor="#000000" horizontalGap="0" pressedFillColor="#2EB9FF" pressedFontColor="#FFFFFF"
+		roundEdge="3" style3D="false" text="Button" textAlignment="SMF.UI.Alignment.center" Z="0" />
+		<Ticker name="Ticker" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false"
+		height="7.29%" left="12.5%"  top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1" backgroundTransparent="false" borderColor="#999999" borderWidth="0" fillColor="#CCCCCC" fontColor="#666666"
+		refreshRate="100" roundEdge="0" text="Ticker" textAlignment="SMF.UI.Alignment.left" Z="0" />
+		<Textbox name="Textbox" borderWitdh="1" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false"
+		font.underline="false" height="10%" left="12.5%"  top="45%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false" alpha="1" backgroundTransparent="false" activeBorderColor="#3366CC" inactiveBorderColor="#999999"
+		enableClearButton="true" fillColor="#FFFFFF" focusEnabled="true" fontColor="#7a7a7a" horizontalGap="0" isPassword="false"
+		borderWidth="0" multipleLine="false" placeHolder="" returnKeyType="SMF.UI.TextboxReturnKey.done" roundEdge="5" text="Textbox" textAlignment="SMF.UI.Alignment.left" textFormatType="SMF.UI.TextboxTextFormat.generic" valueRangeMax="0" valueRangeMin="0"
 		enableUpperCase="false" Z="0" />
-		<Repeatbox name="RepeatBox" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" groupStyle="SMF.UI.RepeatBoxGroupStyle.plain" height="30%" left="12.5%" lockAutoPosition="false" lockAutoSize="false"
+		<Repeatbox name="RepeatBox" enabled="true" groupStyle="SMF.UI.RepeatBoxGroupStyle.plain" height="30%" left="12.5%" 
 		top="35%" touchEnabled="true" visible="true" width="75%" alignment="SMF.UI.LayoutAlignment.left" allowDeletingItems="false" autoSize="false" backgroundTransparent="false" borderColor="##999999" borderWidth="1" enablePullDownToRefresh="false" enablePullUpToRefresh="false"
 		enableScroll="true" groupingDataField="" groupItems="false" horizontalGap="5" layoutType="SMF.UI.LayoutType.absolute" loop="false" orientation="SMF.UI.Orientation.horizontal" scrollHeader="false" showHeader="false" showScrollBar="true" roundEdge="0"
 		verticalGap="5" Z="0">
@@ -36,38 +35,37 @@
 			<pullDownItem backgroundImage="" fillColor="#65625A" height="40dp" imageFillType="SMF.UI.ImageFillType.stretch" positionBackroundImage="SMF.UI.Alignment.topLeft" />
 			<pullUpItem backgroundImage="" fillColor="#65625A" height="40dp" imageFillType="SMF.UI.ImageFillType.stretch" positionBackroundImage="SMF.UI.Alignment.topLeft" />
 		</Repeatbox>
-		<Video name="Video" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="30%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="35%" touchEnabled="true" visible="true"
+		<Video name="Video" enabled="true" height="30%" left="12.5%"  top="35%" touchEnabled="true" visible="true"
 		width="75%" contentUrl="" controlStyle="SMF.UI.VideoControlStyle.embedded" initialPlaybackTime="0" movieScalingMode="SMF.UI.MovieScalingMode.aspectFit" Z="0" />
-		<CodeReader name="CodeReader" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="30%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="35%" touchEnabled="true" visible="true"
+		<CodeReader name="CodeReader" enabled="true" height="30%" left="12.5%"  top="35%" touchEnabled="true" visible="true"
 		width="75%" Z="0" />
-		<WebView name="WebView" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="30%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="35%" touchEnabled="true" visible="true"
+		<WebView name="WebView" enabled="true" height="30%" left="12.5%"  top="35%" touchEnabled="true" visible="true"
 		width="75%" openLinkInside="false" scalePageToFit="false" URL="" Z="0" />
-		<Container name="Container" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="30%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="35%" touchEnabled="true" visible="true"
+		<Container name="Container" enabled="true" height="30%" left="12.5%"  top="35%" touchEnabled="true" visible="true"
 		width="75%" alignment="SMF.UI.LayoutAlignment.left" autoSize="false" backgroundTransparent="true" borderColor="#313031" borderWidth="1" fillColor="#EFF3EF" horizontalGap="5" layoutType="SMF.UI.LayoutType.absolute" orientation="SMF.UI.Orientation.horizontal"
 		verticalGap="5" Z="0" />
-		<ScrollView name="ScrollView" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="30%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="35%" touchEnabled="true" visible="true"
+		<ScrollView name="ScrollView" enabled="true" height="30%" left="12.5%"  top="35%" touchEnabled="true" visible="true"
 		width="75%" alignment="SMF.UI.LayoutAlignment.left" autoSize="false" backgroundTransparent="true" borderColor="#313031" borderWidth="1" contentHeight="100%" contentWidth="100%" decelerationRate="SMF.UI.ScrollViewDecelerationRate.normal" enableHorizontalPaging="false"
 		enableHorizontalScrollbar="false" enableHorizontalScrolling="false" enableVerticalPaging="false" enableVerticalScrollbar="true" enableVerticalScrolling="true" enableZoom="false" fillColor="#EFF3EF" horizontalGap="5" layoutType="SMF.UI.LayoutType.absolute"
 		orientation="SMF.UI.Orientation.horizontal" scrollViewIndicatorStyle="SMF.UI.ScrollViewIndicatorStyle.default" verticalGap="5" Z="0" />
-		<MapView name="MapView" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="30%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="35%" touchEnabled="true" visible="true"
+		<MapView name="MapView" enabled="true" height="30%" left="12.5%"  top="35%" touchEnabled="true" visible="true"
 		width="75%" centerLatitude="41.035972" centerLongitude="29.046902" enableScroll="true" enableZoom="true" latitudeSource="" longitudeSource="" mapType="SMF.UI.MapType.standard" selectedImageSource="" showPins="true" showUserLocation="true" subtitleSource=""
 		titleSource="" unselectedImageSource="" zoomLevel="2" Z="0" />
-		<SwitchButton name="SwitchButton" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="31dp" left="44.26%" lockAutoPosition="false" lockAutoSize="false" top="48.02%" touchEnabled="true"
+		<SwitchButton name="SwitchButton" enabled="true" height="31dp" left="44.26%"  top="48.02%" touchEnabled="true"
 		visible="true" width="51dp" alpha="1" checked="false" tintColor="#4bd663" Z="0" />
-		<Slider name="Slider" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="4.58%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" maxTrackImage="" minTrackImage="" top="47.71%"
+		<Slider name="Slider" enabled="true" height="4.58%" left="12.5%"  maxTrackImage="" minTrackImage="" top="47.71%"
 		touchEnabled="true" visible="true" width="75%" alpha="1" continuous="false" maxTrackColor="#FFFFFF" minTrackColor="#00CCFF" showThumbnail="true" stepSize="1" thumbnailColor="#000000" thumbnailImage="" value="50" valueRangeMax="100" valueRangeMin="0"
 		Z="0" />
-		<Rectangle name="Rectangle" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="30%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="35%" touchEnabled="true" visible="true"
+		<Rectangle name="Rectangle" enabled="true" height="30%" left="12.5%"  top="35%" touchEnabled="true" visible="true"
 		width="75%" alpha="1" backgroundTransparent="false" borderColor="#666666" borderWidth="1" endColor="#000000" gradientFill="false" gradientOrientation="SMF.UI.GradientOrientation.leftToRight" roundedEdge="3" startColor="#666666" Z="0" />
-		<Line name="Line" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="7.29%" left="12.5%" lockAutoPosition="false" lockAutoSize="false" top="46.35%" touchEnabled="true" visible="true"
+		<Line name="Line" enabled="true" height="7.29%" left="12.5%"  top="46.35%" touchEnabled="true" visible="true"
 		width="75%" alpha="1" borderColor="#000000" borderWidth="1" dashed="false" lineRotationAngle="SMF.UI.LineRotationAngle.horizontal" Z="0" />
-		<ActivityIndicator name="ActivityIndicator" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="21px" left="48.98%" lockAutoPosition="false" top="49.43%" touchEnabled="true" visible="true"
+		<ActivityIndicator name="ActivityIndicator" enabled="true" height="21px" left="48.98%" top="49.43%" touchEnabled="true" visible="true"
 		width="21px" style="SMF.UI.ActivityIndicatorStyle.gray" Z="0" />
-		<AdMob name="AdMob" adUnitId.iOS="" adUnitId.Android="" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" left="0%" lockAutoPosition="false" top="44.79%" touchEnabled="true" visible="true"
-		adSize="SMF.UI.AdMob.AdSize.banner" />
-		<Canvas name="Canvas" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" height="30%" left="24.06%" top="41.46%" touchEnabled="true" width="75%" loopPeriod="50" loop="true" Z="0" />
-		<SearchBar name="SearchBar" anchor.bottom="false" anchor.left="true" anchor.right="false" anchor.top="true" designVisible="true" enabled="true" height="10%" left="24.06%" lockAutoPosition="false" lockAutoSize="false" top="46.25%" touchEnabled="true" visible="true"
-		width="75%" alpha="1" text="&quot;&quot;" placeholder="&quot;Search&quot;" icon="" barStyle="SMF.UI.SearchBarStyle.default" tintColor="#7FEA00" Z="0" />
+		<AdMob name="AdMob" adUnitId="" enabled="true" left="0%" top="44.79%" touchEnabled="true" visible="true" adSize="SMF.UI.AdMob.AdSize.banner" />
+		<Canvas name="Canvas" height="30%" left="24.06%" top="41.46%" touchEnabled="true" width="75%" loopPeriod="50" loop="true" Z="0" />
+		<SearchBar name="SearchBar" enabled="true" height="10%" left="24.06%"  top="46.25%" touchEnabled="true" visible="true"
+		width="75%" alpha="1" text="" placeholder="Search" icon="" barStyle="SMF.UI.SearchBarStyle.default" tintColor="#7FEA00" Z="0" />
 		<SliderDrawer name="SliderDrawer" width="157dp" touchEnabled="true" backgroundColor="#FFFFFF" />
 	</Defaults>
 </SMF>
