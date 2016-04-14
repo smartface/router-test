@@ -5,10 +5,10 @@
 		<Label name="Label" enabled="true" height="7.29%" left="12.5%" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" top="46.35%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
 		alpha="1" autoSize="false" backgroundTransparent="true" borderColor="#999999" borderWitdh="0" detectURLsInString="false" fillColor="#CCCCCC" fontColor="#666666" horizontalGap="0" minimumFontSize="7" multipleLine="false" roundEdge="3" showScrollBar="false"
 		text="Label" textAlignment="SMF.UI.Alignment.LEFT" z="0" />
-		<Image name="Image" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alpha="1" changeAnimation="fade" enableCache="true" enableScroll="false" enableZoom="false" image="ObjDefaultImage.png" imageFillType="SMF.UI.ImageFillType.NORMAL"
+		<Image name="Image" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alpha="1" changeAnimation="fade" enableCache="true" enableScroll="false" enableZoom="false" image="" imageFillType="SMF.UI.ImageFillType.NORMAL"
 		imagePosition="SMF.UI.Alignment.CENTER" maxZoomLevel="1" minZoomLevel="1" zoomLevel="1" z="0" />
 		<ImageButton name="ImageButton" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%"
-		alpha="1" defaultImage="buttondefault.png" disabledFontColor="#0000FF" fontColor="#333333" highlightedImage="buttonhighlighted.png" horizontalGap="0" imageFillType="SMF.UI.ImageFillType.STRETCH" imagePosition="SMF.UI.Alignment.CENTER" inactiveImage="buttoninactive.png"
+		alpha="1" defaultImage="" disabledFontColor="#0000FF" fontColor="#333333" highlightedImage="" horizontalGap="0" imageFillType="SMF.UI.ImageFillType.NORMAL" imagePosition="SMF.UI.Alignment.CENTER" inactiveImage=""
 		pressedFontColor="#FFFFFF" text="Button" textAlignment="SMF.UI.Alignment.CENTER" z="0" />
 		<TextButton name="TextButton" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%"
 		alpha="1" fillColor="#00A1F1" fontColor="#000000" horizontalGap="0" pressedFillColor="#2EB9FF" pressedFontColor="#FFFFFF" roundEdge="3" style3D="false" text="Button" textAlignment="SMF.UI.Alignment.CENTER" z="0" />
@@ -21,12 +21,12 @@
 		<Repeatbox name="RepeatBox" enabled="true" groupStyle="SMF.UI.RepeatBoxGroupStyle.PLAIN" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alignment="SMF.UI.LayoutAlignment.LEFT" allowDeletingItems="false" autoSize="false"
 		backgroundTransparent="false" borderColor="##999999" borderWidth="1" enablePullDownToRefresh="false" enablePullUpToRefresh="false" enableScroll="true" groupingDataField="" groupItems="false" horizontalGap="5" layoutType="SMF.UI.LayoutType.ABSOLUTE"
 		loop="false" orientation="SMF.UI.Orientation.HORIZONTAL" scrollHeader="false" showHeader="false" showScrollBar="true" roundEdge="0" verticalGap="5" z="0">
-			<itemTemplate backgroundImage="" fillColor="#EFF3EF" height="40dp" imageFillType="SMF.UI.ImageFillType.STRETCH" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
-			<grouppingHeaderTemplate backgroundImage="" fillColor="#D6DCE0" height="40dp" imageFillType="SMF.UI.ImageFillType.STRETCH" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
-			<activeItemTemplate backgroundImage="" fillColor="#EFF3EF" height="40dp" imageFillType="SMF.UI.ImageFillType.STRETCH" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
-			<headerItem backgroundImage="" fillColor="#EFF3EF" height="40dp" imageFillType="SMF.UI.ImageFillType.STRETCH" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
-			<pullDownItem backgroundImage="" fillColor="#65625A" height="40dp" imageFillType="SMF.UI.ImageFillType.STRETCH" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
-			<pullUpItem backgroundImage="" fillColor="#65625A" height="40dp" imageFillType="SMF.UI.ImageFillType.STRETCH" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
+			<itemTemplate backgroundImage="" fillColor="#EFF3EF" height="40dp" imageFillType="SMF.UI.ImageFillType.NORMAL" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
+			<grouppingHeaderTemplate backgroundImage="" fillColor="#D6DCE0" height="40dp" imageFillType="SMF.UI.ImageFillType.NORMAL" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
+			<activeItemTemplate backgroundImage="" fillColor="#EFF3EF" height="40dp" imageFillType="SMF.UI.ImageFillType.NORMAL" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
+			<headerItem backgroundImage="" fillColor="#EFF3EF" height="40dp" imageFillType="SMF.UI.ImageFillType.NORMAL" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
+			<pullDownItem backgroundImage="" fillColor="#65625A" height="40dp" imageFillType="SMF.UI.ImageFillType.NORMAL" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
+			<pullUpItem backgroundImage="" fillColor="#65625A" height="40dp" imageFillType="SMF.UI.ImageFillType.NORMAL" positionBackroundImage="SMF.UI.Alignment.TOPLEFT" />
 		</Repeatbox>
 		<Video name="Video" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" contentUrl="" controlStyle="SMF.UI.VideoControlStyle.EMBEDDED" initialPlaybackTime="0" movieScalingMode="SMF.UI.MovieScalingMode.ASPECTFIT"
 		z="0" />

@@ -12,7 +12,7 @@
 
 	var btn = new SMF.UI.TextButton({
 		name: "btn",
-		text: "Click Me!",
+		text: "Click me!",
 		fontColor: "#FFFFFF",
 		onPressed: page1_btn_onPressed,
 		width: "70%",
@@ -38,12 +38,15 @@
 	var img = new SMF.UI.Image({
 		name: "img",
 		image: "smartface.png",
-		top: "10%",
+		top: "20%",
 		width: "70%",
-		left: "15%"
+		left: "15%",
+		height: "10%",
+		imageFillType: SMF.UI.ImageFillType.ASPECTFIT
 	});
 
 	Pages.page1.add(img);
+
 	/**
 	 * Creates action(s) that are run when the user press the key of the devices.
 	 * @param {KeyCodeEventArguments} e Uses to for key code argument. It returns e.keyCode parameter.
@@ -76,19 +79,19 @@
 		switch (true) {
 			case btnClickCount == 1:
 				myLabelText = "Well Done! \nYou've clicked the button!";
-				myButtonText = "Click Me Again!";
+				myButtonText = "Click me again!";
 				break;
 			case btnClickCount > 1 && btnClickCount < 10:
 				myLabelText = "Whoa!\nThat click was " + numberSuffix(btnClickCount) + " time!";
-				myButtonText = "Click Again?";
+				myButtonText = "Click again?";
 				break;
 			case btnClickCount >= 10 && btnClickCount < 15:
 				myLabelText = "Feel tired?\nYou can rest your finger now :)";
-				myButtonText = "I'm not Tired!";
+				myButtonText = "I'm not tired!";
 				break;
 			default:
 				myLabelText = "Isn't it good?\nEvery clicks count, you've clicked " + numberSuffix(btnClickCount) + " time!";
-				myButtonText = "Click Again?";
+				myButtonText = "Click again?";
 				break;
 		}
 
