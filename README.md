@@ -21,6 +21,6 @@ Smartface Team
 
 ## Support & Documentation
 
-Visit http://www.smartface.io/developer for support, or to learn more about Smartface.
-You can manage your applications from http://account.smartface.io 
+Visit https://www.smartface.io/developer for support, or to learn more about Smartface.
+You can manage your applications on https://cloud.smartface.io 
 
