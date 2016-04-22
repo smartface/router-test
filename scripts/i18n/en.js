@@ -12,6 +12,6 @@ SMF.i18n.defineLanguage('en', {
 	"yes": "Yes",
 	"sureToDelete": "Are you sure to delete?",
 	"networkError": "There has been a network error, please try again later",
-	"applicationError": "Unhandled Application Error",
+	"applicationError": "There has been an unhandled application error, please inform developers",
 	"delete": "Delete"
 });
