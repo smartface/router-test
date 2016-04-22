@@ -1,7 +1,7 @@
 SMF.i18n.defineLanguage('fi', {
 	"cancel": "Keskeytä",
 	"copy": "Kopioi",
-	"done": "Käännös",
+	"done": "Käännös ",
 	"copyURL": "Kopioi URL",
 	"cut": "Leikkaa",
 	"no": "Ei",
@@ -12,5 +12,5 @@ SMF.i18n.defineLanguage('fi', {
 	"yes": "Kyllä",
 	"sureToDelete": "Haluatko varmasti poistaa?",
 	"networkError": "Tapahtui verkkovirhe. Yritä myöhemmin uudelleen",
-	"applicationError": "Käsittelemätön Application Error"
+	"applicationError": "Tapahtui käsittelemätön virhe. Ilmoita sovelluksen kehittäjille"
 });
