@@ -12,5 +12,5 @@ SMF.i18n.defineLanguage('de', {
 	"yes": "Ja",
 	"sureToDelete": "Sind Sie sicher zu löschen?",
 	"networkError": "Es hat einen Netzwerkfehler, bitte versuchen Sie es später noch einmal",
-	"applicationError": "Unbehandelte Anwendungsfehler"
+	"applicationError": "Es ist ein nicht behandelter Anwendungsfehler gewesen, informieren Sie bitte Entwickler"
 });
