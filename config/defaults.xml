@@ -11,7 +11,7 @@
 		alpha="1" defaultImage="" disabledFontColor="#0000FF" fontColor="#333333" highlightedImage="" horizontalGap="0" imageFillType="SMF.UI.ImageFillType.NORMAL" imagePosition="SMF.UI.Alignment.CENTER" inactiveImage=""
 		pressedFontColor="#FFFFFF" text="Button" textAlignment="SMF.UI.Alignment.CENTER" z="0" />
 		<TextButton name="TextButton" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%"
-		alpha="1" fillColor="#00A1F1" fontColor="#000000" horizontalGap="0" pressedFillColor="#2EB9FF" pressedFontColor="#FFFFFF" roundEdge="3" style3D="false" text="Button" textAlignment="SMF.UI.Alignment.CENTER" z="0" />
+		alpha="1" fillColor="#00A1F1" fontColor="#FFFFFF" horizontalGap="0" pressedFillColor="#2EB9FF" pressedFontColor="#FFFFFF" roundEdge="3" style3D="false" text="Button" textAlignment="SMF.UI.Alignment.CENTER" z="0" />
 		<Ticker name="Ticker" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" height="7.29%" left="12.5%" top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1"
 		backgroundTransparent="false" borderColor="#999999" borderWidth="0" fillColor="#CCCCCC" fontColor="#666666" refreshRate="100" roundEdge="0" text="Ticker" textAlignment="SMF.UI.Alignment.LEFT" z="0" />
 		<TextBox name="TextBox" borderWidth="1" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%"

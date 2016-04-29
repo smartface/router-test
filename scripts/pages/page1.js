@@ -3,8 +3,8 @@
 (function() {
 	var btnClickCount = 0;
 
-	Pages.page1 = new SMF.UI.Page({
-		name: "Page1",
+	var page1 = Pages.page1 = new SMF.UI.Page({
+		name: "page1",
 		fillColor: "#EEEEEE",
 		onKeyPress: page1_onKeyPress,
 		onShow: page1_onShow
@@ -13,39 +13,39 @@
 	var btn = new SMF.UI.TextButton({
 		name: "btn",
 		text: "Click me!",
-		fontColor: "#FFFFFF",
 		onPressed: page1_btn_onPressed,
-		width: "70%",
 		left: "15%",
-		height: "10%",
-		top: "70%"
+		top: "70%",
+		width: "70%",
+		height: "10%"
 	});
-	Pages.page1.add(btn);
+	
+	page1.add(btn);
 
 	var lbl = new SMF.UI.Label({
 		name: "lbl",
 		text: "",
-		width: "70%",
 		left: "15%",
-		height: "10%",
 		top: "45%",
+		width: "70%",
+		height: "15%",
 		multipleLine: true,
 		textAlignment: "center"
 	});
 
-	Pages.page1.add(lbl);
+	page1.add(lbl);
 
 	var img = new SMF.UI.Image({
 		name: "img",
 		image: "smartface.png",
+		left: "15%",
 		top: "20%",
 		width: "70%",
-		left: "15%",
 		height: "10%",
 		imageFillType: SMF.UI.ImageFillType.ASPECTFIT
 	});
 
-	Pages.page1.add(img);
+	page1.add(img);
 
 	/**
 	 * Creates action(s) that are run when the user press the key of the devices.
@@ -124,5 +124,4 @@
 		}
 		return number + suffix;
 	}
-
 })();
