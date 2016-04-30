@@ -4,6 +4,7 @@
 	var btnClickCount = 0;
 
 	var page1 = Pages.page1 = new SMF.UI.Page({
+		//use ctrl + space to show autocomplete within curly brackets in constructors
 		name: "page1",
 		fillColor: "#EEEEEE",
 		onKeyPress: page1_onKeyPress,
