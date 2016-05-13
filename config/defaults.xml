@@ -3,7 +3,7 @@
 	<Defaults>
 		<Page name="Page" backgroundImage="" fillColor="#FFFFFF" imageFillType="SMF.UI.ImageFillType.TILE" imagePosition="SMF.UI.Alignment.TOPLEFT" lockOrientation="false" touchEnabled="true" />
 		<Label name="Label" enabled="true" height="7.29%" left="12.5%" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" top="46.35%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
-		alpha="1" autoSize="false" backgroundTransparent="true" borderColor="#999999" borderWidth="0" detectURLsInString="false" fillColor="#CCCCCC" fontColor="#666666" horizontalGap="0" minimumFontSize="7" multipleLine="false" roundEdge="3" showScrollBar="false"
+		alpha="1" autoSize="false" backgroundTransparent="true" borderColor="#999999" borderWidth="0" detectURLsInString="false" fillColor="#CCCCCC" fontColor="#000000" horizontalGap="0" minimumFontSize="7" multipleLine="false" roundEdge="3" showScrollBar="false"
 		text="Label" textAlignment="SMF.UI.Alignment.LEFT" z="0" />
 		<Image name="Image" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alpha="1" changeAnimation="fade" enableCache="true" enableScroll="false" enableZoom="false" image="" imageFillType="SMF.UI.ImageFillType.NORMAL"
 		imagePosition="SMF.UI.Alignment.CENTER" maxZoomLevel="1" minZoomLevel="1" zoomLevel="1" z="0" />
