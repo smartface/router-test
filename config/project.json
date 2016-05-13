@@ -94,7 +94,7 @@
 				},
 				"plugins": {
 					"facebook": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/Facebook/Android/1.0.1/FacebookAndroid.zip",
+						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/Facebook/Android/3.0.0/FacebookAndroid.zip",
 						"path": "plugins/Android/FacebookAndroid.zip",
 						"active": false
 					},
