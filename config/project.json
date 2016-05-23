@@ -107,11 +107,6 @@
 						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/CodeReader/Android/1.0.0/CodeReaderAndroid.zip",
 						"path": "plugins/Android/CodeReaderAndroid.zip",
 						"active": false
-					},
-					"smfparse": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/Parse/Android/1.0.0/ParseAndroid.zip",
-						"path": "plugins/Android/ParseAndroid.zip",
-						"active": false
 					}
 				},
 				"playerPath": {
