@@ -99,7 +99,7 @@
 						"active": false
 					},
 					"googleanalytics": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/GoogleAnalytics/Android/1.0.0/GoogleAnalyticsAndroid.zip",
+						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/GoogleAnalytics/Android/2.0.0/GoogleAnalyticsAndroid.zip",
 						"path": "plugins/Android/GoogleAnalyticsAndroid.zip",
 						"active": false
 					},
