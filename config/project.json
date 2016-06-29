@@ -58,7 +58,7 @@
 				"urlSchemes": "",
 				"plugins": {
 					"facebookios": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/Facebook/iOS/1.0.0/FacebookiOS.zip",
+						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/Facebook/iOS/1.1.0/FacebookiOS.zip",
 						"path": "plugins/iOS/FacebookiOS.zip",
 						"active": false
 					},
