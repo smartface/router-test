@@ -76,6 +76,11 @@
 						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/CodeReader/iOS/1.0.0/CodeReaderiOS.zip",
 						"path": "plugins/iOS/CodeReaderiOS.zip",
 						"active": false
+					},
+					"SalesForceSMF": {
+						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/SalesForce/iOS/1.0.0/SalesForceSMF.zip",
+						"path": "plugins/iOS/SalesForceSMF.zip",
+						"active": false
 					}
 				},
 				"playerPath": null
