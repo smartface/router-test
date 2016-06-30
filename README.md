@@ -7,20 +7,24 @@
     -----------------------------------------------------------------
 
 
-Hey fellow developer, thank you for using Smartface!
+Hey fellow developer, thank you for using Smartface Cloud!
 
 Developing native apps for iOS and Android is as easy as a few lines of
 JavaScript code.
 
 Start coding right away and to view your app instantly on a real device,
-just click the emulator button and follow the instructions.
-    
+just click the Run on Device button and follow the instructions.
+
+You can also update your native apps remotely and manage their lifecycle
+end-to-end, fully in the cloud.
+
 Welcome to the world of mobility!
-Smartface Team
+Smartface Team.
 
 
-## Support & Documentation
+## Support & Documentation & Useful Links
 
-Visit https://www.smartface.io/developer for support, or to learn more about Smartface.
-You can manage your applications on https://cloud.smartface.io 
-
+Guides: https://www.smartface.io/guides
+API Docs: https://docs.smartface.io
+Smartface Cloud Dashboard: https://cloud.smartface.io 
+Smartface On-Device Emulator Download: https://smf.to/app
