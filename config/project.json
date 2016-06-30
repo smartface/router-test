@@ -58,27 +58,27 @@
 				"urlSchemes": "",
 				"plugins": {
 					"facebookios": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/Facebook/iOS/1.1.0/FacebookiOS.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/Facebook/iOS/1.1.0/FacebookiOS.zip",
 						"path": "plugins/iOS/FacebookiOS.zip",
 						"active": false
 					},
 					"googleanalyticsplugin-ios": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/GoogleAnalytics/iOS/1.0.0/GoogleAnalyticsiOS.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/GoogleAnalytics/iOS/1.0.0/GoogleAnalyticsiOS.zip",
 						"path": "plugins/iOS/GoogleAnalyticsiOS.zip",
 						"active": false
 					},
 					"admob-ios": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/AdMob/iOS/1.0.0/AdmobiOS.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/AdMob/iOS/1.0.0/AdmobiOS.zip",
 						"path": "plugins/iOS/AdmobiOS.zip",
 						"active": false
 					},
 					"codereaderios": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/CodeReader/iOS/1.0.0/CodeReaderiOS.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/iOS/1.0.0/CodeReaderiOS.zip",
 						"path": "plugins/iOS/CodeReaderiOS.zip",
 						"active": false
 					},
 					"SalesForceSMF": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/SalesForce/iOS/1.0.0/SalesForceSMF.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/SalesForce/iOS/1.0.0/SalesForceSMF.zip",
 						"path": "plugins/iOS/SalesForceSMF.zip",
 						"active": false
 					}
@@ -99,17 +99,17 @@
 				},
 				"plugins": {
 					"facebook": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/Facebook/Android/3.0.0/FacebookAndroid.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/Facebook/Android/3.0.0/FacebookAndroid.zip",
 						"path": "plugins/Android/FacebookAndroid.zip",
 						"active": false
 					},
 					"googleanalytics": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/GoogleAnalytics/Android/2.0.0/GoogleAnalyticsAndroid.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/GoogleAnalytics/Android/2.0.0/GoogleAnalyticsAndroid.zip",
 						"path": "plugins/Android/GoogleAnalyticsAndroid.zip",
 						"active": false
 					},
 					"smfimagecode": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/CodeReader/Android/1.1.1/CodeReaderAndroid.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/Android/1.1.1/CodeReaderAndroid.zip",
 						"path": "plugins/Android/CodeReaderAndroid.zip",
 						"active": false
 					}
