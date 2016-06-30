@@ -109,7 +109,7 @@
 						"active": false
 					},
 					"smfimagecode": {
-						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/CodeReader/Android/1.1.0/CodeReaderAndroid.zip",
+						"url": "https://smartfacecdn.blob.core.windows.net/smartface-bin/plugins/CodeReader/Android/1.1.1/CodeReaderAndroid.zip",
 						"path": "plugins/Android/CodeReaderAndroid.zip",
 						"active": false
 					}
