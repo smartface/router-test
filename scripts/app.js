@@ -1,3 +1,4 @@
+/* globals lang */
 include('i18n/i18n.js');
 Application.onStart = Application_OnStart;
 Application.onUnhandledError = Application_OnError;
