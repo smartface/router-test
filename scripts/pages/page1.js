@@ -20,6 +20,7 @@
 		width: "70%",
 		height: "10%"
 	});
+	(Device.deviceOS === "Android") && (btn.effects.ripple.enabled = true);
 	
 	page1.add(btn);
 
