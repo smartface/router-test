@@ -99,17 +99,17 @@
 				},
 				"plugins": {
 					"facebook": {
-						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/Facebook/Android/3.0.0/FacebookAndroid.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/Facebook/Android/4.0.0/FacebookAndroid.zip",
 						"path": "plugins/Android/FacebookAndroid.zip",
 						"active": false
 					},
 					"googleanalytics": {
-						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/GoogleAnalytics/Android/2.0.0/GoogleAnalyticsAndroid.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/GoogleAnalytics/Android/4.0.0/GoogleAnalyticsAndroid.zip",
 						"path": "plugins/Android/GoogleAnalyticsAndroid.zip",
 						"active": false
 					},
 					"smfimagecode": {
-						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/Android/1.1.1/CodeReaderAndroid.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/Android/2.0.0/CodeReaderAndroid.zip",
 						"path": "plugins/Android/CodeReaderAndroid.zip",
 						"active": false
 					}
