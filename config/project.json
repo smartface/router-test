@@ -104,7 +104,7 @@
 						"active": false
 					},
 					"googleanalytics": {
-						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/GoogleAnalytics/Android/4.0.0/GoogleAnalyticsAndroid.zip",
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/GoogleAnalytics/Android/3.0.0/GoogleAnalyticsAndroid.zip",
 						"path": "plugins/Android/GoogleAnalyticsAndroid.zip",
 						"active": false
 					},
