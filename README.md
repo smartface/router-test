@@ -23,8 +23,7 @@ Smartface Team.
 
 ## Support & Documentation & Useful Links
 
-- Guides: https://www.smartface.io/guides
-- API Docs: https://docs.smartface.io
-- Smartface Cloud Dashboard: https://cloud.smartface.io
-- Download Smartface On-Device Emulator from App Store: https://itunes.apple.com/us/app/smartface-develop-superior/id1110260064?mt=8
-- Download Smartface On-Device Emulator from Google Play: https://play.google.com/store/apps/details?id=io.smartface.SmartfaceApp
+- [Guides](https://www.smartface.io/guides)
+- [API Docs](https://docs.smartface.io)
+- [Smartface Cloud Dashboard](https://cloud.smartface.io)
+- [Download Smartface On-Device Emulator](https://smf.to/app) (Works only from your device)
