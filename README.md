@@ -21,10 +21,10 @@ end-to-end, fully in the cloud.
 Welcome to the world of mobility!
 Smartface Team.
 
-
 ## Support & Documentation & Useful Links
 
-Guides: https://www.smartface.io/guides
-API Docs: https://docs.smartface.io
-Smartface Cloud Dashboard: https://cloud.smartface.io 
-Smartface On-Device Emulator Download: https://smf.to/app
+- Guides: https://www.smartface.io/guides
+- API Docs: https://docs.smartface.io
+- Smartface Cloud Dashboard: https://cloud.smartface.io
+- Download Smartface On-Device Emulator from App Store: https://itunes.apple.com/us/app/smartface-develop-superior/id1110260064?mt=8
+- Download Smartface On-Device Emulator from Google Play: https://play.google.com/store/apps/details?id=io.smartface.SmartfaceApp

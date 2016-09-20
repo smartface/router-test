@@ -8,4 +8,4 @@ automatically to the specified plugin folder.
  
 For more information about developing plugins for Smartface, you can refer to 
 the guides at https://www.smartface.io and you can find more Smartface plugins 
-at GitHub https://github.com/SmartfaceIO?query=plugin
+at GitHub https://github.com/Smartface?query=plugin
