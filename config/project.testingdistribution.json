@@ -2,7 +2,7 @@
     "build": {
         "output": {
             "android": {
-                "testDistribution": {
+                "testingDistribution": {
                     "packageProfileName": "Default"
                 }
             }
