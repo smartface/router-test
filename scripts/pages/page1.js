@@ -83,11 +83,11 @@
 				myLabelText = "Well Done! \nYou've clicked the button!";
 				myButtonText = "Click me again!";
 				break;
-			case btnClickCount > 1 && btnClickCount < 10:
+			case btnClickCount < 10:
 				myLabelText = "Whoa!\nThat click was " + numberSuffix(btnClickCount) + " time!";
 				myButtonText = "Click again?";
 				break;
-			case btnClickCount >= 10 && btnClickCount < 15:
+			case btnClickCount < 15:
 				myLabelText = "Feel tired?\nYou can rest your finger now :)";
 				myButtonText = "I'm not tired!";
 				break;
