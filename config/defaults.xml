@@ -46,7 +46,7 @@
 		roundedEdge="3" startColor="#666666" z="0" />
 		<Line name="Line" enabled="true" height="7.29%" left="12.5%" top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1" borderColor="#000000" borderWidth="1" dashed="false" lineRotationAngle="SMF.UI.LineRotationAngle.HORIZONTAL" z="0" />
 		<ActivityIndicator name="ActivityIndicator" enabled="true" height="21px" left="48.98%" top="49.43%" touchEnabled="true" visible="true" width="21px" style="SMF.UI.ActivityIndicatorStyle.GRAY" z="0" />
-		<AdMob name="AdMob" adUnitId="" enabled="true" left="0%" top="44.79%" touchEnabled="true" visible="true" adSize="SMF.UI.AdMob.AdSize.BANNER" />
+		<AdMob name="AdMob" adUnitId="" enabled="true" left="0%" top="44.79%" touchEnabled="true" visible="true" adSize="SMF.UI.Android.AdMob.AdSize.BANNER" />
 		<Canvas name="Canvas" height="30%" left="24.06%" top="41.46%" touchEnabled="true" width="75%" loopPeriod="50" loop="true" z="0" />
 		<SearchBar name="SearchBar" enabled="true" height="10%" left="24.06%" top="46.25%" touchEnabled="true" visible="true" width="75%" alpha="1" text="" placeholder="Search" icon="" barStyle="SMF.UI.SearchBarStyle.DEFAULT" tintColor="#7FEA00" z="0" />
 		<SliderDrawer name="SliderDrawer" width="157dp" touchEnabled="true" backgroundColor="#FFFFFF" />
