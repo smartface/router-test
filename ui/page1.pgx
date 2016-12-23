@@ -1,2 +1,13 @@
-//TODO:
-// add an empty page
+{
+	"components": [
+		{
+			"type": "SMF.UI.Page",
+			"props": {
+				"name": "page1",
+				"children": [],
+				"style": {}
+			},
+			"parent": null
+		}
+	]
+}
