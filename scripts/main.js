@@ -8,7 +8,7 @@ Application.onUnhandledError = Application_OnError;
  * @this Application
  */
 function Application_OnStart(e) {
-    var entryPage = require("pages/index.js");
+    var entryPage = require("pages/index.js").page;
     entryPage.show();
 }
 
