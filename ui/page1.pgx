@@ -1,37 +1,33 @@
 {
-    components: [{
-        type: "SMF.UI.Page",
-        props: {
-            name: page1,
-            children: [
-                "statusBar",
-                "navigationBar",
-                "actionBar"
-            ]
-        },
-        parent: null
-    }, {
-        type: "SMF.UI.statusBar",
-        props: {
-            name: "statusBar",
-            children: [],
-            parent: page1,
-            h: 17.1 // TODO parametric
-        }
-    }, {
-        type: "SMF.UI.iOS.NavigationBar",
-        props: {
-            name: "navigationBar",
-            children: [],
-            parent: page1,
-            h: 56.65, // TODO parametric
-        }
-    }, {
-        type: "SMF.UI.Page.actionBar",
-        props: {
-            name: "actionBar",
-            children: [],
-            parent: page1
-        }
-    }]
+	"components": [{
+		"type": "SMF.UI.Page",
+		"props": {
+			"name": "page1",
+			"children": ["statusBar", "navigationBar", "actionBar"]
+		},
+		"parent": null
+	}, {
+		"type": "SMF.UI.statusBar",
+		"props": {
+			"name": "statusBar",
+			"children": [],
+			"parent": "page1",
+			"h": 17.1
+		}
+	}, {
+		"type": "SMF.UI.iOS.NavigationBar",
+		"props": {
+			"name": "navigationBar",
+			"children": [],
+			"parent": "page1",
+			"h": 56.65
+		}
+	}, {
+		"type": "SMF.UI.Page.actionBar",
+		"props": {
+			"name": "actionBar",
+			"children": [],
+			"parent": "page1"
+		}
+	}]
 }
