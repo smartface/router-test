@@ -1,4 +1,4 @@
-var page1 = require('../ui/page1.js');
+var page1 = require('../ui/page1');
 module.exports = page1; //this is the entry page
 
 // add your page declerations below
