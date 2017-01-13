@@ -8,8 +8,8 @@ Application.onUnhandledError = Application_OnError;
  * @this Application
  */
 function Application_OnStart(e) {
-    var entryPage = require("pages/index.js").page;
-    entryPage.show();
+    var page1 = require("pages/index");
+    page1.show();
 }
 
 function Application_OnError(e) {
