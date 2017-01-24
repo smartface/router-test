@@ -1,131 +1,71 @@
-/*
-		WARNING
-		Auto generated file.
+/* 
+		WARNING 
+		Auto generated file. 
 		Do not modify it's contents.
 */
 
-var btnClickCount = 0;
-
-var page1 = module.exports = new SMF.UI.Page({
-	//use ctrl + space to show autocomplete within curly brackets in constructors
+var page1 = new SMF.UI.Page({
 	name: "page1",
-	fillColor: "#EEEEEE",
-	onKeyPress: page1_onKeyPress,
-	onShow: page1_onShow
+	fillColor: "#EEEEEE"
 });
 
 var btn = new SMF.UI.TextButton({
 	name: "btn",
-	text: "Click me!",
-	onPressed: page1_btn_onPressed,
+	width: "70%",
+	height: "10%",
 	left: "15%",
 	top: "70%",
-	width: "70%",
-	height: "10%"
+	text: "Click me!"
 });
-(Device.deviceOS === "Android") && (btn.effects.ripple.enabled = true);
 
 page1.add(btn);
 
 var lbl = new SMF.UI.Label({
 	name: "lbl",
-	text: "",
+	width: "70%",
+	height: "15.000000000000002%",
 	left: "15%",
 	top: "45%",
-	width: "70%",
-	height: "15%",
 	multipleLine: true,
-	textAlignment: "center"
+	textAlignment: SMF.UI.TextAlignment.CENTER
 });
 
 page1.add(lbl);
 
 var img = new SMF.UI.Image({
 	name: "img",
-	image: "smartface.png",
-	left: "15%",
-	top: "20%",
 	width: "70%",
 	height: "10%",
+	left: "15%",
+	top: "20%",
+	image: "smartface.png",
 	imageFillType: SMF.UI.ImageFillType.ASPECTFIT
 });
 
 page1.add(img);
 
-/**
- * Creates action(s) that are run when the user press the key of the devices.
- * @param {KeyCodeEventArguments} e Uses to for key code argument. It returns e.keyCode parameter.
- * @this Pages.Page1
- */
-function page1_onKeyPress(e) {
-	if (e.keyCode === 4) {
-		Application.exit();
+
+page1.onShow = function() {
+	SMF.UI.statusBar.name = "statusBar";
+	SMF.UI.statusBar.style = SMF.UI.StatusBarStyle.DEFAULT;
+	if(Device.deviceOS === 'iOS'){
+		SMF.UI.iOS.NavigationBar.name = "navigationBar";
 	}
-}
-
-/**
- * Creates action(s) that are run when the page is appeared
- * @param {EventArguments} e Returns some attributes about the specified functions
- * @this Pages.Page1
- */
-function page1_onShow() {}
-
-/**
- * Creates action(s) that are run when the object is pressed from device's screen.
- * @param {EventArguments} e Returns some attributes about the specified functions
- * @this Page1.TextButton1
- */
-function page1_btn_onPressed(e) {
-	var myLabelText = "";
-	var myButtonText = "";
-
-	btnClickCount += 1;
-
-	switch (true) {
-		case btnClickCount == 1:
-			myLabelText = "Well Done! \nYou've clicked the button!";
-			myButtonText = "Click me again!";
-			break;
-		case btnClickCount < 10:
-			myLabelText = "Whoa!\nThat click was " + numberSuffix(btnClickCount) + " time!";
-			myButtonText = "Click again?";
-			break;
-		case btnClickCount < 15:
-			myLabelText = "Feel tired?\nYou can rest your finger now :)";
-			myButtonText = "I'm not tired!";
-			break;
-		default:
-			myLabelText = "Isn't it good?\nEvery clicks count, you've clicked " + numberSuffix(btnClickCount) + " time!";
-			myButtonText = "Click again?";
-			break;
+	if(Device.deviceOS === 'Android'){
+		page1.actionBar.name = "actionBar";
 	}
 
-	lbl.text = myLabelText;
-	btn.text = myButtonText;
-}
+	if(Device.deviceOS === 'iOS')
+		SMF.UI.iOS.NavigationBar.visible = false;
+	if(Device.deviceOS === 'Android')
+		page1.actionBar.visible = false;
+	SMF.UI.statusBar.visible = false;
+};
 
-/**
- *Adds appropriate suffix to given number.
- */
-function numberSuffix(number) {
+Object.assign(page1, {
+	btn: btn,
+	lbl: lbl,
+	img: img,
+});
 
-	var suffix = "th";
-
-	//Lets deal with small numbers
-	var smallNumber = number % 100;
-
-	if (smallNumber < 11 || smallNumber > 13) {
-		switch (smallNumber % 10) {
-			case 1:
-				suffix = 'st';
-				break;
-			case 2:
-				suffix = 'nd';
-				break;
-			case 3:
-				suffix = 'rd';
-				break;
-		}
-	}
-	return number + suffix;
-}
+module && (module.exports = page1);
