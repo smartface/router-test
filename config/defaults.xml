@@ -8,7 +8,7 @@
 		<Image name="Image" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alpha="1" changeAnimation="fade" enableCache="true" enableScroll="false" enableZoom="false" image="" imageFillType="SMF.UI.ImageFillType.NORMAL"
 		imagePosition="SMF.UI.Alignment.CENTER" maxZoomLevel="1" minZoomLevel="1" zoomLevel="1" z="0" />
 		<ImageButton name="ImageButton" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%"
-		alpha="1" defaultImage="" disabledFontColor="#0000FF" fontColor="#333333" highlightedImage="" horizontalGap="0" imageFillType="SMF.UI.ImageFillType.NORMAL" imagePosition="SMF.UI.Alignment.CENTER" inactiveImage="" pressedFontColor="#FFFFFF" text="Button"
+		alpha="1" defaultImage="" disabledFontColor="#0000FF" fontColor="#333333" highlightedImage="" horizontalGap="0" imageFillType="SMF.UI.ImageFillType.NORMAL" imagePosition="SMF.UI.Alignment.CENTER" inactiveImage="" pressedFontColor="#FFFFFF" text=""
 		textAlignment="SMF.UI.Alignment.CENTER" z="0" />
 		<TextButton name="TextButton" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%"
 		alpha="1" fillColor="#00A1F1" fontColor="#FFFFFF" horizontalGap="0" pressedFillColor="#2EB9FF" pressedFontColor="#FFFFFF" roundEdge="3" style3D="false" text="Button" textAlignment="SMF.UI.Alignment.CENTER" z="0" />
@@ -43,7 +43,7 @@
 		<Slider name="Slider" enabled="true" height="4.58%" left="12.5%" maxTrackImage="" minTrackImage="" top="47.71%" touchEnabled="true" visible="true" width="75%" alpha="1" continuous="false" maxTrackColor="#FFFFFF" minTrackColor="#00CCFF" showThumbnail="true"
 		stepSize="1" thumbnailColor="#000000" thumbnailImage="" value="50" valueRangeMax="100" valueRangeMin="0" z="0" />
 		<Rectangle name="Rectangle" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alpha="1" backgroundTransparent="false" borderColor="#666666" borderWidth="1" endColor="#000000" gradientFill="false" gradientOrientation="SMF.UI.GradientOrientation.LEFTTORIGHT"
-		roundedEdge="3" startColor="#666666" z="0" />
+		roundedEdge="3" startColor="#666666" z="0" fillColor="#FFFFFF" />
 		<Line name="Line" enabled="true" height="7.29%" left="12.5%" top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1" borderColor="#000000" borderWidth="1" dashed="false" lineRotationAngle="SMF.UI.LineRotationAngle.HORIZONTAL" z="0" />
 		<ActivityIndicator name="ActivityIndicator" enabled="true" height="21px" left="48.98%" top="49.43%" touchEnabled="true" visible="true" width="21px" style="SMF.UI.ActivityIndicatorStyle.GRAY" z="0" />
 		<AdMob name="AdMob" adUnitId="" enabled="true" left="0%" top="44.79%" touchEnabled="true" visible="true" adSize="SMF.UI.Android.AdMob.AdSize.BANNER" />
