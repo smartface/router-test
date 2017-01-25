@@ -7,17 +7,18 @@
 				"width": 375,
 				"height": 667.1686746987951,
 				"isRemovable": false,
+				"style": {
+					"backgroundColor": "#EEEEEE"
+				},
 				"children": [
 					"statusBar",
 					"navigationBar",
 					"actionBar",
 					"btn",
 					"lbl",
-					"img"
-				],
-				"style": {
-					"backgroundColor": "#EEEEEE"
-				}
+					"img",
+					"btnNext"
+				]
 			},
 			"parent": null
 		},
@@ -102,6 +103,24 @@
 			},
 			"id": "845d2004",
 			"type": "SMF.UI.Image"
+		},
+		{
+			"props": {
+				"name": "btnNext",
+				"isReady": true,
+				"minH": 15,
+				"key": "eebce639",
+				"i": "eebce639",
+				"width": "70%",
+				"height": "10%",
+				"left": "15%",
+				"top": "80.8352144469526%",
+				"dragging": true,
+				"text": "Next Page",
+				"parent": "page1"
+			},
+			"id": "eebce639",
+			"type": "SMF.UI.TextButton"
 		}
 	]
 }

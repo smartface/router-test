@@ -44,6 +44,17 @@ var img = new SMF.UI.Image({
 
 page1.add(img);
 
+var btnNext = new SMF.UI.TextButton({
+	name: "btnNext",
+	width: "70%",
+	height: "10%",
+	left: "15%",
+	top: "80.8352144469526%",
+	text: "Next Page"
+});
+
+page1.add(btnNext);
+
 
 page1.onShow = function() {
 	SMF.UI.statusBar.name = "statusBar";
@@ -66,6 +77,7 @@ Object.assign(page1, {
 	btn: btn,
 	lbl: lbl,
 	img: img,
+	btnNext: btnNext,
 });
 
 module && (module.exports = page1);

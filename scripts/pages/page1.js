@@ -19,8 +19,13 @@ page1.btn.onPressed = btn_onPressed;
 (Device.deviceOS === "Android") && (page1.btn.effects.ripple.enabled = true);
 
 
+//in order to access the second page you need to require it first
+var page2 = require("./page2");
+page1.btnNext.onPressed = function(e) {
+	page2.show();
+	// Pages.page2 is equal to page2
+};
 
-var btnClickCount = 0;
 
 function page1_onKeyPress(e) {
 	if (e.keyCode === 4) {
@@ -31,18 +36,20 @@ function page1_onKeyPress(e) {
 /**
  * Creates action(s) that are run when the page is appeared
  * @param {EventArguments} e Returns some attributes about the specified functions
- * @this Pages.Page1
+ * @this Pages.page1
  */
 function page1_onShow() {
-    // call the backedup function;
-    originalOnShow();
-    
+	// call the backedup function;
+	originalOnShow();
+
 }
+
+var btnClickCount = 0;
 
 /**
  * Creates action(s) that are run when the object is pressed from device's screen.
  * @param {EventArguments} e Returns some attributes about the specified functions
- * @this Page1.TextButton1
+ * @this page1.TextButton1
  */
 function btn_onPressed(e) {
 	var myLabelText = "";
