@@ -2,7 +2,7 @@
 <SMF>
 	<Defaults>
 		<Page name="Page" backgroundImage="" backgroundColor="#FFFFFF" imageFillType="ImageFillType.TILE" imagePosition="Alignment.TOPLEFT" lockOrientation="false" touchEnabled="true" />
-		<Label name="Label" enabled="true" height="7.29%" left="12.5%" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" top="46.35%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
+		<Label name="Label" enabled="true" height="7%" left="12.5%" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" top="46.35%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
 		alpha="1" autoSize="false" backgroundTransparent="true" borderColor="#999999" borderWidth="0" detectURLsInString="false" backgroundColor="#CCCCCC" textColor="#000000" horizontalGap="0" minimumFontSize="7" multipleLine="false" roundEdge="3" showScrollBar="false"
 		text="" textAlignment="Alignment.LEFT" z="0" />
 		<ImageView name="ImageView" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alpha="1" changeAnimation="fade" enableCache="true" enableScroll="false" enableZoom="false" image="" imageFillType="ImageFillType.NORMAL"
@@ -37,7 +37,7 @@
 		z="0" />
 		<MapView name="MapView" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" centerLatitude="41.035972" centerLongitude="29.046902" enableScroll="true" enableZoom="true" latitudeSource="" longitudeSource=""
 		mapType="MapType.STANDARD" selectedImageSource="" showPins="true" showUserLocation="true" subtitleSource="" titleSource="" unselectedImageSource="" zoomLevel="2" z="0" />
-		<Switch name="SwitchButton" enabled="true" height="31dp" left="44.26%" top="48.02%" touchEnabled="true" visible="true" width="51dp" alpha="1" checked="false" tintColor="#4bd663" z="0" />
+		<Switch name="SwitchButton" enabled="true" height="31dp" left="44.26%" top="48.02%" touchEnabled="true" visible="true" width="51dp" alpha="1" toggle="false" thumbOnColor="#00e600" thumbOffColor="#666666{" toggleOffColor="transparent" toggleOnColor="#666666" z="0" />
 		<Slider name="Slider" enabled="true" height="4.58%" left="12.5%" maxTrackImage="" minTrackImage="" top="47.71%" touchEnabled="true" visible="true" width="75%" alpha="1" continuous="false" maxTrackColor="#FFFFFF" minTrackColor="#00CCFF" showThumbnail="true"
 		stepSize="1" thumbnailColor="#000000" thumbnailImage="" value="50" valueRangeMax="100" valueRangeMin="0" z="0" />
 		<Rectangle name="Rectangle" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alpha="1" backgroundTransparent="false" borderColor="#666666" borderWidth="1" endColor="#000000" gradientFill="false" gradientOrientation="GradientOrientation.LEFTTORIGHT"
