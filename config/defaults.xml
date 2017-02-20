@@ -2,22 +2,17 @@
 <SMF>
 	<Defaults>
 		<Page name="Page" backgroundImage="" backgroundColor="#FFFFFF" imageFillType="ImageFillType.TILE" imagePosition="Alignment.TOPLEFT" lockOrientation="false" touchEnabled="true" />
-		<Label name="Label" enabled="true" height="7%" left="12.5%" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" top="46.35%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
+		<Label name="Label"  height="7%" left="12.5%" font.bold="false" font.italic="false"  font.size="8pt" font.strikeThrough="false" font.underline="false" top="46.35%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
 		alpha="1" autoSize="false" backgroundTransparent="true" borderColor="#999999" borderWidth="0" detectURLsInString="false" backgroundColor="#CCCCCC" textColor="#000000" horizontalGap="0" minimumFontSize="7" multipleLine="false" roundEdge="3" showScrollBar="false"
-		text="" textAlignment="Alignment.MIDLEFT" z="0" />
-		<ImageView name="ImageView" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alpha="1" changeAnimation="fade" enableCache="true" enableScroll="false" enableZoom="false" image="" imageFillType="ImageFillType.NORMAL"
-		imagePosition="Alignment.CENTER" maxZoomLevel="1" minZoomLevel="1" zoomLevel="1" z="0" />
-
-		<Button name="Button" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%"
-		alpha="1" backgroundColor="#00A1F1" textColor="#FFFFFF" horizontalGap="0" pressedFillColor="#2EB9FF" pressedtextColor="#FFFFFF" roundEdge="3" style3D="false" text="Button" textAlignment="Alignment.MIDCENTER" z="0" />
-		<Ticker name="Ticker" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" height="7.29%" left="12.5%" top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1"
-		backgroundTransparent="false" borderColor="#999999" borderWidth="0" backgroundColor="#CCCCCC" textColor="#666666" refreshRate="100" roundEdge="0" text="Ticker" textAlignment="Alignment.MIDLEFT" z="0" />
-		<TextBox name="TextBox" enabled="true" font.bold="false" font.italic="false" font.name="Default" font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
-		alpha="1" backgroundTransparent="false" borderWidth="1" activeBorderColor="#3366CC" inactiveBorderColor="#999999" enableClearButton="true" backgroundColor="#FFFFFF" focusEnabled="true" textColor="#7a7a7a" horizontalGap="0" isPassword="false" multipleLine="false"
-		placeHolder="" returnKeyType="TextBoxReturnKey.DONE" roundEdge="5" text="" textAlignment="Alignment.MIDLEFT" textFormatType="TextBoxTextFormat.GENERIC" valueRangeMax="0" valueRangeMin="0" enableUpperCase="false" z="0" />
-		<ListView name="ListView" enabled="true" groupStyle="RepeatBoxGroupStyle.PLAIN" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alignment="LayoutAlignment.LEFT" allowDeletingItems="false" autoSize="false"
-		backgroundTransparent="false" borderColor="##999999" borderWidth="1" enablePullDownToRefresh="false" enablePullUpToRefresh="false" enableScroll="true" groupingDataField="" groupItems="false" horizontalGap="5" layoutType="LayoutType.ABSOLUTE"
-		loop="false" orientation="Orientation.HORIZONTAL" scrollHeader="false" showHeader="false" showScrollBar="true" roundEdge="0" verticalGap="5" z="0">
+		text="" textAlignment="Alignment.MIDLEFT"  />
+		<ImageView name="ImageView"  width="70%" height="30%" left="12.5%" top="35%" imageFillType="ImageFillType.NORMAL" />
+		<Button name="Button"  font.bold="false" font.italic="false"  font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%"
+		alpha="1" backgroundColor="#00A1F1" textColor="#FFFFFF" horizontalGap="0" pressedFillColor="#2EB9FF" pressedtextColor="#FFFFFF" roundEdge="3" style3D="false" text="Button" textAlignment="Alignment.MIDCENTER"  />
+		<Ticker name="Ticker"  font.bold="false" font.italic="false"  font.size="8pt" font.strikeThrough="false" font.underline="false" height="7.29%" left="12.5%" top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1"
+		backgroundTransparent="false" borderColor="#999999" borderWidth="0" backgroundColor="#CCCCCC" textColor="#666666" refreshRate="100" roundEdge="0" text="Ticker" textAlignment="Alignment.MIDLEFT"  />
+		<TextBox name="TextBox"  font.bold="false" font.italic="false"  font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
+		alpha="1"  borderWidth="1" backgroundColor="#FFFFFF"  />
+		<ListView name="ListView" backgroundColor="#ffffff" height="40%" width="60%"  >
 			<itemTemplate backgroundImage="" backgroundColor="#EFF3EF" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 			<grouppingHeaderTemplate backgroundImage="" backgroundColor="#D6DCE0" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 			<activeItemTemplate backgroundImage="" backgroundColor="#EFF3EF" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
@@ -25,28 +20,28 @@
 			<pullDownItem backgroundImage="" backgroundColor="#65625A" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 			<pullUpItem backgroundImage="" backgroundColor="#65625A" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 		</ListView>
-		<Video name="Video" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" contentUrl="" controlStyle="VideoControlStyle.EMBEDDED" initialPlaybackTime="0" movieScalingMode="MovieScalingMode.ASPECTFIT"
-		z="0" />
-		<CodeReader name="CodeReader" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" z="0" />
-		<WebView name="WebView" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" openLinkInside="false" scalePageToFit="false" URL="" z="0" />
-		<Container name="Container" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alignment="LayoutAlignment.LEFT" autoSize="false" backgroundTransparent="true" borderColor="#313031" borderWidth="0" backgroundColor="#EFF3EF"
-		horizontalGap="5" layoutType="LayoutType.ABSOLUTE" orientation="Orientation.HORIZONTAL" verticalGap="5" z="0" />
-		<ScrollView name="ScrollView" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alignment="LayoutAlignment.LEFT" autoSize="false" backgroundTransparent="true" borderColor="#313031" borderWidth="1"
+		<Video name="Video"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" contentUrl="" controlStyle="VideoControlStyle.EMBEDDED" initialPlaybackTime="0" movieScalingMode="MovieScalingMode.ASPECTFIT"
+		 />
+		<CodeReader name="CodeReader"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%"  />
+		<WebView name="WebView"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" openLinkInside="false" scalePageToFit="false" URL=""  />
+		<Container name="Container"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alignment="LayoutAlignment.LEFT" autoSize="false" backgroundTransparent="true" borderColor="#313031" borderWidth="0" backgroundColor="#EFF3EF"
+		horizontalGap="5" layoutType="LayoutType.ABSOLUTE" orientation="Orientation.HORIZONTAL" verticalGap="5"  />
+		<ScrollView name="ScrollView"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alignment="LayoutAlignment.LEFT" autoSize="false" backgroundTransparent="true" borderColor="#313031" borderWidth="1"
 		contentHeight="100%" contentWidth="100%" decelerationRate="ScrollViewDecelerationRate.NORMAL" enableHorizontalPaging="false" enableHorizontalScrollbar="false" enableHorizontalScrolling="false" enableVerticalPaging="false" enableVerticalScrollbar="true"
 		enableVerticalScrolling="true" enableZoom="false" backgroundColor="#EFF3EF" horizontalGap="5" layoutType="LayoutType.ABSOLUTE" orientation="Orientation.HORIZONTAL" scrollViewIndicatorStyle="ScrollViewIndicatorStyle.DEFAULT" verticalGap="5"
-		z="0" />
-		<MapView name="MapView" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" centerLatitude="41.035972" centerLongitude="29.046902" enableScroll="true" enableZoom="true" latitudeSource="" longitudeSource=""
-		mapType="MapType.STANDARD" selectedImageSource="" showPins="true" showUserLocation="true" subtitleSource="" titleSource="" unselectedImageSource="" zoomLevel="2" z="0" />
-		<Switch name="SwitchButton" enabled="true" height="31dp" left="44.26%" top="48.02%" touchEnabled="true" visible="true" width="51dp" alpha="1" toggle="false" thumbOnColor="#00e600" thumbOffColor="#cccccc" toggleOffColor="#010101" toggleOnColor="#cccccc" z="0" />
-		<Slider name="Slider" enabled="true" height="4.58%" left="12.5%" maxTrackImage="" minTrackImage="" top="47.71%" touchEnabled="true" visible="true" width="75%" alpha="1" continuous="false" maxTrackColor="#FFFFFF" minTrackColor="#00CCFF" showThumbnail="true"
-		stepSize="1" thumbnailColor="#000000" thumbnailImage="" value="50" valueRangeMax="100" valueRangeMin="0" z="0" />
-		<Rectangle name="Rectangle" enabled="true" height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alpha="1" backgroundTransparent="false" borderColor="#666666" borderWidth="1" endColor="#000000" gradientFill="false" gradientOrientation="GradientOrientation.LEFTTORIGHT"
-		roundedEdge="3" startColor="#666666" z="0" backgroundColor="#FFFFFF" />
-		<Line name="Line" enabled="true" height="7.29%" left="12.5%" top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1" borderColor="#000000" borderWidth="1" dashed="false" lineRotationAngle="LineRotationAngle.HORIZONTAL" z="0" />
-		<ActivityIndicator name="ActivityIndicator" enabled="true" height="21px" left="48.98%" top="49.43%" touchEnabled="true" visible="true" width="21px" style="ActivityIndicatorStyle.GRAY" z="0" />
-		<AdMob name="AdMob" adUnitId="" enabled="true" left="0%" top="44.79%" touchEnabled="true" visible="true" adSize="Android.AdMob.AdSize.BANNER" />
-		<Canvas name="Canvas" height="30%" left="24.06%" top="41.46%" touchEnabled="true" width="75%" loopPeriod="50" loop="true" z="0" />
-		<SearchBar name="SearchBar" enabled="true" height="10%" left="24.06%" top="46.25%" touchEnabled="true" visible="true" width="75%" alpha="1" text="" placeholder="Search" icon="" barStyle="SearchBarStyle.DEFAULT" tintColor="#7FEA00" z="0" />
+		 />
+		<MapView name="MapView"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" centerLatitude="41.035972" centerLongitude="29.046902" enableScroll="true" enableZoom="true" latitudeSource="" longitudeSource=""
+		mapType="MapType.STANDARD" selectedImageSource="" showPins="true" showUserLocation="true" subtitleSource="" titleSource="" unselectedImageSource="" zoomLevel="2"  />
+		<Switch name="SwitchButton"  height="31dp" left="44.26%" top="48.02%" touchEnabled="true" visible="true" width="51dp" alpha="1" toggle="false" thumbOnColor="#00e600" thumbOffColor="#cccccc" toggleOffColor="#010101" toggleOnColor="#cccccc"  />
+		<Slider name="Slider"  height="4.58%" left="12.5%" maxTrackImage="" minTrackImage="" top="47.71%" touchEnabled="true" visible="true" width="75%" alpha="1" continuous="false" maxTrackColor="#FFFFFF" minTrackColor="#00CCFF" showThumbnail="true"
+		stepSize="1" thumbnailColor="#000000" thumbnailImage="" value="50" valueRangeMax="100" valueRangeMin="0"  />
+		<Rectangle name="Rectangle"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alpha="1" backgroundTransparent="false" borderColor="#666666" borderWidth="1" endColor="#000000" gradientFill="false" gradientOrientation="GradientOrientation.LEFTTORIGHT"
+		roundedEdge="3" startColor="#666666"  backgroundColor="#FFFFFF" />
+		<Line name="Line"  height="7.29%" left="12.5%" top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1" borderColor="#000000" borderWidth="1" dashed="false" lineRotationAngle="LineRotationAngle.HORIZONTAL"  />
+		<ActivityIndicator name="ActivityIndicator"  height="21px" left="48.98%" top="49.43%" touchEnabled="true" visible="true" width="21px"  />
+		<AdMob name="AdMob" adUnitId=""  left="0%" top="44.79%" touchEnabled="true" visible="true" adSize="Android.AdMob.AdSize.BANNER" />
+		<Canvas name="Canvas" height="30%" left="24.06%" top="41.46%" touchEnabled="true" width="75%" loopPeriod="50" loop="true"  />
+		<SearchBar name="SearchBar"  height="10%" left="24.06%" top="46.25%" touchEnabled="true" visible="true" width="75%" alpha="1" text="" placeholder="Search" icon="" barStyle="SearchBarStyle.DEFAULT" tintColor="#7FEA00"  />
 		<SliderDrawer name="SliderDrawer" width="157dp" touchEnabled="true" backgroundColor="#FFFFFF" />
 	</Defaults>
 </SMF>
