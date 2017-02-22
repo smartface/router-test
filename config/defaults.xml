@@ -20,8 +20,7 @@
 			<pullDownItem backgroundImage="" backgroundColor="#65625A" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 			<pullUpItem backgroundImage="" backgroundColor="#65625A" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 		</ListView>
-		<Video name="Video"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" contentUrl="" controlStyle="VideoControlStyle.EMBEDDED" initialPlaybackTime="0" movieScalingMode="MovieScalingMode.ASPECTFIT"
-		 />
+		<VideoView name="Video"  height="30%" left="12.5%" top="35%" width="60%" />
 		<CodeReader name="CodeReader"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%"  />
 		<WebView name="WebView"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" openLinkInside="false" scalePageToFit="false" URL=""  />
 		<Container name="Container"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" alignment="LayoutAlignment.LEFT" autoSize="false" backgroundTransparent="true" borderColor="#313031" borderWidth="0" backgroundColor="#EFF3EF"
@@ -30,8 +29,7 @@
 		contentHeight="100%" contentWidth="100%" decelerationRate="ScrollViewDecelerationRate.NORMAL" enableHorizontalPaging="false" enableHorizontalScrollbar="false" enableHorizontalScrolling="false" enableVerticalPaging="false" enableVerticalScrollbar="true"
 		enableVerticalScrolling="true" enableZoom="false" backgroundColor="#EFF3EF" horizontalGap="5" layoutType="LayoutType.ABSOLUTE" orientation="Orientation.HORIZONTAL" scrollViewIndicatorStyle="ScrollViewIndicatorStyle.DEFAULT" verticalGap="5"
 		 />
-		<MapView name="MapView"  height="30%" left="12.5%" top="35%" touchEnabled="true" visible="true" width="75%" centerLatitude="41.035972" centerLongitude="29.046902" enableScroll="true" enableZoom="true" latitudeSource="" longitudeSource=""
-		mapType="MapType.STANDARD" selectedImageSource="" showPins="true" showUserLocation="true" subtitleSource="" titleSource="" unselectedImageSource="" zoomLevel="2"  />
+		<MapView name="MapView"  height="30%" left="12.5%" top="35%" width="75%" />
 		<Switch name="SwitchButton"  height="31dp" left="44.26%" top="48.02%" touchEnabled="true" visible="true" width="51dp" alpha="1" toggle="false" thumbOnColor="#00e600" thumbOffColor="#cccccc" toggleOffColor="#010101" toggleOnColor="#cccccc"  />
 		<Slider name="Slider"  height="4.58%" left="12.5%" maxTrackImage="" minTrackImage="" top="47.71%" touchEnabled="true" visible="true" width="75%" alpha="1" continuous="false" maxTrackColor="#FFFFFF" minTrackColor="#00CCFF" showThumbnail="true"
 		stepSize="1" thumbnailColor="#000000" thumbnailImage="" value="50" valueRangeMax="100" valueRangeMin="0"  />
