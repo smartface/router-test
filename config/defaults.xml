@@ -2,15 +2,15 @@
 <SMF>
 	<Defaults>
 		<Page name="Page" backgroundImage="" backgroundColor="#FFFFFF" imageFillType="ImageFillType.TILE" imagePosition="Alignment.TOPLEFT" lockOrientation="false" touchEnabled="true" />
-		<Label name="Label"  height="7%" left="12.5%" font.bold="false" font.italic="false"  font.size="8pt" font.strikeThrough="false" font.underline="false" top="46.35%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
+		<Label name="Label"  height="7%" left="12.5%" font.bold="false" font.italic="false"  font.size="8" font.strikeThrough="false" font.underline="false" top="46.35%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
 		alpha="1" autoSize="false" backgroundTransparent="true" borderColor="#999999" borderWidth="0" detectURLsInString="false" backgroundColor="#CCCCCC" textColor="#000000" horizontalGap="0" minimumFontSize="7" multipleLine="false" roundEdge="3" showScrollBar="false"
 		text="" textAlignment="Alignment.MIDLEFT"  />
 		<ImageView name="ImageView"  width="70%" height="30%" left="12.5%" top="35%" imageFillType="ImageFillType.NORMAL" />
-		<Button name="Button"  font.bold="false" font.italic="false"  font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%"
+		<Button name="Button"  font.bold="false" font.italic="false"  font.size="8" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%"
 		alpha="1" backgroundColor="#00A1F1" textColor="#FFFFFF" horizontalGap="0" pressedFillColor="#2EB9FF" pressedtextColor="#FFFFFF" roundEdge="3" style3D="false" text="Button" textAlignment="Alignment.MIDCENTER"  />
-		<Ticker name="Ticker"  font.bold="false" font.italic="false"  font.size="8pt" font.strikeThrough="false" font.underline="false" height="7.29%" left="12.5%" top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1"
+		<Ticker name="Ticker"  font.bold="false" font.italic="false"  font.size="8" font.strikeThrough="false" font.underline="false" height="7.29%" left="12.5%" top="46.35%" touchEnabled="true" visible="true" width="75%" alpha="1"
 		backgroundTransparent="false" borderColor="#999999" borderWidth="0" backgroundColor="#CCCCCC" textColor="#666666" refreshRate="100" roundEdge="0" text="Ticker" textAlignment="Alignment.MIDLEFT"  />
-		<TextBox name="TextBox"  font.bold="false" font.italic="false"  font.size="8pt" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
+		<TextBox name="TextBox"  font.bold="false" font.italic="false"  font.size="8" font.strikeThrough="false" font.underline="false" height="10%" left="12.5%" top="45%" touchEnabled="true" visible="true" width="75%" adjustFontSizeToFit="false"
 		alpha="1"  borderWidth="1" backgroundColor="#FFFFFF"  />
 		<ListView name="ListView" backgroundColor="#ffffff" height="40%" width="60%"  >
 			<itemTemplate backgroundImage="" backgroundColor="#EFF3EF" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
