@@ -41,5 +41,6 @@
 		<Canvas name="Canvas" height="30%" left="24.06%" top="41.46%" touchEnabled="true" width="75%" loopPeriod="50" loop="true"  />
 		<SearchBar name="SearchBar"  height="10%" left="24.06%" top="46.25%" touchEnabled="true" visible="true" width="75%" alpha="1" text="" placeholder="Search" icon="" barStyle="SearchBarStyle.DEFAULT" tintColor="#7FEA00"  />
 		<SliderDrawer name="SliderDrawer" width="157dp" touchEnabled="true" backgroundColor="#FFFFFF" />
+		<FlexLayout name="FlexLayout" height="30%" width="75%" borderWidth="1" />
 	</Defaults>
 </SMF>
