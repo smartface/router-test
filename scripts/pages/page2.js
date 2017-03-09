@@ -1,14 +1,22 @@
-var page2 = require('../ui/page2');
-module.exports = page2;
+const extend = require("js-base/core/extend");
+const Router = require("nf-core/ui/router");
 
-page2.onKeyPress = page2_onKeyPress;
+// Get generetad UI code
+var Page2Design = require("../ui/page2");
 
-page2.btn.onPressed = function(e) {
-    Pages.back();
-};
+const Page2 = extend(Page2Design)(
+    function(_super) {
+        _super(this);
 
-function page2_onKeyPress(e) {
-    if (e.keyCode === 4) {
-        Pages.back();
-    }
+        this.mapChildren(function(component, componentName) {
+            this[componentName] = component;
+        });
+
+        this.btn.onPress = btn_onPress.bind(this);
+    });
+
+function btn_onPress() {
+    Router.goBack();
 }
+
+module && (module.exports = Page2);
