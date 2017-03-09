@@ -16,7 +16,7 @@
 			<pullUpItem backgroundImage="" backgroundColor="#65625A" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 		</ListView>
 		<MapView name="MapView" height="200" width="200" touchEnabled="true" visible="true" alpha="1" />
-		<SearchView name="SearchView" touchEnabled="true" visible="true" alpha="1" width="200" height="70" />
+		<SearchView name="SearchView" touchEnabled="true" visible="true" alpha="1" width="200" height="70" searchViewStyle="SearchView.iOS.Style.DEFAULT" />
 		<Slider name="Slider" visible="true" alpha="1" touchEnabled="true" maxTrackColor="#FFFFFF" minTrackColor="#00CCFF" stepSize="1" thumbnailColor="#000000" thumbnailImage="" value="50" maxValue="100" minValue="0" isResizable="false" width="300" />
 		<Switch name="Switch" width="200" visible="true" alpha="1" touchEnabled="true" toggle="false" thumbOnColor="#00e600" thumbOffColor="#CCCCCC" toggleOffColor="#010101" toggleOnColor="#CCCCCC" isResizable="false" />
 		<TextBox name="TextBox" font.bold="false" font.italic="false" font.size="8" height="70" width="200" visible="true" alpha="1" touchEnabled="true" borderWidth="1" backgroundColor="#FFFFFF" />
