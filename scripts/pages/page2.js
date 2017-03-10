@@ -12,8 +12,13 @@ const Page2 = extend(Page2Design)(
             this[componentName] = component;
         });
 
+        this.onShow = onShow.bind(this);
         this.btn.onPress = btn_onPress.bind(this);
     });
+
+function onShow(e) {
+    console.log(e.message);
+}
 
 function btn_onPress() {
     Router.goBack();

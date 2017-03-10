@@ -17,7 +17,9 @@ const Page1 = extend(Page1Design)(
     });
 
 function btnNext_onPress() {
-    Router.go("page2");
+    Router.go("page2", {
+        message: "Hello World!"
+    });
 }
 
 var btnClickCount = 0;
