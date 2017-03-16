@@ -3,11 +3,12 @@
 	<Defaults>
 		<ActivityIndicator name="ActivityIndicator" touchEnabled="true" visible="true" alpha="1" isResizable="false" />
 		<Button name="Button" font.bold="false" font.italic="false" font.size="8" width="250" height="70" touchEnabled="true" visible="true" alpha="1" backgroundColor="#00A1F1" textColor="#FFFFFF" pressedFillColor="#2EB9FF" pressedtextColor="#FFFFFF" text="Button"
-			textAlignment="Alignment.MIDCENTER" />
-		<FlexLayout name="FlexLayout" height="200" width="200" touchEnabled="true" visible="true" alpha="1" />
-		<ImageView name="ImageView" width="200" height="200" touchEnabled="true" visible="true" alpha="1" imageFillType="ImageFillType.NORMAL" />
-		<Label name="Label" width="250" height="70" font.bold="false" font.italic="false" font.size="8" touchEnabled="true" visible="true" alpha="1" borderColor="#999999" borderWidth="0" backgroundColor="#CCCCCC" textColor="#000000" textAlignment="Alignment.MIDLEFT" />
-		<ListView name="ListView" backgroundColor="#FFFFFF" height="200" width="200" touchEnabled="true" visible="true" alpha="1">
+			textAlignment="Alignment.MIDCENTER" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
+		<FlexLayout name="FlexLayout" flexDirection="FlexLayout.FlexDirection.COLUMN" height="200" width="200" touchEnabled="true" visible="true" alpha="1" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
+		<ImageView name="ImageView" width="200" height="200" touchEnabled="true" visible="true" alpha="1" imageFillType="ImageFillType.NORMAL" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
+		<Label name="Label" width="250" height="70" font.bold="false" font.italic="false" font.size="8" touchEnabled="true" visible="true" alpha="1" borderColor="#999999" borderWidth="0" backgroundColor="#CCCCCC" textColor="#000000" textAlignment="Alignment.MIDLEFT"
+			positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
+		<ListView name="ListView" backgroundColor="#FFFFFF" height="200" width="200" touchEnabled="true" visible="true" alpha="1" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH">
 			<itemTemplate backgroundImage="" backgroundColor="#EFF3EF" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 			<grouppingHeaderTemplate backgroundImage="" backgroundColor="#D6DCE0" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 			<activeItemTemplate backgroundImage="" backgroundColor="#EFF3EF" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
@@ -15,15 +16,18 @@
 			<pullDownItem backgroundImage="" backgroundColor="#65625A" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 			<pullUpItem backgroundImage="" backgroundColor="#65625A" height="40dp" imageFillType="ImageFillType.NORMAL" positionBackroundImage="Alignment.TOPLEFT" />
 		</ListView>
-		<MapView name="MapView" height="200" width="200" touchEnabled="true" visible="true" alpha="1" />
-		<SearchView name="SearchView" touchEnabled="true" visible="true" alpha="1" width="200" height="70" searchViewStyle="SearchView.iOS.Style.DEFAULT" />
-		<Slider name="Slider" visible="true" alpha="1" touchEnabled="true" maxTrackColor="#FFFFFF" minTrackColor="#00CCFF" stepSize="1" thumbnailColor="#000000" thumbnailImage="" value="50" maxValue="100" minValue="0" isResizable="false" width="300" />
-		<Switch name="Switch" width="200" visible="true" alpha="1" touchEnabled="true" toggle="false" thumbOnColor="#00e600" thumbOffColor="#CCCCCC" toggleOffColor="#010101" toggleOnColor="#CCCCCC" isResizable="false" />
-		<TextBox name="TextBox" font.bold="false" font.italic="false" font.size="8" height="70" width="200" visible="true" alpha="1" touchEnabled="true" borderWidth="1" backgroundColor="#FFFFFF" />
-		<VideoView name="VideoView" height="200" width="200" visible="true" alpha="1" touchEnabled="true" />
-		<WebView name="WebView" height="200" width="200" visible="true" alpha="1" touchEnabled="true" />
-		<Page name="Page" backgroundColor="#FFFFFF" touchEnabled="true" visible="true" alpha="1" />
+		<MapView name="MapView" height="200" width="200" touchEnabled="true" visible="true" alpha="1" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
+		<SearchView name="SearchView" touchEnabled="true" visible="true" alpha="1" width="200" height="70" searchViewStyle="SearchView.iOS.Style.DEFAULT" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
+		<Slider name="Slider" visible="true" alpha="1" touchEnabled="true" maxTrackColor="#FFFFFF" minTrackColor="#00CCFF" stepSize="1" thumbnailColor="#000000" thumbnailImage="" value="50" maxValue="100" minValue="0" isResizable="false" width="300" positionType="FlexLayout.PositionType.RELATIVE"
+			alignSelf="FlexLayout.AlignSelf.STRETCH" />
+		<Switch name="Switch" width="200" visible="true" alpha="1" touchEnabled="true" toggle="false" thumbOnColor="#00e600" thumbOffColor="#CCCCCC" toggleOffColor="#010101" toggleOnColor="#CCCCCC" isResizable="false" positionType="FlexLayout.PositionType.RELATIVE"
+			alignSelf="FlexLayout.AlignSelf.STRETCH" />
+		<TextBox name="TextBox" font.bold="false" font.italic="false" font.size="8" height="70" width="200" visible="true" alpha="1" touchEnabled="true" borderWidth="1" backgroundColor="#FFFFFF" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH"
+		/>
+		<VideoView name="VideoView" height="200" width="200" visible="true" alpha="1" touchEnabled="true" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
+		<WebView name="WebView" height="200" width="200" visible="true" alpha="1" touchEnabled="true" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
 
+		<Page name="Page" backgroundColor="#FFFFFF" touchEnabled="true" visible="true" alpha="1" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
 		<StatusBar name="StatusBar" touchEnabled="true" visible="true" alpha="1" />
 		<HeaderBar name="HeaderBar" touchEnabled="true" visible="true" alpha="1" />
 	</Defaults>
