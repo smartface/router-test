@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SMF>
 	<Defaults>
-		<ActivityIndicator name="ActivityIndicator" touchEnabled="true" visible="true" alpha="1" isResizable="false" />
+		<ActivityIndicator name="ActivityIndicator" touchEnabled="true" visible="true" alpha="1" isResizable="false" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
 		<Button name="Button" font.bold="false" font.italic="false" font.size="8" width="250" height="70" touchEnabled="true" visible="true" alpha="1" backgroundColor="#00A1F1" textColor="#FFFFFF" pressedFillColor="#2EB9FF" pressedtextColor="#FFFFFF" text="Button"
 			textAlignment="Alignment.MIDCENTER" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
 		<FlexLayout name="FlexLayout" flexDirection="FlexLayout.FlexDirection.COLUMN" height="200" width="200" touchEnabled="true" visible="true" alpha="1" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.STRETCH" />
