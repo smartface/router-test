@@ -23,7 +23,7 @@ Smartface Team.
 
 ## Support & Documentation & Useful Links
 
-- [Guides](https://www.smartface.io/guides)
-- [API Docs](https://docs.smartface.io)
+- [Guides](https://developer.smartface.io)
+- [API Docs](ref.smartface.io)
 - [Smartface Cloud Dashboard](https://cloud.smartface.io)
 - [Download Smartface On-Device Emulator](https://smf.to/app) (Works only from your device)
