@@ -2,7 +2,7 @@ const extend = require("js-base/core/extend");
 const Router = require("nf-core/ui/router");
 
 // Get generetad UI code
-var Page2Design = require("../ui/page2");
+var Page2Design = require("../ui/ui_page2");
 
 const Page2 = extend(Page2Design)(
     function(_super) {
