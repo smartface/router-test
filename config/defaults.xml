@@ -12,10 +12,10 @@
 			alignSelf="FlexLayout.AlignSelf.AUTO" />
 		<Label name="Label" width="250" height="70" font.bold="false" font.italic="false" font.size="16" touchEnabled="true" visible="true" alpha="1" borderColor="rgba(0,0,0,1)" borderWidth="0" backgroundColor="#FFFFFF" textColor="#000000" text="Label" textAlignment="TextAlignment.MIDLEFT"
 			positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.AUTO" />
-		<ListView name="ListView" backgroundColor="#FFFFFF" height="200" width="200" touchEnabled="true" visible="true" multiline="false" alpha="1" rowHeight="0" itemCount="0" borderWidth="0" borderColor="rgba(0,0,0,1)" alignSelf="FlexLayout.AlignSelf.AUTO"
-			positionType="FlexLayout.PositionType.RELATIVE" />
-		<MapView name="MapView" height="200" width="200" touchEnabled="true" visible="true" alpha="1" borderWidth="0" borderColor="rgba(0,0,0,1)" backgroundColor="#FFFFFF" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.AUTO"
-			rotateEnabled="true" compassEnabled="true" scrollEnabled="true" type="MapView.Type.NORMAL" />
+		<ListView name="ListView" backgroundColor="#FFFFFF" height="200" width="200" touchEnabled="true" visible="true" multiline="false" alpha="1" rowHeight="0" itemCount="0" borderWidth="0" borderColor="rgba(0,0,0,1)" alignSelf="FlexLayout.AlignSelf.AUTO" positionType="FlexLayout.PositionType.RELATIVE"
+		/>
+		<MapView name="MapView" height="200" width="200" touchEnabled="true" visible="true" alpha="1" borderWidth="0" borderColor="rgba(0,0,0,1)" backgroundColor="#FFFFFF" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.AUTO" rotateEnabled="true"
+			compassEnabled="true" scrollEnabled="true" type="MapView.Type.NORMAL" />
 		<SearchView name="SearchView" text="" touchEnabled="true" visible="true" alpha="1" borderWidth="0" borderColor="rgba(0,0,0,1)" width="200" height="70" textAlignment="TextAlignment.MIDLEFT" searchViewStyle="SearchView.iOS.Style.DEFAULT" positionType="FlexLayout.PositionType.RELATIVE"
 			alignSelf="FlexLayout.AlignSelf.AUTO" />
 		<Slider name="Slider" visible="true" alpha="1" touchEnabled="true" maxTrackColor="#00FF00" minTrackColor="#A9A9A9" stepSize="1" thumbColor="#D3D3D3" borderWidth="0" borderColor="rgba(0,0,0,1)" backgroundColor="#FFFFFF" value="50" maxValue="100" minValue="0"
@@ -26,9 +26,8 @@
 			text="TextBox" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.AUTO" />
 		<VideoView name="VideoView" height="200" width="200" visible="true" alpha="1" touchEnabled="true" borderWidth="0" borderColor="rgba(0,0,0,1)" backgroundColor="#FFFFFF" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.AUTO"
 		/>
-		<WebView name="WebView" height="200" width="200" visible="true" alpha="1" touchEnabled="true" borderWidth="0" borderColor="rgba(0,0,0,1)" backgroundColor="#FFFFFF" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.AUTO"
-		/>
-		<Page name="Page" />
+		<WebView name="WebView" height="200" width="200" visible="true" alpha="1" touchEnabled="true" borderWidth="0" borderColor="rgba(0,0,0,1)" backgroundColor="#FFFFFF" positionType="FlexLayout.PositionType.RELATIVE" alignSelf="FlexLayout.AlignSelf.AUTO" />
+		<Page name="Page" backgroundColor="#FFFFFF" />
 		<StatusBar name="StatusBar" />
 		<HeaderBar name="HeaderBar" />
 	</Defaults>

@@ -12,7 +12,6 @@
             "children": [
                 "statusBar",
                 "headerBar",
-                "navigationBar",
                 "actionBar",
                 "btn",
                 "lbl",
@@ -57,7 +56,8 @@
             "fx": 28.125,
             "fy": 211.0500030517578,
             "right": 28.125,
-            "bottom": 211.0500030517578
+            "bottom": 211.0500030517578,
+            "visibility": true
         },
         "id": "c5abb100",
         "type": "Button"
@@ -110,7 +110,8 @@
             "fy": 58.29999923706055,
             "right": 27.125,
             "bottom": 58.29999923706055,
-            "dragging": true
+            "dragging": true,
+            "visibility": true
         },
         "id": "845d2004",
         "type": "ImageView"
@@ -133,7 +134,8 @@
             "fx": 28.125,
             "fy": 243.71817016601562,
             "right": 28.125,
-            "bottom": 243.71817016601562
+            "bottom": 243.71817016601562,
+            "visibility": true
         },
         "id": "eebce639",
         "type": "Button"
