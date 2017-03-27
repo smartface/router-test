@@ -6,7 +6,7 @@
 	"SMF.i18n.languageKV" is populated by calling "SMF.i18n.defineLanguage".
 	Required for BC
 */
-var lang = {};
+global.lang = {};
 
 SMF.i18n = {
 	currentLang: null,

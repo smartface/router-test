@@ -1,0 +1,6 @@
+{
+    "dependencies": {
+        "nf-core": "^1.0.0",
+        "extend": "^1.0.0"
+    }
+}
