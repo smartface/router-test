@@ -1,23 +1,18 @@
-/* globals initRequire */
-Application.onUnhandledError = Application_OnError;
+/* globals lang */
+require("i18n/i18n.js"); //generates global lang object
+const Application = require("nf-core/application");
+const Router = require("nf-core/ui/router");
 
-include("i18n/i18n.js"); //generates global lang object
-include("libs/Smartface/require.js");
-initRequire("main.js");
+// Set uncaught exception handler, all exceptions that are not caught will
+// trigger onUnhandledError callback.
+Application.onUnhandledError = function (e) {
+    alert({
+        title: lang.applicationError,
+        message: e.message + "\n\n*" + e.sourceURL + "\n*" + e.line + "\n*" + e.stack
+    });
+};
 
-
-function Application_OnError(e) {
-    switch (e.type) {
-        case "Server Error":
-        case "Size Overflow":
-            alert(lang.networkError);
-            break;
-        default:
-            //change the following code for desired generic error messsage
-            alert({
-                title: lang.applicationError,
-                message: e.message + "\n\n*" + e.sourceURL + "\n*" + e.line + "\n*" + e.stack
-            });
-            break;
-    }
-}
+// Define routes and go to initial page of application
+Router.add("page1", require("./pages/page1"));
+Router.add("page2", require("./pages/page2"));
+Router.go("page1");

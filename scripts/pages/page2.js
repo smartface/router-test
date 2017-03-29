@@ -1,4 +1,4 @@
-const extend = require("js-base/core/extend");
+const extend = require("extend");
 const Router = require("nf-core/ui/router");
 
 // Get generetad UI code
