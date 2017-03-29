@@ -36,13 +36,13 @@ SMF.i18n = {
 			}
 		}
 		this.currentLang = languageCode;
-		lang = this.languageKV[languageCode];
+		global.lang = this.languageKV[languageCode];
 	}
 };
 
-include('i18n/de.js');
-include('i18n/en.js');
-include('i18n/fi.js');
-include('i18n/tr.js');
+require('i18n/de.js');
+require('i18n/en.js');
+require('i18n/fi.js');
+require('i18n/tr.js');
 
 SMF.i18n.switchLanguage(Device.language);
