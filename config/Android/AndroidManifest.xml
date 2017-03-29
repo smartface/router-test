@@ -4,7 +4,7 @@
 		android:versionCode="1"
 		android:versionName="${Version}"
 		android:installLocation="auto" >
-	<uses-sdk android:minSdkVersion="10" android:targetSdkVersion="23" />
+	<uses-sdk android:minSdkVersion="17" android:targetSdkVersion="24" />
 	<!-- Required for SEND_SMS function. -->   
 	<uses-permission android:name="android.permission.SEND_SMS" />
 	<uses-permission android:name="android.permission.BLUETOOTH" />
@@ -20,7 +20,7 @@
 	<!-- Required for contact list functions. -->
 	<uses-permission android:name="android.permission.READ_CONTACTS"/>
 	<!-- Allows an application to get information about the currently or recently running tasks. --> 
-	<uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
+	<uses-permission android:name="android.permission.GET_TASKS"/>
 	<!-- Required for camera functions. -->
 	<uses-permission android:name="android.permission.CAMERA" />
 	
@@ -95,36 +95,6 @@
 						<category android:name="android.intent.category.DEFAULT" />
 					</intent-filter>
 			</activity>
-			<activity android:name="io.smartface.android.SpNotifications"
-				android:label="@string/app_name"
-				android:excludeFromRecents ="true"
-			>
-				<intent-filter >
-					<action android:name="${PackageName}.notifier.run" />
-					<category android:name="android.intent.category.DEFAULT" />
-				</intent-filter>
-			</activity>
-			<receiver android:name="io.smartface.android.notifications.MyBroadCastReceiver">
-				<intent-filter >
-					<action android:name="${PackageName}.localReceiver" />
-				</intent-filter>
-			</receiver>
-			
-			<provider android:name="io.smartface.android.ui.AssetVideoProvider" android:authorities="${PackageName}.videoprovider"></provider>
-			
-			<receiver android:name="io.smartface.android.ConnectionChangeReceiver"
-				android:label="NetworkConnectionListener">
-				<intent-filter>
-					<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-				</intent-filter>
-			</receiver>
-	
-			<receiver android:name="io.smartface.android.SmsListener" android:enabled="true">
-				<intent-filter>
-					<action android:name="android.provider.Telephony.SMS_RECEIVED" />
-					<action android:name="android.provider.Telephony.SMS_REJECTED" />
-				</intent-filter>
-			</receiver>
 
 			<service android:name="com.geniem.sprat.billing.BillingService" />
 			<receiver android:name="com.geniem.sprat.billing.BillingReceiver">
@@ -174,27 +144,13 @@
 			</service>
 			
 			<meta-data
-				android:name="com.google.android.maps.v2.API_KEY"
+				android:name="com.google.android.geo.API_KEY"
 				android:value="${GoogleMapsKey}"/>
-			<meta-data
-				android:name="${PackageName}.useActionBar"
-				android:value="true"/>
 
 			<activity android:name="com.google.android.gms.ads.AdActivity"
 					 android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
-
-			<service android:name="io.smartface.android.notifications.LocalNotificationService"
-				 android:enabled="true" />
 			 
 			<receiver android:name="io.smartface.android.notifications.LocalNotificationReceiver"/>
-			
-			<service android:name="io.smartface.android.notifications.NLService"
-					android:enabled="true"
-					android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
-				<intent-filter>
-					<action android:name="android.service.notification.NotificationListenerService" />
-				</intent-filter>
-			</service>
 
 	</application>
 </manifest>
