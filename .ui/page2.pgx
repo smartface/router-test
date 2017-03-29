@@ -1,117 +1,130 @@
 {
-    "components": [{
-        "type": "Page",
-        "props": {
-            "name": "page2",
-            "width": 375,
-            "height": 603,
-            "isRemovable": false,
-            "children": [
-                "statusBar",
-                "headerBar",
-                "actionBar",
-                "btn",
-                "lbl",
-                "img"
-            ],
-            "style": {
-                "backgroundColor": "#B7D21C"
-            }
-        },
-        "parent": null
-    }, {
-        "type": "StatusBar",
-        "props": {
-            "name": "statusBar",
-            "parent": "page2",
-            "isRemovable": false,
-            "visibility": true
-        }
-    }, {
-        "type": "HeaderBar",
-        "props": {
-            "name": "headerBar",
-            "parent": "page2",
-            "title": "page2",
-            "isRemovable": false,
-            "visibility": true
-        }
-    }, {
-        "props": {
-            "name": "btn",
-            "isReady": true,
-            "minH": 15,
-            "key": "c5abb100",
-            "i": "c5abb100",
-            "parent": "page2",
-            "width": 262.5,
-            "height": 60.3,
-            "left": 50.25,
-            "top": 485.43634033203125,
-            "dragging": true,
-            "text": "Back",
-            "fw": 0,
-            "fh": 0,
-            "fx": 25.125,
-            "fy": 242.71817016601562,
-            "right": 25.125,
-            "bottom": 242.71817016601562,
-            "visibility": true
-        },
-        "id": "c5abb100",
-        "type": "Button"
-    }, {
-        "props": {
-            "name": "lbl",
-            "isReady": true,
-            "minH": 15,
-            "key": "980522a9",
-            "i": "980522a9",
-            "parent": "page2",
-            "width": 262.5,
-            "height": 90.45000000000002,
-            "left": 54.25,
-            "top": 271.3500061035156,
-            "dragging": true,
-            "multipleLine": true,
-            "text": "This is second page",
-            "fw": 0,
-            "fh": 0,
-            "fx": 27.125,
-            "fy": 135.6750030517578,
-            "right": 27.125,
-            "bottom": 135.6750030517578,
-            "visibility": true,
-            "style": {
-                "textAlign": "MIDCENTER"
-            }
-        },
-        "id": "980522a9",
-        "type": "Label"
-    }, {
-        "props": {
-            "name": "img",
-            "isReady": true,
-            "minH": 15,
-            "key": "845d2004",
-            "i": "845d2004",
-            "parent": "page2",
-            "width": 262.5,
-            "height": 60.3,
-            "left": 62.25,
-            "top": 122.5999984741211,
-            "image": "smartface.png",
-            "imageFillType": "ASPECTFIT",
-            "fw": 0,
-            "fh": 0,
-            "fx": 31.125,
-            "fy": 61.29999923706055,
-            "right": 31.125,
-            "bottom": 61.29999923706055,
-            "dragging": true,
-            "visibility": true
-        },
-        "id": "845d2004",
-        "type": "ImageView"
-    }]
+	"components": [
+		{
+			"type": "Page",
+			"props": {
+				"name": "page2",
+				"width": 375,
+				"height": 603,
+				"isRemovable": false,
+				"children": [
+					"statusBar",
+					"headerBar",
+					"actionBar",
+					"btn",
+					"lbl",
+					"img"
+				],
+				"style": {
+					"backgroundColor": "#B7D21C"
+				}
+			},
+			"parent": null
+		},
+		{
+			"type": "StatusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "page2",
+				"isRemovable": false,
+				"visibility": true
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "page2",
+				"title": "page2",
+				"isRemovable": false,
+				"visibility": true
+			}
+		},
+		{
+			"props": {
+				"name": "btn",
+				"isReady": true,
+				"minH": 15,
+				"key": "c5abb100",
+				"i": "c5abb100",
+				"parent": "page2",
+				"width": 262.5,
+				"height": 60.3,
+				"left": 50.25,
+				"top": 485.43634033203125,
+				"dragging": true,
+				"text": "Back",
+				"fw": 131.25,
+				"fh": 30.149999618530273,
+				"fx": 25.125,
+				"fy": 242.71817016601562,
+				"right": 25.125,
+				"bottom": 242.71817016601562,
+				"visibility": true,
+				"style": {
+					"backgroundColor": "rgba( 0, 161, 241, 1 )",
+					"font": {
+						"color": "rgba( 255, 255, 255, 1 )"
+					}
+				}
+			},
+			"id": "c5abb100",
+			"type": "Button"
+		},
+		{
+			"props": {
+				"name": "lbl",
+				"isReady": true,
+				"minH": 15,
+				"key": "980522a9",
+				"i": "980522a9",
+				"parent": "page2",
+				"width": 262.5,
+				"height": 90.45000000000002,
+				"left": 54.25,
+				"top": 271.3500061035156,
+				"dragging": true,
+				"multipleLine": true,
+				"text": "This is second page",
+				"fw": 131.25,
+				"fh": 45.224998474121094,
+				"fx": 27.125,
+				"fy": 135.6750030517578,
+				"right": 27.125,
+				"bottom": 135.6750030517578,
+				"visibility": true,
+				"style": {
+					"textAlign": "MIDCENTER"
+				}
+			},
+			"id": "980522a9",
+			"type": "Label"
+		},
+		{
+			"props": {
+				"name": "img",
+				"isReady": true,
+				"minH": 15,
+				"key": "845d2004",
+				"i": "845d2004",
+				"parent": "page2",
+				"width": 262.5,
+				"height": 60.3,
+				"left": 62.25,
+				"top": 122.5999984741211,
+				"image": "smartface.png",
+				"imageFillType": "ASPECTFIT",
+				"fw": 131.25,
+				"fh": 30.149999618530273,
+				"fx": 31.125,
+				"fy": 61.29999923706055,
+				"right": 31.125,
+				"bottom": 61.29999923706055,
+				"dragging": true,
+				"visibility": true
+			},
+			"id": "845d2004",
+			"type": "ImageView"
+		}
+	]
 }
