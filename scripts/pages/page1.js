@@ -17,6 +17,7 @@ const Page1 = extend(Page1Design)(
             self.flexlayout[componentName] = component;
         });
 
+        this.headerBar.leftItemEnabled = false;
         this.flexlayout.btn.onPress = btn_onPress.bind(this);
         this.flexlayout.btnNext.onPress = btnNext_onPress.bind(this);
     });
