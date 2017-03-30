@@ -40,7 +40,7 @@
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
+	<true/>
 	<key>UILaunchImages</key>
 	<array>
 		<dict>
