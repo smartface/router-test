@@ -10,7 +10,6 @@
 				"children": [
 					"statusBar",
 					"headerBar",
-					"actionBar",
 					"img",
 					"lbl",
 					"btn"
