@@ -1,4 +1,4 @@
-const extend = require("extend");
+const extend = require("js-base/core/extend");
 const Router = require("nf-core/ui/router");
 
 // Get generetad UI code
@@ -17,6 +17,7 @@ const Page2 = extend(Page2Design)(
     });
 
 function onShow(e) {
+    if (!e) return;
     console.log(e.message);
 }
 

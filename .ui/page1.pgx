@@ -10,15 +10,28 @@
 				"style": {
 					"backgroundColor": "#EEEEEE"
 				},
+				"flexProps": {
+					"flexDirection": "COLUMN",
+					"alignItems": "CENTER",
+					"direction": "INHERIT",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "SPACE_AROUND"
+				},
 				"children": [
 					"statusBar",
 					"headerBar",
 					"actionBar",
-					"btn",
-					"lbl",
 					"img",
-					"btnNext"
-				]
+					"lbl",
+					"flexlayout"
+				],
+				"flex": {
+					"flexDirection": 0,
+					"alignItems": 2,
+					"direction": 0,
+					"flexWrap": 0,
+					"justifyContent": 4
+				}
 			},
 			"parent": null
 		},
@@ -43,60 +56,47 @@
 		},
 		{
 			"props": {
-				"name": "btn",
-				"isReady": true,
-				"minH": 15,
-				"key": "c5abb100",
-				"i": "c5abb100",
-				"parent": "page1",
-				"width": 262.5,
-				"height": 60.3,
-				"left": 56.25,
-				"top": 422.1,
-				"dragging": true,
-				"text": "Click me!",
-				"fw": 131.25,
-				"fh": 30.149999618530273,
-				"fx": 28.125,
-				"fy": 211.0500030517578,
-				"right": 28.125,
-				"bottom": 211.0500030517578,
-				"visibility": true,
-				"style": {
-					"backgroundColor": "rgba( 0, 161, 241, 1 )",
-					"font": {
-						"color": "rgba( 255, 255, 255, 1 )"
-					}
-				}
-			},
-			"id": "c5abb100",
-			"type": "Button"
-		},
-		{
-			"props": {
 				"name": "lbl",
 				"isReady": true,
 				"minH": 15,
 				"key": "980522a9",
 				"i": "980522a9",
 				"parent": "page1",
-				"width": 262.5,
 				"height": 90.45000000000002,
-				"left": 52.2,
+				"left": 52.20000076293945,
 				"top": 277.3500061035156,
 				"dragging": true,
 				"multipleLine": true,
-				"fw": 131.25,
-				"fh": 45.224998474121094,
-				"fx": 26.100000381469727,
-				"fy": 138.6750030517578,
-				"right": 26.100000381469727,
-				"bottom": 138.6750030517578,
+				"fw": 262.5,
+				"fh": 90.44999694824219,
+				"fx": 28.75,
+				"fy": 155.7033233642578,
+				"right": 0,
+				"bottom": 0,
 				"visibility": true,
 				"style": {
 					"textAlign": "MIDCENTER",
-					"backgroundColor": "#ffffff",
-					"opacity": 1
+					"backgroundColor": "rgba( 255, 255, 255, 0 )",
+					"opacity": 1,
+					"borderColor": "rgba( 255, 255, 255, 1 )",
+					"borderRadius": 0,
+					"borderWidth": 0,
+					"font": {
+						"size": 16,
+						"family": "Arial"
+					}
+				},
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 4,
+					"marginLeft": 10,
+					"marginRight": 10
 				}
 			},
 			"id": "980522a9",
@@ -110,53 +110,187 @@
 				"key": "845d2004",
 				"i": "845d2004",
 				"parent": "page1",
-				"width": 262.5,
 				"height": 60.3,
 				"left": 54.25,
 				"top": 116.5999984741211,
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
-				"fw": 131.25,
-				"fh": 30.149999618530273,
-				"fx": 27.125,
-				"fy": 58.29999923706055,
-				"right": 27.125,
-				"bottom": 58.29999923706055,
+				"fw": 262.5,
+				"fh": 60.29999923706055,
+				"fx": 28.75,
+				"fy": 31.80110740661621,
+				"right": 0,
+				"bottom": 0,
 				"dragging": true,
-				"visibility": true
+				"visibility": true,
+				"style": {
+					"borderColor": "rgba( 255, 255, 255, 1 )",
+					"borderWidth": 0,
+					"borderRadius": 0,
+					"opacity": 1
+				},
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 4,
+					"marginLeft": 10,
+					"marginRight": 10
+				}
 			},
 			"id": "845d2004",
 			"type": "ImageView"
 		},
 		{
 			"props": {
-				"name": "btnNext",
+				"name": "flexlayout",
+				"isReady": true,
+				"height": 130,
+				"touchEnabled": true,
+				"backgroundColor": "#FFFFFF",
+				"flexShrink": 1,
+				"alignSelf": "AUTO",
+				"direction": "INHERIT",
+				"positionType": "RELATIVE",
+				"visibility": true,
+				"key": "d0fa9c62",
+				"i": "d0fa9c62",
+				"parent": "page1",
+				"fw": 241.4130859375,
+				"fh": 162.443359375,
+				"fx": 39.29345703125,
+				"fy": 309.75555419921875,
+				"right": 0,
+				"bottom": 0,
+				"dragging": true,
+				"style": {
+					"backgroundColor": "rgba( 255, 255, 255, 0 )",
+					"opacity": 1,
+					"borderColor": "rgba(0,0,0,1)",
+					"borderWidth": 0
+				},
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"children": [
+					"btn",
+					"btnNext"
+				],
+				"flex": {
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0,
+					"alignSelf": 4,
+					"marginLeft": 10,
+					"marginRight": 10
+				}
+			},
+			"id": "d0fa9c62",
+			"type": "FlexLayout"
+		},
+		{
+			"props": {
+				"name": "btn",
 				"isReady": true,
 				"minH": 15,
-				"key": "eebce639",
-				"i": "eebce639",
-				"width": 262.5,
-				"height": 60.3,
+				"key": "48653d59",
+				"i": "48653d59",
+				"parent": "flexlayout",
+				"height": 60,
 				"left": 56.25,
-				"top": 487.4363431151242,
+				"top": 422.1,
 				"dragging": true,
-				"text": "Next Page",
-				"parent": "page1",
-				"fw": 131.25,
-				"fh": 30.149999618530273,
-				"fx": 28.125,
-				"fy": 243.71817016601562,
-				"right": 28.125,
-				"bottom": 243.71817016601562,
+				"text": "Click me!",
+				"fw": 640,
+				"fh": 120.5999984741211,
+				"fx": 0,
+				"fy": 592.3125,
+				"right": 0,
+				"bottom": 0,
 				"visibility": true,
 				"style": {
 					"backgroundColor": "rgba( 0, 161, 241, 1 )",
 					"font": {
-						"color": "rgba( 255, 255, 255, 1 )"
-					}
+						"color": "rgba( 255, 255, 255, 1 )",
+						"family": "Arial",
+						"size": 16
+					},
+					"opacity": 1,
+					"borderColor": "rgba( 255, 255, 255, 1 )",
+					"borderRadius": 0,
+					"borderWidth": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH"
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 4
 				}
 			},
-			"id": "eebce639",
+			"id": "48653d59",
+			"type": "Button"
+		},
+		{
+			"props": {
+				"name": "btnNext",
+				"isReady": true,
+				"minH": 15,
+				"key": "4608e562",
+				"i": "4608e562",
+				"height": 60,
+				"left": 56.25,
+				"top": 487.4363431151242,
+				"dragging": true,
+				"text": "Next Page",
+				"parent": "flexlayout",
+				"fw": 640,
+				"fh": 120.5999984741211,
+				"fx": 0,
+				"fy": 829.2374877929688,
+				"right": 0,
+				"bottom": 0,
+				"visibility": true,
+				"style": {
+					"backgroundColor": "rgba( 0, 161, 241, 1 )",
+					"font": {
+						"color": "rgba( 255, 255, 255, 1 )",
+						"family": "Arial",
+						"size": 16
+					},
+					"opacity": 1,
+					"borderColor": "rgba( 255, 255, 255, 1 )",
+					"borderWidth": 0,
+					"borderRadius": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"marginTop": 10
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 4,
+					"marginTop": 5
+				}
+			},
+			"id": "4608e562",
 			"type": "Button"
 		}
 	]
