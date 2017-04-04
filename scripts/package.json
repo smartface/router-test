@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "nf-core": "^1.0.0",
+        "nf-core": "^1.0.1",
         "js-base": "^1.0.0"
     }
 }
