@@ -6,7 +6,7 @@
 				"name": "page2",
 				"width": 375,
 				"height": 603,
-				"isRemovable": false,
+				"isRemovable": true,
 				"children": [
 					"statusBar",
 					"headerBar",
