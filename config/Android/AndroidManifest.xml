@@ -70,7 +70,7 @@
 
 	${supportsScreens}
 	
-	<application  android:icon="@drawable/icon" android:label="${ApplicationName}" android:largeHeap="true"  android:name="android.support.multidex.MultiDexApplication">
+	<application  android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true"  android:name="android.support.multidex.MultiDexApplication">
 		 
 			<activity android:name=".A" 
 					android:label="${ApplicationName}" 	
