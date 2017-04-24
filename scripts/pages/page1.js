@@ -1,5 +1,5 @@
 const extend = require("js-base/core/extend");
-const Router = require("nf-core/ui/router");
+const Router = require("sf-core/ui/router");
 
 // Get generetad UI code
 var Page1Design = require("../ui/ui_page1");
@@ -8,18 +8,10 @@ const Page1 = extend(Page1Design)(
     function(_super) {
         var self = this;
         _super(self);
-
-        this.mapChildren(function(component, componentName) {
-            self[componentName] = component;
-        });
         
-        this.flexlayout.mapChildren(function(component, componentName) {
-            self.flexlayout[componentName] = component;
-        });
-
         this.headerBar.leftItemEnabled = false;
-        this.flexlayout.btn.onPress = btn_onPress.bind(this);
-        this.flexlayout.btnNext.onPress = btnNext_onPress.bind(this);
+        this.children.flexlayout.children.btn.onPress = btn_onPress.bind(this);
+        this.children.flexlayout.children.btnNext.onPress = btnNext_onPress.bind(this);
     });
 
 function btnNext_onPress() {
@@ -57,8 +49,8 @@ function btn_onPress() {
     }
 
     // Access lbl & btnNext of page1
-    this.lbl.text = myLabelText;
-    this.flexlayout.btn.text = myButtonText;
+    this.children.lbl.text = myLabelText;
+    this.children.flexlayout.children.btn.text = myButtonText;
 }
 
 // Adds appropriate suffix to given number

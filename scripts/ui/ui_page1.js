@@ -1,21 +1,21 @@
 /* 
 		WARNING 
 		Auto generated file. 
-		Do not modify it's contents.
+		Do not modify its contents.
 */
 
 const extend = require('js-base/core/extend');
-const Page = require('nf-core/ui/page');
+const Page = require('sf-core/ui/page');
+const Label = require('sf-core/ui/label');
+const TextAlignment = require('sf-core/ui/textalignment');
+const Color = require('sf-core/ui/color');
+const FlexLayout = require('sf-core/ui/flexlayout');
+const Font = require('sf-core/ui/font');
+const ImageView = require('sf-core/ui/imageview');
+const Image = require('sf-core/ui/image');
+const ImageFillType = require('sf-core/ui/imagefilltype');
+const Button = require('sf-core/ui/button');
 
-const Label = require('nf-core/ui/label');
-const TextAlignment = require('nf-core/ui/textalignment');
-const Color = require('nf-core/ui/color');
-const FlexLayout = require('nf-core/ui/flexlayout');
-const Font = require('nf-core/ui/font');
-const ImageView = require('nf-core/ui/imageview');
-const Image = require('nf-core/ui/image');
-const ImageFillType = require('nf-core/ui/imagefilltype');
-const Button = require('nf-core/ui/button');
 
 
 const Page1_ = extend(Page)(
@@ -25,7 +25,7 @@ const Page1_ = extend(Page)(
 		_super(this, {
 			onLoad: onLoad.bind(this)
 		});
-		
+
 		var lbl = new Label({
 			height: 90.45000000000002,
 			visible: true,
@@ -40,8 +40,9 @@ const Page1_ = extend(Page)(
 			marginLeft: 20,
 			marginRight: 20
 		});
-		lbl.font = Font.create("Arial", 16, Font.NORMAL);
-	
+		lbl.font = Font.create("Arial", 16, Font.NORMAL); 
+		this.layout.addChild(lbl);
+		
 		var img = new ImageView({
 			height: 60.3,
 			image: Image.createFromFile("images://smartface.png"),
@@ -55,9 +56,9 @@ const Page1_ = extend(Page)(
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			marginLeft: 20,
 			marginRight: 20
-		});
+		}); 
+		this.layout.addChild(img);
 		
-	
 		var flexlayout = new FlexLayout({
 			height: 130,
 			visible: true,
@@ -74,9 +75,9 @@ const Page1_ = extend(Page)(
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			marginLeft: 20,
 			marginRight: 20
-		});
+		}); 
+		this.layout.addChild(flexlayout);
 		
-	
 		var btn = new Button({
 			height: 60,
 			text: "Click me!",
@@ -90,8 +91,9 @@ const Page1_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
 		});
-		btn.font = Font.create("Arial", 16, Font.NORMAL);
-	
+		btn.font = Font.create("Arial", 16, Font.NORMAL); 
+		flexlayout.addChild(btn);
+		
 		var btnNext = new Button({
 			height: 60,
 			text: "Next Page",
@@ -106,70 +108,37 @@ const Page1_ = extend(Page)(
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			marginTop: 10
 		});
-		btnNext.font = Font.create("Arial", 16, Font.NORMAL);
-	
-		var children = {
+		btnNext.font = Font.create("Arial", 16, Font.NORMAL); 
+		flexlayout.addChild(btnNext);
+		
+		
+		//assign the children to page 
+		this.children = Object.assign({}, {
 			img: img,
 			lbl: lbl,
 			flexlayout: flexlayout
-		};
+		});
 		
-		var orderedChildrenOfPage = [
-			"img",
-			"lbl",
-			"flexlayout"
-		];
-		
-		this.mapChildren = mapChildren.bind(this, orderedChildrenOfPage, children);
-		
-		var childrenOfflexlayout = {
+		//assign the children of flexlayout
+		flexlayout.children =  Object.assign({}, {
 			btn: btn,
 			btnNext: btnNext
-		};
-		
-		var orderedChildrenOfflexlayout = [
-			"btn",
-			"btnNext"
-		];
-		
-		flexlayout.mapChildren = mapChildren.bind(flexlayout, orderedChildrenOfflexlayout, childrenOfflexlayout);
-		
+		});
+
 });
 
-const mapChildren = function(ordersOfchildren, children, callback){
-	callback = callback.bind(this);
-	ordersOfchildren.map(function(child){
-		callback(children[child], child);
-	});
-};
-
 function onLoad() { 
-    this.headerBar.title = "page1";
-    this.headerBar.visible = true;
-    this.statusBar.visible = true;
-    this.layout.backgroundColor = Color.create("#EEEEEE");
-    this.layout.flexDirection = FlexLayout.FlexDirection.COLUMN;
-    this.layout.alignItems = FlexLayout.AlignItems.CENTER;
-    this.layout.direction = FlexLayout.Direction.INHERIT;
-    this.layout.flexWrap = FlexLayout.FlexWrap.NOWRAP;
-    this.layout.justifyContent = FlexLayout.JustifyContent.SPACE_AROUND;
-    //add components to page.
-    this.mapChildren(function(component){
-        if(component.mapChildren){
-            addChild(component);
-        }
-        this.layout.addChild(component);
-    });
-}
 
-//add child components to parent component.
-function addChild(component){
-    component.mapChildren(function(child){
-        if(child.mapChildren){
-            addChild(child);
-        }
-        this.addChild(child);
-    });
-}
+  this.headerBar.title = "page1";
+  this.headerBar.visible = true;
 
+  this.statusBar.visible = true;
+  this.layout.backgroundColor = Color.create("#EEEEEE");
+  this.layout.flexDirection = FlexLayout.FlexDirection.COLUMN;
+  this.layout.alignItems = FlexLayout.AlignItems.CENTER;
+  this.layout.direction = FlexLayout.Direction.INHERIT;
+  this.layout.flexWrap = FlexLayout.FlexWrap.NOWRAP;
+  this.layout.justifyContent = FlexLayout.JustifyContent.SPACE_AROUND;
+
+}
 module && (module.exports = Page1_);

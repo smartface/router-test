@@ -1,7 +1,7 @@
 /* globals lang */
 require("i18n/i18n.js"); //generates global lang object
-const Application = require("nf-core/application");
-const Router = require("nf-core/ui/router");
+const Application = require("sf-core/application");
+const Router = require("sf-core/ui/router");
 
 // Set uncaught exception handler, all exceptions that are not caught will
 // trigger onUnhandledError callback.

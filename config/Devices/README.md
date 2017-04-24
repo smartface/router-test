@@ -1,1 +1,0 @@
-Device configuration files defined by user will be placed into this folder.
