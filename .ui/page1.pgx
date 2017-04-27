@@ -7,6 +7,7 @@
 				"width": 375,
 				"height": 603,
 				"isRemovable": true,
+				"orientation": "PORTRAIT",
 				"style": {
 					"backgroundColor": "#EEEEEE"
 				},
