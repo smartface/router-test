@@ -25,14 +25,18 @@
 					"font": {}
 				},
 				"isRemovable": true,
-				"layout": {},
+				"layout": {
+					"width": 93.75,
+					"height": 150.75
+				},
 				"flex": {
 					"alignItems": 2,
 					"justifyContent": 4,
 					"flexDirection": 0,
 					"flexWrap": 0,
 					"direction": 0
-				}
+				},
+				"orientation": "PORTRAIT"
 			}
 		},
 		{
@@ -191,7 +195,8 @@
 					"marginRight": 10
 				},
 				"visibility": true,
-				"image": "smartface.png"
+				"image": "smartface.png",
+				"imageFillType": "ASPECTFIT"
 			}
 		}
 	]
