@@ -3,11 +3,8 @@
 		{
 			"type": "Page",
 			"props": {
-				"name": "page2",
-				"width": 375,
-				"height": 603,
-				"isRemovable": true,
-				"orientation": "PORTRAIT",
+				"width": 187.5,
+				"height": 301.5,
 				"children": [
 					"statusBar",
 					"headerBar",
@@ -15,9 +12,7 @@
 					"lbl",
 					"btn"
 				],
-				"style": {
-					"backgroundColor": "rgba( 197, 210, 28, 1 )"
-				},
+				"name": "page2",
 				"flexProps": {
 					"alignItems": "CENTER",
 					"justifyContent": "SPACE_AROUND",
@@ -25,6 +20,12 @@
 					"flexWrap": "NOWRAP",
 					"direction": "INHERIT"
 				},
+				"style": {
+					"backgroundColor": "rgba( 197, 210, 28, 1 )",
+					"font": {}
+				},
+				"isRemovable": true,
+				"layout": {},
 				"flex": {
 					"alignItems": 2,
 					"justifyContent": 4,
@@ -32,48 +33,63 @@
 					"flexWrap": 0,
 					"direction": 0
 				}
-			},
-			"parent": null
+			}
 		},
 		{
 			"type": "StatusBar",
 			"props": {
+				"height": 20,
 				"name": "statusBar",
 				"parent": "page2",
+				"flexProps": {},
+				"style": {
+					"font": {}
+				},
 				"isRemovable": false,
+				"layout": {
+					"height": 10
+				},
+				"flex": {},
 				"visibility": true
 			}
 		},
 		{
 			"type": "HeaderBar",
 			"props": {
+				"height": 44,
+				"title": "page2",
+				"titleColor": "rgba( 0, 0, 0, 1 )",
 				"name": "headerBar",
 				"parent": "page2",
-				"title": "page2",
+				"flexProps": {},
+				"style": {
+					"font": {}
+				},
 				"isRemovable": false,
+				"layout": {
+					"height": 22
+				},
+				"flex": {},
 				"visibility": true
 			}
 		},
 		{
+			"type": "Button",
+			"id": "c5abb100",
 			"props": {
-				"name": "btn",
-				"isReady": true,
-				"minH": 15,
-				"key": "c5abb100",
-				"i": "c5abb100",
-				"parent": "page2",
-				"height": 60,
 				"left": 50.25,
 				"top": 485.43634033203125,
-				"dragging": true,
-				"text": "Back",
-				"fw": 131.25,
-				"fh": 30.149999618530273,
-				"fx": 25.125,
-				"fy": 242.71817016601562,
 				"right": 25.125,
 				"bottom": 242.71817016601562,
-				"visibility": true,
+				"height": 60,
+				"name": "btn",
+				"parent": "page2",
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"marginLeft": 20,
+					"marginRight": 20,
+					"alignSelf": "STRETCH"
+				},
 				"style": {
 					"backgroundColor": "rgba( 0, 161, 241, 1 )",
 					"font": {
@@ -83,44 +99,38 @@
 					},
 					"opacity": 1
 				},
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"marginLeft": 20,
-					"marginRight": 20,
-					"alignSelf": "STRETCH"
+				"layout": {
+					"left": 25.125,
+					"top": 242.71817016601562,
+					"height": 30
 				},
 				"flex": {
 					"positionType": 0,
 					"marginLeft": 10,
 					"marginRight": 10,
 					"alignSelf": 4
-				}
-			},
-			"id": "c5abb100",
-			"type": "Button"
+				},
+				"visibility": true,
+				"text": "Back"
+			}
 		},
 		{
+			"type": "Label",
+			"id": "980522a9",
 			"props": {
-				"name": "lbl",
-				"isReady": true,
-				"minH": 15,
-				"key": "980522a9",
-				"i": "980522a9",
-				"parent": "page2",
-				"height": 90.45000000000002,
 				"left": 54.25,
 				"top": 271.3500061035156,
-				"dragging": true,
-				"multipleLine": true,
-				"text": "This is second page",
-				"fw": 131.25,
-				"fh": 45.224998474121094,
-				"fx": 28.125,
-				"fy": 56.53125,
 				"right": 0,
 				"bottom": 0,
-				"visibility": true,
-				"multiline": false,
+				"height": 90.45000000000002,
+				"name": "lbl",
+				"parent": "page2",
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"marginLeft": 20,
+					"marginRight": 20
+				},
 				"style": {
 					"textAlign": "MIDCENTER",
 					"opacity": 1,
@@ -133,43 +143,32 @@
 					},
 					"backgroundColor": "rgba( 0, 0, 0, 0 )"
 				},
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "STRETCH",
-					"marginLeft": 20,
-					"marginRight": 20
+				"layout": {
+					"left": 27.125,
+					"top": 135.6750030517578,
+					"height": 45.22500000000001
 				},
 				"flex": {
 					"positionType": 0,
 					"alignSelf": 4,
 					"marginLeft": 10,
 					"marginRight": 10
-				}
-			},
-			"id": "980522a9",
-			"type": "Label"
+				},
+				"visibility": true,
+				"text": "This is second page"
+			}
 		},
 		{
+			"type": "ImageView",
+			"id": "845d2004",
 			"props": {
-				"name": "img",
-				"isReady": true,
-				"minH": 15,
-				"key": "845d2004",
-				"i": "845d2004",
-				"parent": "page2",
-				"height": 60.3,
 				"left": 60.25,
 				"top": 124.5999984741211,
-				"image": "smartface.png",
-				"imageFillType": "ASPECTFIT",
-				"fw": 131.25,
-				"fh": 30.149999618530273,
-				"fx": 28.125,
-				"fy": 214.81875610351562,
 				"right": 0,
 				"bottom": 0,
-				"dragging": true,
-				"visibility": true,
+				"height": 60.3,
+				"name": "img",
+				"parent": "page2",
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -177,17 +176,23 @@
 					"marginRight": 20
 				},
 				"style": {
-					"opacity": 1
+					"opacity": 1,
+					"font": {}
+				},
+				"layout": {
+					"left": 30.125,
+					"top": 62.29999923706055,
+					"height": 30.15
 				},
 				"flex": {
 					"positionType": 0,
 					"alignSelf": 4,
 					"marginLeft": 10,
 					"marginRight": 10
-				}
-			},
-			"id": "845d2004",
-			"type": "ImageView"
+				},
+				"visibility": true,
+				"image": "smartface.png"
+			}
 		}
 	]
 }
