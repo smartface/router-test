@@ -1,0 +1,51 @@
+{
+  ".slider": {
+    "touchEnabled": true,
+    "maxTrackColor": "#00FF00",
+    "minTrackColor": "#A9A9A9",
+    "stepSize": 1,
+    "thumbColor": "#D3D3D3",
+    "value": 50,
+    "maxValue": 100,
+    "minValue": 0,
+    "isResizable": false,
+    "width": 300,
+    "visibility": true,
+    "style": {
+      "backgroundColor": "#FFFFFF",
+      "opacity": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "font": {}
+    },
+    "flexProps": {
+      "alignSelf": "AUTO",
+      "positionType": "RELATIVE"
+    },
+    "minHeight": 23,
+    "&-small": {
+      "width": 100
+    },
+    "&-medium": {
+      "width": 250
+    },
+    "&-large": {
+      "width": 350
+    },
+    "&-warning": {
+      "style": {
+        "backgroundColor": "#9F6000"
+      }
+    },
+    "&-error": {
+      "style": {
+        "backgroundColor": "#D8000C"
+      }
+    },
+    "&-success": {
+      "style": {
+        "backgroundColor": "#4F8A10"
+      }
+    }
+  }
+}
