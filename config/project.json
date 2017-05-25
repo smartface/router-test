@@ -19,8 +19,7 @@
 			"upsideDown": false,
 			"landScapeLeft": false,
 			"landScapeRight": false
-		},
-		"theme": "Defaults"
+		}
 	},
 	"api": {
 		"facebook": {
