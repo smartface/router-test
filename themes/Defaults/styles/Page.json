@@ -1,0 +1,17 @@
+{
+  ".page": {
+    "flexProps": {
+      "alignContent": "STRETCH",
+      "alignItems": "STRETCH",
+      "direction": "INHERIT",
+      "flexDirection": "COLUMN",
+      "flexWrap": "NOWRAP",
+      "justifyContent": "FLEX_START"
+    },
+    "style": {
+      "backgroundColor": "#EEEEEE",
+      "font": {}
+    },
+    "orientation": "PORTRAIT"
+  }
+}

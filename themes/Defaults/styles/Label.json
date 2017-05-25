@@ -1,0 +1,52 @@
+{
+  ".label": {
+    "width": 250,
+    "height": 70,
+    "touchEnabled": true,
+    "text": "Label",
+    "visibility": true,
+    "multiline": false,
+    "style": {
+      "backgroundColor": "#FFFFFF",
+      "opacity": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "color": "#000000",
+      "textAlignment": "MIDLEFT",
+      "font": {
+        "size": 16,
+        "bold": false,
+        "color": "#000000",
+        "italic": false
+      }
+    },
+    "flexProps": {
+      "alignSelf": "AUTO",
+      "positionType": "RELATIVE"
+    },
+    "&-small": {
+      "width": 100
+    },
+    "&-medium": {
+      "width": 250
+    },
+    "&-large": {
+      "width": 350
+    },
+    "&-warning": {
+      "style": {
+        "backgroundColor": "#9F6000"
+      }
+    },
+    "&-error": {
+      "style": {
+        "backgroundColor": "#D8000C"
+      }
+    },
+    "&-success": {
+      "style": {
+        "backgroundColor": "#4F8A10"
+      }
+    }
+  }
+}

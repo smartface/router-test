@@ -1,0 +1,50 @@
+{
+  ".activityIndicator": {
+    "touchEnabled": true,
+    "width": 42,
+    "height": 42,
+    "color": "#ADADAD",
+    "visibility": true,
+    "style": {
+      "backgroundColor": "#FFFFFF",
+      "opacity": 1,
+      "borderColor": "rgba(0,0,0,1)",
+      "borderWidth": 0,
+      "font": {}
+    },
+    "flexProps": {
+      "positionType": "RELATIVE",
+      "alignSelf": "AUTO"
+    },
+    "input": {
+      "height": 21,
+      "width": 21
+    },
+    "minHeight": 21,
+    "minWidth": 21,
+    "&-small": {
+      "width": 100
+    },
+    "&-medium": {
+      "width": 250
+    },
+    "&-large": {
+      "width": 350
+    },
+    "&-warning": {
+      "style": {
+        "backgroundColor": "#9F6000"
+      }
+    },
+    "&-error": {
+      "style": {
+        "backgroundColor": "#D8000C"
+      }
+    },
+    "&-success": {
+      "style": {
+        "backgroundColor": "#4F8A10"
+      }
+    }
+  }
+}
