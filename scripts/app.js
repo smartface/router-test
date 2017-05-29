@@ -15,8 +15,8 @@ Application.onUnhandledError = function(e) {
     });
 };
 
-stylerBuilder.registerThemes(settings.config.theme || "Defaults");
-stylerBuilder.setActiveTheme(settings.config.theme);
+stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
+stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
 
 // Define routes and go to initial page of application
 Router.add("page1", require("./pages/page1"));
