@@ -2,21 +2,19 @@
 	"components": [
 		{
 			"type": "Page",
-			"id": "eedb5f9d",
+			"id": "d8b08289",
 			"themeProps": {},
 			"userProps": {
 				"width": 187.5,
 				"height": 301.5,
 				"isRemovable": true,
 				"orientation": "PORTRAIT",
-				"theme": "Defaults",
 				"flexProps": {
 					"alignItems": "CENTER",
 					"justifyContent": "SPACE_AROUND",
 					"flexDirection": "COLUMN",
 					"flexWrap": "NOWRAP",
-					"direction": "INHERIT",
-					"alignContent": null
+					"direction": "INHERIT"
 				},
 				"style": {
 					"backgroundColor": "rgba( 197, 210, 28, 1 )"
@@ -52,17 +50,12 @@
 					"flexDirection": "COLUMN",
 					"flexWrap": "NOWRAP",
 					"direction": "INHERIT",
-					"alignContent": null
+					"alignContent": "STRETCH"
 				},
 				"style": {
-					"backgroundColor": "rgba( 197, 210, 28, 1 )",
-					"font": {}
+					"backgroundColor": "rgba( 197, 210, 28, 1 )"
 				},
 				"isRemovable": true,
-				"layout": {
-					"width": 93.75,
-					"height": 150.75
-				},
 				"flex": {
 					"alignItems": 2,
 					"justifyContent": 4,
@@ -71,18 +64,17 @@
 					"direction": 0
 				},
 				"orientation": "PORTRAIT",
-				"theme": "Defaults"
+				"font": {}
 			}
 		},
 		{
 			"type": "StatusBar",
-			"id": "5929d4e8",
+			"id": "282763d4",
 			"themeProps": {},
 			"userProps": {
 				"height": 20,
 				"isRemovable": false,
 				"visibility": true,
-				"color": null,
 				"layout": {
 					"height": 10
 				}
@@ -97,17 +89,15 @@
 					"font": {}
 				},
 				"isRemovable": false,
-				"layout": {
-					"height": 10
-				},
 				"flex": {},
 				"visibility": true,
-				"color": null
+				"font": {},
+				"color": "#00A1F1"
 			}
 		},
 		{
 			"type": "HeaderBar",
-			"id": "52fb2438",
+			"id": "89ed3f1a",
 			"themeProps": {},
 			"userProps": {
 				"height": 44,
@@ -117,9 +107,6 @@
 				"visibility": true,
 				"layout": {
 					"height": 22
-				},
-				"style": {
-					"backgroundColor": null
 				}
 			},
 			"className": ".headerBar",
@@ -131,15 +118,12 @@
 				"parent": "page2",
 				"flexProps": {},
 				"style": {
-					"font": {},
-					"backgroundColor": null
+					"backgroundColor": "#FFFFFF"
 				},
 				"isRemovable": false,
-				"layout": {
-					"height": 22
-				},
 				"flex": {},
-				"visibility": true
+				"visibility": true,
+				"font": {}
 			}
 		},
 		{
@@ -155,7 +139,6 @@
 				"visibility": true,
 				"text": "Back",
 				"width": null,
-				"touchEnabled": null,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"marginLeft": 20,
@@ -167,15 +150,10 @@
 					"font": {
 						"color": "rgba( 255, 255, 255, 1 )",
 						"size": 16,
-						"family": "Arial",
-						"bold": null,
-						"italic": null
+						"family": "Arial"
 					},
 					"opacity": 1,
-					"borderColor": null,
-					"borderWidth": null,
-					"color": null,
-					"textAlignment": null
+					"borderWidth": null
 				},
 				"layout": {
 					"marginLeft": 10,
@@ -197,7 +175,6 @@
 				"top": 485.43634033203125,
 				"right": 25.125,
 				"bottom": 242.71817016601562,
-				"width": null,
 				"height": 60,
 				"name": "btn",
 				"parent": "page2",
@@ -209,25 +186,18 @@
 				},
 				"style": {
 					"backgroundColor": "rgba( 0, 161, 241, 1 )",
-					"font": {
-						"color": "rgba( 255, 255, 255, 1 )",
-						"size": 16,
-						"family": "Arial",
-						"bold": null,
-						"italic": null
-					},
 					"opacity": 1,
-					"borderColor": null,
+					"borderColor": "rgba(0,0,0,1)",
 					"borderWidth": null,
-					"color": null,
-					"textAlignment": null
-				},
-				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"left": 25.125,
-					"top": 242.71817016601562,
-					"height": 30
+					"color": "#FFFFFF",
+					"textAlignment": "MIDCENTER",
+					"font": {
+						"size": 16,
+						"bold": false,
+						"color": "rgba( 255, 255, 255, 1 )",
+						"italic": false,
+						"family": "Arial"
+					}
 				},
 				"flex": {
 					"positionType": 0,
@@ -236,7 +206,10 @@
 					"alignSelf": 4
 				},
 				"visibility": true,
-				"text": "Back"
+				"text": "Back",
+				"font": {},
+				"width": null,
+				"touchEnabled": true
 			}
 		},
 		{
@@ -252,8 +225,6 @@
 				"visibility": true,
 				"text": "This is second page",
 				"width": null,
-				"touchEnabled": null,
-				"multiline": null,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -268,14 +239,9 @@
 					"borderWidth": 0,
 					"font": {
 						"family": "Arial",
-						"size": 16,
-						"bold": null,
-						"color": null,
-						"italic": null
+						"size": 16
 					},
-					"backgroundColor": "rgba( 0, 0, 0, 0 )",
-					"color": null,
-					"textAlignment": null
+					"backgroundColor": "rgba( 0, 0, 0, 0 )"
 				},
 				"layout": {
 					"marginLeft": 10,
@@ -297,7 +263,6 @@
 				"top": 271.3500061035156,
 				"right": 0,
 				"bottom": 0,
-				"width": null,
 				"height": 90.45000000000002,
 				"name": "lbl",
 				"parent": "page2",
@@ -308,28 +273,21 @@
 					"marginRight": 20
 				},
 				"style": {
-					"textAlign": "MIDCENTER",
+					"backgroundColor": "rgba( 0, 0, 0, 0 )",
 					"opacity": 1,
 					"borderColor": "rgba( 255, 255, 255, 1 )",
-					"borderRadius": 0,
 					"borderWidth": 0,
+					"color": "#000000",
+					"textAlignment": "MIDLEFT",
 					"font": {
-						"family": "Arial",
 						"size": 16,
-						"bold": null,
-						"color": null,
-						"italic": null
+						"bold": false,
+						"color": "#000000",
+						"italic": false,
+						"family": "Arial"
 					},
-					"backgroundColor": "rgba( 0, 0, 0, 0 )",
-					"color": null,
-					"textAlignment": null
-				},
-				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"left": 27.125,
-					"top": 135.6750030517578,
-					"height": 45.22500000000001
+					"textAlign": "MIDCENTER",
+					"borderRadius": 0
 				},
 				"flex": {
 					"positionType": 0,
@@ -339,7 +297,10 @@
 				},
 				"visibility": true,
 				"text": "This is second page",
-				"multiline": null
+				"font": {},
+				"width": null,
+				"touchEnabled": true,
+				"multiline": false
 			}
 		},
 		{
@@ -355,9 +316,9 @@
 				"visibility": true,
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
-				"imageURL": "https://ozcan-ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.5339459940854387",
+				"imageURL": "https://ozcan-ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.0806103926314985",
 				"width": null,
-				"touchEnabled": null,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -366,8 +327,6 @@
 				},
 				"style": {
 					"opacity": 1,
-					"backgroundColor": null,
-					"borderColor": null,
 					"borderWidth": null
 				},
 				"layout": {
@@ -390,7 +349,6 @@
 				"top": 124.5999984741211,
 				"right": 0,
 				"bottom": 0,
-				"width": null,
 				"height": 60.3,
 				"name": "img",
 				"parent": "page2",
@@ -401,18 +359,10 @@
 					"marginRight": 20
 				},
 				"style": {
+					"backgroundColor": "#FFFFFF",
 					"opacity": 1,
-					"font": {},
-					"backgroundColor": null,
-					"borderColor": null,
+					"borderColor": "rgba(0,0,0,1)",
 					"borderWidth": null
-				},
-				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"left": 30.125,
-					"top": 62.29999923706055,
-					"height": 30.15
 				},
 				"flex": {
 					"positionType": 0,
@@ -422,7 +372,12 @@
 				},
 				"visibility": true,
 				"image": "smartface.png",
-				"imageFillType": "ASPECTFIT"
+				"imageFillType": "ASPECTFIT",
+				"font": {},
+				"imageURL": "https://ozcan-ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.0806103926314985",
+				"width": null,
+				"touchEnabled": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )"
 			}
 		}
 	]
