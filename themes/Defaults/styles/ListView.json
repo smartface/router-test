@@ -6,7 +6,7 @@
     "multiline": false,
     "rowHeight": 60,
     "itemCount": 3,
-    "visibility": true,
+    "visible": true,
     "backgroundColor": "#FFFFFF",
     "alpha": 1,
     "borderColor": "rgba(0,0,0,1)",
