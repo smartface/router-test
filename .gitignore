@@ -10,4 +10,4 @@ plugin/iOS/*
 !output/iOS/README.md
 !plugin/Android/README.md
 !plugin/iOS/README.md
-!scripts/node_modules
+scripts/node_modules
