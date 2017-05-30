@@ -1,10 +1,8 @@
 {
   ".statusBar": {
     "color": "#00A1F1",
-    "visibility": true,
-    "style": {
-      "font": {}
-    },
+    "visible": true,
+    "font": {},
     "flexProps": {}
   }
 }

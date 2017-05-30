@@ -4,21 +4,19 @@
     "height": 70,
     "touchEnabled": true,
     "text": "Label",
-    "visibility": true,
+    "visible": true,
     "multiline": false,
-    "style": {
-      "backgroundColor": "#FFFFFF",
-      "opacity": 1,
-      "borderColor": "rgba(0,0,0,1)",
-      "borderWidth": 0,
-      "color": "#000000",
-      "textAlignment": "MIDLEFT",
-      "font": {
-        "size": 16,
-        "bold": false,
-        "color": "#000000",
-        "italic": false
-      }
+    "backgroundColor": "#FFFFFF",
+    "alpha": 1,
+    "borderColor": "rgba(0,0,0,1)",
+    "borderWidth": 0,
+    "color": "#000000",
+    "textAlignment": "MIDLEFT",
+    "font": {
+      "fontSize": 16,
+      "fontBold": false,
+      "fontColor": "#000000",
+      "fontItalic": false
     },
     "flexProps": {
       "alignSelf": "AUTO",
@@ -34,19 +32,13 @@
       "width": 350
     },
     "&-warning": {
-      "style": {
-        "backgroundColor": "#9F6000"
-      }
+      "backgroundColor": "#9F6000"
     },
     "&-error": {
-      "style": {
-        "backgroundColor": "#D8000C"
-      }
+      "backgroundColor": "#D8000C"
     },
     "&-success": {
-      "style": {
-        "backgroundColor": "#4F8A10"
-      }
+      "backgroundColor": "#4F8A10"
     }
   }
 }

@@ -4,20 +4,18 @@
     "width": 200,
     "touchEnabled": true,
     "text": "TextBox",
-    "visibility": true,
-    "style": {
-      "backgroundColor": "#FFFFFF",
-      "opacity": 1,
-      "borderColor": "rgba(0,0,0,1)",
-      "borderWidth": 0,
-      "color": "rgba(0,0,0,1)",
-      "textAlignment": "MIDLEFT",
-      "font": {
-        "size": 16,
-        "bold": false,
-        "color": "rgba(0,0,0,1)",
-        "italic": false
-      }
+    "visible": true,
+    "backgroundColor": "#FFFFFF",
+    "alpha": 1,
+    "borderColor": "rgba(0,0,0,1)",
+    "borderWidth": 0,
+    "color": "rgba(0,0,0,1)",
+    "textAlignment": "MIDLEFT",
+    "font": {
+      "fontSize": 16,
+      "fontBold": false,
+      "fontColor": "rgba(0,0,0,1)",
+      "fontItalic": false
     },
     "flexProps": {
       "alignSelf": "AUTO",
@@ -33,19 +31,13 @@
       "width": 350
     },
     "&-warning": {
-      "style": {
-        "backgroundColor": "#9F6000"
-      }
+      "backgroundColor": "#9F6000"
     },
     "&-error": {
-      "style": {
-        "backgroundColor": "#D8000C"
-      }
+      "backgroundColor": "#D8000C"
     },
     "&-success": {
-      "style": {
-        "backgroundColor": "#4F8A10"
-      }
+      "backgroundColor": "#4F8A10"
     }
   }
 }

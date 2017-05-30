@@ -2,15 +2,13 @@
   ".videoView": {
     "height": 200,
     "width": 200,
+    "visible": true,
+    "backgroundColor": "#FFFFFF",
+    "alpha": 1,
     "touchEnabled": true,
-    "visibility": true,
-    "style": {
-      "backgroundColor": "#FFFFFF",
-      "opacity": 1,
-      "borderColor": "rgba(0,0,0,1)",
-      "borderWidth": 0,
-      "font": {}
-    },
+    "borderColor": "rgba(0,0,0,1)",
+    "borderWidth": 0,
+    "font": {},
     "flexProps": {
       "alignSelf": "AUTO",
       "positionType": "RELATIVE"
@@ -25,19 +23,13 @@
       "width": 350
     },
     "&-warning": {
-      "style": {
-        "backgroundColor": "#9F6000"
-      }
+      "backgroundColor": "#9F6000"
     },
     "&-error": {
-      "style": {
-        "backgroundColor": "#D8000C"
-      }
+      "backgroundColor": "#D8000C"
     },
     "&-success": {
-      "style": {
-        "backgroundColor": "#4F8A10"
-      }
+      "backgroundColor": "#4F8A10"
     }
   }
 }

@@ -7,13 +7,11 @@
     "rowHeight": 60,
     "itemCount": 3,
     "visibility": true,
-    "style": {
-      "backgroundColor": "#FFFFFF",
-      "opacity": 1,
-      "borderColor": "rgba(0,0,0,1)",
-      "borderWidth": 0,
-      "font": {}
-    },
+    "backgroundColor": "#FFFFFF",
+    "alpha": 1,
+    "borderColor": "rgba(0,0,0,1)",
+    "borderWidth": 0,
+    "font": {},
     "flexProps": {
       "alignSelf": "AUTO",
       "positionType": "RELATIVE"
@@ -28,19 +26,13 @@
       "width": 350
     },
     "&-warning": {
-      "style": {
         "backgroundColor": "#9F6000"
-      }
     },
     "&-error": {
-      "style": {
         "backgroundColor": "#D8000C"
-      }
     },
     "&-success": {
-      "style": {
         "backgroundColor": "#4F8A10"
-      }
     }
   }
 }
