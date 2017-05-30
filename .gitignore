@@ -1,5 +1,7 @@
 .c9/*
 .smf/*
+.npm
+.tmp
 output/Android/*
 output/iOS/*
 output/.tmp
