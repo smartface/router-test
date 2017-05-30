@@ -13,3 +13,4 @@ plugin/iOS/*
 !plugin/Android/README.md
 !plugin/iOS/README.md
 scripts/node_modules
+scripts/ui
