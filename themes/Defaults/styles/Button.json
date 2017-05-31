@@ -9,13 +9,12 @@
     "alpha": 1,
     "borderColor": "rgba(0,0,0,1)",
     "borderWidth": 0,
-    "color": "#FFFFFF",
+    "textColor": "#FFFFFF",
     "textAlignment": "MIDCENTER",
     "font": {
-      "fontSize": 16,
-      "fontBold": false,
-      "fontColor": "#FFFFFF",
-      "fontItalic": false
+      "size": 16,
+      "bold": false,
+      "italic": false
     },
     "flexProps": {
       "positionType": "RELATIVE",

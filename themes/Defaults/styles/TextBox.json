@@ -9,13 +9,12 @@
     "alpha": 1,
     "borderColor": "rgba(0,0,0,1)",
     "borderWidth": 0,
-    "color": "rgba(0,0,0,1)",
+    "textColor": "rgba(0,0,0,1)",
     "textAlignment": "MIDLEFT",
     "font": {
-      "fontSize": 16,
-      "fontBold": false,
-      "fontColor": "rgba(0,0,0,1)",
-      "fontItalic": false
+      "size": 16,
+      "bold": false,
+      "italic": false
     },
     "flexProps": {
       "alignSelf": "AUTO",

@@ -322,7 +322,7 @@
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
 				"font": {},
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.23030598481936848",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.8217943287899072",
 				"width": null,
 				"touchEnabled": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -446,6 +446,7 @@
 				"text": "Click me!",
 				"width": null,
 				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 253, 253, 253, 1 )",
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH"
@@ -516,7 +517,8 @@
 					"height": 30
 				},
 				"visible": true,
-				"textAlignment": "MIDCENTER"
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 253, 253, 253, 1 )"
 			}
 		},
 		{
@@ -533,6 +535,7 @@
 				"text": "Next Page",
 				"width": null,
 				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -609,7 +612,8 @@
 					"height": 30
 				},
 				"visible": true,
-				"textAlignment": "MIDCENTER"
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )"
 			}
 		}
 	]
