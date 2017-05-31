@@ -9,6 +9,7 @@
 				"height": 301.5,
 				"isRemovable": true,
 				"orientation": "PORTRAIT",
+				"backgroundColor": "rgba( 197, 210, 28, 1 )",
 				"flexProps": {
 					"alignItems": "CENTER",
 					"justifyContent": "SPACE_AROUND",
@@ -65,7 +66,11 @@
 				},
 				"orientation": "PORTRAIT",
 				"font": {},
-				"layout": {}
+				"layout": {
+					"width": 93.75,
+					"height": 150.75
+				},
+				"backgroundColor": "rgba( 197, 210, 28, 1 )"
 			}
 		},
 		{
@@ -245,6 +250,8 @@
 				"text": "This is second page",
 				"width": null,
 				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"backgroundColor": "rgba( 0, 0, 0, 0 )",
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -275,6 +282,10 @@
 					"alignSelf": 4,
 					"marginLeft": 10,
 					"marginRight": 10
+				},
+				"font": {
+					"size": 16,
+					"family": "Arial"
 				}
 			},
 			"className": ".label",
@@ -317,7 +328,10 @@
 				},
 				"visibility": true,
 				"text": "This is second page",
-				"font": {},
+				"font": {
+					"size": 16,
+					"family": "Arial"
+				},
 				"width": null,
 				"touchEnabled": true,
 				"multiline": false,
@@ -329,7 +343,9 @@
 					"height": 45.22500000000001
 				},
 				"visible": true,
-				"textAlignment": "MIDCENTER"
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"backgroundColor": "rgba( 0, 0, 0, 0 )"
 			}
 		},
 		{
@@ -403,7 +419,7 @@
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
 				"font": {},
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.035402199477317486",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.23030598481936848",
 				"width": null,
 				"touchEnabled": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",

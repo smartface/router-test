@@ -5,7 +5,7 @@
     "touchEnabled": true,
     "visible": true,
     "imageFillType": "NORMAL",
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "rgba(0,0,0,0)",
     "alpha": 1,
     "borderColor": "rgba(0,0,0,1)",
     "borderWidth": 0,

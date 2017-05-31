@@ -147,8 +147,11 @@
 				"height": 90.45000000000002,
 				"visibility": true,
 				"width": null,
-				"text": null,
+				"text": " ",
 				"textAlignment": "MIDCENTER",
+				"multiline": true,
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"backgroundColor": "rgba( 0, 0, 0, 0 )",
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -179,6 +182,10 @@
 					"alignSelf": 4,
 					"marginLeft": 10,
 					"marginRight": 10
+				},
+				"font": {
+					"size": 16,
+					"family": "Arial"
 				}
 			},
 			"className": ".label",
@@ -220,11 +227,14 @@
 					"marginRight": 10
 				},
 				"visibility": true,
-				"font": {},
+				"font": {
+					"size": 16,
+					"family": "Arial"
+				},
 				"width": null,
 				"touchEnabled": true,
-				"text": null,
-				"multiline": false,
+				"text": " ",
+				"multiline": true,
 				"layout": {
 					"marginLeft": 10,
 					"marginRight": 10,
@@ -233,7 +243,9 @@
 					"height": 45.22500000000001
 				},
 				"visible": true,
-				"textAlignment": "MIDCENTER"
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"backgroundColor": "rgba( 0, 0, 0, 0 )"
 			}
 		},
 		{
