@@ -10,15 +10,15 @@ const Page1 = extend(Page1Design)(
         _super(self);
         
         this.headerBar.leftItemEnabled = false;
-        this.children.flexlayout.children.btn.onPress = btn_onPress.bind(this);
-        this.children.flexlayout.children.btnNext.onPress = btnNext_onPress.bind(this);
+        this.children.button1.onPress = btn_onPress.bind(this);
+        // this.children.flexlayout.children.btnNext.onPress = btnNext_onPress.bind(this);
     });
 
-function btnNext_onPress() {
-    Router.go("page2", {
-        message: "Hello World!"
-    });
-}
+// function btnNext_onPress() {
+//     Router.go("page2", {
+//         message: "Hello World!"
+//     });
+// }
 
 var btnClickCount = 0;
 
@@ -50,7 +50,7 @@ function btn_onPress() {
 
     // Access lbl & btnNext of page1
     this.children.lbl.text = myLabelText;
-    this.children.flexlayout.children.btn.text = myButtonText;
+    this.children.button1.text = myButtonText;
 }
 
 // Adds appropriate suffix to given number

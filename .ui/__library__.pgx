@@ -1,0 +1,649 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "a6cb0492",
+			"userProps": {},
+			"version": "6.3.0-rc.6",
+			"props": {
+				"name": "__library__",
+				"children": [
+					"statusBar",
+					"headerBar",
+					"toolbarButtons",
+					"toolbar"
+				],
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
+				"isRemovable": false,
+				"orientation": "PORTRAIT",
+				"layout": {},
+				"backgroundColor": "#FFFFFF",
+				"flex": {},
+				"font": {},
+				"width": 187.5,
+				"height": 333.5
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "6df0da9c",
+			"userProps": {},
+			"props": {
+				"name": "statusBar",
+				"children": [],
+				"parent": "__library__",
+				"color": "#00A1F1",
+				"isRemovable": false,
+				"visible": false,
+				"layout": {
+					"height": 10
+				},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"height": 20
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "28b5e9ec",
+			"userProps": {},
+			"props": {
+				"name": "headerBar",
+				"children": [],
+				"parent": "__library__",
+				"title": "__library__",
+				"titleColor": "#000000",
+				"isRemovable": false,
+				"backgroundColor": "#FFFFFF",
+				"visible": false,
+				"layout": {
+					"height": 22
+				},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"height": 44
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "4459a0f3",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"left": 12,
+				"top": 390,
+				"width": 350,
+				"height": 76,
+				"flexProps": {
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexDirection": "ROW"
+				},
+				"flex": {
+					"alignItems": 2,
+					"justifyContent": 1,
+					"flexDirection": 2
+				}
+			},
+			"props": {
+				"name": "toolbarButtons",
+				"isReady": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "ABSOLUTE"
+				},
+				"height": 76,
+				"width": 350,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 2,
+					"justifyContent": 1,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 1
+				},
+				"parent": "__library__",
+				"children": [
+					"button1",
+					"button2",
+					"button3"
+				],
+				"layout": {
+					"left": 6,
+					"top": 195,
+					"width": 175,
+					"height": 38
+				},
+				"left": 12,
+				"top": 390
+			}
+		},
+		{
+			"type": "Button",
+			"id": "9a06f6e3",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"text": "Page1",
+				"right": null,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"props": {
+				"name": "button1",
+				"isReady": true,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO",
+					"flexGrow": 1
+				},
+				"width": null,
+				"height": 70,
+				"touchEnabled": true,
+				"text": "Page1",
+				"visible": true,
+				"backgroundColor": "#00A1F1",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 0
+				},
+				"parent": "toolbarButtons",
+				"children": [],
+				"layout": {
+					"height": 35
+				},
+				"right": null
+			}
+		},
+		{
+			"type": "Button",
+			"id": "9b53bd75",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"text": "Page2",
+				"left": null,
+				"right": null,
+				"marginLeft": 4,
+				"marginRight": 4,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"props": {
+				"name": "button2",
+				"isReady": true,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO",
+					"flexGrow": 1
+				},
+				"width": null,
+				"height": 70,
+				"touchEnabled": true,
+				"text": "Page2",
+				"visible": true,
+				"backgroundColor": "#00A1F1",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 0
+				},
+				"parent": "toolbarButtons",
+				"children": [],
+				"layout": {
+					"marginLeft": 2,
+					"marginRight": 2,
+					"height": 35
+				},
+				"left": null,
+				"right": null,
+				"marginLeft": 4,
+				"marginRight": 4
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "6de65bc7",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"left": 0,
+				"top": 597,
+				"width": 375,
+				"height": 70,
+				"right": 0,
+				"bottom": 0,
+				"alpha": 0,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"right": 0,
+					"bottom": 0
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"props": {
+				"name": "toolbar",
+				"isReady": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 0
+				},
+				"height": 70,
+				"width": 375,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 0,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 1
+				},
+				"parent": "__library__",
+				"children": [
+					"flexlayout1"
+				],
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"top": 298.5,
+					"width": 187.5,
+					"height": 35
+				},
+				"left": 0,
+				"top": 597,
+				"right": 0,
+				"bottom": 0
+			}
+		},
+		{
+			"type": "Button",
+			"id": "1320dc07",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"text": "Page3",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"props": {
+				"name": "button3",
+				"isReady": true,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO",
+					"flexGrow": 1
+				},
+				"width": null,
+				"height": 70,
+				"touchEnabled": true,
+				"text": "Page3",
+				"visible": true,
+				"backgroundColor": "#00A1F1",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 0
+				},
+				"parent": "toolbarButtons",
+				"children": [],
+				"layout": {
+					"height": 35
+				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "02b59645",
+			"source": {
+				"page": "__library__",
+				"id": "4459a0f3"
+			},
+			"themeProps": {},
+			"userProps": {
+				"name": "toolbarButtons",
+				"isReady": true,
+				"height": 70,
+				"width": 375,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"parent": "toolbar",
+				"left": 0,
+				"top": 0,
+				"right": 0,
+				"bottom": 0,
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "ABSOLUTE",
+					"flexGrow": 1,
+					"right": 0,
+					"bottom": 0
+				},
+				"flex": {
+					"alignSelf": 2,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 2,
+					"justifyContent": 1,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 1
+				},
+				"children": [
+					"button1",
+					"button1_1"
+				],
+				"layout": {
+					"left": 6,
+					"top": 195,
+					"width": 175,
+					"height": 38
+				}
+			},
+			"props": {
+				"name": "flexlayout1",
+				"isReady": true,
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "ABSOLUTE",
+					"flexGrow": 1,
+					"right": 0,
+					"bottom": 0
+				},
+				"height": 70,
+				"width": 375,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flex": {
+					"alignSelf": 2,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 2,
+					"justifyContent": 1,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 1
+				},
+				"parent": "toolbar",
+				"children": [
+					"button27",
+					"button28",
+					"button29"
+				],
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"top": 0,
+					"width": 187.5,
+					"height": 35
+				},
+				"left": 0,
+				"top": 0,
+				"right": 0,
+				"bottom": 0
+			}
+		},
+		{
+			"type": "Button",
+			"id": "19597b30",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"text": "Page1",
+				"right": null,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"props": {
+				"name": "button27",
+				"isReady": true,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO",
+					"flexGrow": 1
+				},
+				"width": null,
+				"height": 70,
+				"touchEnabled": true,
+				"text": "Page1",
+				"visible": true,
+				"backgroundColor": "#00A1F1",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 0
+				},
+				"parent": "flexlayout1",
+				"children": [],
+				"layout": {
+					"height": 35
+				},
+				"right": null
+			}
+		},
+		{
+			"type": "Button",
+			"id": "b28cd1b3",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"text": "Page2",
+				"left": null,
+				"right": null,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"props": {
+				"name": "button28",
+				"isReady": true,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO",
+					"flexGrow": 1
+				},
+				"width": null,
+				"height": 70,
+				"touchEnabled": true,
+				"text": "Page2",
+				"visible": true,
+				"backgroundColor": "#00A1F1",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 0
+				},
+				"parent": "flexlayout1",
+				"children": [],
+				"layout": {
+					"height": 35
+				},
+				"left": null,
+				"right": null
+			}
+		},
+		{
+			"type": "Button",
+			"id": "7e115f1f",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"text": "Page3",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"props": {
+				"name": "button29",
+				"isReady": true,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO",
+					"flexGrow": 1
+				},
+				"width": null,
+				"height": 70,
+				"touchEnabled": true,
+				"text": "Page3",
+				"visible": true,
+				"backgroundColor": "#00A1F1",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 0
+				},
+				"parent": "flexlayout1",
+				"children": [],
+				"layout": {
+					"height": 35
+				}
+			}
+		}
+	]
+}
