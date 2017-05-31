@@ -32,7 +32,7 @@
 				}
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.4",
+			"version": "6.3.0-rc.5",
 			"props": {
 				"width": 187.5,
 				"height": 301.5,
@@ -64,7 +64,8 @@
 					"justifyContent": 4
 				},
 				"orientation": "PORTRAIT",
-				"font": {}
+				"font": {},
+				"layout": {}
 			}
 		},
 		{
@@ -92,7 +93,11 @@
 				"flex": {},
 				"visibility": true,
 				"font": {},
-				"color": "#00A1F1"
+				"color": "#00A1F1",
+				"layout": {
+					"height": 10
+				},
+				"visible": true
 			}
 		},
 		{
@@ -123,7 +128,11 @@
 				"isRemovable": false,
 				"flex": {},
 				"visibility": true,
-				"font": {}
+				"font": {},
+				"layout": {
+					"height": 22
+				},
+				"visible": true
 			}
 		},
 		{
@@ -139,6 +148,7 @@
 				"visibility": true,
 				"width": null,
 				"text": null,
+				"textAlignment": "MIDCENTER",
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -214,7 +224,16 @@
 				"width": null,
 				"touchEnabled": true,
 				"text": null,
-				"multiline": false
+				"multiline": false,
+				"layout": {
+					"marginLeft": 10,
+					"marginRight": 10,
+					"left": 26.100000381469727,
+					"top": 138.6750030517578,
+					"height": 45.22500000000001
+				},
+				"visible": true,
+				"textAlignment": "MIDCENTER"
 			}
 		},
 		{
@@ -291,10 +310,18 @@
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
 				"font": {},
-				"imageURL": "https://ozcan-ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.0806103926314985",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.23030598481936848",
 				"width": null,
 				"touchEnabled": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"layout": {
+					"marginLeft": 10,
+					"marginRight": 10,
+					"left": 27.125,
+					"top": 58.29999923706055,
+					"height": 30.15
+				},
+				"visible": true
 			}
 		},
 		{
@@ -384,7 +411,13 @@
 				"visibility": true,
 				"font": {},
 				"width": null,
-				"touchEnabled": true
+				"touchEnabled": true,
+				"layout": {
+					"marginLeft": 10,
+					"marginRight": 10,
+					"height": 65
+				},
+				"visible": true
 			}
 		},
 		{
@@ -400,6 +433,7 @@
 				"visibility": true,
 				"text": "Click me!",
 				"width": null,
+				"textAlignment": "MIDCENTER",
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH"
@@ -463,7 +497,14 @@
 				"text": "Click me!",
 				"font": {},
 				"width": null,
-				"touchEnabled": true
+				"touchEnabled": true,
+				"layout": {
+					"left": 28.125,
+					"top": 211.05,
+					"height": 30
+				},
+				"visible": true,
+				"textAlignment": "MIDCENTER"
 			}
 		},
 		{
@@ -479,6 +520,7 @@
 				"visibility": true,
 				"text": "Next Page",
 				"width": null,
+				"textAlignment": "MIDCENTER",
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -547,7 +589,15 @@
 				"text": "Next Page",
 				"font": {},
 				"width": null,
-				"touchEnabled": true
+				"touchEnabled": true,
+				"layout": {
+					"marginTop": 5,
+					"left": 28.125,
+					"top": 243.7181715575621,
+					"height": 30
+				},
+				"visible": true,
+				"textAlignment": "MIDCENTER"
 			}
 		}
 	]

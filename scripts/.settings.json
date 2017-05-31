@@ -1,7 +1,10 @@
 {
 	"config": {
 		"theme": {
-			"currentTheme": "Defaults"
+			"currentTheme": "Defaults",
+			"themes": [
+				"Defaults"
+			]
 		}
 	}
 }
