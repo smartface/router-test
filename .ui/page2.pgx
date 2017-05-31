@@ -69,13 +69,13 @@
 			"type": "HeaderBar",
 			"id": "a5358469",
 			"userProps": {
-				"title": "newPage001"
+				"title": "page2"
 			},
 			"props": {
 				"name": "headerBar",
 				"children": [],
 				"parent": "page2",
-				"title": "newPage001",
+				"title": "page2",
 				"visible": true,
 				"layout": {
 					"height": 22
@@ -159,7 +159,7 @@
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
 				"font": {},
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.9538584441203113",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.3968675993146529",
 				"width": null,
 				"touchEnabled": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",

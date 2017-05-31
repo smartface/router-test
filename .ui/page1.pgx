@@ -68,13 +68,13 @@
 			"type": "HeaderBar",
 			"id": "3df87be2",
 			"userProps": {
-				"title": "newPage001"
+				"title": "page1"
 			},
 			"props": {
 				"name": "headerBar",
 				"children": [],
 				"parent": "page1",
-				"title": "newPage001",
+				"title": "page1",
 				"visible": true,
 				"layout": {
 					"height": 22
@@ -165,7 +165,7 @@
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
 				"font": {},
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.9538584441203113",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.3968675993146529",
 				"width": null,
 				"touchEnabled": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -347,7 +347,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"font": {},
-				"key": "cda767d5",
 				"flex": {
 					"alignSelf": 4,
 					"direction": 0,
@@ -410,7 +409,6 @@
 					"bold": false,
 					"italic": false
 				},
-				"key": "76f4a906",
 				"flex": {
 					"positionType": 0,
 					"alignSelf": 4
@@ -460,7 +458,6 @@
 					"bold": false,
 					"italic": false
 				},
-				"key": "44ea1ddd",
 				"flex": {
 					"positionType": 0,
 					"alignSelf": 4
