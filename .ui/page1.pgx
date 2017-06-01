@@ -13,7 +13,7 @@
 					"alignItems": 2
 				}
 			},
-			"version": "6.3.0-rc.6",
+			"version": "6.3.0-rc.7",
 			"props": {
 				"name": "page1",
 				"children": [
@@ -102,8 +102,8 @@
 			"userProps": {
 				"left": null,
 				"top": null,
-				"right": 0,
-				"bottom": 0,
+				"right": null,
+				"bottom": null,
 				"height": 60.3,
 				"visibility": true,
 				"image": "smartface.png",
@@ -146,8 +146,8 @@
 			"props": {
 				"left": null,
 				"top": null,
-				"right": 0,
-				"bottom": 0,
+				"right": null,
+				"bottom": null,
 				"height": 60.3,
 				"name": "img",
 				"parent": "page1",
@@ -176,14 +176,12 @@
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
 				"font": {},
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.5172412963137936",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6605419684991067",
 				"width": null,
 				"touchEnabled": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"layout": {
-					"right": 0,
-					"bottom": 0,
-					"marginBottom": 10,
+
 					"marginLeft": 10,
 					"marginRight": 10,
 					"height": 30.15

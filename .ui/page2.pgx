@@ -157,7 +157,7 @@
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
 				"font": {},
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.26986639831963943",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6605419684991067",
 				"width": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"layout": {
@@ -180,11 +180,11 @@
 			"id": "0b26476a",
 			"themeProps": {},
 			"userProps": {
-				"left": 140,
-				"top": 1920.10009765625,
-				"right": 0,
-				"bottom": 0,
-				"height": 90,
+				"left": null,
+				"top": null,
+				"right": null,
+				"bottom": null,
+				"height": 90.45000000000002,
 				"visibility": true,
 				"text": "This is second page",
 				"width": 213,
@@ -235,9 +235,9 @@
 			"props": {
 				"left": null,
 				"top": null,
-				"right": 0,
-				"bottom": 0,
-				"height": 90,
+				"right": null,
+				"bottom": null,
+				"height": 90.45000000000002,
 				"name": "lbl",
 				"parent": "page2",
 				"flexProps": {
@@ -265,8 +265,6 @@
 				"width": null,
 				"multiline": false,
 				"layout": {
-					"right": 0,
-					"bottom": 0,
 					"marginLeft": 10,
 					"marginRight": 10,
 					"height": 45
@@ -298,11 +296,7 @@
 				"left": null,
 				"top": null,
 				"right": null,
-				"bottom": null,
-				"flexProps": {
-					"right": 25.125,
-					"bottom": 242.71817016601562
-				}
+				"bottom": null
 			},
 			"className": ".button",
 			"props": {
