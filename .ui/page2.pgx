@@ -190,7 +190,7 @@
 				"width": 213,
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 0, 0, 0, 1 )",
-				"backgroundColor": "rgba( 0, 0, 0, 0 )",
+				"backgroundColor": "rgba( 184, 50, 50, 0 )",
 				"marginRight": 20,
 				"marginLeft": 20,
 				"flexProps": {
@@ -272,7 +272,7 @@
 				"visible": true,
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 0, 0, 0, 1 )",
-				"backgroundColor": "rgba( 0, 0, 0, 0 )",
+				"backgroundColor": "rgba( 184, 50, 50, 0 )",
 				"marginRight": 20,
 				"marginLeft": 20,
 				"borderColor": "rgba( 255, 255, 255, 1 )",
