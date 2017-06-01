@@ -15,7 +15,8 @@
     "font": {
       "size": 16,
       "bold": false,
-      "italic": false
+      "italic": false,
+      "family": "Arial"
     },
     "flexProps": {
       "alignSelf": "AUTO",
