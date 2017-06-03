@@ -30,7 +30,7 @@
 				}
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.10",
+			"version": "6.3.0-rc.12",
 			"props": {
 				"width": 187.5,
 				"height": 301.5,
@@ -145,6 +145,7 @@
 				"borderWidth": null,
 				"marginLeft": 10,
 				"marginRight": 10,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"marginLeft": 20,
@@ -209,12 +210,13 @@
 				"alpha": 1,
 				"width": null,
 				"borderWidth": null,
-				"touchEnabled": true,
 				"borderColor": "rgba(0,0,0,1)",
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
 				"marginLeft": 10,
-				"marginRight": 10
+				"marginRight": 10,
+				"touchEnabled": true,
+				"usePageVariable": true
 			}
 		},
 		{
@@ -236,6 +238,8 @@
 				"textAlignment": "MIDCENTER",
 				"alpha": 1,
 				"width": null,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -278,6 +282,8 @@
 				"layout": {
 					"right": 0,
 					"bottom": 0,
+					"marginLeft": 5,
+					"marginRight": 5,
 					"height": 45.22500000000001
 				},
 				"flex": {
@@ -301,9 +307,11 @@
 				"textAlignment": "MIDCENTER",
 				"alpha": 1,
 				"width": null,
-				"touchEnabled": true,
 				"multiline": false,
-				"textColor": "#000000"
+				"textColor": "#000000",
+				"touchEnabled": true,
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -323,6 +331,8 @@
 				"imageURL": "https://ozcan-ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7615585576130848",
 				"width": null,
 				"borderWidth": null,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -361,6 +371,8 @@
 				"layout": {
 					"right": 0,
 					"bottom": 0,
+					"marginLeft": 5,
+					"marginRight": 5,
 					"height": 30.15
 				},
 				"flex": {
@@ -374,12 +386,14 @@
 				"font": {},
 				"visible": true,
 				"alpha": 1,
-				"imageURL": "https://ozcan-ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7615585576130848",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.42795388525072897",
 				"width": null,
 				"borderWidth": null,
-				"touchEnabled": true,
 				"backgroundColor": "rgba(0,0,0,0)",
-				"borderColor": "rgba(0,0,0,1)"
+				"borderColor": "rgba(0,0,0,1)",
+				"touchEnabled": true,
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		}
 	]

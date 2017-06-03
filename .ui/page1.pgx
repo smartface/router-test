@@ -30,10 +30,10 @@
 				}
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.10",
+			"version": "6.3.0-rc.12",
 			"props": {
-				"width": 160,
-				"height": 252,
+				"width": 187.5,
+				"height": 301.5,
 				"children": [
 					"statusBar",
 					"headerBar",
@@ -134,8 +134,8 @@
 			"userProps": {
 				"left": null,
 				"top": null,
-				"right": 0,
-				"bottom": 0,
+				"right": null,
+				"bottom": null,
 				"height": 90.45000000000002,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba( 255, 255, 255, 1 )",
@@ -146,6 +146,9 @@
 				"alpha": 1,
 				"width": null,
 				"text": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"multiline": true,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -174,8 +177,8 @@
 			"props": {
 				"left": null,
 				"top": null,
-				"right": 0,
-				"bottom": 0,
+				"right": null,
+				"bottom": null,
 				"height": 90.45000000000002,
 				"name": "lbl",
 				"parent": "page1",
@@ -186,8 +189,8 @@
 					"marginRight": 20
 				},
 				"layout": {
-					"right": 0,
-					"bottom": 0,
+					"marginLeft": 5,
+					"marginRight": 5,
 					"height": 45.22500000000001
 				},
 				"flex": {
@@ -210,10 +213,12 @@
 				"textAlignment": "MIDCENTER",
 				"alpha": 1,
 				"width": null,
-				"touchEnabled": true,
 				"text": null,
-				"multiline": false,
-				"textColor": "#000000"
+				"multiline": true,
+				"textColor": "#000000",
+				"touchEnabled": true,
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -235,6 +240,8 @@
 				"alpha": 1,
 				"imageURL": "https://ozcan-ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7615585576130848",
 				"width": null,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -273,6 +280,8 @@
 				"layout": {
 					"right": 0,
 					"bottom": 0,
+					"marginLeft": 5,
+					"marginRight": 5,
 					"height": 30.15
 				},
 				"flex": {
@@ -289,10 +298,12 @@
 				"font": {},
 				"visible": true,
 				"alpha": 1,
-				"imageURL": "https://ozcan-ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%20SE?random=0.9483420102563926",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.42795388525072897",
 				"width": null,
+				"backgroundColor": "rgba(0,0,0,0)",
 				"touchEnabled": true,
-				"backgroundColor": "rgba(0,0,0,0)"
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -302,7 +313,7 @@
 			"userProps": {
 				"right": null,
 				"bottom": null,
-				"height": 120,
+				"height": 130,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -344,7 +355,7 @@
 			"props": {
 				"right": null,
 				"bottom": null,
-				"height": 120,
+				"height": 130,
 				"children": [
 					"btn",
 					"btnNext"
@@ -366,7 +377,7 @@
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
-					"height": 60
+					"height": 65
 				},
 				"flex": {
 					"alignContent": 4,
@@ -386,10 +397,10 @@
 				"visible": true,
 				"alpha": 1,
 				"width": null,
-				"touchEnabled": true,
 				"left": null,
 				"marginLeft": 10,
-				"marginRight": 10
+				"marginRight": 10,
+				"touchEnabled": true
 			}
 		},
 		{
@@ -410,6 +421,7 @@
 				"visible": true,
 				"alpha": 1,
 				"width": null,
+				"usePageVariable": false,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH"
@@ -468,9 +480,10 @@
 				"visible": true,
 				"alpha": 1,
 				"width": null,
-				"touchEnabled": true,
 				"textColor": "#FFFFFF",
-				"textAlignment": "MIDCENTER"
+				"textAlignment": "MIDCENTER",
+				"touchEnabled": true,
+				"usePageVariable": false
 			}
 		},
 		{
@@ -479,7 +492,7 @@
 			"themeProps": {},
 			"userProps": {
 				"left": null,
-				"top": null,
+				"top": 10,
 				"right": 0,
 				"bottom": 0,
 				"height": 60,
@@ -491,6 +504,7 @@
 				"visible": true,
 				"alpha": 1,
 				"width": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -517,7 +531,7 @@
 			"className": ".button",
 			"props": {
 				"left": null,
-				"top": null,
+				"top": 10,
 				"right": 0,
 				"bottom": 0,
 				"height": 60,
@@ -531,6 +545,7 @@
 				"layout": {
 					"right": 0,
 					"bottom": 0,
+					"top": 5,
 					"height": 30
 				},
 				"flex": {
@@ -553,9 +568,10 @@
 				"visible": true,
 				"alpha": 1,
 				"width": null,
-				"touchEnabled": true,
 				"textColor": "#FFFFFF",
-				"textAlignment": "MIDCENTER"
+				"textAlignment": "MIDCENTER",
+				"touchEnabled": true,
+				"usePageVariable": true
 			}
 		}
 	]
