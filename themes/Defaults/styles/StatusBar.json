@@ -3,6 +3,15 @@
     "color": "#00A1F1",
     "visible": true,
     "font": {},
-    "flexProps": {}
+    "flexProps": {},
+    "&-warning": {
+      "backgroundColor": "#9F6000"
+    },
+    "&-error": {
+      "backgroundColor": "#D8000C"
+    },
+    "&-success": {
+      "backgroundColor": "#4F8A10"
+    }
   }
 }
