@@ -8,10 +8,10 @@ const Page1 = extend(Page1Design)(
     function(_super) {
         var self = this;
         _super(self);
-        
+
         this.headerBar.leftItemEnabled = false;
         this.children.flexlayout.children.btn.onPress = btn_onPress.bind(this);
-        this.children.flexlayout.children.btnNext.onPress = btnNext_onPress.bind(this);
+        this.btnNext.onPress = btnNext_onPress.bind(this);
     });
 
 function btnNext_onPress() {
