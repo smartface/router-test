@@ -13,6 +13,10 @@
     "borderColor": "rgba(0,0,0,1)",
     "borderWidth": 0,
     "font": {},
+    "centerLocation": {
+      "latitude": 40.7828647,
+      "longitude": -73.9675491
+    },
     "flexProps": {
       "alignSelf": "AUTO",
       "positionType": "RELATIVE"
