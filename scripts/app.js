@@ -15,7 +15,7 @@ Application.onUnhandledError = function(e) {
 
 const Router = require("sf-core/ui/router");
 const stylerBuilder = require("library/styler-builder");
-const settings = require("./.settings.json");
+const settings = require("./settings.json");
 stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
 stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
 
