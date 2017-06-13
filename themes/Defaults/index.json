@@ -24,12 +24,6 @@
 				"Small": ".activityIndicator-small",
 				"Medium": ".activityIndicator-medium",
 				"Large": ".activityIndicator-large"
-			},
-			"Highlights": {
-				"Default": ".activityIndicator",
-				"Warning": ".activityIndicator-warning",
-				"Error": ".activityIndicator-error",
-				"Success": ".activityIndicator-success"
 			}
 		},
 		"Button": {
@@ -52,20 +46,11 @@
 				"Small": ".flexLayout-small",
 				"Medium": ".flexLayout-medium",
 				"Large": ".flexLayout-large"
-			},
-			"Highlights": {
-				"Default": ".flexLayout",
-				"Warning": ".flexLayout-warning",
-				"Error": ".flexLayout-error",
-				"Success": ".flexLayout-success"
 			}
 		},
 		"HeaderBar": {
-			"Highlights": {
-				"Default": ".headerBar",
-				"Warning": ".headerBar-warning",
-				"Error": ".headerBar-error",
-				"Success": ".headerBar-success"
+			"HeaderBar": {
+				"Default": ".headerBar"
 			}
 		},
 		"ImageView": {
@@ -74,12 +59,6 @@
 				"Small": ".imageView-small",
 				"Medium": ".imageView-medium",
 				"Large": ".imageView-large"
-			},
-			"Highlights": {
-				"Default": ".imageView",
-				"Warning": ".imageView-warning",
-				"Error": ".imageView-error",
-				"Success": ".imageView-success"
 			}
 		},
 		"Label": {
@@ -88,12 +67,6 @@
 				"Small": ".label-small",
 				"Medium": ".label-medium",
 				"Large": ".label-large"
-			},
-			"Highlights": {
-				"Default": ".label",
-				"Warning": ".label-warning",
-				"Error": ".label-error",
-				"Success": ".label-success"
 			}
 		},
 		"ListView": {
@@ -102,12 +75,6 @@
 				"Small": ".listView-small",
 				"Medium": ".listView-medium",
 				"Large": ".listView-large"
-			},
-			"Highlights": {
-				"Default": ".listView",
-				"Warning": ".listView-warning",
-				"Error": ".listView-error",
-				"Success": ".listView-success"
 			}
 		},
 		"MapView": {
@@ -116,20 +83,11 @@
 				"Small": ".mapView-small",
 				"Medium": ".mapView-medium",
 				"Large": ".mapView-large"
-			},
-			"Highlights": {
-				"Default": ".mapView",
-				"Warning": ".mapView-warning",
-				"Error": ".mapView-error",
-				"Success": ".mapView-success"
 			}
 		},
 		"Page": {
-			"Highlights": {
-				"Default": ".page",
-				"Warning": ".page-warning",
-				"Error": ".page-error",
-				"Success": ".page-success"
+			"Page": {
+				"Default": ".page"
 			}
 		},
 		"SearchView": {
@@ -138,12 +96,6 @@
 				"Small": ".searchView-small",
 				"Medium": ".searchView-medium",
 				"Large": ".searchView-large"
-			},
-			"Highlights": {
-				"Default": ".searchView",
-				"Warning": ".searchView-warning",
-				"Error": ".searchView-error",
-				"Success": ".searchView-success"
 			}
 		},
 		"Slider": {
@@ -152,20 +104,11 @@
 				"Small": ".slider-small",
 				"Medium": ".slider-medium",
 				"Large": ".slider-large"
-			},
-			"Highlights": {
-				"Default": ".slider",
-				"Warning": ".slider-warning",
-				"Error": ".slider-error",
-				"Success": ".slider-success"
 			}
 		},
 		"StatusBar": {
-			"Highlights": {
-				"Default": ".statusBar",
-				"Warning": ".statusBar-warning",
-				"Error": ".statusBar-error",
-				"Success": ".statusBar-success"
+			"StatusBar": {
+				"Default": ".statusBar"
 			}
 		},
 		"Switch": {
@@ -174,12 +117,6 @@
 				"Small": ".switch-small",
 				"Medium": ".switch-medium",
 				"Large": ".switch-large"
-			},
-			"Highlights": {
-				"Default": ".switch",
-				"Warning": ".switch-warning",
-				"Error": ".switch-error",
-				"Success": ".switch-success"
 			}
 		},
 		"TextBox": {
@@ -188,12 +125,6 @@
 				"Small": ".textBox-small",
 				"Medium": ".textBox-medium",
 				"Large": ".textBox-large"
-			},
-			"Highlights": {
-				"Default": ".textBox",
-				"Warning": ".textBox-warning",
-				"Error": ".textBox-error",
-				"Success": ".textBox-success"
 			}
 		},
 		"VideoView": {
@@ -202,12 +133,6 @@
 				"Small": ".videoView-small",
 				"Medium": ".videoView-medium",
 				"Large": ".videoView-large"
-			},
-			"Highlights": {
-				"Default": ".videoView",
-				"Warning": ".videoView-warning",
-				"Error": ".videoView-error",
-				"Success": ".videoView-success"
 			}
 		},
 		"WebView": {
@@ -216,12 +141,6 @@
 				"Small": ".webView-small",
 				"Medium": ".webView-medium",
 				"Large": ".webView-large"
-			},
-			"Highlights": {
-				"Default": ".webView",
-				"Warning": ".webView-warning",
-				"Error": ".webView-error",
-				"Success": ".webView-success"
 			}
 		}
 	}

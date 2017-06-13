@@ -5,15 +5,6 @@
     "visible": true,
     "backgroundColor": "#FFFFFF",
     "font": {},
-    "flexProps": {},
-    "&-warning": {
-      "backgroundColor": "#9F6000"
-    },
-    "&-error": {
-      "backgroundColor": "#D8000C"
-    },
-    "&-success": {
-      "backgroundColor": "#4F8A10"
-    }
+    "flexProps": {}
   }
 }
