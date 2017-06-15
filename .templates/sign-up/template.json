@@ -1,0 +1,11 @@
+{
+  "name": "signUpPageTemplate",
+  "title": "Sign-up Page",
+  "description": "Sign-up page template",
+  "tags": [],
+  "resources": {
+    "fonts": ["Nunito"],
+    "images": ["sing_up_head_image"]
+  },
+  "version": "1.0.0"
+}
