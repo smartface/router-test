@@ -15,7 +15,9 @@
 				"flexProps": {
 					"justifyContent": "FLEX_START",
 					"alignContent": "STRETCH",
-					"alignItems": "STRETCH"
+					"alignItems": "STRETCH",
+					"flexDirection": "COLUMN",
+					"flexWrap": "WRAP"
 				},
 				"layout": {},
 				"flex": {},
@@ -23,7 +25,7 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.3.9",
+			"version": "6.3.10",
 			"props": {
 				"backgroundColor": "rgba( 238, 238, 238, 1 )",
 				"orientation": "PORTRAIT",
@@ -49,28 +51,28 @@
 					"alignItems": "STRETCH",
 					"direction": "INHERIT",
 					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
+					"flexWrap": "WRAP",
 					"justifyContent": "FLEX_START"
 				},
 				"parent": null,
 				"name": "signUpPageTemplate",
 				"layout": {
-					"width": 93.75,
-					"height": 166.75,
-					"paddingLeft": 10,
-					"paddingTop": 10,
-					"paddingRight": 10
+					"width": 334.7107438016529,
+					"height": 576.2913223140496,
+					"paddingLeft": 20,
+					"paddingTop": 20,
+					"paddingRight": 20
 				},
 				"flex": {
 					"alignContent": 4,
 					"alignItems": 4,
 					"flexDirection": 0,
-					"flexWrap": 0,
+					"flexWrap": 1,
 					"justifyContent": 0
 				},
 				"font": {},
-				"width": 187.5,
-				"height": 333.5
+				"width": 446.2809917355372,
+				"height": 768.3884297520661
 			}
 		},
 		{
@@ -93,12 +95,12 @@
 				"isRemovable": false,
 				"name": "statusBar",
 				"layout": {
-					"height": 10
+					"height": 25
 				},
 				"flex": {},
 				"font": {},
 				"flexProps": {},
-				"height": 20
+				"height": 25
 			}
 		},
 		{
@@ -125,12 +127,12 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"layout": {
-					"height": 22
+					"height": 56.6
 				},
 				"flex": {},
 				"font": {},
 				"flexProps": {},
-				"height": 44
+				"height": 56.6
 			}
 		},
 		{
@@ -311,8 +313,8 @@
 				"name": "userName",
 				"parent": "signUpPageTemplate",
 				"layout": {
-					"marginTop": 5,
-					"paddingBottom": 2,
+					"marginTop": 10,
+					"paddingBottom": 4,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -378,8 +380,8 @@
 				"name": "userNameLbl",
 				"parent": "userName",
 				"layout": {
-					"width": 167,
-					"height": 10.5,
+					"width": 334,
+					"height": 21,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -433,8 +435,8 @@
 				"name": "userNameText",
 				"parent": "userName",
 				"layout": {
-					"width": 167,
-					"height": 20,
+					"width": 334,
+					"height": 40,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -484,8 +486,8 @@
 				"name": "userNameLine",
 				"parent": "userName",
 				"layout": {
-					"height": 0.5,
-					"borderWidth": 0.5
+					"height": 1,
+					"borderWidth": 1
 				},
 				"flex": {
 					"alignContent": 4,
@@ -509,6 +511,8 @@
 				"bottom": null,
 				"top": null,
 				"minHeight": null,
+				"maxHeight": null,
+				"marginBottom": 10,
 				"flexProps": {
 					"flexGrow": 2,
 					"bottom": 30,
@@ -552,6 +556,7 @@
 				"name": "password",
 				"parent": "signUpPageTemplate",
 				"layout": {
+					"marginBottom": 10,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -564,7 +569,9 @@
 					"flexGrow": 2,
 					"bottom": 30
 				},
-				"font": {}
+				"font": {},
+				"maxHeight": null,
+				"marginBottom": 10
 			}
 		},
 		{
@@ -615,8 +622,8 @@
 				"name": "passwordLbl",
 				"parent": "password",
 				"layout": {
-					"width": 167,
-					"height": 10.5,
+					"width": 334,
+					"height": 21,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -674,8 +681,8 @@
 				"name": "passwordText",
 				"parent": "password",
 				"layout": {
-					"width": 167,
-					"height": 20,
+					"width": 334,
+					"height": 40,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -723,8 +730,8 @@
 				"name": "passwordLine",
 				"parent": "password",
 				"layout": {
-					"height": 0.5,
-					"borderWidth": 0.5
+					"height": 1,
+					"borderWidth": 1
 				},
 				"flex": {
 					"alignContent": 4,
@@ -751,7 +758,8 @@
 					"flexDirection": "ROW",
 					"alignItems": "FLEX_START",
 					"justifyContent": "CENTER",
-					"flexGrow": 2
+					"flexGrow": 2,
+					"alignSelf": "STRETCH"
 				},
 				"layout": {},
 				"flex": {},
@@ -775,7 +783,7 @@
 					"footerSignupLbl"
 				],
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "FLEX_START",
@@ -791,6 +799,7 @@
 					"borderWidth": 0
 				},
 				"flex": {
+					"alignSelf": 4,
 					"alignContent": 4,
 					"alignItems": 1,
 					"justifyContent": 1,
@@ -851,9 +860,9 @@
 				"name": "footerText",
 				"parent": "signUpPageFooter",
 				"layout": {
-					"marginTop": 5,
-					"width": 91.5,
-					"height": 10,
+					"marginTop": 10,
+					"width": 183,
+					"height": 20,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -911,9 +920,9 @@
 				"name": "footerSignupLbl",
 				"parent": "signUpPageFooter",
 				"layout": {
-					"marginTop": 5,
-					"width": 28.5,
-					"height": 10,
+					"marginTop": 10,
+					"width": 57,
+					"height": 20,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -930,7 +939,7 @@
 				"width": null,
 				"text": "Sign up",
 				"height": null,
-				"minHeight": 30,
+				"minHeight": null,
 				"maxHeight": 60,
 				"flexProps": {
 					"flexGrow": 1
@@ -956,7 +965,7 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
-				"minHeight": 30,
+				"minHeight": null,
 				"maxHeight": 60,
 				"children": [],
 				"font": {
@@ -973,8 +982,7 @@
 				"name": "loginbutton",
 				"parent": "signUpPageTemplate",
 				"layout": {
-					"minHeight": 15,
-					"maxHeight": 30,
+					"maxHeight": 60,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1030,7 +1038,7 @@
 					"flexGrow": 3
 				},
 				"font": {},
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/sing_up_head_image.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.1615476709317174"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/sing_up_head_image.png?os=Android&osVersion=7&density=386&densityRatio=0.4132231404958678&zoomLevel=1&brandModel=Galaxy%20Note%203&resourceFolderOrder=drawable-xxhdpi%2Cdrawable-xxxhdpi%2Cdrawable-xhdpi%2Cdrawable-hdpi%2Cdrawable-mdpi%2Cdrawable-ldpi%2Cdrawable"
 			}
 		},
 		{
@@ -1041,12 +1049,12 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"width": null,
 				"height": null,
-				"minHeight": 20,
+				"minHeight": null,
 				"marginTop": null,
 				"paddingBottom": null,
 				"maxHeight": 70,
 				"flexProps": {
-					"flexGrow": 1.2,
+					"flexGrow": 2,
 					"alignSelf": "STRETCH",
 					"justifyContent": "CENTER",
 					"alignItems": "STRETCH"
@@ -1066,7 +1074,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"minHeight": 20,
+				"minHeight": null,
 				"marginTop": null,
 				"paddingBottom": null,
 				"maxHeight": 70,
@@ -1084,13 +1092,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.2
+					"flexGrow": 2
 				},
 				"name": "email",
 				"parent": "signUpPageTemplate",
 				"layout": {
-					"minHeight": 10,
-					"maxHeight": 35,
+					"maxHeight": 70,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1101,7 +1108,7 @@
 					"flexWrap": 0,
 					"flexDirection": 0,
 					"positionType": 0,
-					"flexGrow": 1.2
+					"flexGrow": 2
 				},
 				"font": {}
 			}
@@ -1156,8 +1163,8 @@
 				"name": "emailLbl",
 				"parent": "email",
 				"layout": {
-					"width": 167,
-					"height": 10.5,
+					"width": 334,
+					"height": 21,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1211,8 +1218,8 @@
 				"name": "emailText",
 				"parent": "email",
 				"layout": {
-					"width": 167,
-					"height": 20,
+					"width": 334,
+					"height": 40,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1264,8 +1271,8 @@
 				"name": "emailLine",
 				"parent": "email",
 				"layout": {
-					"height": 0.5,
-					"borderWidth": 0.5
+					"height": 1,
+					"borderWidth": 1
 				},
 				"flex": {
 					"alignSelf": 4,
@@ -1287,12 +1294,12 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"width": null,
 				"height": null,
-				"minHeight": 20,
+				"minHeight": null,
 				"marginTop": null,
 				"paddingBottom": null,
 				"maxHeight": 70,
 				"flexProps": {
-					"flexGrow": 1.2,
+					"flexGrow": 2,
 					"alignSelf": "STRETCH",
 					"justifyContent": "CENTER",
 					"alignItems": "STRETCH"
@@ -1312,7 +1319,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"minHeight": 20,
+				"minHeight": null,
 				"marginTop": null,
 				"paddingBottom": null,
 				"maxHeight": 70,
@@ -1330,13 +1337,12 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": 1.2
+					"flexGrow": 2
 				},
 				"name": "birthday",
 				"parent": "signUpPageTemplate",
 				"layout": {
-					"minHeight": 10,
-					"maxHeight": 35,
+					"maxHeight": 70,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1347,7 +1353,7 @@
 					"flexWrap": 0,
 					"flexDirection": 0,
 					"positionType": 0,
-					"flexGrow": 1.2
+					"flexGrow": 2
 				},
 				"font": {}
 			}
@@ -1402,8 +1408,8 @@
 				"name": "birthdayLbl",
 				"parent": "birthday",
 				"layout": {
-					"width": 167,
-					"height": 10.5,
+					"width": 334,
+					"height": 21,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1457,8 +1463,8 @@
 				"name": "birthdayText",
 				"parent": "birthday",
 				"layout": {
-					"width": 167,
-					"height": 20,
+					"width": 334,
+					"height": 40,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1510,8 +1516,8 @@
 				"name": "birthdayline",
 				"parent": "birthday",
 				"layout": {
-					"height": 0.5,
-					"borderWidth": 0.5
+					"height": 1,
+					"borderWidth": 1
 				},
 				"flex": {
 					"alignSelf": 4,
