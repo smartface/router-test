@@ -30,10 +30,21 @@
 				}
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.12",
+			"version": "6.3.11",
 			"props": {
-				"width": 187.5,
-				"height": 301.5,
+				"backgroundColor": "rgba( 197, 210, 28, 1 )",
+				"orientation": "PORTRAIT",
+				"width": 375,
+				"height": 603,
+				"isRemovable": true,
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "SPACE_AROUND"
+				},
 				"children": [
 					"statusBar",
 					"headerBar",
@@ -41,30 +52,7 @@
 					"lbl",
 					"btn"
 				],
-				"name": "page2",
-				"flexProps": {
-					"alignItems": "CENTER",
-					"justifyContent": "SPACE_AROUND",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH"
-				},
-				"isRemovable": true,
-				"layout": {
-					"width": 93.75,
-					"height": 150.75
-				},
-				"flex": {
-					"alignItems": 2,
-					"justifyContent": 4,
-					"flexDirection": 0,
-					"flexWrap": 0,
-					"direction": 0
-				},
-				"orientation": "PORTRAIT",
-				"backgroundColor": "rgba( 197, 210, 28, 1 )",
-				"font": {}
+				"name": "page2"
 			}
 		},
 		{
@@ -77,22 +65,20 @@
 				"visible": true,
 				"layout": {
 					"height": 10
-				}
-			},
-			"className": ".statusBar",
-			"props": {
-				"height": 20,
-				"name": "statusBar",
-				"parent": "page2",
-				"flexProps": {},
-				"isRemovable": false,
-				"layout": {
-					"height": 10
 				},
 				"flex": {},
 				"font": {},
+				"flexProps": {},
+				"defaults": {}
+			},
+			"className": ".statusBar",
+			"props": {
+				"color": "#00A1F1",
 				"visible": true,
-				"color": "#00A1F1"
+				"height": 20,
+				"isRemovable": false,
+				"parent": "page2",
+				"name": "statusBar"
 			}
 		},
 		{
@@ -107,24 +93,22 @@
 				"visible": true,
 				"layout": {
 					"height": 22
-				}
-			},
-			"className": ".headerBar",
-			"props": {
-				"height": 44,
-				"title": "page2",
-				"titleColor": "rgba( 0, 0, 0, 1 )",
-				"name": "headerBar",
-				"parent": "page2",
-				"flexProps": {},
-				"isRemovable": false,
-				"layout": {
-					"height": 22
 				},
 				"flex": {},
 				"font": {},
+				"flexProps": {},
+				"defaults": {}
+			},
+			"className": ".headerBar",
+			"props": {
+				"title": "page2",
+				"titleColor": "rgba( 0, 0, 0, 1 )",
 				"visible": true,
-				"backgroundColor": "#FFFFFF"
+				"backgroundColor": "#FFFFFF",
+				"height": 44,
+				"isRemovable": false,
+				"parent": "page2",
+				"name": "headerBar"
 			}
 		},
 		{
@@ -146,11 +130,13 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"usePageVariable": true,
+				"maxHeight": 60,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"marginLeft": 20,
 					"marginRight": 20,
-					"alignSelf": "STRETCH"
+					"alignSelf": "STRETCH",
+					"flexGrow": 2
 				},
 				"layout": {
 					"right": 12.5625,
@@ -173,50 +159,41 @@
 			},
 			"className": ".button",
 			"props": {
+				"width": null,
+				"height": 60,
+				"touchEnabled": true,
+				"text": "Back",
+				"visible": true,
+				"backgroundColor": "rgba( 0, 161, 241, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": null,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
 				"left": null,
 				"top": null,
 				"right": null,
 				"bottom": null,
-				"height": 60,
-				"name": "btn",
-				"parent": "page2",
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"marginLeft": 20,
-					"marginRight": 20,
-					"alignSelf": "STRETCH"
-				},
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"height": 30
-				},
-				"flex": {
-					"positionType": 0,
-					"marginLeft": 10,
-					"marginRight": 10,
-					"alignSelf": 4
-				},
-				"text": "Back",
-				"backgroundColor": "rgba( 0, 161, 241, 1 )",
-				"font": {
-					"color": "rgba( 255, 255, 255, 1 )",
-					"size": 16,
-					"family": "Arial",
-					"bold": false,
-					"italic": false
-				},
-				"visible": true,
-				"alpha": 1,
-				"width": null,
-				"borderWidth": null,
-				"borderColor": "rgba(0,0,0,1)",
-				"textColor": "#FFFFFF",
-				"textAlignment": "MIDCENTER",
 				"marginLeft": 10,
 				"marginRight": 10,
-				"touchEnabled": true,
-				"usePageVariable": true
+				"usePageVariable": true,
+				"maxHeight": 60,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial",
+					"color": "rgba( 255, 255, 255, 1 )"
+				},
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"marginLeft": 20,
+					"marginRight": 20,
+					"flexGrow": 2
+				},
+				"parent": "page2",
+				"name": "btn"
 			}
 		},
 		{
@@ -228,7 +205,7 @@
 				"top": null,
 				"right": 0,
 				"bottom": 0,
-				"height": 90.45000000000002,
+				"height": 90,
 				"text": "This is second page",
 				"borderColor": "rgba( 255, 255, 255, 1 )",
 				"borderRadius": 0,
@@ -240,11 +217,13 @@
 				"width": null,
 				"marginLeft": 10,
 				"marginRight": 10,
+				"maxHeight": 90,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
 					"marginLeft": 20,
-					"marginRight": 20
+					"marginRight": 20,
+					"flexGrow": 2
 				},
 				"layout": {
 					"right": 0,
@@ -266,52 +245,41 @@
 			},
 			"className": ".label",
 			"props": {
+				"width": null,
+				"height": 90,
+				"touchEnabled": true,
+				"text": "This is second page",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 0, 0, 0, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba( 255, 255, 255, 1 )",
+				"borderWidth": 0,
+				"textColor": "#000000",
+				"textAlignment": "MIDCENTER",
 				"left": null,
 				"top": null,
 				"right": 0,
 				"bottom": 0,
-				"height": 90.45000000000002,
-				"name": "lbl",
-				"parent": "page2",
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "STRETCH",
-					"marginLeft": 20,
-					"marginRight": 20
-				},
-				"layout": {
-					"right": 0,
-					"bottom": 0,
-					"marginLeft": 5,
-					"marginRight": 5,
-					"height": 45.22500000000001
-				},
-				"flex": {
-					"positionType": 0,
-					"alignSelf": 4,
-					"marginLeft": 10,
-					"marginRight": 10
-				},
-				"text": "This is second page",
-				"borderColor": "rgba( 255, 255, 255, 1 )",
 				"borderRadius": 0,
-				"borderWidth": 0,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"maxHeight": 90,
 				"font": {
-					"family": "Arial",
 					"size": 16,
 					"bold": false,
-					"italic": false
+					"italic": false,
+					"family": "Arial"
 				},
-				"backgroundColor": "rgba( 0, 0, 0, 0 )",
-				"visible": true,
-				"textAlignment": "MIDCENTER",
-				"alpha": 1,
-				"width": null,
-				"multiline": false,
-				"textColor": "#000000",
-				"touchEnabled": true,
-				"marginLeft": 10,
-				"marginRight": 10
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"marginLeft": 20,
+					"marginRight": 20,
+					"flexGrow": 2
+				},
+				"parent": "page2",
+				"name": "lbl"
 			}
 		},
 		{
@@ -323,7 +291,7 @@
 				"top": null,
 				"right": 0,
 				"bottom": 0,
-				"height": 60.3,
+				"height": 60,
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
 				"visible": true,
@@ -333,11 +301,13 @@
 				"borderWidth": null,
 				"marginLeft": 10,
 				"marginRight": 10,
+				"maxHeight": 60,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
 					"marginLeft": 20,
-					"marginRight": 20
+					"marginRight": 20,
+					"flexGrow": 4
 				},
 				"layout": {
 					"right": 0,
@@ -355,45 +325,33 @@
 			},
 			"className": ".imageView",
 			"props": {
+				"width": null,
+				"height": 60,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": null,
 				"left": null,
 				"top": null,
 				"right": 0,
 				"bottom": 0,
-				"height": 60.3,
-				"name": "img",
-				"parent": "page2",
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "STRETCH",
-					"marginLeft": 20,
-					"marginRight": 20
-				},
-				"layout": {
-					"right": 0,
-					"bottom": 0,
-					"marginLeft": 5,
-					"marginRight": 5,
-					"height": 30.15
-				},
-				"flex": {
-					"positionType": 0,
-					"alignSelf": 4,
-					"marginLeft": 10,
-					"marginRight": 10
-				},
 				"image": "smartface.png",
-				"imageFillType": "ASPECTFIT",
-				"font": {},
-				"visible": true,
-				"alpha": 1,
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.42795388525072897",
-				"width": null,
-				"borderWidth": null,
-				"backgroundColor": "rgba(0,0,0,0)",
-				"borderColor": "rgba(0,0,0,1)",
-				"touchEnabled": true,
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207",
 				"marginLeft": 10,
-				"marginRight": 10
+				"marginRight": 10,
+				"maxHeight": 60,
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"marginLeft": 20,
+					"marginRight": 20,
+					"flexGrow": 4
+				},
+				"parent": "page2",
+				"name": "img"
 			}
 		}
 	]
