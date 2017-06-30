@@ -30,12 +30,12 @@
 				}
 			},
 			"className": ".page",
-			"version": "6.3.11",
+			"version": "6.3.20",
 			"props": {
 				"backgroundColor": "rgba( 197, 210, 28, 1 )",
 				"orientation": "PORTRAIT",
-				"width": 375,
-				"height": 603,
+				"width": 187.5,
+				"height": 301.5,
 				"isRemovable": true,
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -218,6 +218,7 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"maxHeight": 90,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -279,7 +280,8 @@
 					"flexGrow": 2
 				},
 				"parent": "page2",
-				"name": "lbl"
+				"name": "lbl",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -339,7 +341,7 @@
 				"right": 0,
 				"bottom": 0,
 				"image": "smartface.png",
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207",
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6080452067078606",
 				"marginLeft": 10,
 				"marginRight": 10,
 				"maxHeight": 60,

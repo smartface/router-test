@@ -10,7 +10,7 @@ const Page1 = extend(Page1Design)(
         _super(self);
 
         this.headerBar.leftItemEnabled = false;
-        this.children.flexlayout.children.btn.onPress = btn_onPress.bind(this);
+        this.flexlayout.children.btn.onPress = btn_onPress.bind(this);
         this.btnNext.onPress = btnNext_onPress.bind(this);
     });
 
@@ -49,8 +49,8 @@ function btn_onPress() {
     }
 
     // Access lbl & btnNext of page1
-    this.children.lbl.text = myLabelText;
-    this.children.flexlayout.children.btn.text = myButtonText;
+    this.lbl.text = myLabelText;
+    this.flexlayout.children.btn.text = myButtonText;
 }
 
 // Adds appropriate suffix to given number

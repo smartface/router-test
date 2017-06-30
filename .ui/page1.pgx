@@ -34,12 +34,12 @@
 				}
 			},
 			"className": ".page",
-			"version": "6.3.11",
+			"version": "6.3.20",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
-				"width": 320,
-				"height": 504,
+				"width": 187.5,
+				"height": 301.5,
 				"isRemovable": true,
 				"paddingLeft": 10,
 				"paddingRight": 10,
@@ -135,6 +135,7 @@
 				"multiline": true,
 				"marginTop": null,
 				"maxHeight": 90,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH",
@@ -197,7 +198,8 @@
 					"flexGrow": 2
 				},
 				"parent": "page1",
-				"name": "lbl"
+				"name": "lbl",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -261,7 +263,7 @@
 				"bottom": 0,
 				"image": "smartface.png",
 				"borderRadius": 0,
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%20SE",
+				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6080452067078606",
 				"marginLeft": null,
 				"marginRight": null,
 				"maxHeight": 60,
@@ -295,6 +297,7 @@
 				"marginLeft": null,
 				"marginRight": null,
 				"maxHeight": 130,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -340,6 +343,7 @@
 				"marginLeft": null,
 				"marginRight": null,
 				"maxHeight": 130,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -379,7 +383,7 @@
 				"visible": true,
 				"alpha": 1,
 				"width": null,
-				"usePageVariable": false,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH"
@@ -419,7 +423,7 @@
 				"right": 0,
 				"bottom": 0,
 				"borderRadius": 0,
-				"usePageVariable": false,
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
