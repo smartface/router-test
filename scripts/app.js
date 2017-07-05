@@ -20,6 +20,6 @@ stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
 stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
 
 // Define routes and go to initial page of application
-Router.add("page1", require("./pages/loginPageFB001"));
+Router.add("page1", require("./pages/page1"));
 Router.add("page2", require("./pages/page2"));
 Router.go("page1");
