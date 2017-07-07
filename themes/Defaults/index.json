@@ -16,7 +16,8 @@
 		"TextBox": ".textBox",
 		"TextArea": ".textArea",
 		"VideoView": ".videoView",
-		"WebView": ".webView"
+		"WebView": ".webView",
+		"ScrollView": ".scrollView"
 	},
 	"Components": {
 		"ActivityIndicator": {
@@ -47,6 +48,14 @@
 				"Small": ".flexLayout-small",
 				"Medium": ".flexLayout-medium",
 				"Large": ".flexLayout-large"
+			}
+		},
+		"ScrollView": {
+			"Sizes": {
+				"Default": ".scrollView",
+				"Small": ".scrollView-small",
+				"Medium": ".scrollView-medium",
+				"Large": ".scrollView-large"
 			}
 		},
 		"HeaderBar": {
