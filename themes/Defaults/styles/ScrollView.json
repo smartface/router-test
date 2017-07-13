@@ -8,6 +8,7 @@
 		"alpha": 1,
 		"borderColor": "rgba(0,0,0,1)",
 		"borderWidth": 0,
+		"align": "HORIZONTAL",
 		"font": {},
 		"flexProps": {
 			"alignSelf": "AUTO",
