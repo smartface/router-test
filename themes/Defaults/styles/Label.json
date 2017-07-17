@@ -12,7 +12,6 @@
     "borderWidth": 0,
     "textColor": "#000000",
     "textAlignment": "MIDLEFT",
-    "scrollEnabled": false,
     "font": {
       "size": 16,
       "bold": false,
