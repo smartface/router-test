@@ -17,7 +17,8 @@
 		"TextArea": ".textArea",
 		"VideoView": ".videoView",
 		"WebView": ".webView",
-		"ScrollView": ".scrollView"
+		"ScrollView": ".scrollView",
+		"ListViewItem": ".listViewItem"
 	},
 	"Components": {
 		"ActivityIndicator": {
@@ -85,6 +86,14 @@
 				"Small": ".listView-small",
 				"Medium": ".listView-medium",
 				"Large": ".listView-large"
+			}
+		},
+		"ListViewItem": {
+			"Sizes": {
+				"Default": ".listViewItem",
+				"Small": ".listViewItem-small",
+				"Medium": ".listViewItem-medium",
+				"Large": ".listViewItem-large"
 			}
 		},
 		"MapView": {
