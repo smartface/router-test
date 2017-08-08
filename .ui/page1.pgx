@@ -1,6 +1,5 @@
 {
-	"components": [
-		{
+	"components": [{
 			"type": "Page",
 			"id": "e891b86d",
 			"initialized": true,
@@ -37,7 +36,7 @@
 				}
 			},
 			"className": ".page",
-			"version": "6.4.4-rc.7",
+			"version": "6.4.4",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
