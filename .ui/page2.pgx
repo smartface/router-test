@@ -32,7 +32,7 @@
 				}
 			},
 			"className": ".page",
-			"version": "6.4.5-rc.1",
+			"version": "6.4.5",
 			"props": {
 				"backgroundColor": "rgba( 197, 210, 28, 1 )",
 				"orientation": "PORTRAIT",
