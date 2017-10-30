@@ -1,7 +1,7 @@
 const extend = require("js-base/core/extend");
 const Router = require("sf-core/ui/router");
 
-// Get generetad UI code
+// Get generated UI code
 var Page2Design = require("../ui/ui_page2");
 
 const Page2 = extend(Page2Design)(
