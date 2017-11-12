@@ -82,7 +82,7 @@
 			"userProps": {
 				"title": "page1",
 				"titleColor": "rgba( 0, 0, 0, 1 )",
-				"visible": true,
+				"visible": true
 			},
 			"className": ".headerBar",
 			"props": {
