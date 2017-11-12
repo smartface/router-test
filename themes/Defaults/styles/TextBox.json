@@ -3,7 +3,6 @@
     "height": 70,
     "width": 200,
     "touchEnabled": true,
-    "text": "TextBox",
     "visible": true,
     "backgroundColor": "#FFFFFF",
     "alpha": 1,

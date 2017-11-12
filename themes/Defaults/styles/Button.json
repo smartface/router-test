@@ -3,7 +3,6 @@
     "width": 250,
     "height": 70,
     "touchEnabled": true,
-    "text": "Button",
     "visible": true,
     "backgroundColor": "#00A1F1",
     "alpha": 1,

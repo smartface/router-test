@@ -3,7 +3,6 @@
     "width": 250,
     "height": 70,
     "touchEnabled": true,
-    "text": "Label",
     "visible": true,
     "multiline": false,
     "backgroundColor": "#FFFFFF",
