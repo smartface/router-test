@@ -12,6 +12,7 @@ Application.onUnhandledError = function(e) {
     });
 };
 
+require("./theme");
 
 const Router = require("sf-core/ui/router");
 const stylerBuilder = require("library/styler-builder");

@@ -7,9 +7,6 @@
 				"Page": "Default"
 			},
 			"userProps": {
-				"width": 187.5,
-				"height": 301.5,
-				"isRemovable": true,
 				"orientation": "PORTRAIT",
 				"backgroundColor": "rgba( 197, 210, 28, 1 )",
 				"flexProps": {
@@ -18,17 +15,6 @@
 					"flexDirection": "COLUMN",
 					"flexWrap": "NOWRAP",
 					"direction": "INHERIT"
-				},
-				"layout": {
-					"width": 93.75,
-					"height": 150.75
-				},
-				"flex": {
-					"alignItems": 2,
-					"justifyContent": 4,
-					"flexDirection": 0,
-					"flexWrap": 0,
-					"direction": 0
 				}
 			},
 			"className": ".page",
@@ -65,16 +51,7 @@
 				"StatusBar": "Default"
 			},
 			"userProps": {
-				"height": 20,
-				"isRemovable": false,
-				"visible": true,
-				"layout": {
-					"height": 10
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"visible": true
 			},
 			"className": ".statusBar",
 			"props": {
@@ -94,18 +71,9 @@
 				"HeaderBar": "Default"
 			},
 			"userProps": {
-				"height": 44,
 				"title": "page2",
 				"titleColor": "rgba( 0, 0, 0, 1 )",
-				"isRemovable": false,
-				"visible": true,
-				"layout": {
-					"height": 22
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"visible": true
 			},
 			"className": ".headerBar",
 			"props": {
