@@ -118,19 +118,6 @@
 					"alignSelf": "STRETCH",
 					"flexGrow": 2
 				},
-				"layout": {
-					"right": 12.5625,
-					"bottom": 121.35908508300781,
-					"left": 25.125,
-					"top": 242.71817016601562,
-					"height": 30
-				},
-				"flex": {
-					"positionType": 0,
-					"marginLeft": 10,
-					"marginRight": 10,
-					"alignSelf": 4
-				},
 				"font": {
 					"color": "rgba( 255, 255, 255, 1 )",
 					"size": 16,
@@ -209,19 +196,6 @@
 					"marginRight": 20,
 					"flexGrow": 2
 				},
-				"layout": {
-					"right": 0,
-					"bottom": 0,
-					"left": 27.125,
-					"top": 135.6750030517578,
-					"height": 45.22500000000001
-				},
-				"flex": {
-					"positionType": 0,
-					"alignSelf": 4,
-					"marginLeft": 10,
-					"marginRight": 10
-				},
 				"font": {
 					"family": "Arial",
 					"size": 16
@@ -284,7 +258,6 @@
 				"imageFillType": "ASPECTFIT",
 				"visible": true,
 				"alpha": 1,
-				"imageURL": "https://ozcan-ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7615585576130848",
 				"width": null,
 				"borderWidth": null,
 				"marginLeft": 10,
@@ -296,19 +269,6 @@
 					"marginLeft": 20,
 					"marginRight": 20,
 					"flexGrow": 4
-				},
-				"layout": {
-					"right": 0,
-					"bottom": 0,
-					"left": 30.125,
-					"top": 62.29999923706055,
-					"height": 30.15
-				},
-				"flex": {
-					"positionType": 0,
-					"alignSelf": 4,
-					"marginLeft": 10,
-					"marginRight": 10
 				}
 			},
 			"className": ".imageView",
@@ -327,7 +287,6 @@
 				"right": 0,
 				"bottom": 0,
 				"image": "smartface.png",
-				"imageURL": "https://ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.92&brandModel=iPhone%207",
 				"marginLeft": 10,
 				"marginRight": 10,
 				"maxHeight": 60,
