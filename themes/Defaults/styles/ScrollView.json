@@ -8,7 +8,6 @@
 		"alpha": 1,
 		"borderColor": "rgba(0,0,0,1)",
 		"borderWidth": 0,
-		"align": "VERTICAL",
 		"scrollBarEnabled": true,
 		"font": {},
 		"flexProps": {
