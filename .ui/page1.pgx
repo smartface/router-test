@@ -166,7 +166,7 @@
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
-					"justifyContent": "CENTER",
+					"justifyContent": "SPACE_BETWEEN",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
@@ -229,7 +229,6 @@
 			"id": "4608e562",
 			"userProps": {
 				"left": null,
-				"top": 10,
 				"right": 0,
 				"bottom": 0,
 				"height": 60,
