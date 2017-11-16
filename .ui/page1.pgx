@@ -83,7 +83,6 @@
 				"textAlignment": "MIDCENTER",
 				"alpha": 1,
 				"width": null,
-				"text": null,
 				"marginLeft": null,
 				"marginRight": null,
 				"multiline": true,
@@ -105,7 +104,6 @@
 			"className": ".label",
 			"props": {
 				"name": "lbl",
-				"text": null,
 				"usePageVariable": true,
 				"children": [],
 				"parent": "e891b86d"
