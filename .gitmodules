@@ -1,4 +1,4 @@
 [submodule ".templates"]
 	path = .templates
-	url = git@github.com:smartface/template-packages.git
+	url = https://github.com/smartface/template-packages.git
 	branch = master
