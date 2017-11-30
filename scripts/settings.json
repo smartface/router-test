@@ -1,0 +1,11 @@
+{
+	"config": {
+		"theme": {
+			"currentTheme": "Defaults",
+			"themes": [
+				"Defaults"
+			]
+		},
+		"version": "6.5.3"
+	}
+}
