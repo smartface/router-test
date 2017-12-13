@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "sf-core": "^2.0.0",
+        "sf-core": "2.0.6",
         "js-base": "1.0.4",
         "@smartface/styler": "^1.0.0"
     }
