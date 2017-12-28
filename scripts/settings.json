@@ -1,9 +1,9 @@
 {
 	"config": {
 		"theme": {
-			"currentTheme": "Defaults",
+			"currentTheme": "defaultTheme",
 			"themes": [
-				"Defaults"
+				"defaultTheme"
 			]
 		},
 		"version": "6.5.3"
