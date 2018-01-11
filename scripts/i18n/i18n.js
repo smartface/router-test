@@ -35,8 +35,10 @@ SMF.i18n = {
 				this.switchLanguage(this.defaultLang);
 			}
 		}
-		this.currentLang = languageCode;
-		global.lang = this.languageKV[languageCode];
+		else {
+			this.currentLang = languageCode;
+			global.lang = this.languageKV[languageCode];
+		}
 	}
 };
 
