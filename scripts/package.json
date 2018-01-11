@@ -1,9 +1,9 @@
 {
     "dependencies": {
-        "sf-core": "2.0.6",
+        "sf-core": "2.0.7",
         "js-base": "1.0.4",
         "@smartface/styler": "^1.0.0",
-        "@smartface/contx": "1.0.0-rc.14",
+        "@smartface/contx": "1.0.0",
         "sf-extension-utils": "^3.2.1"
     }
 }
