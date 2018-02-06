@@ -79,7 +79,8 @@
 				},
 				"font": {
 					"color": "rgba( 255, 255, 255, 1 )",
-					"family": "Arial"
+					"family": "Arial",
+					"style": "RegularMT"
 				}
 			},
 			"className": ".button",
@@ -111,7 +112,8 @@
 					"marginRight": 20
 				},
 				"font": {
-					"family": "Arial"
+					"family": "Arial",
+					"style": "RegularMT"
 				}
 			},
 			"className": ".label",
