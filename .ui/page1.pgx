@@ -97,6 +97,7 @@
 					"marginLeft": 20,
 					"marginRight": 20
 				},
+				"height": 60,
 				"image": "smartface.png",
 				"maxHeight": 60,
 				"width": null
