@@ -1,46 +1,46 @@
 {
 	"components": [
 		{
-			"type": "Page",
 			"id": "57f4-201f-4bfc-5fc6",
-			"userProps": {},
+			"initialized": false,
 			"props": {
-				"name": "__library__",
-				"parent": null,
 				"children": [
 					"23c1-aa21-38ff-148e",
 					"76f4-a7ec-36e9-a444"
 				],
-				"orientation": "PORTRAIT"
+				"name": "__library__",
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"version": "6.6.1",
-			"initialized": false
+			"type": "Page",
+			"userProps": {},
+			"version": "6.6.2"
 		},
 		{
-			"type": "StatusBar",
 			"id": "23c1-aa21-38ff-148e",
-			"userProps": {},
 			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "statusBar",
 				"parent": "57f4-201f-4bfc-5fc6",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
+				"visible": true
+			},
+			"type": "StatusBar",
+			"userProps": {}
 		},
 		{
-			"type": "HeaderBar",
 			"id": "76f4-a7ec-36e9-a444",
-			"userProps": {
-				"title": "__library__"
-			},
 			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "57f4-201f-4bfc-5fc6",
-				"children": [],
 				"title": "__library__",
-				"visible": true,
-				"isRemovable": false
+				"visible": true
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "__library__"
 			}
 		}
 	]

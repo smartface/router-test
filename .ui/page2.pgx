@@ -1,22 +1,10 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "7761adc8",
 			"initialized": true,
-			"userProps": {
-				"orientation": "PORTRAIT",
-				"backgroundColor": "rgba( 197, 210, 28, 1 )",
-				"paddingLeft": 10,
-				"paddingRight": 10,
-				"flexProps": {
-					"justifyContent": "SPACE_AROUND"
-				}
-			},
-			"className": ".page",
-			"version": "6.6.1",
 			"props": {
-				"name": "page2",
 				"children": [
 					"a829471c",
 					"35f1c1a1",
@@ -24,130 +12,120 @@
 					"980522a9",
 					"c5abb100"
 				],
-				"parent": null,
+				"isRemovable": true,
+				"name": "page2",
 				"orientation": "PORTRAIT",
-				"isRemovable": true
-			}
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 197, 210, 28, 1 )",
+				"flexProps": {
+					"justifyContent": "SPACE_AROUND"
+				},
+				"orientation": "PORTRAIT",
+				"paddingLeft": 10,
+				"paddingRight": 10
+			},
+			"version": "6.6.2"
 		},
 		{
-			"type": "StatusBar",
+			"className": ".statusBar",
 			"id": "a829471c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "7761adc8"
+			},
+			"type": "StatusBar",
 			"userProps": {
 				"visible": true
-			},
-			"className": ".statusBar",
-			"props": {
-				"name": "statusBar",
-				"children": [],
-				"parent": "7761adc8",
-				"isRemovable": false
 			}
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".headerBar",
 			"id": "35f1c1a1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "7761adc8",
+				"title": "page2"
+			},
+			"type": "HeaderBar",
 			"userProps": {
 				"title": "page2",
 				"titleColor": "rgba( 0, 0, 0, 1 )",
 				"visible": true
-			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "page2",
-				"children": [],
-				"parent": "7761adc8",
-				"isRemovable": false
 			}
 		},
 		{
-			"type": "Button",
-			"id": "c5abb100",
-			"userProps": {
-				"height": 60,
-				"text": "Back",
-				"backgroundColor": "rgba( 0, 161, 241, 1 )",
-				"width": null,
-				"usePageVariable": true,
-				"maxHeight": 60,
-				"marginRight": 0,
-				"marginLeft": 0,
-				"flexProps": {
-					"marginLeft": 20,
-					"marginRight": 20,
-					"alignSelf": "STRETCH"
-				},
-				"font": {
-					"color": "rgba( 255, 255, 255, 1 )",
-					"family": "Arial",
-					"style": "RegularMT"
-				}
-			},
 			"className": ".button",
+			"id": "c5abb100",
 			"props": {
-				"name": "btn",
-				"text": "Back",
-				"usePageVariable": true,
 				"children": [],
-				"parent": "7761adc8"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "980522a9",
+				"name": "btn",
+				"parent": "7761adc8",
+				"text": "Back",
+				"usePageVariable": true
+			},
+			"type": "Button",
 			"userProps": {
-				"height": 90,
-				"text": "This is second page",
-				"backgroundColor": "rgba( 0, 0, 0, 0 )",
-				"visible": true,
-				"textAlignment": "MIDCENTER",
-				"width": null,
-				"maxHeight": 90,
-				"usePageVariable": true,
-				"marginRight": 0,
-				"marginLeft": 0,
 				"flexProps": {
-					"alignSelf": "STRETCH",
 					"marginLeft": 20,
 					"marginRight": 20
 				},
 				"font": {
-					"family": "Arial",
-					"style": "RegularMT"
-				}
-			},
-			"className": ".label",
-			"props": {
-				"name": "lbl",
-				"text": "This is second page",
+					"color": "rgba( 255, 255, 255, 1 )"
+				},
+				"maxHeight": 60,
+				"text": "Back",
 				"usePageVariable": true,
-				"children": [],
-				"parent": "7761adc8"
+				"width": null
 			}
 		},
 		{
-			"type": "ImageView",
-			"id": "845d2004",
+			"className": ".label",
+			"id": "980522a9",
+			"props": {
+				"children": [],
+				"name": "lbl",
+				"parent": "7761adc8",
+				"text": "This is second page",
+				"usePageVariable": true
+			},
+			"type": "Label",
 			"userProps": {
-				"height": 60,
-				"image": "smartface.png",
-				"imageFillType": "ASPECTFIT",
-				"visible": true,
-				"width": null,
-				"maxHeight": 60,
-				"marginRight": 0,
-				"marginLeft": 0,
+				"backgroundColor": "rgba( 0, 0, 0, 0 )",
 				"flexProps": {
-					"alignSelf": "STRETCH",
 					"marginLeft": 20,
 					"marginRight": 20
-				}
-			},
+				},
+				"maxHeight": 90,
+				"text": "This is second page",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
 			"className": ".imageView",
+			"id": "845d2004",
 			"props": {
-				"name": "img",
 				"children": [],
+				"name": "img",
 				"parent": "7761adc8"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"image": "smartface.png",
+				"maxHeight": 60,
+				"width": null
 			}
 		}
 	]

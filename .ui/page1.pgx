@@ -1,22 +1,10 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "e891b86d",
 			"initialized": true,
-			"userProps": {
-				"orientation": "PORTRAIT",
-				"backgroundColor": "#EEEEEE",
-				"paddingLeft": 10,
-				"paddingRight": 10,
-				"flexProps": {
-					"justifyContent": "SPACE_AROUND"
-				}
-			},
-			"className": ".page",
-			"version": "6.6.1",
 			"props": {
-				"name": "page1",
 				"children": [
 					"42b807d1",
 					"b7d28cff",
@@ -24,175 +12,168 @@
 					"980522a9",
 					"d0fa9c62"
 				],
-				"parent": null,
+				"isRemovable": true,
+				"name": "page1",
 				"orientation": "PORTRAIT",
-				"isRemovable": true
-			}
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_AROUND"
+				},
+				"orientation": "PORTRAIT",
+				"paddingLeft": 10,
+				"paddingRight": 10
+			},
+			"version": "6.6.2"
 		},
 		{
-			"type": "StatusBar",
+			"className": ".statusBar",
 			"id": "42b807d1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "e891b86d"
+			},
+			"type": "StatusBar",
 			"userProps": {
 				"visible": true
-			},
-			"className": ".statusBar",
-			"props": {
-				"name": "statusBar",
-				"children": [],
-				"parent": "e891b86d",
-				"isRemovable": false
 			}
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".headerBar",
 			"id": "b7d28cff",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "e891b86d",
+				"title": "page1"
+			},
+			"type": "HeaderBar",
 			"userProps": {
 				"title": "page1",
 				"titleColor": "rgba( 0, 0, 0, 1 )",
 				"visible": true
-			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "page1",
-				"children": [],
-				"parent": "e891b86d",
-				"isRemovable": false
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label",
 			"id": "980522a9",
+			"props": {
+				"children": [],
+				"name": "lbl",
+				"parent": "e891b86d",
+				"usePageVariable": true
+			},
+			"type": "Label",
 			"userProps": {
-				"height": 91,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"textAlignment": "MIDCENTER",
-				"width": null,
-				"marginLeft": null,
-				"marginRight": null,
-				"multiline": true,
-				"maxHeight": 90,
-				"usePageVariable": true,
 				"flexProps": {
-					"alignSelf": "STRETCH",
 					"marginLeft": 20,
 					"marginRight": 20
 				},
-				"font": {
-					"family": "Arial",
-					"style": "RegularMT"
-				}
-			},
-			"className": ".label",
-			"props": {
-				"name": "lbl",
+				"height": 90,
+				"maxHeight": 90,
+				"multiline": true,
+				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
-				"children": [],
-				"parent": "e891b86d"
+				"width": null
 			}
 		},
 		{
-			"type": "ImageView",
+			"className": ".imageView",
 			"id": "845d2004",
+			"props": {
+				"children": [],
+				"name": "img",
+				"parent": "e891b86d"
+			},
+			"type": "ImageView",
 			"userProps": {
-				"height": 60.3,
-				"image": "smartface.png",
-				"imageFillType": "ASPECTFIT",
-				"width": null,
-				"marginLeft": null,
-				"marginRight": null,
-				"maxHeight": 60,
 				"flexProps": {
-					"alignSelf": "STRETCH",
 					"marginLeft": 20,
 					"marginRight": 20
-				}
-			},
-			"className": ".imageView",
-			"props": {
-				"name": "img",
-				"children": [],
-				"parent": "e891b86d"
+				},
+				"image": "smartface.png",
+				"maxHeight": 60,
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"className": ".flexLayout",
 			"id": "d0fa9c62",
+			"props": {
+				"children": [
+					"48653d59",
+					"4608e562"
+				],
+				"name": "flexlayout",
+				"parent": "e891b86d",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"height": 130,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"width": null,
-				"marginLeft": null,
-				"marginRight": null,
-				"maxHeight": 130,
-				"usePageVariable": true,
 				"flexProps": {
 					"justifyContent": "SPACE_BETWEEN",
 					"alignSelf": "STRETCH",
 					"marginLeft": 20,
 					"marginRight": 20
-				}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"name": "flexlayout",
+				},
+				"height": 130,
+				"marginLeft": null,
+				"marginRight": null,
+				"maxHeight": 130,
 				"usePageVariable": true,
-				"children": [
-					"48653d59",
-					"4608e562"
-				],
-				"parent": "e891b86d"
+				"width": null
 			}
 		},
 		{
-			"type": "Button",
-			"id": "48653d59",
-			"userProps": {
-				"height": 60,
-				"text": "Click me!",
-				"backgroundColor": "rgba( 0, 161, 241, 1 )",
-				"width": null,
-				"usePageVariable": true,
-				"font": {
-					"color": "rgba( 255, 255, 255, 1 )",
-					"family": "Arial",
-					"style": "RegularMT"
-				}
-			},
 			"className": ".button",
+			"id": "48653d59",
 			"props": {
+				"children": [],
 				"name": "btn",
+				"parent": "d0fa9c62",
+				"text": "Click me!",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"color": "rgba( 255, 255, 255, 1 )"
+				},
+				"height": 60,
 				"text": "Click me!",
 				"usePageVariable": true,
-				"children": [],
-				"parent": "d0fa9c62"
+				"width": null
 			}
 		},
 		{
-			"type": "Button",
+			"className": ".button",
 			"id": "4608e562",
-			"userProps": {
-				"height": 60,
+			"props": {
+				"children": [],
+				"name": "btnNext",
+				"parent": "d0fa9c62",
 				"text": "Next Page",
-				"backgroundColor": "rgba( 0, 161, 241, 1 )",
-				"width": null,
-				"usePageVariable": true,
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
 				"flexProps": {
 					"marginTop": 10
 				},
 				"font": {
-					"color": "rgba( 255, 255, 255, 1 )",
-					"family": "Arial",
-					"style": "RegularMT"
-				}
-			},
-			"className": ".button",
-			"props": {
-				"name": "btnNext",
+					"color": "rgba( 255, 255, 255, 1 )"
+				},
+				"height": 60,
 				"text": "Next Page",
 				"usePageVariable": true,
-				"children": [],
-				"parent": "d0fa9c62"
+				"width": null
 			}
 		}
 	]
