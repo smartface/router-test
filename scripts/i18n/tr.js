@@ -36,5 +36,9 @@ SMF.i18n.defineLanguage('tr', {
 	"updateFail": "Güncelleme başarısız oldu",
 	"updateIsInProgress": "Güncelleme sürüyor",
 	"noInternetMessage": "İnternet Bağlantısı yok",
-	"noInternetTitle": "Bağlanamıyor"
+	"noInternetTitle": "Bağlanamıyor",
+	"useFaceIDTitle": "FaceID kullan",
+	"useFaceIDMessage": "Gelecekteki oturum açmalarında FaceID kullanmak ister misin?",
+	"scanFaceIDTitle": "FaceID ile oturum aç",
+	"scanFaceIDMessage": "Yüzünü tarat"
 });
