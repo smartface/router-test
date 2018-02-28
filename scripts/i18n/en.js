@@ -39,4 +39,8 @@ SMF.i18n.defineLanguage('en', {
 	"scanFingerprintMessage": "Scan your finger",
 	"noInternetMessage": "No Internet Connection",
 	"noInternetTitle": "Connection Failed",
+	"useFaceIDTitle": "Use FaceID",
+	"useFaceIDMessage": "Would you like to use FaceID login on your future logins?",
+	"scanFaceIDTitle": "Login with FaceID",
+	"scanFaceIDMessage": "Scan your face",
 });
