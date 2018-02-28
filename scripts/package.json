@@ -3,7 +3,7 @@
     "@smartface/contx": "^1.0.11",
     "@smartface/styler": "^1.0.0",
     "js-base": "1.0.4",
-    "sf-core": "^2.0.9-beta.11",
+    "sf-core": "^2.0.9",
     "sf-extension-utils": "^3.2.1"
   }
 }
