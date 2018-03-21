@@ -13,6 +13,7 @@ Application.onUnhandledError = function(e) {
 };
 
 const Router = require("sf-core/ui/router");
+require("./theme");
 
 // Define routes and go to initial page of application
 Router.add("page1", require("./pages/page1"));
