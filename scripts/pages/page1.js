@@ -1,20 +1,54 @@
-const extend = require("js-base/core/extend");
+const extend = require('js-base/core/extend');
 const Router = require("sf-core/ui/router");
-
+const System = require('sf-core/device/system');
 // Get generated UI code
-var Page1Design = require("../ui/ui_page1");
+const Page1Design = require('ui/ui_page1');
+
 
 const Page1 = extend(Page1Design)(
+    // Constructor
     function(_super) {
-        var self = this;
-        _super(self);
+        // Initalizes super class for this page scope
+        _super(this);
+        // overrides super.onShow method
+        this.onShow = onShow.bind(this, this.onShow.bind(this));
+        // overrides super.onLoad method
+        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
-        this.headerBar.leftItemEnabled = false;
-        this.flexlayout.children.btn.onPress = btn_onPress.bind(this);
-        this.btnNext.onPress = btnNext_onPress.bind(this);
     });
 
+/**
+ * @event onShow
+ * This event is called when a page appears on the screen (everytime).
+ * @param {function} superOnShow super onShow function
+ * @param {Object} parameters passed from Router.go function
+ */
+function onShow(superOnShow) {
+    superOnShow();
+    const page = this;
+    if (System.OS === "Android") {
+        setTimeout(() => page.btnNext.enabled = true, 300);
+    }
+}
+
+/**
+ * @event onLoad
+ * This event is called once when page is created.
+ * @param {function} superOnLoad super onLoad function
+ */
+function onLoad(superOnLoad) {
+    superOnLoad();
+    const page = this;
+    page.headerBar.leftItemEnabled = false;
+    page.flexlayout.children.btn.onPress = btn_onPress.bind(page);
+    page.btnNext.onPress = btnNext_onPress.bind(page);
+}
+
 function btnNext_onPress() {
+    const page = this;
+    if (System.OS === "Android") {
+        page.btnNext.enabled = false;
+    }
     Router.go("page2", {
         message: "Hello World!"
     });

@@ -76,7 +76,6 @@
 					"marginRight": 20
 				},
 				"height": 90,
-				"maxHeight": 90,
 				"multiline": true,
 				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
@@ -99,7 +98,6 @@
 				},
 				"height": 60,
 				"image": "smartface.png",
-				"maxHeight": 60,
 				"width": null
 			}
 		},
@@ -124,10 +122,11 @@
 					"marginLeft": 20,
 					"marginRight": 20
 				},
-				"height": 130,
+				"height": 145,
 				"marginLeft": null,
 				"marginRight": null,
-				"maxHeight": 130,
+				"marginTop": 10,
+				"paddingBottom": 15,
 				"usePageVariable": true,
 				"width": null
 			}

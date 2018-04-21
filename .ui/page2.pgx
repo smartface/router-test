@@ -79,7 +79,7 @@
 				"font": {
 					"color": "rgba( 255, 255, 255, 1 )"
 				},
-				"maxHeight": 60,
+				"height": 60,
 				"text": "Back",
 				"usePageVariable": true,
 				"width": null
@@ -102,7 +102,6 @@
 					"marginLeft": 20,
 					"marginRight": 20
 				},
-				"maxHeight": 90,
 				"text": "This is second page",
 				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
@@ -125,7 +124,6 @@
 				},
 				"height": 60,
 				"image": "smartface.png",
-				"maxHeight": 60,
 				"width": null
 			}
 		}
