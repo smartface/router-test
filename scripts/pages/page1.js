@@ -1,20 +1,19 @@
-const extend = require('js-base/core/extend');
+const extend = require("js-base/core/extend");
 const Router = require("sf-core/ui/router");
-const System = require('sf-core/device/system');
-// Get generated UI code
-const Page1Design = require('ui/ui_page1');
+const System = require("sf-core/device/system");
 
+// Get generated UI code
+const Page1Design = require("ui/ui_page1");
 
 const Page1 = extend(Page1Design)(
     // Constructor
     function(_super) {
         // Initalizes super class for this page scope
         _super(this);
-        // overrides super.onShow method
+        // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
-        // overrides super.onLoad method
+        // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-
     });
 
 /**
@@ -24,8 +23,9 @@ const Page1 = extend(Page1Design)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
-    superOnShow();
     const page = this;
+    superOnShow();
+
     if (System.OS === "Android") {
         setTimeout(() => page.btnNext.enabled = true, 300);
     }
@@ -37,8 +37,9 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
-    superOnLoad();
     const page = this;
+    superOnLoad();
+
     page.headerBar.leftItemEnabled = false;
     page.flexlayout.children.btn.onPress = btn_onPress.bind(page);
     page.btnNext.onPress = btnNext_onPress.bind(page);
@@ -46,6 +47,7 @@ function onLoad(superOnLoad) {
 
 function btnNext_onPress() {
     const page = this;
+
     if (System.OS === "Android") {
         page.btnNext.enabled = false;
     }
@@ -77,7 +79,8 @@ function btn_onPress() {
             myButtonText = "I'm not tired!";
             break;
         default:
-            myLabelText = "Isn't it good?\nEvery clicks count, you've clicked " + numberSuffix(btnClickCount) + " time!";
+            myLabelText = "Isn't it good?\nEvery clicks count, you've clicked " +
+                numberSuffix(btnClickCount) + " time!";
             myButtonText = "Click again?";
             break;
     }
@@ -91,23 +94,23 @@ function btn_onPress() {
 function numberSuffix(number) {
     var suffix = "th";
 
-    //Lets deal with small numbers
+    // Let's deal with small numbers
     var smallNumber = number % 100;
 
     if (smallNumber < 11 || smallNumber > 13) {
         switch (smallNumber % 10) {
             case 1:
-                suffix = 'st';
+                suffix = "st";
                 break;
             case 2:
-                suffix = 'nd';
+                suffix = "nd";
                 break;
             case 3:
-                suffix = 'rd';
+                suffix = "rd";
                 break;
         }
     }
     return number + suffix;
 }
 
-module && (module.exports = Page1);
+module.exports = Page1;

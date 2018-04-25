@@ -1,7 +1,7 @@
-const extend = require('js-base/core/extend');
+const extend = require("js-base/core/extend");
 const Router = require("sf-core/ui/router");
 const Color = require("sf-core/ui/color");
-const System = require('sf-core/device/system');
+const System = require("sf-core/device/system");
 
 // Get generated UI code
 const Page2Design = require('ui/ui_page2');
@@ -11,9 +11,9 @@ const Page2 = extend(Page2Design)(
     function(_super) {
         // Initalizes super class for this page scope
         _super(this);
-        // overrides super.onShow method
+        // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
-        // overrides super.onLoad method
+        // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     });
 
@@ -24,10 +24,12 @@ const Page2 = extend(Page2Design)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow, data) {
-    superOnShow();
     const page = this;
+    superOnShow();
+
     page.headerBar.itemColor = Color.BLACK;
-    if (!data) return;
+    if (!data)
+        return;
     console.log(data.message);
     if (System.OS === "Android") {
         setTimeout(() => page.btn.enabled = true, 400);
@@ -40,8 +42,9 @@ function onShow(superOnShow, data) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
-    superOnLoad();
     const page = this;
+    superOnLoad();
+
     page.btn.onPress = btn_onPress.bind(page);
     if (System.OS === "Android")
         page.btn.enabled = false;
@@ -54,4 +57,4 @@ function btn_onPress() {
     Router.goBack();
 }
 
-module && (module.exports = Page2);
+module.exports = Page2;
