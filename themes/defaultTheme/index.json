@@ -15,6 +15,7 @@
 		"Switch": ".switch",
 		"TextBox": ".textBox",
 		"TextArea": ".textArea",
+		"TextView": ".textView",
 		"VideoView": ".videoView",
 		"WebView": ".webView",
 		"ScrollView": ".scrollView",
