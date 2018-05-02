@@ -33,6 +33,12 @@ function clearProps(t) {
   return t;
 }
 
+function updateUnderlineColor(t){
+  if(t.underline && !t.underlineColor){
+    t.underlineColor = t.foregroundColor || "#000000";
+  }
+}
+
 
 function isPlainAttributedText(t){
     return ( 
@@ -48,5 +54,6 @@ module.exports = {
     isEaualProps,
     isEqualFontProps,
     clearProps,
-    isPlainAttributedText
+    isPlainAttributedText,
+    updateUnderlineColor
 };
