@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@smartface/smartface.ui-editor": "6.8.0-rc.10"
+    "@smartface/smartface.ui-editor": "6.8.0"
   }
 }
