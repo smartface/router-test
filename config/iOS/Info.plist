@@ -21,6 +21,10 @@
 	<string>Your NSAppleMusicUsageDescription</string>
 	<key>NSMotionUsageDescription</key>
 	<string>Your NSMotionUsageDescription</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Your NSMicrophoneUsageDescription</string>
+	<key>NSSpeechRecognitionUsageDescription </key>
+	<string>Your NSSpeechRecognitionUsageDescription </string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
