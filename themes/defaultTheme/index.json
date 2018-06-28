@@ -20,6 +20,8 @@
         "VideoView": ".videoView",
         "WebView": ".webView",
         "ScrollView": ".scrollView",
-        "ListViewItem": ".listViewItem"
+        "ListViewItem": ".listViewItem",
+        "CollectionView": ".collectionView",
+        "CollectionViewItem": ".collectionViewItem"
     }
 }

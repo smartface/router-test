@@ -1,22 +1,17 @@
 {
-    ".mapView": {
+    ".collectionView": {
         "height": 200,
         "width": 200,
         "touchEnabled": true,
-        "rotateEnabled": true,
-        "compassEnabled": true,
-        "scrollEnabled": true,
-        "type": "NORMAL",
+        "multiline": false,
+        "rowHeight": 60,
+        "itemCount": 3,
         "visible": true,
         "backgroundColor": "#FFFFFF",
         "alpha": 1,
         "borderColor": "rgba(0,0,0,1)",
         "borderWidth": 0,
         "font": {},
-        "centerLocation": {
-            "latitude": 40.7828647,
-            "longitude": -73.9675491
-        },
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
