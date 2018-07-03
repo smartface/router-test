@@ -9,6 +9,7 @@
 		"borderColor": "rgba(0,0,0,1)",
 		"borderWidth": 0,
 		"scrollBarEnabled": true,
+		"align": "HORIZONTAL",
 		"font": {},
 		"flexProps": {
 			"alignSelf": "AUTO",
