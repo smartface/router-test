@@ -1,5 +1,5 @@
 {
-    ".collectionView": {
+    ".gridView": {
         "height": 200,
         "width": 200,
         "touchEnabled": true,

@@ -7,7 +7,6 @@
         "ImageView": ".imageView",
         "Label": ".label",
         "ListView": ".listView",
-        "GridView": ".gridView",
         "MapView": ".mapView",
         "Page": ".page",
         "SearchView": ".searchView",
@@ -21,7 +20,7 @@
         "WebView": ".webView",
         "ScrollView": ".scrollView",
         "ListViewItem": ".listViewItem",
-        "CollectionView": ".collectionView",
-        "CollectionViewItem": ".collectionViewItem"
+        "GridView": ".gridView",
+        "GridViewItem": ".gridViewItem"
     }
 }
