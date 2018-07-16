@@ -13,8 +13,16 @@ Application.onUnhandledError = function(e) {
 };
 
 require("sf-extension-utils");
-const Router = require("sf-core/ui/router");
 require("./theme");
+const Router = require("sf-core/ui/router");
+const Network = require("sf-core/device/network");
+var notifier = new Network.createNotifier();
+
+notifier.subscribe((connectionType) => {
+    if (connectionType === Network.ConnectionType.NONE) {
+        alert("No Network Connection");
+    }
+});
 
 // Define routes and go to initial page of application
 Router.add("page1", require("./pages/page1"));
