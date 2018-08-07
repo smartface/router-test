@@ -8,7 +8,7 @@ const Application = require("sf-core/application");
 Application.onUnhandledError = function(e) {
     alert({
         title: lang.applicationError,
-        message: e.message + "\n\n*" + e.sourceURL + "\n*" + e.line + "\n*" + e.stack
+        message: e.stack || (e.message + "\n\n*" + e.sourceURL + "\n*" + e.line)
     });
 };
 
