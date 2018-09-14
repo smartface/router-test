@@ -2,13 +2,14 @@
 require("i18n/i18n.js"); // Generates global lang object
 
 const Application = require("sf-core/application");
+const OS = require('sf-core/device/system').OS;
 
 // Set uncaught exception handler, all exceptions that are not caught will
 // trigger onUnhandledError callback.
 Application.onUnhandledError = function(e) {
     alert({
-        title: lang.applicationError,
-        message: e.stack || (e.message + "\n\n*" + e.sourceURL + "\n*" + e.line)
+        title: e.type || lang.applicationError,
+        message: OS === "Android" ? e.stack : (e.message + "\n\n*" + e.stack)
     });
 };
 
