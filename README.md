@@ -1,3 +1,13 @@
+### Set up
+- Clone https://github.com/smartface/router to workspace root
+- Install dependencies of the router in the scripts folder
+```
+    "path-to-regexp": "^2.4.0"
+    "resolve-pathname": "^2.2.0"
+```
+- Run ``` npm run dev:link ```
+- Run on Devicce
+
 
      ____                       _    __                      _       
     / ___| _ __ ___   __ _ _ __| |_ / _| __ _  ___ ___      (_) ___  
