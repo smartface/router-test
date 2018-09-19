@@ -1,0 +1,180 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "e891b86d",
+			"initialized": true,
+			"props": {
+				"children": [
+					"42b807d1",
+					"b7d28cff",
+					"845d2004",
+					"980522a9",
+					"d0fa9c62"
+				],
+				"isRemovable": true,
+				"name": "page1",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_AROUND"
+				},
+				"orientation": "PORTRAIT",
+				"paddingLeft": 10,
+				"paddingRight": 10
+			},
+			"version": "6.10.2"
+		},
+		{
+			"className": ".statusBar",
+			"id": "42b807d1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "e891b86d"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
+			}
+		},
+		{
+			"className": ".headerBar",
+			"id": "b7d28cff",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "e891b86d",
+				"title": "page1"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "page1",
+				"titleColor": "rgba( 0, 0, 0, 1 )",
+				"visible": true
+			}
+		},
+		{
+			"className": ".label",
+			"id": "980522a9",
+			"props": {
+				"children": [],
+				"name": "lbl",
+				"parent": "e891b86d",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"height": 90,
+				"multiline": true,
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "845d2004",
+			"props": {
+				"children": [],
+				"name": "img",
+				"parent": "e891b86d"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"height": 60,
+				"image": "smartface.png",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "d0fa9c62",
+			"props": {
+				"children": [
+					"48653d59",
+					"4608e562"
+				],
+				"name": "flexlayout",
+				"parent": "e891b86d",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN",
+					"alignSelf": "STRETCH",
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"height": 145,
+				"marginLeft": null,
+				"marginRight": null,
+				"marginTop": 10,
+				"paddingBottom": 15,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "48653d59",
+			"props": {
+				"children": [],
+				"name": "btn",
+				"parent": "d0fa9c62",
+				"text": "Click me!",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"color": "rgba( 255, 255, 255, 1 )"
+				},
+				"height": 60,
+				"text": "Click me!",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "4608e562",
+			"props": {
+				"children": [],
+				"name": "btnNext",
+				"parent": "d0fa9c62",
+				"text": "Next Page",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"flexProps": {
+					"marginTop": 10
+				},
+				"font": {
+					"color": "rgba( 255, 255, 255, 1 )"
+				},
+				"height": 60,
+				"text": "Next Page",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

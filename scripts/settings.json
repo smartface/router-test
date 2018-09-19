@@ -1,0 +1,13 @@
+{
+	"config": {
+		"theme": {
+			"currentTheme": "newrouterTheme",
+			"themes": [
+				"defaultTheme",
+				"newrouterTheme"
+			],
+			"baseTheme": "newrouterTheme"
+		},
+		"version": "6.10.2"
+	}
+}
