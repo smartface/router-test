@@ -9,9 +9,10 @@ const Page2Design = require('ui/ui_page2');
 
 const Page2 = extend(Page2Design)(
     // Constructor
-    function(_super, data) {
+    function(_super, data, router) {
         // Initalizes super class for this page scope
         _super(this);
+        this.router = router;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
@@ -58,7 +59,7 @@ function onLoad(superOnLoad) {
 }
 
 function btn_onPress() {
-    Application.router.goBack();
+    this.router.goBack();
 }
 
 module.exports = Page2;

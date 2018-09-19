@@ -8,7 +8,7 @@ const Page1Design = require("ui/ui_page1");
 
 const Page1 = extend(Page1Design)(
     // Constructor
-    function(_super) {
+    function(_super, data, router) {
         // Initalizes super class for this page scope
         _super(this);
         // Overrides super.onShow method

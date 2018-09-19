@@ -35,14 +35,14 @@ Application.router = Router.of({
     routes: [
         Route.of({
             path: "/page1",
-            build: (params, state) => {
+            build: (match, state) => {
                 let Page1 = require("pages/page1");
                 return new Page1();
             }
         }),
         Route.of({
             path: "/page2",
-            build: (params, state) => {
+            build: (match, state) => {
                 let Page2 = require("pages/page2");
                 return new Page2();
             }
@@ -52,13 +52,13 @@ Application.router = Router.of({
             routes: [
                 Route.of({
                     path: "/stack/path1",
-                    build: (params, state) => new Page1(state.data)
+                    build: (match, state, router, view) => new Page1(state.data, router)
                 }),
                 Route.of({
                     path: "/stack/path2",
-                    build: (params, state) => {
+                    build: (match, state, router) => {
                         console.log("state : "+JSON.stringify(state));
-                        return new Page2(state.data)
+                        return new Page2(state.data, router)
                     }
                 })
             ]
