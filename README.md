@@ -1,6 +1,6 @@
 ### Set up
 - Clone https://github.com/smartface/router to workspace root
-- Clone sf-core to scripts/node_modules and change branch to 'controllers-analysis'
+- Clone sf-core to scripts/node_modules and change branch to controllers-analysis
 - Install dependencies of the router in the scripts folder
 ```
     "path-to-regexp": "^2.4.0"
