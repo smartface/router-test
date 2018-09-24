@@ -16,9 +16,9 @@
         },
         "orientation": {
             "portrait": true,
-            "upsideDown": false,
-            "landScapeLeft": false,
-            "landScapeRight": false
+            "upsideDown": true,
+            "landScapeLeft": true,
+            "landScapeRight": true
         }
     },
     "api": {
