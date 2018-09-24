@@ -33,9 +33,13 @@ notifier.subscribe((connectionType) => {
 var Page1 = require("pages/page1");
 var Page2 = require("pages/page2");
 
+var bottomPage1 = new Page1({});
+var bottomPage2 = new Page2({});
+
 // Define routes and go to initial page of application
 Application.router = StackRouter.of({
     path: "/pages",
+    isRoot: true,
     routes: [
         Route.of({
             path: "/pages/page1",
@@ -54,7 +58,6 @@ Application.router = StackRouter.of({
         }),
         StackRouter.of({
             path: "/stack",
-            // build: (match, state, router) => new Page1(state.data, router),
             to: "/stack/path1",
             routes: [
                 Route.of({
@@ -76,6 +79,7 @@ Application.router = StackRouter.of({
         }),
         BottomTabBarRouter.of({
             path: "/bottom",
+            to: "/bottom/page2",
             tabbarParams: () => ({
                 ios: { translucent: false},
                 itemColor: Color.RED,
@@ -87,35 +91,40 @@ Application.router = StackRouter.of({
             routes: [
                 Route.of({
                     path: "/bottom/page1",
-                    build: (match, state, router, view) => new Page1(state && state.data || {}, router)
+                    build: (match, state, router, view) => {
+                        bottomPage1._router = router;
+                        return bottomPage1
+                    }
                 }),
                 Route.of({
                     path: "/bottom/page2",
                     build: (match, state, router, view) => {
-                        return new Page2(state && state.data || {}, router);
+                        bottomPage2.router = router;
+                        return bottomPage2;
                     }
                 })
             ]
         })
     ]
 });
-// Router.add("page1", "pages/page1");
-// Router.add("page2", "pages/page2");
-// Application.router.go("/bottom/page1");
-const TabBarItem = require('sf-core/ui/tabbaritem');
 
-const Renderer = require("@smartface/router/src/native/IOSRenderer");
-const TabBarController = require("sf-core/ui/bottomtabbarcontroller");
-// console.log("3");
+
+Application.router.go("/bottom/page1");
 
 // var page1 = new Page1();
-// // navigationController.childViewControllers= []
+// navigationController.childViewControllers= []
 // var navigationController = new NavigationController();
 // navigationController.childControllers = [page1];
-var renderer = new Renderer(TabBarController);
 // {_rootController: new TabBarController()};
-// new Renderer(TabBarController);
 
+/*
+const TabBarItem = require('sf-core/ui/tabbaritem');
+const Renderer = require("@smartface/router/src/native/IOSRenderer");
+const TabBarController = require("sf-core/ui/bottomtabbarcontroller");
+console.log("3");
+
+new Renderer(TabBarController);
+var renderer = new Renderer(TabBarController);
 renderer._rootController.tabBar.ios.translucent = false;
 
 renderer._rootController.childControllers = [new Page1,new Page2];
@@ -130,20 +139,22 @@ renderer._rootController.tabBar.items = [
         title : "page2"
 })];
 
-
 renderer._rootController.selectedIndex = 0;
 renderer._rootController.show();
-
 renderer._rootController.tabBar.ios.translucent = false;
-renderer._rootController.tabBar.itemColor = Color.RED;
+renderer._rootController.tabBar.itemColor = Color.RED;``
 renderer._rootController.tabBar.unselectedItemColor = Color.YELLOW;
+renderer.activate();
+Renderer.setasRoot(new Page1());
+renderer.activate();
 // bottomtabbarcontroller.tabBar.backgroundColor = Color.BLUE;
-console.log("tabbarHeight : " + renderer._rootController.tabBar.height);
 
+console.log("tabbarHeight : " + renderer._rootController.tabBar.height);
 console.log("translucent : " + renderer._rootController.tabBar.ios.translucent);
 console.log("bottomtabbar items : " + renderer._rootController.tabBar.items); // TODO :returns undefined, this will fix.
 
 console.log("6");
+
 renderer._rootController.shouldSelectByIndex = function(params){
     console.log("=========================================");
     console.log("bottomtabbarcontroller shouldSelectByIndex");
@@ -151,13 +162,17 @@ renderer._rootController.shouldSelectByIndex = function(params){
     console.log("=========================================");
     return true;
 };
+
 renderer._rootController.didSelectByIndex = function(params){
     console.log("=========================================");
     console.log("bottomtabbarcontroller didSelectByIndex");
     console.log("index : " + params.index);
     console.log("=========================================");
 };
-Application.setRootController(renderer._rootController);
+
+// renderer.setRootController(renderer._rootController);
 console.log("7");
 
 // renderer.pushChild(page1);
+
+*/

@@ -51,7 +51,7 @@ function onLoad(superOnLoad) {
     // if (System.OS === "Android")
         // page.btn.enabled = false;
     page.android.onBackButtonPressed = () => {
-        page.btn.enabled && Application.router.goBack();
+        this.router.goBack();
     };
 }
 
