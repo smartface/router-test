@@ -11,6 +11,7 @@ const Page1 = extend(Page1Design)(
     function(_super, data, router) {
         // Initalizes super class for this page scope
         _super(this);
+        this._router = router;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
@@ -40,7 +41,7 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
-
+    
     page.headerBar.leftItemEnabled = false;
     page.flexlayout.children.btn.onPress = btn_onPress.bind(page);
     page.btnNext.onPress = btnNext_onPress.bind(page);
@@ -52,7 +53,8 @@ function btnNext_onPress() {
     if (System.OS === "Android") {
         page.btnNext.enabled = false;
     }
-    Application.router.go("/stack/path2", {
+    this._router.go("/stack/path2", {
+        applied: this._applied,
         message: "Hello World!"
     });
 }
@@ -61,6 +63,8 @@ var btnClickCount = 0;
 
 // Gets/sets press event callback for btn
 function btn_onPress() {
+    this._applied = true;
+    
     var myLabelText = "";
     var myButtonText = "";
 
@@ -94,7 +98,7 @@ function btn_onPress() {
 // Adds appropriate suffix to given number
 function numberSuffix(number) {
     var suffix = "th";
-
+    
     // Let's deal with small numbers
     var smallNumber = number % 100;
 

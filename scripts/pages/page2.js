@@ -17,9 +17,6 @@ const Page2 = extend(Page2Design)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        
-        console.log(data.message);
-
     });
 
 /**
@@ -51,8 +48,8 @@ function onLoad(superOnLoad) {
     superOnLoad();
 
     page.btn.onPress = btn_onPress.bind(page);
-    if (System.OS === "Android")
-        page.btn.enabled = false;
+    // if (System.OS === "Android")
+        // page.btn.enabled = false;
     page.android.onBackButtonPressed = () => {
         page.btn.enabled && Application.router.goBack();
     };
