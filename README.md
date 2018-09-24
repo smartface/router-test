@@ -6,7 +6,7 @@
     "path-to-regexp": "^2.4.0"
     "resolve-pathname": "^2.2.0"
 ```
-- Run ``` npm run dev:link ```
+- Run ``` cd router && npm run dev:link ```
 - Run on Devicce
 
 
