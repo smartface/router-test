@@ -50,10 +50,10 @@ function onLoad(superOnLoad) {
 function btnNext_onPress() {
     const page = this;
 
-    if (System.OS === "Android") {
-        page.btnNext.enabled = false;
-    }
-    this._router.go("/stack/path2", {
+    // if (System.OS === "Android") {
+    //     page.btnNext.enabled = false;
+    // }
+    this._router.push("/stack/path2", {
         applied: this._applied,
         message: "Hello World!"
     });

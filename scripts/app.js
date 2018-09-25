@@ -37,7 +37,7 @@ var bottomPage1 = new Page1({});
 var bottomPage2 = new Page2({});
 
 // Define routes and go to initial page of application
-Application.router = StackRouter.of({
+const router = StackRouter.of({
     path: "/pages",
     isRoot: true,
     routes: [
@@ -92,6 +92,7 @@ Application.router = StackRouter.of({
                 Route.of({
                     path: "/bottom/page1",
                     build: (match, state, router, view) => {
+                        alert("route page1");
                         bottomPage1._router = router;
                         return bottomPage1
                     }
@@ -109,7 +110,7 @@ Application.router = StackRouter.of({
 });
 
 
-Application.router.go("/bottom/page1");
+router.push("/stack/page1");
 
 // var page1 = new Page1();
 // navigationController.childViewControllers= []
