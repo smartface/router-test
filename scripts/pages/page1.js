@@ -42,7 +42,7 @@ function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
     
-    page.headerBar.leftItemEnabled = false;
+    page.headerBar.leftItemEnabled = true;
     page.flexlayout.children.btn.onPress = btn_onPress.bind(page);
     page.btnNext.onPress = btnNext_onPress.bind(page);
 }

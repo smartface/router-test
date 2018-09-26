@@ -14,17 +14,12 @@ Application.onUnhandledError = function(e) {
 
 require("sf-extension-utils");
 require("./theme");
+require("./routes.js");
 
 const Network = require("sf-core/device/network");
-const Router = require("@smartface/router/src/native/NativeRouter");
-const StackRouter = require("@smartface/router/src/native/NativeStackRouter");
-const BottomTabBarRouter = require("@smartface/router/src/native/BottomTabBarRouter");
-const Route = require("@smartface/router/src/router/Route");
-const Color = require('sf-core/ui/color');
-
-const Page = require('sf-core/ui/page');
 
 var notifier = new Network.createNotifier();
+
 
 notifier.subscribe((connectionType) => {
     if (connectionType === Network.ConnectionType.NONE) {
@@ -32,99 +27,7 @@ notifier.subscribe((connectionType) => {
     }
 });
 
-var Page1 = require("pages/page1");
-var Page2 = require("pages/page2");
 
-var bottomPage1 = new Page1({});
-var bottomPage2 = new Page2({});
-
-
-// 
-
-// Define routes and go to initial page of application
-const router = Router.of({
-    path: "/pages",
-    isRoot: true,
-    build: () => {
-        return new Page({ orientation: Page.Orientation.AUTO });
-    },
-    routes: [
-        Route.of({
-            path: "/pages/page1",
-            build: (match, state, router) => {
-                console.log("page1");
-                let Page1 = require("pages/page1");
-                return new Page1(state.data, router);
-            }
-        }),
-        Route.of({
-            path: "/pages/page2",
-            build: (match, state) => {
-                let Page2 = require("pages/page2");
-                return new Page2();
-            }
-        }),
-        StackRouter.of({
-            path: "/stack",
-            to: "/stack/path1",
-            build: () => {
-                const NavigationController = require('sf-core/ui/navigationcontroller');
-                return new NavigationController();
-            },
-            routes: [
-                Route.of({
-                    path: "/stack/path1",
-                    build: (match, state, router) => new Page1(state.data, router)
-                }),
-                Route.of({
-                    path: "/stack/path2",
-                    build: (match, state, router) => {
-                        if(!state.data.applied){
-                            // blocks route changing
-                            return null;
-                        }
-                        
-                        return new Page1(state.data, router);
-                    }
-                })
-            ]
-        }),
-        BottomTabBarRouter.of({
-            path: "/bottom",
-            to: "/bottom/page2",
-            build: () => {
-                const BottomTabBarController = require('sf-core/ui/bottomtabbarcontroller');
-                return new BottomTabBarController();
-            },
-            tabbarParams: () => ({
-                ios: { translucent: false},
-                itemColor: Color.RED,
-                unselectedItemColor: Color.YELLOW,
-                backgroundColor: Color.BLUE,
-                height: 100
-            }),
-            items: () => [{title : "page1"}, {title: "page2"}],
-            routes: [
-                Route.of({
-                    path: "/bottom/page1",
-                    build: (match, state, router, view) => {
-                        bottomPage1._router = router;
-                        return bottomPage1
-                    }
-                }),
-                Route.of({
-                    path: "/bottom/page2",
-                    build: (match, state, router, view) => {
-                        bottomPage2.router = router;
-                        return bottomPage2;
-                    }
-                })
-            ]
-        })
-    ]
-});
-
-router.push("/stack/path1");
 
 // var page1 = new Page1();
 // navigationController.childViewControllers= []
