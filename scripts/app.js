@@ -22,6 +22,8 @@ const BottomTabBarRouter = require("@smartface/router/src/native/BottomTabBarRou
 const Route = require("@smartface/router/src/router/Route");
 const Color = require('sf-core/ui/color');
 
+const Page = require('sf-core/ui/page');
+
 var notifier = new Network.createNotifier();
 
 notifier.subscribe((connectionType) => {
@@ -36,10 +38,16 @@ var Page2 = require("pages/page2");
 var bottomPage1 = new Page1({});
 var bottomPage2 = new Page2({});
 
+
+// 
+
 // Define routes and go to initial page of application
-const router = StackRouter.of({
+const router = Router.of({
     path: "/pages",
     isRoot: true,
+    build: () => {
+        return new Page({ orientation: Page.Orientation.AUTO });
+    },
     routes: [
         Route.of({
             path: "/pages/page1",
@@ -59,6 +67,10 @@ const router = StackRouter.of({
         StackRouter.of({
             path: "/stack",
             to: "/stack/path1",
+            build: () => {
+                const NavigationController = require('sf-core/ui/navigationcontroller');
+                return new NavigationController();
+            },
             routes: [
                 Route.of({
                     path: "/stack/path1",
@@ -72,7 +84,7 @@ const router = StackRouter.of({
                             return null;
                         }
                         
-                        return new Page2(state.data, router);
+                        return new Page1(state.data, router);
                     }
                 })
             ]
@@ -80,6 +92,10 @@ const router = StackRouter.of({
         BottomTabBarRouter.of({
             path: "/bottom",
             to: "/bottom/page2",
+            build: () => {
+                const BottomTabBarController = require('sf-core/ui/bottomtabbarcontroller');
+                return new BottomTabBarController();
+            },
             tabbarParams: () => ({
                 ios: { translucent: false},
                 itemColor: Color.RED,
@@ -92,7 +108,6 @@ const router = StackRouter.of({
                 Route.of({
                     path: "/bottom/page1",
                     build: (match, state, router, view) => {
-                        alert("route page1");
                         bottomPage1._router = router;
                         return bottomPage1
                     }
@@ -109,8 +124,7 @@ const router = StackRouter.of({
     ]
 });
 
-
-router.push("/stack/page1");
+router.push("/stack/path1");
 
 // var page1 = new Page1();
 // navigationController.childViewControllers= []
