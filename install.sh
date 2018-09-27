@@ -8,7 +8,7 @@
     npm i
     cd node_modules
     rm -R sf-core
-    git clone git clone git@bitbucket.org:smartface-team/sf-core.git
+    git clone git@bitbucket.org:smartface-team/sf-core.git
     cd sf-core
     git checkout controllers-analysis
     npm i
