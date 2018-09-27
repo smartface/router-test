@@ -5,6 +5,7 @@
     git clone https://github.com/smartface/router.git
     cd scripts
     npm i -S path-to-regexp@2.4.0 resolve-pathname@2.2.0
+    npm i
     cd node_modules
     rm -R sf-core
     git clone git clone git@bitbucket.org:smartface-team/sf-core.git
