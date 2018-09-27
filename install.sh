@@ -3,7 +3,7 @@
 (
     cd ~/workspace
     git clone https://github.com/smartface/router.git
-    cd ../scripts
+    cd scripts
     npm i -S path-to-regexp@2.4.0 resolve-pathname@2.2.0
     cd node_modules
     rm -R sf-core
