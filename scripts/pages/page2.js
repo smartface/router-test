@@ -2,15 +2,17 @@ const extend = require("js-base/core/extend");
 const Router = require("sf-core/ui/router");
 const Color = require("sf-core/ui/color");
 const System = require("sf-core/device/system");
+const Application = require("sf-core/application");
 
 // Get generated UI code
 const Page2Design = require('ui/ui_page2');
 
 const Page2 = extend(Page2Design)(
     // Constructor
-    function(_super) {
+    function(_super, data, router) {
         // Initalizes super class for this page scope
         _super(this);
+        this.router = router;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
@@ -30,7 +32,7 @@ function onShow(superOnShow, data) {
     page.headerBar.itemColor = Color.BLACK;
     if (!data)
         return;
-    console.log(data.message);
+
     if (System.OS === "Android") {
         setTimeout(() => page.btn.enabled = true, 400);
     }
@@ -46,15 +48,15 @@ function onLoad(superOnLoad) {
     superOnLoad();
 
     page.btn.onPress = btn_onPress.bind(page);
-    if (System.OS === "Android")
-        page.btn.enabled = false;
+    // if (System.OS === "Android")
+        // page.btn.enabled = false;
     page.android.onBackButtonPressed = () => {
-        page.btn.enabled && Router.goBack();
+        this.router.goBack();
     };
 }
 
 function btn_onPress() {
-    Router.goBack();
+    this.router.goBack();
 }
 
 module.exports = Page2;
