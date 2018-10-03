@@ -94,7 +94,8 @@
         "output": {
             "ios": {
                 "outputFolder": "output/iOS",
-                "bundleIdentifier": "io.smartface.demo"
+                "bundleIdentifier": "io.smartface.demo",
+                "targetedDeviceFamily": "universal"
             },
             "android": {
                 "outputFolder": "output/Android",
