@@ -9,7 +9,7 @@
 		"borderColor": "rgba(0,0,0,1)",
 		"borderWidth": 0,
 		"scrollBarEnabled": true,
-		"align": "HORIZONTAL",
+		"align": "VERTICAL",
 		"font": {},
 		"flexProps": {
 			"alignSelf": "AUTO",
