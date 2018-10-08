@@ -9,6 +9,7 @@
 					"42b807d1",
 					"b7d28cff",
 					"845d2004",
+					"2043-d9a3-053b-8cbc",
 					"980522a9",
 					"d0fa9c62"
 				],
@@ -60,16 +61,60 @@
 			}
 		},
 		{
+			"className": ".imageView",
+			"id": "845d2004",
+			"props": {
+				"autoHeight": 54.385964912280706,
+				"children": [],
+				"name": "img",
+				"parent": "e891b86d"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 54.385964912280706,
+				"flexProps": {
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"height": 60,
+				"image": "smartface.png",
+				"width": null
+			}
+		},
+		{
+			"className": ".textView",
+			"id": "2043-d9a3-053b-8cbc",
+			"props": {
+				"children": [],
+				"name": "textView1",
+				"parent": "e891b86d",
+				"text": "asdfasdf asdfnaslkdflkasd faskld fnaksd"
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {},
+				"height": 72.31120059364721,
+				"html": "asdfasdf <font color=\"#dd1818\" style=\"font-family: ios-Default-Bold;\">asdfnaslkdflkasd</font> faskld <span style=\"background-color: rgba(233, 13, 13, 0);\">fnaksd</span>",
+				"text": "asdfasdf asdfnaslkdflkasd faskld fnaksd",
+				"textAlignment": "MIDCENTER",
+				"width": 348.2456140350877
+			}
+		},
+		{
 			"className": ".label",
 			"id": "980522a9",
 			"props": {
+				"autoHeight": 21.05263157894737,
 				"children": [],
 				"name": "lbl",
 				"parent": "e891b86d",
+				"text": "asdfasdfasdfasd asdf",
 				"usePageVariable": true
 			},
 			"type": "Label",
 			"userProps": {
+				"autoHeight": 21.05263157894737,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"marginLeft": 20,
@@ -77,27 +122,9 @@
 				},
 				"height": 90,
 				"multiline": true,
+				"text": "asdfasdfasdfasd asdf",
 				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "845d2004",
-			"props": {
-				"children": [],
-				"name": "img",
-				"parent": "e891b86d"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"flexProps": {
-					"marginLeft": 20,
-					"marginRight": 20
-				},
-				"height": 60,
-				"image": "smartface.png",
 				"width": null
 			}
 		},
@@ -135,6 +162,7 @@
 			"className": ".button",
 			"id": "48653d59",
 			"props": {
+				"autoHeight": 61.40350877192983,
 				"children": [],
 				"name": "btn",
 				"parent": "d0fa9c62",
@@ -143,6 +171,7 @@
 			},
 			"type": "Button",
 			"userProps": {
+				"autoHeight": 61.40350877192983,
 				"font": {
 					"color": "rgba( 255, 255, 255, 1 )"
 				},
@@ -156,6 +185,7 @@
 			"className": ".button",
 			"id": "4608e562",
 			"props": {
+				"autoHeight": 61.40350877192983,
 				"children": [],
 				"name": "btnNext",
 				"parent": "d0fa9c62",
@@ -164,6 +194,7 @@
 			},
 			"type": "Button",
 			"userProps": {
+				"autoHeight": 61.40350877192983,
 				"flexProps": {
 					"marginTop": 10
 				},

@@ -3,6 +3,7 @@
 		"theme": {
 			"currentTheme": "newrouterTheme",
 			"themes": [
+				"a",
 				"defaultTheme",
 				"newrouterTheme"
 			],

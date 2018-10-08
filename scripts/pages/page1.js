@@ -53,7 +53,7 @@ function btnNext_onPress() {
     // if (System.OS === "Android") {
     //     page.btnNext.enabled = false;
     // }
-    this._router.push("/stack/path2", {
+    this._router.push("/user/login", {
         applied: this._applied,
         message: "Hello World!"
     });

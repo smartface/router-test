@@ -1,0 +1,68 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "c2b9-eaca-3f0a-30a2",
+			"initialized": true,
+			"props": {
+				"children": [
+					"0945-ca27-3fca-b0b4",
+					"6b1c-0211-dcf7-3149",
+					"e6be-e979-18b9-9814"
+				],
+				"name": "pgLogin",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "6.10.2"
+		},
+		{
+			"className": ".statusBar",
+			"id": "0945-ca27-3fca-b0b4",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "c2b9-eaca-3f0a-30a2"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"id": "6b1c-0211-dcf7-3149",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "c2b9-eaca-3f0a-30a2",
+				"title": "Login Page"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Login Page"
+			}
+		},
+		{
+			"className": ".button",
+			"id": "e6be-e979-18b9-9814",
+			"props": {
+				"children": [],
+				"name": "button1",
+				"parent": "c2b9-eaca-3f0a-30a2",
+				"text": "Back"
+			},
+			"type": "Button",
+			"userProps": {
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"left": 56.140350877192986,
+				"text": "Back",
+				"top": 261.40350877192986
+			}
+		}
+	]
+}
