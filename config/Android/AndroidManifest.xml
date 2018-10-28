@@ -173,7 +173,8 @@
 					android:resource="@xml/provider_paths"/>
 			</provider>
 			
-			<!-- Cropping Image Activity comes build-in into the Emulator. But to use this feature in published apps, you must define it-->
+			<!-- Cropping Image Activity comes built-in into the Emulator. 
+			But to use this feature in published apps, you must define it-->
 			<!--<activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat" />-->
 	</application>
 </manifest>
