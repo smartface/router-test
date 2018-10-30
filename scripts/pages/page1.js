@@ -1,4 +1,5 @@
 const extend = require("js-base/core/extend");
+const Router = require("sf-core/ui/router");
 const System = require("sf-core/device/system");
 
 // Get generated UI code
@@ -6,10 +7,9 @@ const Page1Design = require("ui/ui_page1");
 
 const Page1 = extend(Page1Design)(
     // Constructor
-    function(_super, data, router) {
+    function(_super) {
         // Initalizes super class for this page scope
         _super(this);
-        this._router = router;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
@@ -39,19 +39,19 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
-    
-    page.headerBar.leftItemEnabled = true;
+
+    page.headerBar.leftItemEnabled = false;
     page.flexlayout.children.btn.onPress = btn_onPress.bind(page);
     page.btnNext.onPress = btnNext_onPress.bind(page);
 }
 
 function btnNext_onPress() {
+    const page = this;
 
-    // if (System.OS === "Android") {
-    //     page.btnNext.enabled = false;
-    // }
-    this._router.push("/pages/page2", {
-        applied: this._applied,
+    if (System.OS === "Android") {
+        page.btnNext.enabled = false;
+    }
+    Router.go("page2", {
         message: "Hello World!"
     });
 }
@@ -60,8 +60,6 @@ var btnClickCount = 0;
 
 // Gets/sets press event callback for btn
 function btn_onPress() {
-    this._applied = true;
-    
     var myLabelText = "";
     var myButtonText = "";
 
@@ -95,7 +93,7 @@ function btn_onPress() {
 // Adds appropriate suffix to given number
 function numberSuffix(number) {
     var suffix = "th";
-    
+
     // Let's deal with small numbers
     var smallNumber = number % 100;
 

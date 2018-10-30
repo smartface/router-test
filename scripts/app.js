@@ -25,12 +25,7 @@ notifier.subscribe((connectionType) => {
     }
 });
 
-/*
 // Define routes and go to initial page of application
 Router.add("page1", "pages/page1");
 Router.add("page2", "pages/page2");
 Router.go("page1");
-
-*/
-require("./routes.js");
-
