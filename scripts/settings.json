@@ -1,11 +1,22 @@
 {
 	"config": {
 		"theme": {
-			"currentTheme": "defaultTheme",
+			"currentTheme": "workspaceTheme",
+			"baseTheme": "workspaceTheme",
 			"themes": [
-				"defaultTheme"
+				"defaultTheme",
+				"workspaceTheme"
 			]
 		},
-		"version": "6.10.2"
+		"paths": {
+			"pgxFolder": ".ui",
+			"uiFolder": "scripts/ui",
+			"pagesFolder": "scripts/pages",
+			"libraryUiFolder": "scripts/node_modules/library",
+			"libraryUserFolder": "scripts/components",
+			"themesFolder": "themes",
+			"themesDistFolder": "scripts/themes"
+		},
+		"version": "6.10.3-rc.1"
 	}
 }
