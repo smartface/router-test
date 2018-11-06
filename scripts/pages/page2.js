@@ -1,5 +1,4 @@
 const extend = require("js-base/core/extend");
-const Router = require("sf-core/ui/router");
 const Color = require("sf-core/ui/color");
 const System = require("sf-core/device/system");
 const Application = require("sf-core/application");
@@ -51,7 +50,7 @@ function onLoad(superOnLoad) {
     // if (System.OS === "Android")
         // page.btn.enabled = false;
     page.android.onBackButtonPressed = () => {
-        this.router.goBack();
+        this.router.push("");
     };
 }
 

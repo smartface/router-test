@@ -1,21 +1,57 @@
 const extend = require("js-base/core/extend");
-const Router = require("sf-core/ui/router");
 const System = require("sf-core/device/system");
 const Application = require("sf-core/application");
+const AlertView = require("sf-core/ui/alertview");
 
 // Get generated UI code
 const Page1Design = require("ui/ui_page1");
 
 const Page1 = extend(Page1Design)(
     // Constructor
-    function(_super, data, router) {
+    function(_super, data, router, link) {
         // Initalizes super class for this page scope
         _super(this);
+        this._link = link;
         this._router = router;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+        // this.onHide = () => {
+        //     console.log('onhide');
+        //     // this.unblock();
+        // }
+        
+        this.onRouteEnter = (router, route) => {
+            console.log(`onRouteEnter ${route}`);
+            this.unblock = router.addRouteBlocker((path, routeData, action, ok) => {
+                
+                alert({
+                    message: "Would you like to answer?",
+                    title: "Question", //optional
+                    buttons: [{
+                            text: "Yes",
+                            type: AlertView.Android.ButtonType.POSITIVE,
+                            onClick: function() {
+                                ok(true)
+                            }
+                        },
+                        {
+                            text: "No",
+                            type: AlertView.Android.ButtonType.NEGATIVE,
+                            onClick: function() {
+                                ok(false);
+                            },
+                        }
+                    ]
+                });
+            });
+        };
+        
+        this.onRouteExit = (router, route) => {
+            console.log(`onRouteExit ${route}`);
+          this.unblock();  
+        };
     });
 
 /**
@@ -27,7 +63,8 @@ const Page1 = extend(Page1Design)(
 function onShow(superOnShow) {
     const page = this;
     superOnShow();
-
+    // this._router.setHeaderbarProps({visible: false});
+    
     if (System.OS === "Android") {
         setTimeout(() => page.btnNext.enabled = true, 300);
     }
@@ -41,7 +78,7 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
-    
+
     page.headerBar.leftItemEnabled = true;
     page.flexlayout.children.btn.onPress = btn_onPress.bind(page);
     page.btnNext.onPress = btnNext_onPress.bind(page);
@@ -53,7 +90,7 @@ function btnNext_onPress() {
     // if (System.OS === "Android") {
     //     page.btnNext.enabled = false;
     // }
-    this._router.push("/user/login", {
+    this._router.push(this._link, {
         applied: this._applied,
         message: "Hello World!"
     });
@@ -63,8 +100,9 @@ var btnClickCount = 0;
 
 // Gets/sets press event callback for btn
 function btn_onPress() {
+
     this._applied = true;
-    
+
     var myLabelText = "";
     var myButtonText = "";
 
@@ -98,7 +136,7 @@ function btn_onPress() {
 // Adds appropriate suffix to given number
 function numberSuffix(number) {
     var suffix = "th";
-    
+
     // Let's deal with small numbers
     var smallNumber = number % 100;
 
