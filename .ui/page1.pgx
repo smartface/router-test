@@ -27,7 +27,7 @@
 				"paddingLeft": 10,
 				"paddingRight": 10
 			},
-			"version": "6.11.1"
+			"version": "6.11.2"
 		},
 		{
 			"className": ".statusBar",
@@ -134,6 +134,7 @@
 			"props": {
 				"children": [
 					"48653d59",
+					"39c8-39ce-77b6-ff87",
 					"4608e562"
 				],
 				"name": "flexlayout",
@@ -149,13 +150,13 @@
 					"marginLeft": 20,
 					"marginRight": 20
 				},
-				"height": 145,
+				"height": 213.12994275774273,
 				"marginLeft": null,
 				"marginRight": null,
 				"marginTop": 10,
 				"paddingBottom": 15,
 				"usePageVariable": true,
-				"width": null
+				"width": 356.78571973528176
 			}
 		},
 		{
@@ -183,18 +184,18 @@
 		},
 		{
 			"className": ".button",
-			"id": "4608e562",
+			"id": "39c8-39ce-77b6-ff87",
 			"props": {
-				"autoHeight": 61.40350877192983,
+				"autoHeight": 60.71428571428571,
 				"children": [],
-				"name": "btnNext",
+				"name": "btnNext_1",
 				"parent": "d0fa9c62",
-				"text": "Next Page",
+				"text": "Action 2",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 61.40350877192983,
+				"autoHeight": 60.71428571428571,
 				"flexProps": {
 					"marginTop": 10
 				},
@@ -202,7 +203,33 @@
 					"color": "rgba( 255, 255, 255, 1 )"
 				},
 				"height": 60,
-				"text": "Next Page",
+				"text": "Action 2",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "4608e562",
+			"props": {
+				"autoHeight": 21.428571428571427,
+				"children": [],
+				"name": "btnNext",
+				"parent": "d0fa9c62",
+				"text": "Action 1",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 21.428571428571427,
+				"flexProps": {
+					"marginTop": 10
+				},
+				"font": {
+					"color": "rgba( 255, 255, 255, 1 )"
+				},
+				"height": 60,
+				"text": "Action 1",
 				"usePageVariable": true,
 				"width": null
 			}

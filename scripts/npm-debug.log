@@ -1,0 +1,620 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v6.9.2/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v6.9.2/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '@smartface/contx@2.0.2' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @smartface/contx@2.0.2
+8 silly fetchNamedPackageData @smartface/contx
+9 silly mapToRegistry name @smartface/contx
+10 silly mapToRegistry scope (from package name) @smartface
+11 silly mapToRegistry registry https://registry.npmjs.org
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: '@smartface/contx',
+12 silly mapToRegistry   scope: '@smartface',
+12 silly mapToRegistry   escapedName: '@smartface%2fcontx',
+12 silly mapToRegistry   name: '@smartface/contx',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/@smartface%2fcontx
+14 verbose request uri https://registry.npmjs.org/@smartface%2fcontx
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 8:15:46 AM
+17 verbose request id b945f103bd383a9d
+18 verbose etag W/"e461805a7101b59603eb3a33d0c71895"
+19 verbose lastModified Thu, 08 Nov 2018 11:42:02 GMT
+20 http request GET https://registry.npmjs.org/@smartface%2fcontx
+21 http 304 https://registry.npmjs.org/@smartface%2fcontx
+22 verbose headers { date: 'Wed, 14 Nov 2018 08:15:46 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'set-cookie': [ '__cfduid=d198ca4c1a091ed50ee8131bd7265fe821542183346; expires=Thu, 14-Nov-19 08:15:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+22 verbose headers   age: '249514',
+22 verbose headers   'cf-ray': '4798083a7f9b9be1-AMS',
+22 verbose headers   etag: 'W/"e461805a7101b59603eb3a33d0c71895"',
+22 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 verbose headers   'last-modified': 'Thu, 08 Nov 2018 11:42:02 GMT',
+22 verbose headers   vary: 'Accept, Accept-Encoding',
+22 verbose headers   via: '1.1 varnish (Varnish/5.2)',
+22 verbose headers   'x-amz-meta-rev': '72-426bdd3d80c66cfa40bbce8b5f6d0afe',
+22 verbose headers   'x-varnish': '505133134 492706007',
+22 verbose headers   server: 'cloudflare' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Wed, 14 Nov 2018 08:15:46 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'set-cookie': [ '__cfduid=d198ca4c1a091ed50ee8131bd7265fe821542183346; expires=Thu, 14-Nov-19 08:15:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+23 silly get     age: '249514',
+23 silly get     'cf-ray': '4798083a7f9b9be1-AMS',
+23 silly get     etag: 'W/"e461805a7101b59603eb3a33d0c71895"',
+23 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 silly get     'last-modified': 'Thu, 08 Nov 2018 11:42:02 GMT',
+23 silly get     vary: 'Accept, Accept-Encoding',
+23 silly get     via: '1.1 varnish (Varnish/5.2)',
+23 silly get     'x-amz-meta-rev': '72-426bdd3d80c66cfa40bbce8b5f6d0afe',
+23 silly get     'x-varnish': '505133134 492706007',
+23 silly get     server: 'cloudflare' } ]
+24 verbose etag https://registry.npmjs.org/@smartface%2fcontx from cache
+25 verbose get saving @smartface/contx to /home/ubuntu/workspace/.npm/registry.npmjs.org/_40smartface_252fcontx/.cache.json
+26 verbose correctMkdir /home/ubuntu/workspace/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule @smartface/contx@2.0.2 checking installable status
+40 silly cache add args [ '@smartface/contx@2.0.2', null ]
+41 verbose cache add spec @smartface/contx@2.0.2
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: '@smartface/contx@2.0.2',
+42 silly cache add   scope: '@smartface',
+42 silly cache add   escapedName: '@smartface%2fcontx',
+42 silly cache add   name: '@smartface/contx',
+42 silly cache add   rawSpec: '2.0.2',
+42 silly cache add   spec: '2.0.2',
+42 silly cache add   type: 'version' }
+43 silly addNamed @smartface/contx@2.0.2
+44 verbose addNamed "2.0.2" is a plain semver version for @smartface/contx
+45 silly mapToRegistry name @smartface/contx
+46 silly mapToRegistry scope (from package name) @smartface
+47 silly mapToRegistry registry https://registry.npmjs.org
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: '@smartface/contx',
+48 silly mapToRegistry   scope: '@smartface',
+48 silly mapToRegistry   escapedName: '@smartface%2fcontx',
+48 silly mapToRegistry   name: '@smartface/contx',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/@smartface%2fcontx
+50 verbose addNameVersion registry:https://registry.npmjs.org/@smartface%2fcontx not in flight; fetching
+51 verbose get https://registry.npmjs.org/@smartface%2fcontx not expired, no request
+52 silly mapToRegistry name @smartface/contx
+53 silly mapToRegistry scope (from package name) @smartface
+54 silly mapToRegistry registry https://registry.npmjs.org
+55 silly mapToRegistry data Result {
+55 silly mapToRegistry   raw: '@smartface/contx',
+55 silly mapToRegistry   scope: '@smartface',
+55 silly mapToRegistry   escapedName: '@smartface%2fcontx',
+55 silly mapToRegistry   name: '@smartface/contx',
+55 silly mapToRegistry   rawSpec: '',
+55 silly mapToRegistry   spec: 'latest',
+55 silly mapToRegistry   type: 'tag' }
+56 silly mapToRegistry uri https://registry.npmjs.org/@smartface%2fcontx
+57 verbose addRemoteTarball https://registry.npmjs.org/@smartface/contx/-/contx-2.0.2.tgz not in flight; adding
+58 verbose addRemoteTarball [ 'https://registry.npmjs.org/@smartface/contx/-/contx-2.0.2.tgz',
+58 verbose addRemoteTarball   '19aa493b1985920228b8b501df477a40795982e3' ]
+59 info retry fetch attempt 1 at 8:15:47 AM
+60 info attempt registry request try #1 at 8:15:47 AM
+61 http fetch GET https://registry.npmjs.org/@smartface/contx/-/contx-2.0.2.tgz
+62 http fetch 200 https://registry.npmjs.org/@smartface/contx/-/contx-2.0.2.tgz
+63 silly fetchAndShaCheck shasum 19aa493b1985920228b8b501df477a40795982e3
+64 verbose addTmpTarball /tmp/npm-15475-7b7f2ab3/registry.npmjs.org/_40smartface/contx/-/contx-2.0.2.tgz not in flight; adding
+65 verbose addTmpTarball already have metadata; skipping unpack for @smartface/contx@2.0.2
+66 verbose correctMkdir /home/ubuntu/workspace/.npm correctMkdir not in flight; initializing
+67 silly cache afterAdd @smartface/contx@2.0.2
+68 verbose afterAdd /home/ubuntu/workspace/.npm/@smartface/contx/2.0.2/package/package.json not in flight; writing
+69 verbose correctMkdir /home/ubuntu/workspace/.npm correctMkdir not in flight; initializing
+70 verbose afterAdd /home/ubuntu/workspace/.npm/@smartface/contx/2.0.2/package/package.json written
+71 silly fetchNamedPackageData filtrex
+72 silly mapToRegistry name filtrex
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry http://cd.smartface.io/nexus/content/groups/npm-all-public
+75 silly mapToRegistry data Result {
+75 silly mapToRegistry   raw: 'filtrex',
+75 silly mapToRegistry   scope: null,
+75 silly mapToRegistry   escapedName: 'filtrex',
+75 silly mapToRegistry   name: 'filtrex',
+75 silly mapToRegistry   rawSpec: '',
+75 silly mapToRegistry   spec: 'latest',
+75 silly mapToRegistry   type: 'tag' }
+76 silly mapToRegistry uri http://cd.smartface.io/nexus/content/groups/npm-all-public/filtrex
+77 verbose request uri http://cd.smartface.io/nexus/content/groups/npm-all-public/filtrex
+78 verbose request no auth needed
+79 info attempt registry request try #1 at 8:15:48 AM
+80 verbose lastModified Wed, 14 Nov 2018 08:14:12 GMT
+81 http request GET http://cd.smartface.io/nexus/content/groups/npm-all-public/filtrex
+82 http 200 http://cd.smartface.io/nexus/content/groups/npm-all-public/filtrex
+83 verbose headers { 'content-type': 'application/json',
+83 verbose headers   'last-modified': 'Wed, 14 Nov 2018 08:15:48 GMT',
+83 verbose headers   'accept-ranges': 'bytes',
+83 verbose headers   server: 'Microsoft-IIS/10.0',
+83 verbose headers   'x-frame-options': 'SAMEORIGIN',
+83 verbose headers   'x-content-type-options': 'nosniff',
+83 verbose headers   'x-powered-by': 'ARR/3.0, ASP.NET',
+83 verbose headers   date: 'Wed, 14 Nov 2018 08:15:48 GMT',
+83 verbose headers   'content-length': '10184' }
+84 silly get cb [ 200,
+84 silly get   { 'content-type': 'application/json',
+84 silly get     'last-modified': 'Wed, 14 Nov 2018 08:15:48 GMT',
+84 silly get     'accept-ranges': 'bytes',
+84 silly get     server: 'Microsoft-IIS/10.0',
+84 silly get     'x-frame-options': 'SAMEORIGIN',
+84 silly get     'x-content-type-options': 'nosniff',
+84 silly get     'x-powered-by': 'ARR/3.0, ASP.NET',
+84 silly get     date: 'Wed, 14 Nov 2018 08:15:48 GMT',
+84 silly get     'content-length': '10184' } ]
+85 verbose get saving filtrex to /home/ubuntu/workspace/.npm/cd.smartface.io/nexus/content/groups/npm-all-public/filtrex/.cache.json
+86 verbose correctMkdir /home/ubuntu/workspace/.npm correctMkdir not in flight; initializing
+87 silly resolveWithNewModule filtrex@0.5.4 checking installable status
+88 silly cache add args [ 'filtrex@^0.5.4', null ]
+89 verbose cache add spec filtrex@^0.5.4
+90 silly cache add parsed spec Result {
+90 silly cache add   raw: 'filtrex@^0.5.4',
+90 silly cache add   scope: null,
+90 silly cache add   escapedName: 'filtrex',
+90 silly cache add   name: 'filtrex',
+90 silly cache add   rawSpec: '^0.5.4',
+90 silly cache add   spec: '>=0.5.4 <0.6.0',
+90 silly cache add   type: 'range' }
+91 silly addNamed filtrex@>=0.5.4 <0.6.0
+92 verbose addNamed ">=0.5.4 <0.6.0" is a valid semver range for filtrex
+93 silly addNameRange { name: 'filtrex', range: '>=0.5.4 <0.6.0', hasData: false }
+94 silly mapToRegistry name filtrex
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry http://cd.smartface.io/nexus/content/groups/npm-all-public
+97 silly mapToRegistry data Result {
+97 silly mapToRegistry   raw: 'filtrex',
+97 silly mapToRegistry   scope: null,
+97 silly mapToRegistry   escapedName: 'filtrex',
+97 silly mapToRegistry   name: 'filtrex',
+97 silly mapToRegistry   rawSpec: '',
+97 silly mapToRegistry   spec: 'latest',
+97 silly mapToRegistry   type: 'tag' }
+98 silly mapToRegistry uri http://cd.smartface.io/nexus/content/groups/npm-all-public/filtrex
+99 verbose addNameRange registry:http://cd.smartface.io/nexus/content/groups/npm-all-public/filtrex not in flight; fetching
+100 verbose get http://cd.smartface.io/nexus/content/groups/npm-all-public/filtrex not expired, no request
+101 silly addNameRange number 2 { name: 'filtrex', range: '>=0.5.4 <0.6.0', hasData: true }
+102 silly addNameRange versions [ 'filtrex', [ '0.5.2', '0.5.3', '0.5.4' ] ]
+103 silly addNamed filtrex@0.5.4
+104 verbose addNamed "0.5.4" is a plain semver version for filtrex
+105 silly cache afterAdd filtrex@0.5.4
+106 verbose afterAdd /home/ubuntu/workspace/.npm/filtrex/0.5.4/package/package.json not in flight; writing
+107 verbose correctMkdir /home/ubuntu/workspace/.npm correctMkdir not in flight; initializing
+108 verbose afterAdd /home/ubuntu/workspace/.npm/filtrex/0.5.4/package/package.json written
+109 silly loadAllDepsIntoIdealTree Finishing
+110 silly loadIdealTree Finishing
+111 silly currentTree scripts
+111 silly currentTree ├── @smartface/contx@1.5.1
+111 silly currentTree ├── @smartface/html-to-text@1.1.1
+111 silly currentTree ├── @smartface/router@1.0.0-rc.3
+111 silly currentTree ├── @smartface/styler@1.3.15
+111 silly currentTree ├── decode-uri-component@0.2.0
+111 silly currentTree ├── filtrex@0.5.4
+111 silly currentTree ├── for-in@1.0.2
+111 silly currentTree ├── html-parse-stringify@1.0.2
+111 silly currentTree ├── invariant@2.2.4
+111 silly currentTree ├── is-extendable@1.0.1
+111 silly currentTree ├── is-plain-object@2.0.4
+111 silly currentTree ├── isobject@3.0.1
+111 silly currentTree ├── js-base@1.0.4
+111 silly currentTree ├── js-tokens@4.0.0
+111 silly currentTree ├── library@1.0.0
+111 silly currentTree ├── loose-envify@1.4.0
+111 silly currentTree ├── mixin-deep@1.3.1
+111 silly currentTree ├── path-to-regexp@2.4.0
+111 silly currentTree ├── query-string@6.2.0
+111 silly currentTree ├── resolve-pathname@2.2.0
+111 silly currentTree ├── semver@5.6.0
+111 silly currentTree ├─┬ sf-core@4.0.1-alpha.15
+111 silly currentTree │ ├── acorn-dynamic-import@4.0.0
+111 silly currentTree │ ├── acorn-node@1.6.2
+111 silly currentTree │ ├── acorn-walk@6.1.1
+111 silly currentTree │ ├── acorn@6.0.4
+111 silly currentTree │ ├── align-text@0.1.4
+111 silly currentTree │ ├── array-filter@0.0.1
+111 silly currentTree │ ├── array-map@0.0.0
+111 silly currentTree │ ├── array-reduce@0.0.0
+111 silly currentTree │ ├── asn1.js@4.10.1
+111 silly currentTree │ ├─┬ assert@1.4.1
+111 silly currentTree │ │ ├── inherits@2.0.1
+111 silly currentTree │ │ └── util@0.10.3
+111 silly currentTree │ ├── assertion-error@1.1.0
+111 silly currentTree │ ├── balanced-match@1.0.0
+111 silly currentTree │ ├── base64-js@1.3.0
+111 silly currentTree │ ├── bn.js@4.11.8
+111 silly currentTree │ ├── brace-expansion@1.1.11
+111 silly currentTree │ ├── brorand@1.1.0
+111 silly currentTree │ ├── browser-pack@6.1.0
+111 silly currentTree │ ├─┬ browser-resolve@1.11.3
+111 silly currentTree │ │ └── resolve@1.1.7
+111 silly currentTree │ ├── browserify-aes@1.2.0
+111 silly currentTree │ ├── browserify-cipher@1.0.1
+111 silly currentTree │ ├── browserify-des@1.0.2
+111 silly currentTree │ ├── browserify-rsa@4.0.1
+111 silly currentTree │ ├── browserify-sign@4.0.4
+111 silly currentTree │ ├── browserify-zlib@0.1.4
+111 silly currentTree │ ├── browserify@14.1.0
+111 silly currentTree │ ├── buffer-from@1.1.1
+111 silly currentTree │ ├── buffer-xor@1.0.3
+111 silly currentTree │ ├── buffer@5.2.1
+111 silly currentTree │ ├── builtin-status-codes@3.0.0
+111 silly currentTree │ ├── cached-path-relative@1.0.2
+111 silly currentTree │ ├── camelcase@1.2.1
+111 silly currentTree │ ├── center-align@0.1.3
+111 silly currentTree │ ├── chai@3.5.0
+111 silly currentTree │ ├── cipher-base@1.0.4
+111 silly currentTree │ ├── cliui@2.1.0
+111 silly currentTree │ ├── combine-source-map@0.8.0
+111 silly currentTree │ ├── concat-map@0.0.1
+111 silly currentTree │ ├─┬ concat-stream@1.5.2
+111 silly currentTree │ │ ├── process-nextick-args@1.0.7
+111 silly currentTree │ │ └── readable-stream@2.0.6
+111 silly currentTree │ ├── console-browserify@1.1.0
+111 silly currentTree │ ├── constants-browserify@1.0.0
+111 silly currentTree │ ├── convert-source-map@1.1.3
+111 silly currentTree │ ├── core-util-is@1.0.2
+111 silly currentTree │ ├── create-ecdh@4.0.3
+111 silly currentTree │ ├── create-hash@1.2.0
+111 silly currentTree │ ├── create-hmac@1.1.7
+111 silly currentTree │ ├── crypto-browserify@3.12.0
+111 silly currentTree │ ├── date-now@0.1.4
+111 silly currentTree │ ├── decamelize@1.2.0
+111 silly currentTree │ ├─┬ deep-eql@0.1.3
+111 silly currentTree │ │ └── type-detect@0.1.1
+111 silly currentTree │ ├── defined@1.0.0
+111 silly currentTree │ ├── deps-sort@2.0.0
+111 silly currentTree │ ├── des.js@1.0.0
+111 silly currentTree │ ├─┬ detective@4.7.1
+111 silly currentTree │ │ └── acorn@5.7.3
+111 silly currentTree │ ├── diffie-hellman@5.0.3
+111 silly currentTree │ ├── domain-browser@1.1.7
+111 silly currentTree │ ├── duplexer2@0.1.4
+111 silly currentTree │ ├── elliptic@6.4.1
+111 silly currentTree │ ├── events@1.1.1
+111 silly currentTree │ ├── evp_bytestokey@1.0.3
+111 silly currentTree │ ├── foreachasync@3.0.0
+111 silly currentTree │ ├── fs.realpath@1.0.0
+111 silly currentTree │ ├── function-bind@1.1.1
+111 silly currentTree │ ├── get-assigned-identifiers@1.2.0
+111 silly currentTree │ ├── glob@7.1.3
+111 silly currentTree │ ├── has@1.0.3
+111 silly currentTree │ ├── hash-base@3.0.4
+111 silly currentTree │ ├── hash.js@1.1.5
+111 silly currentTree │ ├── hmac-drbg@1.0.1
+111 silly currentTree │ ├── htmlescape@1.1.1
+111 silly currentTree │ ├── https-browserify@0.0.1
+111 silly currentTree │ ├── ieee754@1.1.12
+111 silly currentTree │ ├── indexof@0.0.1
+111 silly currentTree │ ├── inflight@1.0.6
+111 silly currentTree │ ├── inherits@2.0.3
+111 silly currentTree │ ├── inline-source-map@0.6.2
+111 silly currentTree │ ├─┬ insert-module-globals@7.2.0
+111 silly currentTree │ │ └── concat-stream@1.6.2
+111 silly currentTree │ ├── is-buffer@1.1.6
+111 silly currentTree │ ├── isarray@1.0.0
+111 silly currentTree │ ├── json-stable-stringify@0.0.1
+111 silly currentTree │ ├── jsonify@0.0.0
+111 silly currentTree │ ├── jsonparse@1.3.1
+111 silly currentTree │ ├── JSONStream@1.3.5
+111 silly currentTree │ ├── kind-of@3.2.2
+111 silly currentTree │ ├─┬ labeled-stream-splicer@2.0.1
+111 silly currentTree │ │ └── isarray@2.0.4
+111 silly currentTree │ ├── lazy-cache@1.0.4
+111 silly currentTree │ ├── lodash.memoize@3.0.4
+111 silly currentTree │ ├── lodash@4.17.11
+111 silly currentTree │ ├── longest@1.0.1
+111 silly currentTree │ ├── md5.js@1.3.5
+111 silly currentTree │ ├── miller-rabin@4.0.1
+111 silly currentTree │ ├── minimalistic-assert@1.0.1
+111 silly currentTree │ ├── minimalistic-crypto-utils@1.0.1
+111 silly currentTree │ ├── minimatch@3.0.4
+111 silly currentTree │ ├── minimist@1.2.0
+111 silly currentTree │ ├── module-deps@4.1.1
+111 silly currentTree │ ├── node-forge@0.7.6
+111 silly currentTree │ ├── once@1.4.0
+111 silly currentTree │ ├── os-browserify@0.1.2
+111 silly currentTree │ ├── pako@0.2.9
+111 silly currentTree │ ├── parents@1.0.1
+111 silly currentTree │ ├── parse-asn1@5.1.1
+111 silly currentTree │ ├── path-browserify@0.0.1
+111 silly currentTree │ ├── path-is-absolute@1.0.1
+111 silly currentTree │ ├── path-parse@1.0.6
+111 silly currentTree │ ├── path-platform@0.11.15
+111 silly currentTree │ ├── pbkdf2@3.0.17
+111 silly currentTree │ ├── process-nextick-args@2.0.0
+111 silly currentTree │ ├── process@0.11.10
+111 silly currentTree │ ├── public-encrypt@4.0.3
+111 silly currentTree │ ├── punycode@1.4.1
+111 silly currentTree │ ├── querystring-es3@0.2.1
+111 silly currentTree │ ├── querystring@0.2.0
+111 silly currentTree │ ├── randombytes@2.0.6
+111 silly currentTree │ ├── randomfill@1.0.4
+111 silly currentTree │ ├── read-only-stream@2.0.0
+111 silly currentTree │ ├─┬ readable-stream@2.3.6
+111 silly currentTree │ │ └── string_decoder@1.1.1
+111 silly currentTree │ ├── repeat-string@1.6.1
+111 silly currentTree │ ├── resolve@1.8.1
+111 silly currentTree │ ├── right-align@0.1.3
+111 silly currentTree │ ├── ripemd160@2.0.2
+111 silly currentTree │ ├── safe-buffer@5.1.2
+111 silly currentTree │ ├── salep@0.2.3
+111 silly currentTree │ ├── sha.js@2.4.11
+111 silly currentTree │ ├── shasum@1.0.2
+111 silly currentTree │ ├── shell-quote@1.6.1
+111 silly currentTree │ ├── simple-concat@1.0.0
+111 silly currentTree │ ├── source-map@0.5.7
+111 silly currentTree │ ├── stream-browserify@2.0.1
+111 silly currentTree │ ├── stream-combiner2@1.1.1
+111 silly currentTree │ ├── stream-http@2.8.3
+111 silly currentTree │ ├── stream-splicer@2.0.0
+111 silly currentTree │ ├── string_decoder@0.10.31
+111 silly currentTree │ ├── subarg@1.0.0
+111 silly currentTree │ ├── syntax-error@1.4.0
+111 silly currentTree │ ├── through@2.3.8
+111 silly currentTree │ ├── through2@2.0.5
+111 silly currentTree │ ├── timers-browserify@1.4.2
+111 silly currentTree │ ├── to-arraybuffer@1.0.1
+111 silly currentTree │ ├── tty-browserify@0.0.1
+111 silly currentTree │ ├── type-detect@1.0.0
+111 silly currentTree │ ├── typedarray@0.0.6
+111 silly currentTree │ ├── uglify-js@2.8.12
+111 silly currentTree │ ├── uglify-to-browserify@1.0.2
+111 silly currentTree │ ├── umd@3.0.3
+111 silly currentTree │ ├── undeclared-identifiers@1.1.2
+111 silly currentTree │ ├─┬ url@0.11.0
+111 silly currentTree │ │ └── punycode@1.3.2
+111 silly currentTree │ ├── util-deprecate@1.0.2
+111 silly currentTree │ ├── util@0.10.4
+111 silly currentTree │ ├── vm-browserify@0.0.4
+111 silly currentTree │ ├── walk@2.3.14
+111 silly currentTree │ ├── window-size@0.1.0
+111 silly currentTree │ ├── wordwrap@0.0.2
+111 silly currentTree │ ├── wrappy@1.0.2
+111 silly currentTree │ ├── xtend@4.0.1
+111 silly currentTree │ └── yargs@3.10.0
+111 silly currentTree ├── sf-extension-utils@4.6.0
+111 silly currentTree ├── strict-uri-encode@2.0.0
+111 silly currentTree ├── tinycolor2@1.4.1
+111 silly currentTree ├── value-equal@0.4.0
+111 silly currentTree ├── void-elements@1.0.0
+111 silly currentTree ├── warning@3.0.0
+111 silly currentTree └── wolfy87-eventemitter@5.2.5
+112 silly idealTree scripts
+112 silly idealTree ├── @smartface/contx@2.0.2
+112 silly idealTree ├── @smartface/html-to-text@1.1.1
+112 silly idealTree ├── @smartface/router@1.0.0-rc.3
+112 silly idealTree ├── @smartface/styler@1.3.15
+112 silly idealTree ├── decode-uri-component@0.2.0
+112 silly idealTree ├── filtrex@0.5.4
+112 silly idealTree ├── for-in@1.0.2
+112 silly idealTree ├── html-parse-stringify@1.0.2
+112 silly idealTree ├── invariant@2.2.4
+112 silly idealTree ├── is-extendable@1.0.1
+112 silly idealTree ├── is-plain-object@2.0.4
+112 silly idealTree ├── isobject@3.0.1
+112 silly idealTree ├── js-base@1.0.4
+112 silly idealTree ├── js-tokens@4.0.0
+112 silly idealTree ├── library@1.0.0
+112 silly idealTree ├── loose-envify@1.4.0
+112 silly idealTree ├── mixin-deep@1.3.1
+112 silly idealTree ├── path-to-regexp@2.4.0
+112 silly idealTree ├── query-string@6.2.0
+112 silly idealTree ├── resolve-pathname@2.2.0
+112 silly idealTree ├── semver@5.6.0
+112 silly idealTree ├─┬ sf-core@4.0.1-alpha.15
+112 silly idealTree │ ├── acorn-dynamic-import@4.0.0
+112 silly idealTree │ ├── acorn-node@1.6.2
+112 silly idealTree │ ├── acorn-walk@6.1.1
+112 silly idealTree │ ├── acorn@6.0.4
+112 silly idealTree │ ├── align-text@0.1.4
+112 silly idealTree │ ├── array-filter@0.0.1
+112 silly idealTree │ ├── array-map@0.0.0
+112 silly idealTree │ ├── array-reduce@0.0.0
+112 silly idealTree │ ├── asn1.js@4.10.1
+112 silly idealTree │ ├─┬ assert@1.4.1
+112 silly idealTree │ │ ├── inherits@2.0.1
+112 silly idealTree │ │ └── util@0.10.3
+112 silly idealTree │ ├── assertion-error@1.1.0
+112 silly idealTree │ ├── balanced-match@1.0.0
+112 silly idealTree │ ├── base64-js@1.3.0
+112 silly idealTree │ ├── bn.js@4.11.8
+112 silly idealTree │ ├── brace-expansion@1.1.11
+112 silly idealTree │ ├── brorand@1.1.0
+112 silly idealTree │ ├── browser-pack@6.1.0
+112 silly idealTree │ ├─┬ browser-resolve@1.11.3
+112 silly idealTree │ │ └── resolve@1.1.7
+112 silly idealTree │ ├── browserify-aes@1.2.0
+112 silly idealTree │ ├── browserify-cipher@1.0.1
+112 silly idealTree │ ├── browserify-des@1.0.2
+112 silly idealTree │ ├── browserify-rsa@4.0.1
+112 silly idealTree │ ├── browserify-sign@4.0.4
+112 silly idealTree │ ├── browserify-zlib@0.1.4
+112 silly idealTree │ ├── browserify@14.1.0
+112 silly idealTree │ ├── buffer-from@1.1.1
+112 silly idealTree │ ├── buffer-xor@1.0.3
+112 silly idealTree │ ├── buffer@5.2.1
+112 silly idealTree │ ├── builtin-status-codes@3.0.0
+112 silly idealTree │ ├── cached-path-relative@1.0.2
+112 silly idealTree │ ├── camelcase@1.2.1
+112 silly idealTree │ ├── center-align@0.1.3
+112 silly idealTree │ ├── chai@3.5.0
+112 silly idealTree │ ├── cipher-base@1.0.4
+112 silly idealTree │ ├── cliui@2.1.0
+112 silly idealTree │ ├── combine-source-map@0.8.0
+112 silly idealTree │ ├── concat-map@0.0.1
+112 silly idealTree │ ├─┬ concat-stream@1.5.2
+112 silly idealTree │ │ ├── process-nextick-args@1.0.7
+112 silly idealTree │ │ └── readable-stream@2.0.6
+112 silly idealTree │ ├── console-browserify@1.1.0
+112 silly idealTree │ ├── constants-browserify@1.0.0
+112 silly idealTree │ ├── convert-source-map@1.1.3
+112 silly idealTree │ ├── core-util-is@1.0.2
+112 silly idealTree │ ├── create-ecdh@4.0.3
+112 silly idealTree │ ├── create-hash@1.2.0
+112 silly idealTree │ ├── create-hmac@1.1.7
+112 silly idealTree │ ├── crypto-browserify@3.12.0
+112 silly idealTree │ ├── date-now@0.1.4
+112 silly idealTree │ ├── decamelize@1.2.0
+112 silly idealTree │ ├─┬ deep-eql@0.1.3
+112 silly idealTree │ │ └── type-detect@0.1.1
+112 silly idealTree │ ├── defined@1.0.0
+112 silly idealTree │ ├── deps-sort@2.0.0
+112 silly idealTree │ ├── des.js@1.0.0
+112 silly idealTree │ ├─┬ detective@4.7.1
+112 silly idealTree │ │ └── acorn@5.7.3
+112 silly idealTree │ ├── diffie-hellman@5.0.3
+112 silly idealTree │ ├── domain-browser@1.1.7
+112 silly idealTree │ ├── duplexer2@0.1.4
+112 silly idealTree │ ├── elliptic@6.4.1
+112 silly idealTree │ ├── events@1.1.1
+112 silly idealTree │ ├── evp_bytestokey@1.0.3
+112 silly idealTree │ ├── foreachasync@3.0.0
+112 silly idealTree │ ├── fs.realpath@1.0.0
+112 silly idealTree │ ├── function-bind@1.1.1
+112 silly idealTree │ ├── get-assigned-identifiers@1.2.0
+112 silly idealTree │ ├── glob@7.1.3
+112 silly idealTree │ ├── has@1.0.3
+112 silly idealTree │ ├── hash-base@3.0.4
+112 silly idealTree │ ├── hash.js@1.1.5
+112 silly idealTree │ ├── hmac-drbg@1.0.1
+112 silly idealTree │ ├── htmlescape@1.1.1
+112 silly idealTree │ ├── https-browserify@0.0.1
+112 silly idealTree │ ├── ieee754@1.1.12
+112 silly idealTree │ ├── indexof@0.0.1
+112 silly idealTree │ ├── inflight@1.0.6
+112 silly idealTree │ ├── inherits@2.0.3
+112 silly idealTree │ ├── inline-source-map@0.6.2
+112 silly idealTree │ ├─┬ insert-module-globals@7.2.0
+112 silly idealTree │ │ └── concat-stream@1.6.2
+112 silly idealTree │ ├── is-buffer@1.1.6
+112 silly idealTree │ ├── isarray@1.0.0
+112 silly idealTree │ ├── json-stable-stringify@0.0.1
+112 silly idealTree │ ├── jsonify@0.0.0
+112 silly idealTree │ ├── jsonparse@1.3.1
+112 silly idealTree │ ├── JSONStream@1.3.5
+112 silly idealTree │ ├── kind-of@3.2.2
+112 silly idealTree │ ├─┬ labeled-stream-splicer@2.0.1
+112 silly idealTree │ │ └── isarray@2.0.4
+112 silly idealTree │ ├── lazy-cache@1.0.4
+112 silly idealTree │ ├── lodash.memoize@3.0.4
+112 silly idealTree │ ├── lodash@4.17.11
+112 silly idealTree │ ├── longest@1.0.1
+112 silly idealTree │ ├── md5.js@1.3.5
+112 silly idealTree │ ├── miller-rabin@4.0.1
+112 silly idealTree │ ├── minimalistic-assert@1.0.1
+112 silly idealTree │ ├── minimalistic-crypto-utils@1.0.1
+112 silly idealTree │ ├── minimatch@3.0.4
+112 silly idealTree │ ├── minimist@1.2.0
+112 silly idealTree │ ├── module-deps@4.1.1
+112 silly idealTree │ ├── node-forge@0.7.6
+112 silly idealTree │ ├── once@1.4.0
+112 silly idealTree │ ├── os-browserify@0.1.2
+112 silly idealTree │ ├── pako@0.2.9
+112 silly idealTree │ ├── parents@1.0.1
+112 silly idealTree │ ├── parse-asn1@5.1.1
+112 silly idealTree │ ├── path-browserify@0.0.1
+112 silly idealTree │ ├── path-is-absolute@1.0.1
+112 silly idealTree │ ├── path-parse@1.0.6
+112 silly idealTree │ ├── path-platform@0.11.15
+112 silly idealTree │ ├── pbkdf2@3.0.17
+112 silly idealTree │ ├── process-nextick-args@2.0.0
+112 silly idealTree │ ├── process@0.11.10
+112 silly idealTree │ ├── public-encrypt@4.0.3
+112 silly idealTree │ ├── punycode@1.4.1
+112 silly idealTree │ ├── querystring-es3@0.2.1
+112 silly idealTree │ ├── querystring@0.2.0
+112 silly idealTree │ ├── randombytes@2.0.6
+112 silly idealTree │ ├── randomfill@1.0.4
+112 silly idealTree │ ├── read-only-stream@2.0.0
+112 silly idealTree │ ├─┬ readable-stream@2.3.6
+112 silly idealTree │ │ └── string_decoder@1.1.1
+112 silly idealTree │ ├── repeat-string@1.6.1
+112 silly idealTree │ ├── resolve@1.8.1
+112 silly idealTree │ ├── right-align@0.1.3
+112 silly idealTree │ ├── ripemd160@2.0.2
+112 silly idealTree │ ├── safe-buffer@5.1.2
+112 silly idealTree │ ├── salep@0.2.3
+112 silly idealTree │ ├── sha.js@2.4.11
+112 silly idealTree │ ├── shasum@1.0.2
+112 silly idealTree │ ├── shell-quote@1.6.1
+112 silly idealTree │ ├── simple-concat@1.0.0
+112 silly idealTree │ ├── source-map@0.5.7
+112 silly idealTree │ ├── stream-browserify@2.0.1
+112 silly idealTree │ ├── stream-combiner2@1.1.1
+112 silly idealTree │ ├── stream-http@2.8.3
+112 silly idealTree │ ├── stream-splicer@2.0.0
+112 silly idealTree │ ├── string_decoder@0.10.31
+112 silly idealTree │ ├── subarg@1.0.0
+112 silly idealTree │ ├── syntax-error@1.4.0
+112 silly idealTree │ ├── through@2.3.8
+112 silly idealTree │ ├── through2@2.0.5
+112 silly idealTree │ ├── timers-browserify@1.4.2
+112 silly idealTree │ ├── to-arraybuffer@1.0.1
+112 silly idealTree │ ├── tty-browserify@0.0.1
+112 silly idealTree │ ├── type-detect@1.0.0
+112 silly idealTree │ ├── typedarray@0.0.6
+112 silly idealTree │ ├── uglify-js@2.8.12
+112 silly idealTree │ ├── uglify-to-browserify@1.0.2
+112 silly idealTree │ ├── umd@3.0.3
+112 silly idealTree │ ├── undeclared-identifiers@1.1.2
+112 silly idealTree │ ├─┬ url@0.11.0
+112 silly idealTree │ │ └── punycode@1.3.2
+112 silly idealTree │ ├── util-deprecate@1.0.2
+112 silly idealTree │ ├── util@0.10.4
+112 silly idealTree │ ├── vm-browserify@0.0.4
+112 silly idealTree │ ├── walk@2.3.14
+112 silly idealTree │ ├── window-size@0.1.0
+112 silly idealTree │ ├── wordwrap@0.0.2
+112 silly idealTree │ ├── wrappy@1.0.2
+112 silly idealTree │ ├── xtend@4.0.1
+112 silly idealTree │ └── yargs@3.10.0
+112 silly idealTree ├── sf-extension-utils@4.6.0
+112 silly idealTree ├── strict-uri-encode@2.0.0
+112 silly idealTree ├── tinycolor2@1.4.1
+112 silly idealTree ├── value-equal@0.4.0
+112 silly idealTree ├── void-elements@1.0.0
+112 silly idealTree ├── warning@3.0.0
+112 silly idealTree └── wolfy87-eventemitter@5.2.5
+113 silly generateActionsToTake Starting
+114 silly install generateActionsToTake
+115 silly rollbackFailedOptional Starting
+116 silly rollbackFailedOptional Finishing
+117 silly runTopLevelLifecycles Finishing
+118 silly install printInstalled
+119 verbose stack Error: /home/ubuntu/workspace/scripts/node_modules/sf-core: Appears to be a git repo or submodule.
+119 verbose stack     at /home/ubuntu/.nvm/versions/node/v6.9.2/lib/node_modules/npm/node_modules/npm-install-checks/index.js:137:15
+119 verbose stack     at /home/ubuntu/.nvm/versions/node/v6.9.2/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:267:18
+119 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+120 verbose cwd /home/ubuntu/workspace/scripts
+121 error Linux 4.4.0-78-generic
+122 error argv "/home/ubuntu/.nvm/versions/node/v6.9.2/bin/node" "/home/ubuntu/.nvm/versions/node/v6.9.2/bin/npm" "i" "@smartface/contx@2.0.2"
+123 error node v6.9.2
+124 error npm  v3.10.9
+125 error path /home/ubuntu/workspace/scripts/node_modules/sf-core
+126 error code EISGIT
+127 error git /home/ubuntu/workspace/scripts/node_modules/sf-core: Appears to be a git repo or submodule.
+128 error git /home/ubuntu/workspace/scripts/node_modules/sf-core
+129 error git Refusing to remove it. Update manually,
+129 error git or move it out of the way first.
+130 verbose exit [ 1, true ]
