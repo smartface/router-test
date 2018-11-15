@@ -7,6 +7,7 @@ const Application = require("sf-core/application");
 // Set uncaught exception handler, all exceptions that are not caught will
 // trigger onUnhandledError callback.
 Application.onUnhandledError = function(e) {
+    console.log(e.message + "\n\n*" + e.stack);
     alert({
         title: e.type || "Error",
         message: (e.message + "\n\n*" + e.stack)

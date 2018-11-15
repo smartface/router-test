@@ -24,32 +24,32 @@ const Page1 = extend(Page1Design)(
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
     this.onRouteEnter = (router, route) => {
-      this.unblock = router.addRouteBlocker((path, routeData, action, ok) => {
-        alert({
-          message: "Would you like to answer?",
-          title: "Question", //optional
-          buttons: [{
-              text: "Yes",
-              type: AlertView.Android.ButtonType.POSITIVE,
-              onClick: function() {
-                ok(true);
-              }
-            },
-            {
-              text: "No",
-              type: AlertView.Android.ButtonType.NEGATIVE,
-              onClick: function() {
-                ok(false);
-              },
-            }
-          ]
-        });
-      });
+      // this.unblock = router.addRouteBlocker((path, routeData, action, ok) => {
+      //   alert({
+      //     message: "Would you like to answer?",
+      //     title: "Question", //optional
+      //     buttons: [{
+      //         text: "Yes",
+      //         type: AlertView.Android.ButtonType.POSITIVE,
+      //         onClick: function() {
+      //           ok(true);
+      //         }
+      //       },
+      //       {
+      //         text: "No",
+      //         type: AlertView.Android.ButtonType.NEGATIVE,
+      //         onClick: function() {
+      //           ok(false);
+      //         },
+      //       }
+      //     ]
+      //   });
+      // });
     };
 
     this.onRouteExit = (router, route) => {
       console.log(`onRouteExit ${route}`);
-      this.unblock();
+      // this.unblock();
     };
   });
 

@@ -128,13 +128,13 @@ const router = Router.of({
         }))
       ]
     }),
-    withModalRouter(StackRouter.of(routeBinder({
+    withModalRouter(Router.of(routeBinder({
       path: "/path3",
-      to: "/path3/modal1",
-      // initial: ['/path3'],
-      // build: (router) => {
-      //   return new Page1({}, router, "/path3/modal2/path1", "/pages/page2");
-      // },
+      // to: "/path3/modal1",
+      initial: ['/path3'],
+      build: (router) => {
+        return new Page1({}, router, "/path3/modal2/path1", "/pages/page2");
+      },
       routes: [
         Route.of({
           path: "/path3/modal1",
@@ -149,7 +149,7 @@ const router = Router.of({
             return new Page2({}, router, "/bottom/stack/path1");
           }
         }),
-        Router.of({
+        StackRouter.of({
           path: "/path3/modal2",
           modal: true,
           build: (router, route) => {
@@ -205,6 +205,6 @@ const unlisten = router.listen((location, action) => {
   console.log(` ---- new route location: ${location.pathname} ${action}`);
 });
 
-router.push("/bottom");
+router.push("/path3");
 
 module.exports = router;
