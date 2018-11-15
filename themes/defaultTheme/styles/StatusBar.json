@@ -3,9 +3,7 @@
         "android": {
             "color": "#00A1F1"
         },
-        "ios": {
-            "style": "DEFAULT"
-        },
+        "style": "DEFAULT",
         "visible": true
     }
 }
