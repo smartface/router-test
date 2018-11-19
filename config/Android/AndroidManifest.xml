@@ -4,7 +4,7 @@
 		android:versionCode="1"
 		android:versionName="${Version}"
 		android:installLocation="auto" >
-	<uses-sdk android:minSdkVersion="17" android:targetSdkVersion="24" />
+	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="27" />
 	<!-- Required for SEND_SMS function. -->   
 	<!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
 	<!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
