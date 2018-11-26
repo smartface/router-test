@@ -13,3 +13,4 @@ plugin/*
 node_modules/
 scripts/ui
 scripts/themes
+sf_modules/
