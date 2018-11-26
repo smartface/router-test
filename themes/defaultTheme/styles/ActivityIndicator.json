@@ -9,10 +9,12 @@
         "alpha": 1,
         "borderColor": "rgba(0,0,0,1)",
         "borderWidth": 0,
-        "font": {},
         "flexProps": {
             "positionType": "RELATIVE",
             "alignSelf": "AUTO"
+        },
+        "ios":{
+            "activityIndicatorViewStyle": "NORMAL"
         },
         "minHeight": 21,
         "minWidth": 21,
