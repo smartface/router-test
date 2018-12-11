@@ -1,5 +1,4 @@
 const extend = require("js-base/core/extend");
-const Router = require("sf-core/ui/router");
 const System = require("sf-core/device/system");
 
 // Get generated UI code
@@ -7,9 +6,10 @@ const Page1Design = require("ui/ui_page1");
 
 const Page1 = extend(Page1Design)(
     // Constructor
-    function(_super) {
+    function(_super, routeData, router) {
         // Initalizes super class for this page scope
         _super(this);
+        this._router = router;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
@@ -51,7 +51,7 @@ function btnNext_onPress() {
     if (System.OS === "Android") {
         page.btnNext.enabled = false;
     }
-    Router.go("page2", {
+    page._router.push("/pages/page2", {
         message: "Hello World!"
     });
 }
