@@ -4,7 +4,7 @@ In order to improve your router skills you can create a workspace by cloning thi
 
 ### How to use?
 
-After run new workspace you could find examples in the `./scripts/routes` folder and you should apply this instructions to run examples.
+After open new workspace you could find examples in the `./scripts/routes` folder and you should apply this instructions to run examples.
 
 Select an URL 
 - /example/replace/pages/page1 - Replace action examples
