@@ -1,3 +1,24 @@
+## Play and Learn
+
+In order to improve your router skills you can create a workspace by cloning this repository.
+
+### How to use?
+
+After run new workspace you could find examples ./scripts/routes folder. To run examples you should apply this instructions.
+
+Select an URL 
+    - /example/replace/pages/page1 - Replace action examples
+    - /example/btb - BottomTabBarRouter examples
+    - /example/modal - Modal pages examples
+    - /example/backto - Back to page examples
+    
+and replace push function's URL to run example.
+
+```js
+router.push("/example/replace/pages/page1");
+```
+
+## Maintanence
 ### Set up
 - Clone https://github.com/smartface/router to workspace root
 - Clone sf-core to scripts/node_modules and change branch to 'controllers-analysis'
