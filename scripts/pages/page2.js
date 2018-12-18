@@ -8,9 +8,10 @@ const Page2Design = require('ui/ui_page2');
 
 const Page2 = extend(Page2Design)(
     // Constructor
-    function(_super, data, router) {
+    function(_super, data, router, action) {
         // Initalizes super class for this page scope
         _super(this);
+        this.action = action;
         this.router = router;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
@@ -47,15 +48,15 @@ function onLoad(superOnLoad) {
     superOnLoad();
 
     page.btn.onPress = btn_onPress.bind(page);
-    // if (System.OS === "Android")
-        // page.btn.enabled = false;
-    page.android.onBackButtonPressed = () => {
-        this.router.push("");
+    Application.onBackButtonPressed = () => {
+        this.router.goBack();
     };
 }
 
 function btn_onPress() {
-    this.router.goBack();
+    
+    this.action();   
+    // this.router.dismiss();
 }
 
 module.exports = Page2;

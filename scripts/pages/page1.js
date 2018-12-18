@@ -8,10 +8,11 @@ const Page1Design = require("ui/ui_page1");
 
 const Page1 = extend(Page1Design)(
     // Constructor
-    function(_super, data, router, link) {
+    function(_super, data, router, action) {
         // Initalizes super class for this page scope
         _super(this);
-        this._link = link;
+        this.txt = data.label && data.label.toString() || '';
+        this.action = action;
         this._router = router;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
@@ -24,33 +25,33 @@ const Page1 = extend(Page1Design)(
         
         this.onRouteEnter = (router, route) => {
             console.log(`onRouteEnter ${route}`);
-            this.unblock = router.addRouteBlocker((path, routeData, action, ok) => {
+            // this.unblock = router.addRouteBlocker((path, routeData, action, ok) => {
                 
-                alert({
-                    message: "Would you like to answer?",
-                    title: "Question", //optional
-                    buttons: [{
-                            text: "Yes",
-                            type: AlertView.Android.ButtonType.POSITIVE,
-                            onClick: function() {
-                                ok(true)
-                            }
-                        },
-                        {
-                            text: "No",
-                            type: AlertView.Android.ButtonType.NEGATIVE,
-                            onClick: function() {
-                                ok(false);
-                            },
-                        }
-                    ]
-                });
-            });
+            //     alert({
+            //         message: "Would you like to answer?",
+            //         title: "Question", //optional
+            //         buttons: [{
+            //                 text: "Yes",
+            //                 type: AlertView.Android.ButtonType.POSITIVE,
+            //                 onClick: function() {
+            //                     ok(true)
+            //                 }
+            //             },
+            //             {
+            //                 text: "No",
+            //                 type: AlertView.Android.ButtonType.NEGATIVE,
+            //                 onClick: function() {
+            //                     ok(false);
+            //                 },
+            //             }
+            //         ]
+            //     });
+            // });
         };
         
         this.onRouteExit = (router, route) => {
             console.log(`onRouteExit ${route}`);
-          this.unblock();  
+        //   this.unblock();  
         };
     });
 
@@ -87,13 +88,7 @@ function onLoad(superOnLoad) {
 function btnNext_onPress() {
     const page = this;
 
-    // if (System.OS === "Android") {
-    //     page.btnNext.enabled = false;
-    // }
-    this._router.push(this._link, {
-        applied: this._applied,
-        message: "Hello World!"
-    });
+    this.action();
 }
 
 var btnClickCount = 0;
@@ -129,7 +124,7 @@ function btn_onPress() {
     }
 
     // Access lbl & btnNext of page1
-    this.lbl.text = myLabelText;
+    this.lbl.text = this.txt + " _ " +myLabelText;
     this.flexlayout.children.btn.text = myButtonText;
 }
 

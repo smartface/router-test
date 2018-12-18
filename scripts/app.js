@@ -15,7 +15,7 @@ Application.onUnhandledError = function(e) {
 
 require("sf-extension-utils");
 require("./theme");
-require("./routes.js");
+require("./routes/routes.js");
 
 const Network = require("sf-core/device/network");
 

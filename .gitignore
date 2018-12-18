@@ -15,3 +15,4 @@ scripts/ui
 scripts/themes
 router
 .npmrc
+sf_modules/
