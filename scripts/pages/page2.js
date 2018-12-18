@@ -8,7 +8,7 @@ const Page2Design = require('ui/ui_page2');
 
 const Page2 = extend(Page2Design)(
     // Constructor
-    function(_super, data, router, action) {
+    function Page2(_super, data, router, action) {
         // Initalizes super class for this page scope
         _super(this);
         this.action = action;

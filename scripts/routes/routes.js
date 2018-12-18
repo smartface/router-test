@@ -13,6 +13,7 @@ const Color = require('sf-core/ui/color');
 const modalExample = require("./modal");
 const backtoExample = require("./backto");
 const bottomtabbarExample = require("./bottomtabbar");
+const replaceExample = require("./replace");
 
 const router = Router.of({
   path: "/",
@@ -21,7 +22,8 @@ const router = Router.of({
   routes: [
     backtoExample,
     modalExample,
-    bottomtabbarExample
+    bottomtabbarExample,
+    replaceExample
   ]
 });
 
@@ -29,6 +31,17 @@ const unlisten = router.listen((location, action) => {
   console.log(` ---- new route location: ${location.url}`);
 });
 
-router.push("/example/backto");
+
+/**
+ * Usage of the examples
+ * 
+ * url : /example/replace - Replace action examples
+ * url : /example/btb - BottomTabBarRouter examples
+ * url : /example/modal - Modal pages examples
+ * url : /example/backto - Back to page examples
+ * 
+ * Select a url and push
+ */
+router.push("/example/replace/pages/page1");
 
 module.exports = router;

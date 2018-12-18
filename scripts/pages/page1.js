@@ -8,7 +8,7 @@ const Page1Design = require("ui/ui_page1");
 
 const Page1 = extend(Page1Design)(
     // Constructor
-    function(_super, data, router, action) {
+    function Page1(_super, data, router, action) {
         // Initalizes super class for this page scope
         _super(this);
         this.txt = data.label && data.label.toString() || '';

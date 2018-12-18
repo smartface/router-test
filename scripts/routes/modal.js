@@ -5,6 +5,7 @@ const Route = require("@smartface/router/src/router/Route");
 
 module.exports = StackRouter.of({
     path: "/example/modal",
+    to: "/example/modal/page1",
     routes: [
         Route.of({
             path: "/example/modal/page1",
