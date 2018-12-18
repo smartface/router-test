@@ -5,6 +5,23 @@ const Route = require("@smartface/router/src/router/Route");
 const Color = require('sf-core/ui/color');
 const Page1 = require("pages/page1");
 const Page2 = require("pages/page2");
+const Application = require("sf-core/application");
+
+class StylingComponent {
+    constructor(){
+        
+    }
+}
+
+StylingContext.@@St;
+
+// Theme styling BottomTabBarRouter using Application.theme
+Application.theme(
+    new StylingContext(),
+    'btbExample'
+  );
+  
+
 
 module.exports = BottomTabBarRouter.of({
     path: "/example/btb",

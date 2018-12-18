@@ -18,10 +18,6 @@ const Page1 = extend(Page1Design)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        // this.onHide = () => {
-        //     console.log('onhide');
-        //     // this.unblock();
-        // }
         
         this.onRouteEnter = (router, route) => {
             console.log(`onRouteEnter ${route}`);
