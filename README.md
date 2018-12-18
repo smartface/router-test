@@ -7,10 +7,10 @@ In order to improve your router skills you can create a workspace by cloning thi
 After run new workspace you could find examples ./scripts/routes folder. To run examples you should apply this instructions.
 
 Select an URL 
-    - /example/replace/pages/page1 - Replace action examples
-    - /example/btb - BottomTabBarRouter examples
-    - /example/modal - Modal pages examples
-    - /example/backto - Back to page examples
+- /example/replace/pages/page1 - Replace action examples
+- /example/btb - BottomTabBarRouter examples
+- /example/modal - Modal pages examples
+- /example/backto - Back to page examples
     
 and replace push function's URL to run example.
 
