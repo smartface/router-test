@@ -6,80 +6,115 @@ const Color = require('sf-core/ui/color');
 const Page1 = require("pages/page1");
 const Page2 = require("pages/page2");
 const Application = require("sf-core/application");
+const createPageContext = require("@smartface/contx/lib/smartface/pageContext");
 
 class StylingComponent {
-    constructor(){
-        
-    }
+  subscribeContext({
+    type, // context type
+    style, // style with native object
+    rawStyle // style with json object
+  }) {
+    console.log('styling context');
+    console.log(JSON.stringify(rawStyle));
+    // You can assign styles below using style object
+    // 
+    // bottomTabBarRouter
+  }
 }
 
-StylingContext.@@St;
+StylingComponent.$$styleContext = {
+  classNames: ".page",
+  userProps: {
+    flexProps: {
+      justifyContent: "SPACE_AROUND"
+    },
+    paddingLeft: 10,
+    paddingRight: 10
+  },
+  statusBar: {
+    classNames: ".statusBar",
+    userProps: {
+      visible: true
+    }
+  },
+  headerBar: {
+    classNames: ".headerBar",
+    userProps: {
+      titleColor: "rgba( 0, 0, 0, 1 )",
+      visible: true
+    }
+  }
+};
+
+const pageContext = createPageContext(new StylingComponent(), "btbExample");
 
 // Theme styling BottomTabBarRouter using Application.theme
 Application.theme(
-    new StylingContext(),
-    'btbExample'
-  );
-  
+  pageContext,
+  'btbExample'
+);
 
 
-module.exports = BottomTabBarRouter.of({
-    path: "/example/btb",
-    to: "/example/btb/tab1/page1",
-    tabbarParams: () => ({
-        ios: { translucent: false },
-        itemColor: {
-            normal: Color.YELLOW,
-            selected: Color.RED
-        },
-        backgroundColor: Color.BLUE
-    }),
-    items: () => [{ title: "page1" }, { title: "page2" }, { title: "page3" }],
-    // tab1
-    routes: [
-        StackRouter.of({
-            path: "/example/btb/tab1",
-            to: "/example/btb/tab1/page1",
-            headerBarParams: () => { ios: { translucent: false } },
-            routes: [
-                Route.of({
-                    path: "/example/btb/tab1/page1",
-                    build: (router, route) => new Page1(route.getState().routeData, router, "/example/btb/tab1/page2")
-                }),
-                Route.of({
-                    path: "/example/btb/tab1/page2",
-                    build: (router, route) => {
-                        const { routeData, view, match } = route.getState();
 
-                        return new Page2(routeData, router, () => router.goBack());
-                    }
-                })
-            ]
-        }),
-        // tab2
-        StackRouter.of({
-            path: "/example/btb/tab2",
-            to: "/example/btb/tab2/page1",
-            headerBarParams: () => { ios: { translucent: false } },
-            routes: [
-                Route.of({
-                    path: "/example/btb/tab2/page1",
-                    build: (router, route) => new Page1(route.getState().routeData, router, "/example/btb/tab2/page2")
-                }),
-                Route.of({
-                    path: "/example/btb/tab2/page2",
-                    build: (router, route) => {
-                        return new Page2(route.getState().routeData, router, () => router.goBack());
-                    }
-                })
-            ]
-        }),
-        // tab3
+const bottomTabBarRouter = BottomTabBarRouter.of({
+  path: "/example/btb",
+  to: "/example/btb/tab1/page1",
+  tabbarParams: () => ({
+    ios: { translucent: false },
+    itemColor: {
+      normal: Color.YELLOW,
+      selected: Color.RED
+    },
+    backgroundColor: Color.BLUE
+  }),
+  items: () => [{ title: "page1" }, { title: "page2" }, { title: "page3" }],
+  // tab1
+  routes: [
+    StackRouter.of({
+      path: "/example/btb/tab1",
+      to: "/example/btb/tab1/page1",
+      headerBarParams: () => { ios: { translucent: false } },
+      routes: [
         Route.of({
-            path: "/example/btb/tab3",
-            build: (router, route) => {
-                return new Page1(route.getState().routeData, router, "/example/btb/tab2/page1");
-            }
+          path: "/example/btb/tab1/page1",
+          build: (router, route) => new Page1(route.getState().routeData, router, "/example/btb/tab1/page2")
+        }),
+        Route.of({
+          path: "/example/btb/tab1/page2",
+          build: (router, route) => {
+            const { routeData, view, match } = route.getState();
+
+            return new Page2(routeData, router, () => router.goBack());
+          }
         })
-    ]
+      ]
+    }),
+    // tab2
+    StackRouter.of({
+      path: "/example/btb/tab2",
+      to: "/example/btb/tab2/page1",
+      headerBarParams: () => { ios: { translucent: false } },
+      routes: [
+        Route.of({
+          path: "/example/btb/tab2/page1",
+          build: (router, route) => new Page1(route.getState().routeData, router, "/example/btb/tab2/page2")
+        }),
+        Route.of({
+          path: "/example/btb/tab2/page2",
+          build: (router, route) => {
+            return new Page2(route.getState().routeData, router, () => router.goBack());
+          }
+        })
+      ]
+    }),
+    // tab3
+    Route.of({
+      path: "/example/btb/tab3",
+      build: (router, route) => {
+        return new Page1(route.getState().routeData, router, "/example/btb/tab2/page1");
+      }
+    })
+  ]
 });
+
+module.exports = bottomTabBarRouter;
