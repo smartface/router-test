@@ -23,26 +23,12 @@ class StylingComponent {
 }
 
 StylingComponent.$$styleContext = {
-  classNames: ".page",
+  classNames: "",
   userProps: {
-    flexProps: {
-      justifyContent: "SPACE_AROUND"
-    },
+    width: null,
+    height: null,
     paddingLeft: 10,
     paddingRight: 10
-  },
-  statusBar: {
-    classNames: ".statusBar",
-    userProps: {
-      visible: true
-    }
-  },
-  headerBar: {
-    classNames: ".headerBar",
-    userProps: {
-      titleColor: "rgba( 0, 0, 0, 1 )",
-      visible: true
-    }
   }
 };
 
@@ -53,8 +39,6 @@ Application.theme(
   pageContext,
   'btbExample'
 );
-
-
 
 const bottomTabBarRouter = BottomTabBarRouter.of({
   path: "/example/btb",
@@ -83,11 +67,12 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
           path: "/example/btb/tab1/page2",
           build: (router, route) => {
             const { routeData, view, match } = route.getState();
+            view = view || new Page2(routeData, router, () => router.goBack());
 
-            return new Page2(routeData, router, () => router.goBack());
+            return view;
           }
         })
-      ]
+       ]
     }),
     // tab2
     StackRouter.of({

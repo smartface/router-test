@@ -14,6 +14,7 @@ const modalExample = require("./modal");
 const backtoExample = require("./backto");
 const bottomtabbarExample = require("./bottomtabbar");
 const replaceExample = require("./replace");
+const sliderDrawerSinglePageExample = require("./sliderdrawer-single-page");
 
 const router = Router.of({
   path: "/",
@@ -23,7 +24,8 @@ const router = Router.of({
     backtoExample,
     modalExample,
     bottomtabbarExample,
-    replaceExample
+    replaceExample,
+    sliderDrawerSinglePageExample
   ]
 });
 
@@ -42,6 +44,6 @@ const unlisten = router.listen((location, action) => {
  * 
  * Select a url and push
  */
-router.push("/example/replace/pages/page1");
+router.push("/example/sdw-single/page1");
 
 module.exports = router;

@@ -1,0 +1,216 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"id": "f9c8-0a7a-1fed-c913",
+			"initialized": true,
+			"props": {
+				"children": [
+					"7f4f-228e-0b6f-4b6d",
+					"4672-4f61-36b5-f88b",
+					"8bf0-3c3c-15c3-283d",
+					"dcbb-3028-24aa-fb6f",
+					"5e64-6fdf-3048-8351",
+					"7436-7f35-8c59-6f2e",
+					"b186-9bd7-2532-519a"
+				],
+				"name": "sliderDrawerComp",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"height": 455.93220338983053,
+				"left": 8.474576271186441,
+				"marginTop": 5,
+				"top": 18.64406779661017,
+				"width": 352.54237288135596
+			}
+		},
+		{
+			"className": ".button",
+			"id": "7f4f-228e-0b6f-4b6d",
+			"props": {
+				"autoHeight": 50.847457627118644,
+				"children": [],
+				"name": "button1_2",
+				"parent": "f9c8-0a7a-1fed-c913",
+				"text": "Button"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.847457627118644,
+				"backgroundColor": "rgba( 247, 247, 247, 1 )",
+				"borderColor": "rgba( 233, 233, 233, 1 )",
+				"borderWidth": 1,
+				"height": 50,
+				"marginTop": 5,
+				"text": "Button",
+				"textColor": "rgba( 24, 24, 24, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "4672-4f61-36b5-f88b",
+			"props": {
+				"autoHeight": 50.847457627118644,
+				"children": [],
+				"name": "button1_1_1_1_1_1",
+				"parent": "f9c8-0a7a-1fed-c913",
+				"text": "Button"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.847457627118644,
+				"backgroundColor": "rgba( 247, 247, 247, 1 )",
+				"borderColor": "rgba( 233, 233, 233, 1 )",
+				"borderWidth": 1,
+				"height": 50,
+				"marginTop": 5,
+				"text": "Button",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "8bf0-3c3c-15c3-283d",
+			"props": {
+				"autoHeight": 50.847457627118644,
+				"children": [],
+				"name": "button1_1_1_1_1",
+				"parent": "f9c8-0a7a-1fed-c913",
+				"text": "Button"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.847457627118644,
+				"backgroundColor": "rgba( 247, 247, 247, 1 )",
+				"borderColor": "rgba( 233, 233, 233, 1 )",
+				"borderWidth": 1,
+				"height": 50,
+				"marginTop": 5,
+				"text": "Button",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "dcbb-3028-24aa-fb6f",
+			"props": {
+				"autoHeight": 50.847457627118644,
+				"children": [],
+				"name": "button1_1_1_1",
+				"parent": "f9c8-0a7a-1fed-c913",
+				"text": "Button"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.847457627118644,
+				"backgroundColor": "rgba( 247, 247, 247, 1 )",
+				"borderColor": "rgba( 233, 233, 233, 1 )",
+				"borderWidth": 1,
+				"height": 50,
+				"marginTop": 5,
+				"text": "Button",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "5e64-6fdf-3048-8351",
+			"props": {
+				"autoHeight": 50.847457627118644,
+				"children": [],
+				"name": "button1_1_1",
+				"parent": "f9c8-0a7a-1fed-c913",
+				"text": "Button"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.847457627118644,
+				"backgroundColor": "rgba( 247, 247, 247, 1 )",
+				"borderColor": "rgba( 233, 233, 233, 1 )",
+				"borderWidth": 1,
+				"height": 50,
+				"marginTop": 5,
+				"text": "Button",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "7436-7f35-8c59-6f2e",
+			"props": {
+				"autoHeight": 50.847457627118644,
+				"children": [],
+				"name": "button1_1",
+				"parent": "f9c8-0a7a-1fed-c913",
+				"text": "Button"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.847457627118644,
+				"backgroundColor": "rgba( 247, 247, 247, 1 )",
+				"borderColor": "rgba( 233, 233, 233, 1 )",
+				"borderWidth": 1,
+				"height": 50,
+				"marginTop": 5,
+				"text": "Button",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "b186-9bd7-2532-519a",
+			"props": {
+				"autoHeight": 50.847457627118644,
+				"children": [],
+				"name": "button1",
+				"parent": "f9c8-0a7a-1fed-c913",
+				"text": "Button"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.847457627118644,
+				"backgroundColor": "rgba( 247, 247, 247, 1 )",
+				"borderColor": "rgba( 233, 233, 233, 1 )",
+				"borderWidth": 1,
+				"height": 50,
+				"marginTop": 5,
+				"text": "Button",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"width": null
+			}
+		}
+	]
+}
