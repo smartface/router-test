@@ -32,16 +32,16 @@ StylingComponent.$$styleContext = {
   }
 };
 
-const pageContext = createPageContext(new StylingComponent(), "btbExample");
+const pageContext = createPageContext(new StylingComponent(), "btbModal");
 
 // Theme styling BottomTabBarRouter using Application.theme
 Application.theme(
   pageContext,
-  'btbExample'
+  'btbModal'
 );
 
 const bottomTabBarRouter = BottomTabBarRouter.of({
-  path: "/example/btb",
+  path: "/example/btbmodal/btb",
   to: "/example/btb/tab1/page1",
   tabbarParams: () => ({
     ios: { translucent: false },
@@ -51,20 +51,20 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
     },
     backgroundColor: Color.BLUE
   }),
-  items: () => [{ title: "page1" }, { title: "page2" }, { title: "page3" }],
+  items: () => [{ title: "Tab 1" }, { title: "Tab 2" }, { title: "Tab 3" }],
   // tab1
   routes: [
     StackRouter.of({
-      path: "/example/btb/tab1",
-      to: "/example/btb/tab1/page1",
+      path: "/example/btbmodal/btb/tab1",
+      to: "/example/btbmodal/btb/tab1/page1",
       headerBarParams: () => { ios: { translucent: false } },
       routes: [
         Route.of({
-          path: "/example/btb/tab1/page1",
-          build: (router, route) => new Page1(route.getState().routeData, router, "/example/btb/tab1/page2")
+          path: "/example/btbmodal/btb/tab1/page1",
+          build: (router, route) => new Page1(route.getState().routeData, router, () => router.push("/example/btbmodal/modal/page1"))
         }),
         Route.of({
-          path: "/example/btb/tab1/page2",
+          path: "/example/btbmodal/btb/tab1/page2",
           build: (router, route) => {
             const { routeData, view, match } = route.getState();
             view = view || new Page2(routeData, router, () => router.goBack());
@@ -72,20 +72,20 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             return view;
           }
         })
-       ]
+      ]
     }),
     // tab2
     StackRouter.of({
-      path: "/example/btb/tab2",
-      to: "/example/btb/tab2/page1",
+      path: "/example/btbmodal/btb/tab2",
+      to: "/example/btbmodal/btb/tab2/page1",
       headerBarParams: () => { ios: { translucent: false } },
       routes: [
         Route.of({
-          path: "/example/btb/tab2/page1",
-          build: (router, route) => new Page1(route.getState().routeData, router, "/example/btb/tab2/page2")
+          path: "/example/btbmodal/btb/tab2/page1",
+          build: (router, route) => new Page1(route.getState().routeData, router, () => router.push("/example/btbmodal/btb/tab2/page2"))
         }),
         Route.of({
-          path: "/example/btb/tab2/page2",
+          path: "/example/btbmodal/btb/tab2/page2",
           build: (router, route) => {
             return new Page2(route.getState().routeData, router, () => router.goBack());
           }
@@ -94,7 +94,7 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
     }),
     // tab3
     Route.of({
-      path: "/example/btb/tab3",
+      path: "/example/btbmodal/btb/tab3",
       build: (router, route) => {
         return new Page1(route.getState().routeData, router, "/example/btb/tab2/page1");
       }
@@ -102,4 +102,25 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
   ]
 });
 
-module.exports = bottomTabBarRouter;
+const router = StackRouter.of({
+  path: "/example/btbmodal",
+  to: "/example/btbmodal/btb/tab1/page1",
+  headerBarParams: () => { ios: { translucent: false } },
+  routes: [
+    bottomTabBarRouter,
+    StackRouter.of({
+      path: "/example/btbmodal/modal",
+      modal:true,
+      routes: [
+        Router.of({
+          path: "/example/btbmodal/modal/page1",
+          build: (router, route) => {
+            return new Page2(route.getState().routeData, router, () => router.dismiss());
+          }
+        })
+      ]
+    })
+  ]
+});
+
+module.exports = router;

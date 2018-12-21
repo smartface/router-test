@@ -5,13 +5,14 @@ const Route = require("@smartface/router/src/router/Route");
 
 module.exports = StackRouter.of({
     path: "/example/modal",
-    to: "/example/modal/page1",
+    to: "/example/modal/modalpages/page1",
+    homeRoute: 0,
     routes: [
         Route.of({
             path: "/example/modal/page1",
             build: (router, route) => {
                 let Page = require("pages/page1");
-                return new Page({ label: 1 }, router, "/pages2/page2/page1");
+                return new Page({ label: 1 }, router, () => router.push('/example/modal/modalpages/page1'));
             }
         }),
         StackRouter.of({
@@ -22,11 +23,11 @@ module.exports = StackRouter.of({
                     path: "/example/modal/modalpages/page1",
                     build: (router, route) => {
                         let Page = require("pages/page1");
-                        return new Page({ label: 1 }, router, "/example/modal/modalpages/page2");
+                        return new Page({ label: 1 }, router, () => router.dismiss());
                     }
-                }), 
+                }),
                 Route.of({
-                    path: "/example/modal/modalpages/page2",
+                    path: "2",
                     build: (router, route) => {
                         let Page = require("pages/page2");
                         return new Page({ label: 2 }, router);

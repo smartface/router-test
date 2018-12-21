@@ -15,6 +15,7 @@ const backtoExample = require("./backto");
 const bottomtabbarExample = require("./bottomtabbar");
 const replaceExample = require("./replace");
 const sliderDrawerSinglePageExample = require("./sliderdrawer-single-page");
+const btbModalExample = require("./btb-with-modal");
 
 const router = Router.of({
   path: "/",
@@ -25,7 +26,8 @@ const router = Router.of({
     modalExample,
     bottomtabbarExample,
     replaceExample,
-    sliderDrawerSinglePageExample
+    sliderDrawerSinglePageExample,
+    btbModalExample
   ]
 });
 
@@ -41,9 +43,10 @@ const unlisten = router.listen((location, action) => {
  * url : /example/btb - BottomTabBarRouter examples
  * url : /example/modal - Modal pages examples
  * url : /example/backto - Back to page examples
+ * url : /example/btbmodal - BottomTabBar with Modal StackRouter
  * 
  * Select a url and push
  */
-router.push("/example/sdw-single/page1");
+router.push("/example/btbmodal");
 
 module.exports = router;
