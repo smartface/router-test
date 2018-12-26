@@ -29,8 +29,12 @@ class SliderDrawerWrapper {
     return this.sliderDrawer.enabled;
   }
   
-  setView(view){
+  setView(view) {
     view.sliderDrawer = this.sliderDrawer;
+  }
+  
+  toggle(){
+    
   }
 
   onLoad() {

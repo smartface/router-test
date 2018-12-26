@@ -11,7 +11,7 @@ const Page1 = extend(Page1Design)(
     function Page1(_super, data, router, action) {
         // Initalizes super class for this page scope
         _super(this);
-        this.txt = data.label && data.label.toString() || '';
+        this.data = data;
         this.action = action;
         this._router = router;
         // Overrides super.onShow method
@@ -79,11 +79,12 @@ function onLoad(superOnLoad) {
     page.headerBar.leftItemEnabled = true;
     page.flexlayout.children.btn.onPress = btn_onPress.bind(page);
     page.btnNext.onPress = btnNext_onPress.bind(page);
+    
+    this.lbl.text = this.data.label && this.data.label.toString() || '';
 }
 
 function btnNext_onPress() {
     const page = this;
-
     this.action();
 }
 
@@ -120,7 +121,7 @@ function btn_onPress() {
     }
 
     // Access lbl & btnNext of page1
-    this.lbl.text = this.txt + " _ " +myLabelText;
+    
     this.flexlayout.children.btn.text = myButtonText;
 }
 

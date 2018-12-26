@@ -4,34 +4,51 @@ const BottomTabBarRouter = require("@smartface/router/src/native/BottomTabBarRou
 const Route = require("@smartface/router/src/router/Route");
 
 module.exports = StackRouter.of({
-    path: "/example/modal",
-    to: "/example/modal/modalpages/page1",
+    path: "/example/nestedmodal",
+    to: "/example/nestedmodal/page1",
     homeRoute: 0,
     routes: [
         Route.of({
-            path: "/example/modal/page1",
+            path: "/example/nestedmodal/page1",
             build: (router, route) => {
                 let Page = require("pages/page1");
-                return new Page({ label: 1 }, router, () => router.push('/example/modal/modalpages/page1'));
+                return new Page({ label: 1 }, router, () => router.push('/example/nestedmodal/modalpages/page1'));
             }
         }),
         StackRouter.of({
-            path: '/example/modal/modalpages',
+            path: '/example/nestedmodal/modalpages',
             modal: true,
             routes: [
                 Route.of({
-                    path: "/example/modal/modalpages/page1",
+                    path: "/example/nestedmodal/modalpages/page1",
                     build: (router, route) => {
                         let Page = require("pages/page1");
-                        return new Page({ label: 1 }, router, () => router.dismiss());
+                        let opened = false;
+                        
+                        return new Page({ label: 'modal 1' }, router, () => {
+                            console.log('router : '+router);
+                            if (opened) {
+                                router.dismiss();
+                            }
+                            else {
+                                opened = true;
+                                router.push('/example/nestedmodal/modalpages/nested/page2');
+                            }
+                        });
                     }
                 }),
-                Route.of({
-                    path: "2",
-                    build: (router, route) => {
-                        let Page = require("pages/page2");
-                        return new Page({ label: 2 }, router);
-                    }
+                StackRouter.of({
+                    path: '/example/nestedmodal/modalpages/nested',
+                    modal: true,
+                    routes: [
+                        Route.of({
+                            path: "/example/nestedmodal/modalpages/nested/page2",
+                            build: (router, route) => {
+                                let Page = require("pages/page1");
+                                return new Page({ label: 'modal 2' }, router, () => router.dismiss());
+                            }
+                        })
+                    ]
                 })
             ]
         })
