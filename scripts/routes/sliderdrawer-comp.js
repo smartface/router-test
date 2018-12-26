@@ -4,15 +4,6 @@ const FlexLayout = require('sf-core/ui/flexlayout'),
 const Application = require("sf-core/application");
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 
-// const addChild = require("@smartface/contx/lib/smartface/action/addChild");
-
-// var mainContainer = new FlexLayout();
-// mainContainer.left = 0;
-// mainContainer.right = 0;
-// mainContainer.bottom = 0;
-// mainContainer.top = 0;
-// mainContainer.positionType = FlexLayout.PositionType.ABSOLUTE;
-
 class SliderDrawerWrapper {
   constructor(props) {
     this.sliderDrawer = new SliderDrawer({
@@ -65,5 +56,5 @@ class SliderDrawerWrapper {
 
 const drawer = new SliderDrawerWrapper();
 drawer.position = SliderDrawer.Position.LEFT;
-drawer.enabled = true;
+drawer.enabled = false;
 module.exports = drawer;

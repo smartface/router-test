@@ -10,11 +10,15 @@ module.exports = StackRouter.of({
   routes: [
     Route.of({
       path: "/example/sdw-single/page1",
+      routeDidEnter: (router, route) => {
+        sliderDrawerWrapper.enabled = true;
+      },
+      routeDidExit: (router, route) => {
+        sliderDrawerWrapper.enabled = false;
+      },
       build: (router, route) => {
         let Page = require("pages/page1");
-        const view = new Page({ label: 2 }, router, () => router.push('/'));
-        sliderDrawerWrapper.setView(view);
-        sliderDrawerWrapper.enabled = true;
+        const view = new Page({ label: 2 }, router, () => router.push('/example/replace'));
         
         return view;
       }

@@ -35,7 +35,6 @@ const unlisten = router.listen((location, action) => {
   console.log(` ---- new route location: ${location.url}`);
 });
 
-
 /**
  * Usage of the examples
  * 
@@ -47,6 +46,6 @@ const unlisten = router.listen((location, action) => {
  * 
  * Select a url and push
  */
-router.push("/example/btbmodal");
+router.push("/example/sdw-single");
 
 module.exports = router;
