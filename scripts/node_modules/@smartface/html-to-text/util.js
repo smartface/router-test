@@ -3,6 +3,7 @@ function isEaualProps(a, b) {
     a.underline === b.underline &&
     a.backgroundColor === b.backgroundColor &&
     a.foregroundColor === b.foregroundColor &&
+    a.link === b.link &&
     isEqualFontProps(a.font, b.font) && (
       (a.ios && b.ios) ? (a.ios.underlineColor === b.ios.underlineColor) :
       (!a.ios && !b.ios) ? true : false)

@@ -25,6 +25,8 @@ function getParsedTree(ast, parent) {
       res.style["font-family"] = ast.attrs.face;
     if (ast.attrs.size)
       res.style["font-size"] = ast.attrs.size;
+    if (ast.attrs.href)
+      res.style["href"] = ast.attrs.href;
   }
 
   if (ast.type === "text") {
@@ -77,6 +79,7 @@ function getAttributedStringsFromTree(tree, resStrings) {
         obj.font.italic = /italic/i.test(obj.font.style);
       }
     }
+    tree.style["href"] && (obj.link = tree.style["href"]);
     tree.style["font-size"] && (obj.font.size = Math.floor(parseFloat(tree.style["font-size"])));
     tree.style["font-weight"] && (obj.font.bold = tree.style["font-weight"] === "bold");
     tree.style["font-style"] && (obj.font.italic = tree.style["font-style"] == "italic");
