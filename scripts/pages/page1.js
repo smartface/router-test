@@ -9,9 +9,12 @@ const Page1 = extend(Page1Design)(
     function(_super, routeData, router) {
         // Initalizes super class for this page scope
         _super(this);
+
         this._router = router;
+        console.log("router:" + this._router)
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
+
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     });
@@ -26,6 +29,8 @@ function onShow(superOnShow) {
     const page = this;
     superOnShow();
 
+    console.log("on show");
+
     if (System.OS === "Android") {
         setTimeout(() => page.btnNext.enabled = true, 300);
     }
@@ -35,34 +40,53 @@ function onShow(superOnShow) {
  * @event onLoad
  * This event is called once when page is created.
  * @param {function} superOnLoad super onLoad function
+ * 
  */
 function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
-
+    console.log("on louad");
     page.headerBar.leftItemEnabled = false;
     page.flexlayout.children.btn.onPress = btn_onPress.bind(page);
     page.btnNext.onPress = btnNext_onPress.bind(page);
+    page.btnPush.onPress = btnPush_onPress.bind(page);
+    //page.flexlayout.children.btnPush = btnPush_onPress.bind(page);
+
+}
+
+function btnPush_onPress() {
+    this.lbl.text = "Welcommene";
+    console.log("remove actor:");
 }
 
 function btnNext_onPress() {
+    console.log("press clicked");
     const page = this;
 
     if (System.OS === "Android") {
         page.btnNext.enabled = false;
     }
+
+    console.log("i am clicked");
+    console.log(page._router);
+
+    page._router.push("/example/btb/tab1/page2", {
+        message: "Hello World!"
+    });
+
+    /*
     page._router.push("/pages/page2", {
         message: "Hello World!"
     });
+    */
 }
 
-var btnClickCount = 0;
+let btnClickCount = 0;
 
 // Gets/sets press event callback for btn
 function btn_onPress() {
     var myLabelText = "";
     var myButtonText = "";
-
     btnClickCount += 1;
 
     switch (true) {

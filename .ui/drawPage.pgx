@@ -1,0 +1,68 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "b959-9550-2de1-d2e4",
+			"initialized": true,
+			"props": {
+				"children": [
+					"d52c-5f0e-7638-4eba",
+					"9817-3609-8950-af66",
+					"9bb2-6daf-fbe8-ffb1"
+				],
+				"name": "drawPage",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "6.13.0"
+		},
+		{
+			"className": ".statusBar",
+			"id": "d52c-5f0e-7638-4eba",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "b959-9550-2de1-d2e4"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"id": "9817-3609-8950-af66",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "b959-9550-2de1-d2e4",
+				"title": "drawPage"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "drawPage"
+			}
+		},
+		{
+			"className": ".button",
+			"id": "9bb2-6daf-fbe8-ffb1",
+			"props": {
+				"autoHeight": 71.0323527707892,
+				"children": [],
+				"name": "btnNext",
+				"parent": "b959-9550-2de1-d2e4",
+				"text": "Next Me",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 71.0323527707892,
+				"text": "Next Me",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

@@ -19,6 +19,7 @@
 			},
 			"type": "Page",
 			"userProps": {
+				"backgroundColor": "rgba( 70, 67, 67, 1 )",
 				"flexProps": {
 					"justifyContent": "SPACE_AROUND"
 				},
@@ -60,38 +61,17 @@
 			}
 		},
 		{
-			"className": ".label",
-			"id": "980522a9",
-			"props": {
-				"children": [],
-				"name": "lbl",
-				"parent": "e891b86d",
-				"usePageVariable": true
-			},
-			"type": "Label",
-			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"flexProps": {
-					"marginLeft": 20,
-					"marginRight": 20
-				},
-				"height": 90,
-				"multiline": true,
-				"textAlignment": "MIDCENTER",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
 			"className": ".imageView",
 			"id": "845d2004",
 			"props": {
+				"autoHeight": 54.6875,
 				"children": [],
 				"name": "img",
 				"parent": "e891b86d"
 			},
 			"type": "ImageView",
 			"userProps": {
+				"autoHeight": 54.6875,
 				"flexProps": {
 					"marginLeft": 20,
 					"marginRight": 20
@@ -102,12 +82,49 @@
 			}
 		},
 		{
+			"className": ".label",
+			"id": "980522a9",
+			"props": {
+				"autoHeight": 20.53291386571424,
+				"children": [],
+				"name": "lbl",
+				"parent": "e891b86d",
+				"text": "Weolcome",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"autoHeight": 20.53291386571424,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"font": {
+					"size": 18,
+					"bold": false,
+					"italic": false,
+					"family": "Arial",
+					"style": "RegularMT"
+				},
+				"height": 90,
+				"multiline": true,
+				"text": "Weolcome",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 233, 233, 233, 1 )",
+				"usePageVariable": true,
+				"visible": true,
+				"width": null
+			}
+		},
+		{
 			"className": ".flexLayout",
 			"id": "d0fa9c62",
 			"props": {
 				"children": [
 					"48653d59",
-					"4608e562"
+					"4608e562",
+					"0fc5-1d94-ab64-ac55"
 				],
 				"name": "flexlayout",
 				"parent": "e891b86d",
@@ -122,7 +139,7 @@
 					"marginLeft": 20,
 					"marginRight": 20
 				},
-				"height": 145,
+				"height": 210,
 				"marginLeft": null,
 				"marginRight": null,
 				"marginTop": 10,
@@ -135,6 +152,7 @@
 			"className": ".button",
 			"id": "48653d59",
 			"props": {
+				"autoHeight": 60.75757344563802,
 				"children": [],
 				"name": "btn",
 				"parent": "d0fa9c62",
@@ -143,6 +161,7 @@
 			},
 			"type": "Button",
 			"userProps": {
+				"autoHeight": 60.75757344563802,
 				"font": {
 					"color": "rgba( 255, 255, 255, 1 )"
 				},
@@ -156,6 +175,7 @@
 			"className": ".button",
 			"id": "4608e562",
 			"props": {
+				"autoHeight": 60.75757344563802,
 				"children": [],
 				"name": "btnNext",
 				"parent": "d0fa9c62",
@@ -164,6 +184,7 @@
 			},
 			"type": "Button",
 			"userProps": {
+				"autoHeight": 60.75757344563802,
 				"flexProps": {
 					"marginTop": 10
 				},
@@ -172,6 +193,28 @@
 				},
 				"height": 60,
 				"text": "Next Page",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "0fc5-1d94-ab64-ac55",
+			"props": {
+				"autoHeight": 70.56818008422852,
+				"children": [],
+				"name": "btnPush",
+				"parent": "d0fa9c62",
+				"text": "PusherPage",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 70.56818008422852,
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				},
+				"text": "PusherPage",
 				"usePageVariable": true,
 				"width": null
 			}

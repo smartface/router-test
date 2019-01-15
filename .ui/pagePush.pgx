@@ -1,0 +1,87 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "a336-793f-8ac0-3343",
+			"initialized": true,
+			"props": {
+				"children": [
+					"0587-c5fa-3ad2-5eff",
+					"e379-3618-276d-3a90",
+					"c9ec-0d91-9b9a-273b"
+				],
+				"name": "pagePush",
+				"orientation": "PORTRAIT",
+				"parent": null,
+				"safeAreaEnabled": false
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 70, 70, 70, 1 )",
+				"paddingBottom": 10,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"paddingTop": 10,
+				"safeAreaEnabled": false
+			},
+			"version": "6.13.0"
+		},
+		{
+			"className": ".statusBar",
+			"id": "0587-c5fa-3ad2-5eff",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "a336-793f-8ac0-3343"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"id": "e379-3618-276d-3a90",
+			"props": {
+				"borderVisibility": false,
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "a336-793f-8ac0-3343",
+				"title": "pagePush"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"borderVisibility": false,
+				"title": "pagePush"
+			}
+		},
+		{
+			"className": ".button",
+			"id": "c9ec-0d91-9b9a-273b",
+			"props": {
+				"autoHeight": 70.6896551724138,
+				"children": [],
+				"name": "btnBackIt",
+				"parent": "a336-793f-8ac0-3343",
+				"text": "BackMC",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 70.6896551724138,
+				"flexProps": {
+					"alignSelf": "AUTO"
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "DejaVuSansMono"
+				},
+				"text": "BackMC",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}
