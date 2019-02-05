@@ -56,6 +56,6 @@ const unlisten = router.listen((location, action) => {
  * 
  * Select a url and push
  */
-router.push("/example/modal/noanimation");
+router.push("/example/noanimation");
 
 module.exports = router;
