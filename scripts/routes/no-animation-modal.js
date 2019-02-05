@@ -4,48 +4,47 @@ const BottomTabBarRouter = require("@smartface/router/src/native/BottomTabBarRou
 const Route = require("@smartface/router/src/router/Route");
 
 module.exports = StackRouter.of({
-    path: "/example/nestedmodal",
-    to: "/example/nestedmodal/page1",
+    path: "/example/modal/noanimation",
+    to: "/example/modal/noanimation/page1",
     homeRoute: 0,
     routes: [
         Route.of({
-            path: "/example/nestedmodal/page1",
+            path: "/example/modal/noanimation/page1",
             build: (router, route) => {
                 let Page = require("pages/page1");
                 return new Page({ label: 1 }, router, () => router.push('page1'));
             }
         }),
         StackRouter.of({
-            path: '/example/nestedmodal/modalpages',
+            path: '/example/modal/noanimation/modalpages',
             modal: true,
             routes: [
                 Route.of({
-                    path: "/example/nestedmodal/modalpages/page1",
+                    path: "/example/modal/noanimation/modalpages/page1",
                     build: (router, route) => {
                         let Page = require("pages/page1");
                         let opened = false;
                         
-                        return new Page({ label: 'modal 1' }, router, () => {
-                            console.log('router : '+router);
+                        return new Page({ label: 'anitamated modal 1, dismiss is not animated' }, router, () => {
                             if (opened) {
-                                router.dismiss();
+                                router.dismiss(false);
                             }
                             else {
                                 opened = true;
-                                router.push('nested/page2');
+                                router.push('nested/page2', false);
                             }
                         });
                     }
                 }),
                 StackRouter.of({
-                    path: '/example/nestedmodal/modalpages/nested',
+                    path: '/example/modal/noanimation/modalpages/nested',
                     modal: true,
                     routes: [
                         Route.of({
-                            path: "/example/nestedmodal/modalpages/nested/page2",
+                            path: "/example/modal/noanimation/modalpages/nested/page2",
                             build: (router, route) => {
                                 let Page = require("pages/page1");
-                                return new Page({ label: 'modal 2' }, router, () => router.dismiss());
+                                return new Page({ label: 'not animmated modal 2' }, router, () => router.dismiss(false));
                             }
                         })
                     ]

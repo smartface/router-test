@@ -1,11 +1,19 @@
 {
-    ".statusBar": {
-        "android": {
-            "color": "#00A1F1"
-        },
-        "ios": {
-            "style": "DEFAULT"
-        },
-        "visible": true
-    }
+	".statusBar": {
+		"android": {
+			"color": "#00A1F1"
+		},
+		"style": "DEFAULT",
+		"visible": true
+	},
+	".sf-statusBar": {
+		"android": {
+			"color": "#00A1F1"
+		},
+		"style": "LIGHTCONTENT",
+		"visible": true
+	},
+	".default_statusBar" : {
+		"visible": true
+	}
 }

@@ -17,6 +17,8 @@ const replaceExample = require("./replace");
 const sliderDrawerSinglePageExample = require("./sliderdrawer-single-page");
 const btbModalExample = require("./btb-with-modal");
 const nestedModal = require("./nested-modal");
+const pushExample = require("./push-pages");
+const noAnimationModal = require("./no-animation-modal");
 
 const router = Router.of({
   path: "/",
@@ -29,7 +31,9 @@ const router = Router.of({
     replaceExample,
     sliderDrawerSinglePageExample,
     btbModalExample,
-    nestedModal
+    nestedModal,
+    pushExample,
+    noAnimationModal
   ]
 });
 
@@ -46,9 +50,12 @@ const unlisten = router.listen((location, action) => {
  * url : /example/backto - Back to page examples
  * url : /example/btbmodal - BottomTabBar with Modal StackRouter
  * url : /example/nestedmodal - Nested Modal StackRouters
+ * url : /example/pushExample - Push pages example
+ * url : /example/sdw-single - Sliderdrawer only for single page example
+ * url : /example/modal/noanimation - Modal pages can open or close without animation
  * 
  * Select a url and push
  */
-router.push("/example/nestedmodal");
+router.push("/example/modal/noanimation");
 
 module.exports = router;
