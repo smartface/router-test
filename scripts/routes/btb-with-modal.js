@@ -14,8 +14,6 @@ class StylingComponent {
     style, // style with native objects
     rawStyle // style with json objects
   }) {
-    console.log('styling context');
-    console.log(JSON.stringify(rawStyle));
     // You can assign styles below using style object
     // 
     // bottomTabBarRouter
@@ -42,7 +40,7 @@ Application.theme(
 
 const bottomTabBarRouter = BottomTabBarRouter.of({
   path: "/example/btbmodal/btb",
-  to: "/example/btb/tab1/page1",
+  to: "/example/btbmodal/btb/tab1/page1",
   tabbarParams: () => ({
     ios: { translucent: false },
     itemColor: {
@@ -102,25 +100,25 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
   ]
 });
 
-const router = StackRouter.of({
-  path: "/example/btbmodal",
-  to: "/example/btbmodal/btb/tab1/page1",
-  headerBarParams: () => { ios: { translucent: false } },
-  routes: [
-    bottomTabBarRouter,
-    StackRouter.of({
-      path: "/example/btbmodal/modal",
-      modal:true,
-      routes: [
-        Router.of({
-          path: "/example/btbmodal/modal/page1",
-          build: (router, route) => {
-            return new Page2(route.getState().routeData, router, () => router.dismiss());
-          }
-        })
-      ]
-    })
-  ]
-});
+// const router = StackRouter.of({
+//   path: "/example/btbmodal",
+//   to: "/example/btbmodal/btb/tab1/page1",
+//   headerBarParams: () => { ios: { translucent: false } },
+//   routes: [
+//     bottomTabBarRouter,
+//     StackRouter.of({
+//       path: "/example/btbmodal/modal",
+//       modal:true,
+//       routes: [
+//         Router.of({
+//           path: "/example/btbmodal/modal/page1",
+//           build: (router, route) => {
+//             return new Page2(route.getState().routeData, router, () => router.dismiss());
+//           }
+//         })
+//       ]
+//     })
+//   ]
+// });
 
-module.exports = router;
+module.exports = bottomTabBarRouter;

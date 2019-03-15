@@ -15,6 +15,13 @@ module.exports = StackRouter.of({
                 return new Page({ label: 1 }, router, () => router.push('/example/modal/modalpages/page1'));
             }
         }),
+        Route.of({
+            path: "/example/modal/page2",
+            build: (router, route) => {
+                let Page = require("pages/page1");
+                return new Page({ label: 1 }, router, () => router.push('/example/modal/modalpages/page1'));
+            }
+        }),
         StackRouter.of({
             path: '/example/modal/modalpages',
             modal: true,

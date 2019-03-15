@@ -1,18 +1,10 @@
-var Page1 = require("pages/page1");
-var Page2 = require("pages/page2");
-
-var bottomPage1 = new Page1({});
-var bottomPage2 = new Page2({});
-
 const Router = require("@smartface/router/src/native/NativeRouter");
-const StackRouter = require("@smartface/router/src/native/NativeStackRouter");
-const BottomTabBarRouter = require("@smartface/router/src/native/BottomTabBarRouter");
-const Route = require("@smartface/router/src/router/Route");
-const Color = require('sf-core/ui/color');
 
 const modalExample = require("./modal");
 const backtoExample = require("./backto");
 const bottomtabbarExample = require("./bottomtabbar");
+const bottomtabbarWithHomeRoute = require("./bottomtabbar-homeroute");
+const bottomtabbarWithChangeHandler = require("./bottomtabbar-tabchange");
 const replaceExample = require("./replace");
 const sliderDrawerSinglePageExample = require("./sliderdrawer-single-page");
 const btbModalExample = require("./btb-with-modal");
@@ -33,7 +25,9 @@ const router = Router.of({
     btbModalExample,
     nestedModal,
     pushExample,
-    noAnimationModal
+    noAnimationModal,
+    bottomtabbarWithHomeRoute,
+    bottomtabbarWithChangeHandler
   ]
 });
 
@@ -49,6 +43,8 @@ const unlisten = router.listen((location, action) => {
  * url : /example/modal - Modal pages examples
  * url : /example/backto - Back to page examples
  * url : /example/btbmodal - BottomTabBar with Modal StackRouter
+ * url : /example/btbhome - BottomTabBar with homeoute
+ * url : /example/btb-tabchange - BottomTabBar with change handler
  * url : /example/nestedmodal - Nested Modal StackRouters
  * url : /example/pushExample - Push pages example
  * url : /example/sdw-single - Sliderdrawer only for single page example
@@ -56,6 +52,6 @@ const unlisten = router.listen((location, action) => {
  * 
  * Select a url and push
  */
-router.push("/example/noanimation");
+router.push("/example/btb-tabchange");
 
 module.exports = router;

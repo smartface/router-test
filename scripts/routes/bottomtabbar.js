@@ -35,10 +35,10 @@ StylingComponent.$$styleContext = {
 const pageContext = createPageContext(new StylingComponent(), "btbExample");
 
 // Theme styling BottomTabBarRouter using Application.theme
-Application.theme(
-  pageContext,
-  'btbExample'
-);
+// Application.theme(
+//   pageContext,
+//   'btbExample'
+// );
 
 const bottomTabBarRouter = BottomTabBarRouter.of({
   path: "/example/btb",
@@ -61,7 +61,10 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
       routes: [
         Route.of({
           path: "/example/btb/tab1/page1",
-          build: (router, route) => new Page1(route.getState().routeData, router, "/example/btb/tab1/page2")
+          build: (router, route) => {
+            console.log("example/btb/tab1/page1");
+            return new Page1(route.getState().routeData, router, "/example/btb/tab1/page2")
+          }
         }),
         Route.of({
           path: "/example/btb/tab1/page2",

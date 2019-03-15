@@ -7,6 +7,7 @@ const Application = require("sf-core/application");
 // Set uncaught exception handler, all exceptions that are not caught will
 // trigger onUnhandledError callback.
 Application.onUnhandledError = function(e) {
+    console.log(e.stack);
     alert({
         title: e.type || "Error",
         message: (e.message + "\n\n*" + e.stack)
@@ -15,7 +16,6 @@ Application.onUnhandledError = function(e) {
 
 require("sf-extension-utils");
 require("./theme");
-require("./routes");
 
 const Network = require("sf-core/device/network");
 
@@ -26,3 +26,5 @@ notifier.subscribe((connectionType) => {
         alert("No Network Connection");
     }
 });
+
+require("./routes");

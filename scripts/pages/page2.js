@@ -54,8 +54,8 @@ function onLoad(superOnLoad) {
 }
 
 function btn_onPress() {
-    
-    this.action();   
+    console.log("btn click");
+    this.action();
     // this.router.dismiss();
 }
 
