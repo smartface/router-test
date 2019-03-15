@@ -15,8 +15,9 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
       selected: Color.RED
     },
   }),
-  onTabChange: (router, /* @type ChangeEvent*/ event) => {
+  onTabChangedByUser: (router, /* @type ChangeEvent*/ event) => {
     console.log("Tab is changed", event.prevTabIndex, event.tabIndex);
+    console.log(Router.getActiveRouter());
   },
   items: () => [{ title: "page1" }, { title: "page2" }, { title: "page3" }],
   // tab1
