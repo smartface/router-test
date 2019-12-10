@@ -67,7 +67,7 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
     Route.of({
       path: "/example/btb-tabchange/tab3",
       build: (router, route) => {
-        return new Page1(route.getState().routeData, router, "/example/btb-tabchange/tab2/page1");
+        return new Page1(route.getState().routeData, router, () => router.push("/example/btb-tabchange/tab2/page1"));
       }
     })
   ]

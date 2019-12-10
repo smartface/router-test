@@ -40,7 +40,7 @@ Application.theme(
 
 const bottomTabBarRouter = BottomTabBarRouter.of({
   path: "/example/btbmodal/btb",
-  to: "/example/btbmodal/btb/tab1/page1",
+  to: "/example/btbmodal/btb/tab1",
   tabbarParams: () => ({
     ios: { translucent: false },
     itemColor: {
@@ -94,31 +94,31 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
     Route.of({
       path: "/example/btbmodal/btb/tab3",
       build: (router, route) => {
-        return new Page1(route.getState().routeData, router, "/example/btb/tab2/page1");
+        return new Page1(route.getState().routeData, router, () => router.push("/example/btbmodal/btb/tab2"));
       }
     })
   ]
 });
 
-// const router = StackRouter.of({
-//   path: "/example/btbmodal",
-//   to: "/example/btbmodal/btb/tab1/page1",
-//   headerBarParams: () => { ios: { translucent: false } },
-//   routes: [
-//     bottomTabBarRouter,
-//     StackRouter.of({
-//       path: "/example/btbmodal/modal",
-//       modal:true,
-//       routes: [
-//         Router.of({
-//           path: "/example/btbmodal/modal/page1",
-//           build: (router, route) => {
-//             return new Page2(route.getState().routeData, router, () => router.dismiss());
-//           }
-//         })
-//       ]
-//     })
-//   ]
-// });
+const router = StackRouter.of({
+  path: "/example/btbmodal",
+  to: "/example/btbmodal/btb",
+  headerBarParams: () => { ios: { translucent: false } },
+  routes: [
+    bottomTabBarRouter,
+    StackRouter.of({
+      path: "/example/btbmodal/modal",
+      modal:true,
+      routes: [
+        Router.of({
+          path: "/example/btbmodal/modal/page1",
+          build: (router, route) => {
+            return new Page2(route.getState().routeData, router, () => router.dismiss());
+          }
+        })
+      ]
+    })
+  ]
+});
 
-module.exports = bottomTabBarRouter;
+module.exports = router;
