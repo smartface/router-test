@@ -85,7 +85,7 @@ function onLoad(superOnLoad) {
 
 function btnNext_onPress() {
     const page = this;
-    this.action();
+    typeof this.action === "function" && this.action();
 }
 
 var btnClickCount = 0;

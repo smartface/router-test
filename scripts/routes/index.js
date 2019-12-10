@@ -48,7 +48,7 @@ const unlisten = router.listen((location, action) => {
  * url : /example/nestedmodal - Nested Modal StackRouters
  * url : /example/pushExample - Push pages example
  * url : /example/sdw-single - Sliderdrawer only for single page example
- * url : /example/modal/noanimation - Modal pages can open or close without animation
+ * url : /example/noanimation - Modal pages can open or close without animation
  * 
  * Select a url and push
  */
