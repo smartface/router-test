@@ -18,10 +18,18 @@ module.exports = StackRouter.of({
       },
       build: (router, route) => {
         let Page = require("pages/page1");
-        const view = new Page({ label: 2 }, router, () => router.push('/example/replace'));
+        const view = new Page({ label: 2 }, router, () => router.push('page2'));
         
         return view;
       }
+    }),
+    Route.of({
+        path: "/example/sdw-single/page2",
+        build: (router, route) => {
+            let Page = require("pages/page2");
+            const view = new Page({ label: 2 }, router, () => router.goBack());
+            return view;
+        }
     })
   ]
 });

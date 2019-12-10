@@ -12,7 +12,7 @@ module.exports = StackRouter.of({
             path: "/example/nestedmodal/page1",
             build: (router, route) => {
                 let Page = require("pages/page1");
-                return new Page({ label: 1 }, router, () => router.push('page1'));
+                return new Page({ label: 1 }, router, () => router.push('/example/nestedmodal/modalpages/page1'));
             }
         }),
         StackRouter.of({
@@ -44,7 +44,7 @@ module.exports = StackRouter.of({
                         Route.of({
                             path: "/example/nestedmodal/modalpages/nested/page2",
                             build: (router, route) => {
-                                let Page = require("pages/page1");
+                                let Page = require("pages/page2");
                                 return new Page({ label: 'modal 2' }, router, () => router.dismiss());
                             }
                         })

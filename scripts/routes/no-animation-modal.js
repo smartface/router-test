@@ -27,7 +27,7 @@ module.exports = StackRouter.of({
                         
                         return new Page({ label: 'animated modal 1, dismiss is not animated' }, router, () => {
                             if (opened) {
-                                router.dismiss(null, false);
+                                router.dismiss({}, false);
                             }
                             else {
                                 opened = true;
@@ -47,7 +47,7 @@ module.exports = StackRouter.of({
                             path: "/example/noanimation/modalpages/nested/page2",
                             build: (router, route) => {
                                 let Page = require("pages/page1");
-                                return new Page({ label: 'not animmated modal 2' }, router, () => router.dismiss(null, false));
+                                return new Page({ label: 'not animmated modal 2' }, router, () => router.dismiss({}, false));
                             },
                             routeDidExit(router, route){
                                 console.log('exit :', route.getState().action)
