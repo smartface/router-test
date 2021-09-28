@@ -27,7 +27,8 @@
 				"paddingLeft": 10,
 				"paddingRight": 10
 			},
-			"version": "6.14.1"
+			"version": "6.14.1",
+			"degree": 0
 		},
 		{
 			"className": ".statusBar",
@@ -41,7 +42,8 @@
 			"type": "StatusBar",
 			"userProps": {
 				"visible": true
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".headerBar",
@@ -58,7 +60,8 @@
 				"title": "page1",
 				"titleColor": "rgba( 0, 0, 0, 1 )",
 				"visible": true
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".imageView",
@@ -79,7 +82,8 @@
 				"height": 60,
 				"image": "smartface.png",
 				"width": null
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".textView",
@@ -99,7 +103,8 @@
 				"text": "asdfasdf asdfnaslkdflkasd faskld fnaksd",
 				"textAlignment": "MIDCENTER",
 				"width": 348.2456140350877
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".label",
@@ -125,8 +130,10 @@
 				"text": "asdfasdfasdfasd asdf",
 				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
-				"width": null
-			}
+				"width": null,
+				"testId": "Ry4n4IHEF"
+			},
+			"degree": 1
 		},
 		{
 			"className": ".flexLayout",
@@ -155,8 +162,10 @@
 				"marginTop": 10,
 				"paddingBottom": 15,
 				"usePageVariable": true,
-				"width": null
-			}
+				"width": null,
+				"testId": "cvamWfId5z"
+			},
+			"degree": 1
 		},
 		{
 			"className": ".button",
@@ -178,8 +187,10 @@
 				"height": 60,
 				"text": "Click me!",
 				"usePageVariable": true,
-				"width": null
-			}
+				"width": null,
+				"testId": "9jDl7NBIFX"
+			},
+			"degree": 2
 		},
 		{
 			"className": ".button",
@@ -204,8 +215,10 @@
 				"height": 60,
 				"text": "Next Page",
 				"usePageVariable": true,
-				"width": null
-			}
+				"width": null,
+				"testId": "zlJaCpqx9U"
+			},
+			"degree": 2
 		}
 	]
 }

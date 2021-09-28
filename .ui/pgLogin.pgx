@@ -17,7 +17,8 @@
 			},
 			"type": "Page",
 			"userProps": {},
-			"version": "6.14.1"
+			"version": "6.14.1",
+			"degree": 0
 		},
 		{
 			"className": ".statusBar",
@@ -29,7 +30,8 @@
 				"parent": "c2b9-eaca-3f0a-30a2"
 			},
 			"type": "StatusBar",
-			"userProps": {}
+			"userProps": {},
+			"degree": 1
 		},
 		{
 			"className": ".headerBar",
@@ -44,7 +46,8 @@
 			"type": "HeaderBar",
 			"userProps": {
 				"title": "Login Page"
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".button",
@@ -53,7 +56,8 @@
 				"children": [],
 				"name": "button1",
 				"parent": "c2b9-eaca-3f0a-30a2",
-				"text": "Back"
+				"text": "Back",
+				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
@@ -71,8 +75,11 @@
 				"left": 36.140351728959516,
 				"text": "Back",
 				"top": 255.94895796342328,
-				"width": 71.81818181818181
-			}
+				"usePageVariable": true,
+				"width": 71.81818181818181,
+				"testId": "1Sg_HF2Vg"
+			},
+			"degree": 1
 		},
 		{
 			"className": ".gridView",
@@ -98,7 +105,8 @@
 				"left": 12.727272727272727,
 				"top": 29.09090909090909,
 				"width": 352.7272727272727
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".gridViewItem",
@@ -108,11 +116,6 @@
 				"children": [],
 				"name": "gridViewItem1",
 				"parent": "15d6-7e7c-d53b-4f15"
-			},
-			"source": {
-				"page": "__library__",
-				"type": "gridViewItem1",
-				"id": "75e5-d1d0-0351-f212"
 			},
 			"type": "GridViewItem",
 			"userProps": {
@@ -126,7 +129,8 @@
 				"left": 0,
 				"top": 0,
 				"width": 181.8181818181818
-			}
+			},
+			"degree": 2
 		}
 	]
 }
