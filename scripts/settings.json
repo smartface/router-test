@@ -1,14 +1,36 @@
 {
 	"config": {
 		"theme": {
-			"currentTheme": "newrouterTheme",
+			"currentTheme": "defaultTheme",
+			"baseTheme": "defaultTheme",
 			"themes": [
-				"a",
 				"defaultTheme",
+				"a",
 				"newrouterTheme"
-			],
-			"baseTheme": "newrouterTheme"
+			]
 		},
-		"version": "6.14.2"
+		"paths": {
+			"pgxFolder": ".ui",
+			"uiFolder": "scripts/generated/pages",
+			"pagesFolder": "scripts/pages",
+			"libraryUiFolder": "scripts/generated/my-components",
+			"libraryUserFolder": "scripts/components",
+			"themesFolder": "themes",
+			"themesDistFolder": "scripts/generated/themes",
+			"output": {
+				"root": "dist",
+				"include": [
+					"node_modules",
+					"sf_modules"
+				],
+				"acceptedExtensions": [
+					".js",
+					".json",
+					".map"
+				]
+			}
+		},
+		"version": "6.15.1",
+		"projectType": "ts"
 	}
 }

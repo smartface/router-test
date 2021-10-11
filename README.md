@@ -20,22 +20,12 @@ router.push("/example/replace/pages/page1");
 
 ## Maintanence
 ### Set up
-- Clone https://github.com/smartface/router to workspace root
-- Clone sf-core to scripts/node_modules and change branch to 'controllers-analysis'
-- Install dependencies of the router in the scripts folder
-```
-    "path-to-regexp": "^2.4.0"
-    "resolve-pathname": "^2.2.0"
-```
-- Run ``` cd router && npm run dev:link ```
-- Run on Devicce
+- Clone https://github.com/smartface/router-test to workspace root
+- Run ``` cd scripts && yarn ```
+- Run on Device
 
-
-
-
-
-
-     ____                       _    __                      _       
+___
+     ____                       _    __                      _
     / ___| _ __ ___   __ _ _ __| |_ / _| __ _  ___ ___      (_) ___  
     \___ \| '_ ` _ \ / _` | '__| __| |_ / _` |/ __/ _ \     | |/ _ \ 
      ___) | | | | | | (_| | |  | |_|  _| (_| | (_|  __/  _  | | (_) |
@@ -59,7 +49,5 @@ Smartface Team.
 
 ## Support & Documentation & Useful Links
 
-- [Guides](https://developer.smartface.io)
+- [Guides](https://docs.smartface.io/)
 - [API Docs](http://ref.smartface.io)
-- [Smartface Cloud Dashboard](https://cloud.smartface.io)
-- [Download Smartface On-Device Emulator](https://smf.to/app) (Works only from your device)

@@ -27,7 +27,8 @@
 				"paddingLeft": 10,
 				"paddingRight": 10
 			},
-			"version": "6.14.1"
+			"version": "6.14.1",
+			"degree": 0
 		},
 		{
 			"className": ".statusBar",
@@ -41,7 +42,8 @@
 			"type": "StatusBar",
 			"userProps": {
 				"visible": true
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".headerBar",
@@ -58,7 +60,53 @@
 				"title": "page2",
 				"titleColor": "rgba( 0, 0, 0, 1 )",
 				"visible": true
-			}
+			},
+			"degree": 1
+		},
+		{
+			"className": ".imageView",
+			"id": "845d2004",
+			"props": {
+				"children": [],
+				"name": "img",
+				"parent": "7761adc8"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"height": 60,
+				"image": "smartface.png",
+				"width": null
+			},
+			"degree": 1
+		},
+		{
+			"className": ".label",
+			"id": "980522a9",
+			"props": {
+				"children": [],
+				"name": "lbl",
+				"parent": "7761adc8",
+				"text": "This is second page",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"backgroundColor": "rgba( 0, 0, 0, 0 )",
+				"flexProps": {
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"text": "This is second page",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"width": null,
+				"testId": "-mx8NSZv0p"
+			},
+			"degree": 1
 		},
 		{
 			"className": ".button",
@@ -82,50 +130,10 @@
 				"height": 60,
 				"text": "Back",
 				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".label",
-			"id": "980522a9",
-			"props": {
-				"children": [],
-				"name": "lbl",
-				"parent": "7761adc8",
-				"text": "This is second page",
-				"usePageVariable": true
+				"width": null,
+				"testId": "I-guvnUoii"
 			},
-			"type": "Label",
-			"userProps": {
-				"backgroundColor": "rgba( 0, 0, 0, 0 )",
-				"flexProps": {
-					"marginLeft": 20,
-					"marginRight": 20
-				},
-				"text": "This is second page",
-				"textAlignment": "MIDCENTER",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "845d2004",
-			"props": {
-				"children": [],
-				"name": "img",
-				"parent": "7761adc8"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"flexProps": {
-					"marginLeft": 20,
-					"marginRight": 20
-				},
-				"height": 60,
-				"image": "smartface.png",
-				"width": null
-			}
+			"degree": 1
 		}
 	]
 }
